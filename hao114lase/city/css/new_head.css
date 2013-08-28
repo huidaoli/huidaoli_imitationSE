@@ -1,0 +1,17 @@
+@charset "gb2312";
+body {background:#fff url(../images/images_2011.png) repeat-x 0 -558px;}
+html{
+background:#FFF;
+color:#000;
+background-attachment: fixed;
+background-image: url(about:blank);
+_zoom:expression(function(elem){elem.style.zoom = "1";document.execCommand("BackgroundImageCache",false,true);}(this));
+}
+
+#header .con{ height: 78px; }
+#header .bd { border-top: none;}
+#header.box { margin-bottom: 0;}
+#logo{ width: 210px; height: 69px; overflow: hidden; float: left;  margin-top:3px;}
+#logo a.logo-index {  width:117px; height:69px; float:left; margin-right:5px; }
+#logo a.logo-cur{ float:left; width:69px; height:51px;margin-top:9px; overflow:hidden; text-indent:-99em;}
+#logo.hover a.logo-cur{ width:77px; background:url(../images/images_2011.png) 0 -391px no-repeat;}

@@ -1,0 +1,118 @@
+.logo .logo-cur{
+	background:url(../images/bg.png) 0 0 no-repeat;
+}
+.box-grey .bh .style{ 
+	color:#fe6300;
+}
+
+/*
+.tag-list{
+	position:absolute;
+	left:775px;
+	top:15px;
+	width:180px;
+}
+.tag-list li{
+	display:inline;
+	float:left;
+	margin:0 0 11px 10px;
+}
+.tag-list li a{
+	display:inline;
+	float:left;
+	height:28px;
+	line-height:28px;
+	padding:0 9px 0 7px;
+	white-space:pre;
+}
+.tag-list li a:hover{ 
+	text-decoration:none;
+}
+.tag-list li .pink{ 
+	background:#f6c5c5;
+	color:#ac4e4e;
+}
+.tag-list li .yellow{ 
+	background:#fceaa0;
+	color:#a88805;
+}
+.tag-list li .green{ 
+	background:#caf2a6;
+	color:#3e720f;
+}
+.tag-list li .azure{ 
+	background:#bcecf6;
+	color:#1a7d92;
+}
+.tag-list li .blue{ 
+	background:#bccaf6;
+	color:#1438a7;
+}
+.tag-list li .purple{ 
+	background:#e1c5f6;
+	color:#7a2bb6;
+}
+.tag-list li .petunia{ 
+	background:#f1a9ed;
+	color:#93128c;
+}
+.tag-list li .rediance{ 
+	background:#fa9191;
+	color:#860000;
+}
+.tag-list li .buff{ 
+	background:#f9c383;
+	color:#975609;
+}
+*/
+.lose-weight-list{
+	border:1px solid #b2d2f3;
+	border-top:0;
+	background:#fff;
+	padding:17px 0 8px 15px;
+}
+.lose-weight-list li{
+	display:inline; 
+	float:left;
+	width:116px;
+}
+.lose-weight-list img{
+	cursor:pointer;
+	display:block;
+	height:86px;
+	margin:auto;
+	width:86px;
+}
+.lose-weight-list .dec{
+	display:block;
+	font-size:14px;
+	margin-top:4px;
+	text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

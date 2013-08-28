@@ -1,0 +1,61 @@
+.b8{ height:8px; overflow:hidden; clear:both;}
+.leftBox{ width:660px; float:left;}
+.rightBox{ width:280px; float:right;}
+.bor{ background:#fff; border:1px solid #a2c6ec;}
+.bor2{ background:#fff; border:1px solid #a2c6ec;height:1223px;}
+h2{ clear:both; height:30px; background:#eef7ff; line-height:30px; color:#004b9c; font-size:14px; padding:0 12px;}
+.list{ width:240px; margin:0 auto; padding:6px 0;}
+.list li{ width:120px; float:left;}
+.list li a,.list li{ font-size:14px;}
+.l{ width:315px; float:left;}
+.m{ width:316px; border-left:1px dashed #daeafa; border-right:1px dashed #daeafa; float:left;}
+.r{ width:315px; float:right;}
+.l,.m,.r{ height:118px;}
+.gw{ width:948px;}
+.gw h2{ text-align:center;}
+.gh{ width:638px; clear:both; overflow:hidden; zoom:1; padding:0 10px;}
+.tab{ width:100%; height:26px; overflow:hidden; clear:both; position:relative; margin-bottom:-1px;}
+.tab li{ width:76px; float:left; line-height:24px; margin-left:3px; cursor:pointer; display:inline; font-size:14px; font-family:Arial; color:#0e6dbc; height:24px; border:1px solid #a2c6ec; background:#ecf7ff; text-align:center;}
+.tab li.on{ background:#fff; font-weight:bold; border-bottom:1px solid #fff;}
+.divBuy{ width:250px; padding:10px; margin:0 auto;}
+.divBuy select,.divBuy input{ vertical-align:middle;}
+.divBuy p{ padding:5px 0;}
+.divBuy input{ margin-left:10px; display:inline;}
+.divBuy h3{ color:#004b9c;}
+ul.dklist{ width:100%; font-size:12px;}
+ul.dklist li{ width:50%; float:left; line-height:200%;}
+ul.dklist li span{text-decoration:line-through;}
+.leftBox h2{ color:#000;position:relative;}
+.leftBox h2 a{ position:absolute; right:10px; font-size:12px; *top:0; font-weight:normal; color:#0e6dbc;}
+.clipBox{ width:100px; height:75px; overflow:hidden; position:relative; margin:0 auto;}
+.clipBox p{ clear:both; height:1px; line-height:1; font-size:0; overflow:hidden; position:absolute;}
+.clipBox p.d{ width:98px; border-left:1px solid #f2f7fa; border-right:1px solid #f2f7fa;}
+.clipBox p.d1{ width:96px; border-left:2px solid #f2f7fa; border-right:2px solid #f2f7fa;}
+.g1{ top:1px; left:0;}
+.g2{ top:0; left:0;}
+.b1{bottom:0; _bottom:-1px; left:0;} 
+.b2{ bottom:1px; _bottom:0; left:0;}
+.gameList{ width:100%; clear:both;}
+.gameList li{ width:130px; margin-left:1px; display:inline; text-align:center; float:left; padding-top:8px; font-size:14px;}
+.gameList li img{ display:block; margin:0 auto;}
+.gameList li a{ color:#0e6dbc;}
+.gameList li a:hover{ color:#f60;}
+.gameClass{ width:640px; margin:0 auto; border-top:1px dashed #daeafa; padding-top:10px;}
+.gameClass ul{ width:100%; clear:both;}
+.gameClass li{ margin-right:10px; display:inline; padding-left:9px; float:left;}
+.gameClass li,.gameClass li span{ height:21px; overflow:hidden; cursor:pointer; background:url(http://img.qihoo.com/images/2008/hao360/20101216/tagbg.png) 0 0 no-repeat;}
+.gameClass li span{ float:left; line-height:24px; _line-height:21px; .line-height:21px; padding-right:9px; background-position:right 0;}
+.gameClass li.on{ background-position:0 -21px;}
+.gameClass li.on span{ background-position:right -21px; font-weight:bold;}
+.conClass{ padding:5px 0; line-height:24px; display:none; clear:both;}
+.conClass a{ padding:0 2px;}
+.conClass p{ background:url(http://img.qihoo.com/images/2008/hao360/20101216/cico.png) 0 3px no-repeat; padding-left:45px; padding-bottom:6px;}
+.conClass p.c1{}
+.conClass p.c2{ background-position:0 -315px;}
+.conClass p.c3{ background-position:0 -634px;}
+.conClass p.c4{ background-position:0 -930px;}
+.conClass p.c5{ background-position:0 -1258px; padding-top:6px; border-top:1px dashed #daeafa;}
+.tag{ width:100%; clear:both; height:21px;}
+.cRed{ color:red;}
+.clear{ clear:both;}
+.clear:after,.list:after,.gameList:after{ content:""; clear:both; height:0; visibility:hidden; display:block;}

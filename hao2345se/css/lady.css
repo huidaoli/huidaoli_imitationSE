@@ -1,0 +1,66 @@
+@charset "gb2312";
+/* CSS Document */
+
+
+body{background-color:#fff;font-size:12px;font-family:ËÎÌו,Verdana, Arial, Helvetica, sans-serif;color:#1657a9;line-height:21px;}
+body,form,p,pre,ul,ol,dl,h1,h2,h3,h4,h5,h6 {padding:0;margin:0;}
+h1,h2,h3,h4,h5,h6{font-family:Verdana,;font-weight:normal; font-size:12px;}
+input{font-size:12px;}
+ul{ list-style-type:none}
+li{ list-style-type:none}
+th{ font-weight:bold;}
+a{color:#1657a9; text-decoration:none;}
+a:hover{color:#db0010; text-decoration:underline}
+.red{color:red}
+.green{color:green}
+img{padding:0; margin:0;border:0}
+.clear{clear:both}
+
+
+.wrap{ width:990px; margin:0 auto;}
+.lady h2{ height:31px; line-height:31px; padding:0 20px 7px; background:url(../images/lady/ladybg.png) no-repeat 0 0; font-size:14px; font-weight:bold; color:#fff; text-align:left;}
+.lady h3{padding:0 20px; height:33px; line-height:33px;background:url(../images/lady/ladybg.png) no-repeat 0 -39px; font-size:14px; font-weight:bold; color:#387ddc; text-align:left;}
+.lady h3 span.icon1{padding-left:30px; height:33px; display:block;background:url(../images/lady/ladybg.png) no-repeat -950px -192px; }
+.lady h3 span.icon2{ width:960px;padding-left:30px; height:33px; display:block;background:url(../images/lady/ladybg.png) no-repeat -950px -235px; clear:both }
+.lady_box{ margin:0 4px;padding-bottom:2px; border:1px solid #b5ccec; border-top:0; border-bottom:0; background:#f7faff; zoom:1}
+.lady_box2{ margin:0;padding:0}
+.nuxin{padding-bottom:0; border-bottom:1px solid #b5ccec; margin-bottom:5px;}
+.box1 td, .box1 th {border-right: 1px solid #e9eef6;border-bottom: 1px solid #e9eef6;height: 35px;line-height: 35px;padding: 0 4px 0 10px;  font-size: 16px;}
+.box1 th {border-right: medium none;font-weight: 100;text-align: left;}
+.box2 td, .box2 th {border-bottom: 1px solid #e9eef6;height: 35px;line-height: 35px;padding: 0 4px 0 10px;  font-size: 14px;}
+.box2 td{width:14%}
+.box2 th { width:8%; font-weight:normal; text-align:center;}
+.box2_bot{height:2px; overflow:hidden; background:url(../images/lady/ladybg.png) no-repeat 0 -73px; margin-bottom:5px; }
+.box2 th.fl_class a{color:#387ddc}
+.lady_fenlei{font-weight:normal; width:350px; display:block; float:right}
+.lady_fenlei a{ color:#fff;margin:0 10px;}
+.lady_fenlei a:hover{color:#fff; text-decoration:underline}
+.lady_fenlei i{font-style:normal; float:right; margin-left:30px}
+.dapei{padding:10px 0 0px 10px; overflow:hidden; border-bottom:1px solid #e9eef6}
+.dapei_box{padding-bottom:10px;}
+
+.dapei .dp_title{padding:10px 10px 0 5px;width:23px; height:94px; line-height:18px; display:block;background:url(../images/lady/ladybg.png) no-repeat -949px -80px; text-align:center;}
+.dapei .dp_title a{color:#313131}
+.dapei .dp_title a:hover{color:#db0010}
+
+.dapei .dp_title i{ height:16px; display:block;line-height:16px; font-size:11px; font-style:normal; text-align:center}
+.dapei .dp_title i a{color:#666; text-decoration:underline}
+.dapei .dp_title i a:hover{color:#db0010; text-decoration:underline}
+
+.dapei a img{padding:3px; border:1px solid #ccc;}
+.dapei a:hover img{padding:3px; border:1px solid #f60;}
+
+.lady_icon{padding:10px 0 5px}
+.lady_icon span{ margin:0 14px;width:62px; height:70px; font-size:12px; text-align:center; display:inline; float:left;}
+.lady_icon img{display:block; margin:0 auto;}
+.lady_icon i{width:7px; height:65px; display:block; background:url(../images/lady/ladybg.png) no-repeat 0 -106px; float:left;}
+.photo_m, .mv_photo{ margin:0 auto;}
+.photo_m a img, .mv_photo a img{padding:1px; background:#fff; border:1px solid #bfc8d6}
+.photo_m a:hover img, .mv_photo a:hover img{padding:1px; background:#fff; border:1px solid #f60}
+.photo_t, .mv_photo_t{padding:0 10px;height:25px; line-height:25px; display:block; text-align:center; font-size:13px; font-style:normal; color:#fff; background:url(../images/lady/ladybg.png) no-repeat 0 -80px; margin-top:1px;}
+.photo_t a{ font-size:13px; color:#fff;}
+.photo_t a.name{ float:left;}
+.photo_t a.weibo{ float:right}
+
+.mv_photo_t{background:none; color:#000; }
+.tool-bar{text-align:center}

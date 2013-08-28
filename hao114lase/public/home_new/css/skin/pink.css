@@ -1,0 +1,24 @@
+@charset "gb2312";
+#wrap,.topbar .sets .sethome,.header .notice,.m-search,.m-search-tab .active,.m-search-tab .active116{ background-image:url(../../images/skin/pink_spirit.png);}
+#wrap{ background-position:0 -207px; background-repeat:repeat-x;}
+.m-search-tab .active{ background-position:0 -23px; background-repeat:no-repeat; }
+.m-search-tab .active116{ background-position:0 -48px; background-repeat:no-repeat;}
+.topbar .sets .sethome{ background-position:0 -84px; background-repeat:no-repeat;}
+.header .notice{ background-position:0 3px; background-repeat:no-repeat;}
+.m-search{  border-color:#f4bce2; background-position:0 -128px;background-repeat:repeat-x; }
+.header .logo{background-image:url(../../images/skin/pink_logo.png);_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="");}
+.topbar{ border-color:#f3cde7;}
+.col-hotKeys .hotKeys a,.box-prlInq .tit,.box-prlInq .more,.usage-tab .active,.col-coolsite .tit,.usage-con .tbox .ipt-text,.fmSite-tab li,.box-tuan a,.sortSite .tit a,.recomSite .tit a{ color:#c5479d;}
+.topbar .setColor .blue{ background-position:-1px -568px;}
+.topbar .setColor .pink{ background-position:-39px -612px;}
+.skin-list .default-setColor .blue{ background-position:0px -590px;}
+.skin-list .default-setColor .pink{ background-position:-38px -634px;}
+.sideBar,.col-usage,.col-coolsite,.col,.fmSite-tab li,.box-tuan{ border-color:#f4bce2;}
+.starBar{border-color:#ebbbdc;}
+.starBar li.hover{ background-color:#fbdef5;}
+.fmSite-tab li span,.box-tuan a{ background-color:#f9e2f4;}
+.sortSite{border-color:#ffe4fa; background-color:#fff9fe;}
+.sideBar{ background-color:#fbf1f9;}
+.col-recomSite{background-color:#fff9fe;}
+.usage-tab li{ background-color:#fbdef5;}
+.usage-tab .active{background-color:#f18cd1;color:#fff;}

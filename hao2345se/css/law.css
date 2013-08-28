@@ -1,0 +1,82 @@
+@charset "gb2312";
+/*common.css*/
+/* base */
+
+table{border-spacing:0;}
+/* path */
+.law_path{ margin:0 auto; width:990px;height:25px; line-height:25px; color:#666; text-align:left;}
+.law_path a{color:#666;}
+.law_path a:hover{color:#fd5151;}
+.law_path span{ float:right; text-align:right; display:block; height:25px; width:400px; padding-right:5px; color:#999;}
+.law_path span a{ margin:0 3px; zoom:1;}
+
+.clear{clear:both}
+.hr10{height:10px; overflow:hidden; clear:both}
+.wrap{width:990px; margin:0 auto; text-align:left;}
+.law_sidebar{width:206px; float:right}
+.law_main{width:774px; float:left;}
+.law_search{height:69px; border:1px solid #cbd6df; background:url(/images/law/lawbg.png) repeat-x 0 0}
+.law_search_fot{height:3px; background:url(/images/law/lawbg.png) repeat-x 0 -70px; overflow:hidden}
+.law_searchimg{ margin:0 15px; width:132px; height:69px; display:block; float:left; background:url(/images/law/lawbg.png) no-repeat 0 -74px;}
+.law_search .inp{ margin:15px 10px 0 0;height:36px; width:505px; line-height:36px;padding-left:3px; display:inline; background:url(/images/law/lawbg.png) no-repeat 0 -144px; border:none; float:left; color:#CCC;}
+.law_search .btn{ margin-top:15px;background:url(/images/law/lawbg.png) no-repeat -133px -74px;border: medium none;cursor: pointer;font-size: 14px; font-weight:bold;height:37px;line-height:37px;width:91px; color:#fff; float:left;}
+.law_search .hot_search{padding-left:15px; margin-top:15px;width:180px; height:40px; line-height:18px; overflow:hidden; float:left;}
+.law_search .hot_search a{margin-right:25px; color:#666;}
+.law_main h2, .law_sidebar h2, .sogou_box h2{height:32px; line-height:32px; font-size:16px; font-weight:bold; color:#416f8d; clear:both; background:url(/images/law/lawbg.png) repeat-x 0 -181px; border-right:1px solid #cbd6df}
+.law_main h2 .titlebg, .law_sidebar .titlebg, .sogou_box .titlebg{ width:6px; height:32px; display:inline-block; float:left; margin-right:5px; background:url(/images/law/lawbg.png) no-repeat 0 -214px;}
+.law_1, .law_m, .sidebar_box, .pufa, .zixun{border:1px solid #cdd7e0; border-top:0;zoom:1}
+.sidebar_box a{color:#333;}
+.sidebar_box a:hover{color:#fd5151}
+.law_1 td, .law_1 th{ width:17%;padding-left:10px;border:1px solid #e9eef2; border-top:none; border-left:none; line-height:34px; height:34px; font-size:14px; font-weight:normal}
+.law_1 th{ width:15%; text-align:left; border-right:0;}
+.law_1 tr.end td, .law_1 tr.end th{border-bottom:none}
+.law_2{border:0px solid; border-top:0;}
+.law_m dl{margin:0 5px;padding:9px 10px; background:url(/images/law/lawbg.png) repeat-x 0 bottom; clear:both;}
+.law_m dt{padding-right:5px;width:96px; height:23px; font-size:14px; color:#2a5978; line-height:23px; text-align:center; background:url(/images/law/lawbg.png) no-repeat -317px -74px; float:left;}
+.law_m dd{margin-left:115px;}
+.law_m .law_web li{width:19.9%; height:26px; line-height:26px; font-size:14px; float:left; overflow:hidden;}
+
+.law_v_img{ margin:0 5px 0;height:136px;padding-top:10px; border-bottom:1px dotted #e0e0e0}
+.law_v_img li{width:19.9%; text-align:center; float:left;}
+.law_v_img li img{padding:3px; border:1px solid #e3e3e3;}
+.law_v_img li a{width:139px; display:block; margin:0 auto;}
+.law_v_img li a:hover img{border:1px solid #f30}
+.law_v_img li a:hover{text-decoration:none}
+.law_v_img li .name{padding-top:3px;height:21px; line-height:21px; display:block; font-size:12px; cursor:pointer}
+.law_v_txt{ margin:0 5px 0;}
+.law_v_txt li{width:19.9%; height:30px; line-height:30px; font-size:14px; text-align:center; float:left;}
+
+.pufa{padding-top:2px; height:172px;}
+.pufa_nav{height:29px; background:url(/images/law/lawbg.png) no-repeat -10px -214px;}
+.pufa_nav li{width:68px; overflow:hidden; text-align:center; float:left;}
+.pufa_nav li a{ width:66px;height:29px; line-height:27px;border-top:2px solid #fff; display:block; color:#2b5977}
+
+.pufa_nav li a.curr1{width:66px; height:27px; border-top:2px solid #9faab4; border-right:1px solid #cfd9e2; color:#2b5977; font-weight:bold; background:#fff;}
+.pufa_nav li a.curr2{width:66px; height:27px; border-top:2px solid #9faab4; border-left:1px solid #cfd9e2; border-right:1px solid #cfd9e2; color:#2b5977; font-weight:bold; background:#fff;}
+.pufa_nav li a.curr3{width:66px; height:27px; border-top:2px solid #9faab4; border-left:1px solid #cfd9e2; color:#2b5977; font-weight:bold; background:#fff; }
+.pufa_nav li a:hover.curr1, ..pufa_nav li a:hover.curr2, .pufa_nav li a:hover.curr3{color:#fd5151}
+.pufa_list{padding:5px;_padding-top:4px}
+.pufa_list li{width:49.9%; height:22px; line-height:22px; float:left;}
+.cx_wd{height:140px;}
+.cx_wd dl{padding:5px 5px 0; height:30px;}
+.cx_wd dt{width:60px; height:15px; line-height:15px; color:#666; text-align:right; float:left;}
+.cx_wd dd{margin-left:65px; line-height:15px;}
+.cx_wd dd a{height:15px; width:49.9%; display:block; float:left;}
+
+.zixun{padding:8px 5px 0}
+.zixun_m{padding-top:5px;width:50%; height:155px; border-bottom:1px dotted #e0e0e0; text-align:center; float:left;}
+.zx_end{border-bottom:none}
+.zixun_m a{color:#0c5e93;}
+.zixun_m a:hover{color:#fd5151;}
+.zixun_m img{border:1px solid #e3e3e3}
+.zixun_m .name{padding-top:3px;height:18px; line-height:18px; display:block; cursor:pointer;overflow: hidden;}
+.zixun_m .tel{padding-bottom:3px;height:18px; line-height:18px; display:block; color:#333;}
+.zixun_m .zx_btn{height:24px; display:block}
+.zixun_m .zx_btn a{width:69px; height:23px; display:block; margin:0 auto; background:url(/images/law/lawbg.png) no-repeat -133px -112px;}
+
+.list{padding:5px 5px 5px 10px;}
+.list li{height:25px; overflow:hidden; line-height:25px;}
+.list li i{font-family:'ËÎÌו'; color:#999}
+.list2{padding:4px 3px 3px}
+.list2 li{width:49.9%; height:24px; line-height:24px; overflow:hidden; float:left;}
+.sogou_box{padding-bottom:5px;}

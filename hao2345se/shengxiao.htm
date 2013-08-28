@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<title>生肖血型-我的网址导航</title>
+<link href="neiye/css/common.css" rel="stylesheet">
+<link href="css/xingzuo.css" rel="stylesheet">
+<script src="neiye/js/xingzuo.js"  type="text/javascript"></script>
+<base target="_blank">
+<style>
+li {cursor:pointer;}
+body{background:url(images/xingzuo/top_bg.png) repeat-x 0 0;text-align:center;}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+var url=window.location.href;
+var pos=url.indexOf("year");
+var arr=new Array();
+if(pos!=-1){
+	var s = url.substring(pos+5,pos+9); 
+	arr['sx']=get_ani_byyear(s);
+	add_query(arr)
+}
+window.onload=function(){
+	 var arr=get_q("sx");
+	 m.loadJs(req_url+"/dispatch.php?type=sx&catch=all"+"&animal="+arr['sx']);
+	 
+	 m.loadJs(req_url+"/dispatch.php?type=sx&catch="+arr['tab']+"&animal="+arr['sx']);
+}
+</script>
+<!-- top -->
+<script id="xtopjs" src="neiye/js/xtop.js"></script>
+<!-- top end -->
+<div class="head">
+<script type="text/javascript" src="neiye/js/sosohead.js"></script>
+</div>
+
+<!-- path -->
+<div class="path">
+<span>
+<a target="_blank" href="health.htm">健康</a>|
+<a target="_blank" href="http://game.6164.com/">小游戏</a>|
+<a target="_blank" href="http://v.6164.com/">电影</a>|
+<a target="_blank" href="manwoman.htm">女性</a>|
+<a target="_blank" href="http://book.6164.com/">小说</a>&nbsp;
+</span>
+<ul><li style="display:inline;"><a target="_self" href="/">首页</a></li>&nbsp;&gt;&nbsp;<li style="display:inline;"><a target="_self" href="/ylwz.htm">娱乐休闲</a></li>&nbsp;&gt;&nbsp;<li style="display:inline;">星座</li></ul>
+</div>
+<!-- path end -->
+
+<div class="wrapper">
+	<div class="nav clearfix">
+    	<div class="nav_inner"><a href="xingzuo.htm" target="_self">星座运程</a><em></em><a class="current" >生肖血型</a><em></em><a href="taluo.htm" target="_self">塔罗命理</a></div>
+    </div>
+    <div class="section_box">
+    	<h3 class="section_hd">十二生肖</h3>
+        <div class="section_bd">
+        	<div class="search">你的资料：<input type="text"  id='birth_year'  value="请输入您的出生年份" style="color:rgb(100,100,100)"/> 年（例如："1990"）<input class="btn_b" type="submit" value="查看生肖"  onclick="go_check_sx()"/></div>
+    		
+    		<ul id="zodiac_list" class="zodiac_list clearfix">
+                <li>
+                    <a class="mouse" href="shu" target="_self"></a>                
+                </li>
+                <li>
+                    <a class="ox" href="niu" target="_self"></a>
+                </li>
+                <li>
+                    <a class="tiger" href="hu" target="_self"></a>
+                </li>
+                <li>
+                    <a class="rabbit" href="tu" target="_self"></a>
+                </li>
+                <li>
+                    <a class="dragon" href="long" target="_self"></a>
+                </li>
+                <li>
+                    <a class="snake" href="she" target="_self"></a>
+                </li>
+                <li>
+                    <a class="horse" href="ma" target="_self"></a>
+                </li>
+                <li>
+                    <a class="sheep" href="yang" target="_self"></a>
+                </li>
+                <li>
+                    <a class="monkey" href="hou" target="_self"></a>
+                </li>
+                <li>
+                    <a class="chook" href="ji" target="_self"></a>
+                </li>
+                <li>
+                    <a class="dog" href="gou" target="_self"></a>
+                </li>
+                <li>
+                    <a class="pig" href="zhu" target="_self"></a>
+                </li>
+        	</ul>
+        </div>
+    </div>
+        
+    <div class="astro_content zodiac_content">
+        	<div class="hd">
+            	<div class="imgbox">
+                	<img id="now_sx_img" src="images/xingzuo/mouse_b.png" alt="" />
+                </div>
+                <div class="luck_date">
+                	<strong class="time" id="date_today"></strong>                  
+                    <p><a href="http://www.go108.com.cn/">由科技紫微星座网提供</a></p>
+                </div>
+                <div class="luck">
+                    <p><span>爱情运：<em id="love_h">花</em></span><span>事业运：<em id="work_h">得</em></span><span>财富运：<em id="money_h">玉</em></span><span>健康休闲：<em id="health_h">虎</em></span></p>
+                   
+                    <ul id="js_luck_list" class="luck_list">
+                        <li><a href="#js_love" target="_self"  class="love">本月爱情运</a></li>
+                        <li><a href="#js_project" target="_self"  class="work">本月事业运</a></li>
+                        <li><a href="#js_wealth" target="_self" class="money">本月财富运</a></li>
+                        <li><a href="#js_health" target="_self"  class="health">本月健康休闲</a></li>
+                    </ul>
+                 </div>
+            </div>
+        	<div id="js_luck_content" class="luck_content">
+                <div id="love_content" class="detail" style="display:none;">
+                	<dl class="love">
+                    	<dt><i></i>爱情运：<em id="love_d">花</em></dt>
+                        <dd id="love_doc">花香扑鼻，花姿婀娜。本月爱情如"花"，代表爱情花开，能感受到浪漫与甜蜜。但是，花朵成簇，选择也就成了关键；而花开花谢，瞬间变化，要把握爱情还得懂得珍惜。
+</dd>
+                    </dl>
+                    <dl class="single">
+                    	<dt><i></i>单身者：</dt>
+                        <dd>
+                        	<span>寂寞指数：<strong id="lonely_love"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>
+                         	 <span> 魅力指数：<strong id="charm_love"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>
+                         	<span>恋爱指数：<strong id="loving_love"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>
+                            <span>闪婚指数：<strong id="marry_love"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>
+                            <span>好桃花生肖：<em id="good_love">马</em></span>
+                            <span>烂桃花生肖：<em id="bad_love">马</em></span>
+                        </dd>
+                        <dd>运势分析: <font  id="single_love">月中，单身者有机会收到异性朋友的礼物，如果彼此有意，不妨深入交往，易有不错的结局。</font></dd>
+                    </dl>
+                    <dl class="fere">
+                    	<dt><i></i>有伴侣者：</dt>
+                        <dd>
+                            <span>约会指数：<strong id="meet_love"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong>   </span>                
+                            <span>甜蜜指数：<strong id="sweet_love"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>
+                          <span>吵架指数：<strong id="quarrel_love"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>
+                            <span>情变指数：<strong id="change_love"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>
+                            <span>最有缘生肖：<em id="affinity_love">马</em></span>
+                            <span>最相克生肖：<em id="enemy_love">马</em></span>
+                         </dd>
+                        <dd>运势分析: <font id="pair_love">有伴侣者虽然小有争吵，但很快就能和好如初。多用智慧、体贴来关心另一半，扮演体贴的关怀者、顺从者、倾听者，对方会感动不已。</font></dd>
+                    </dl>
+                    <dl class="good_luck">
+                    	<dt><i></i>本月开运锦囊：</dt>
+                        <dd><span>爱情之花：<em id="flower_love">桃花</em></span><span>爱情香气：<em id="perfume_love">大洋香型</em></span><span>爱情饰物：<em id="body_love">琉璃</em></span></dd>
+                    </dl>
+                </div>
+                <div id="work_content" class="detail" style="display:none;">
+                	<dl class="project">
+                    	<dt><i></i>事业运：<em id="work_d">得</em></dt>
+                        <dd id="work_doc">得与失之间，总有着太多的哲思。本月事业运得失随心，关乎选择与心境。取舍之间有失必有得，不必执着暂时失去的一些东西，静下心来体会，你会豁然开朗，收获更多。
+</dd>
+                    </dl>
+                    <dl class="study">
+                    	<dt><i></i>学习运：</dt>
+                        <dd>
+                        	<span>学习力：<strong id="learn_work"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>
+                            <span>表达力：<strong id="expression_work"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>
+                            <span>学业贵人：<em id="good_work">生肖马</em></span>
+                            <span>学业小人：<em id="bad_work">生肖马</em></span>
+                        </dd>
+                        <dd id="study_work">运势分析: 工作完成量大，不过欠缺技巧，虽然工作的结果可观，但工作的过程会感到很辛苦。从事脑力工作的人，应多注意睡眠的质量，否则工作的效率将大打折扣。</dd>
+                    </dl>
+                    <dl class="work">
+                    	<dt><i></i>工作运：</dt>
+                        <dd>
+                            <span>开创力：<strong id="create_work"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>         
+                            <span>行动力：<strong id="action_work"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>
+                          <span>合作指数：<strong id="cooperation_work"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>          
+                           <span>事业贵人：<em id="rich_work">生肖猴</em></span>
+                            <span>事业小人：<em id="small_work">生肖鸡</em></span>
+                         </dd>
+                        <dd>运势分析: <font  id="work_work">有伴侣者虽然小有争吵，但很快就能和好如初。多用智慧、体贴来关心另一半，扮演体贴的关怀者、顺从者、倾听者，对方会感动不已。</font></dd>
+                    </dl>
+                </div>
+                <div id="money_content" class="detail" style="display:none;">
+                	<dl class="wealth">
+                    	<dt><i></i>财富运：<em id="money_d">玉</em></dt>
+                        <dd id="money_doc">本月财运如"玉"，代表财运旺盛，除了正财收入，还有不错的偏财运。而且除了日常开支，还会有不少节余玩乐、享福，可以过着如"玉"般的生活，只要能知足，就会很滋润、满足。</dd>
+                       <dd>
+                        	<span>求财指数：<strong id="request_money"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>
+                            <span>守财指数：<strong id="observe_money"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>
+                            <span>漏财指数：<strong id="lose_money"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>
+                            <span>财运贵人：<em id="rich_money">生肖马</em></span>
+                            <span>财运小人：<em id="small_money">生肖马</em></span>
+                        </dd>
+                        <dd>运势分析: <font id="doc_money">本月你尤其善于理财，懂得合理节省，对投资也有自己独特的看法，进账也不少，不过外出时要注意锁好门窗，以防小偷光临。</font></dd>
+                    </dl>
+                </div>
+                <div id="health_content" class="detail" style="display:none;">
+                	<dl class="health">
+                    	<dt><i></i>健康休闲运：<em id="health_d">虎</em></dt>
+                        <dd id="health_doc">虎虎生威，精神爽朗！本月身体如"虎"，情绪高昂，不用担忧身体健康出状况，在生活中找乐子就对了。不过，也要稍微控制情绪，避免情绪过于亢奋而失眠等。</dd>
+                       <dd>
+                        	<span>玩乐指数：<strong id="play_health"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>
+                            <span>健康指数：<strong id="health_num_health"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>
+                            <span>压力指数：<strong id="pressure_health"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>
+                            <span>心情指数：<strong id="mood_health"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star.png"><img alt="" src="images/xingzuo/star_gray.png"></strong></span>
+                        </dd>
+                       <dd>运势分析: <font id="doc_health">工作完成量大，不过欠缺技巧，虽然工作的结果可观，但工作的过程会感到很辛苦。从事脑力工作的人，应多注意睡眠的质量，否则工作的效率将大打折扣。</font></dd>
+<dd>减压妙法：<font id="reduce_health">感到紧张心烦的时候来几次深呼吸，情况会好转</font></dd>
+<dd>保养秘诀：<font id="health_health">多吃酸味食品有利健康，如柠檬、葡萄、山楂等。</font></dd>
+                    </dl>
+
+                </div>
+            </div>
+        </div>
+     <script type="text/javascript">
+
+             //初始化
+	 init();
+	 function init(){
+                    get_date("sx",1);
+                    var url=location.href;
+                    var sx="mouse",tab="love";
+                    if(url.indexOf("#")!=-1){
+                      	  var paraString = url.substring(url.indexOf("#")+1,url.length).split("&"); 
+                          var num= paraString.length;
+                      	  for(var i=0;i<num;i++){
+                        		var tmp_arr =paraString[i].split("=");
+                        		if(tmp_arr[0]=="sx"){
+                            		sx=tmp_arr[1];
+                            	}else if(tmp_arr[0]=="tab"){
+                            		tab=tmp_arr[1];
+                                }
+                          	  }
+                         }
+                   
+                    modify_con(sx,tab);
+	 }
+                    
+                    var sx_list=$("zodiac_list").childNodes;            
+                    var tab_list=$("js_luck_list").childNodes;                
+                    function modify_con(sx,tab){
+                    	var sx_list=get_childnodes($("zodiac_list"));   
+                   	 
+                    	for(var i = 0,pl = sx_list.length;i<pl;i++){
+                        var name_tag=get_childnodes(sx_list[i]);
+						if(name_tag[0].className==sx){
+                        		add_class(sx_list[i],"current");
+                            }else{
+                                rem_class(sx_list[i],"current");
+                            }
+                    	}
+                    	var tab_list=get_childnodes($("js_luck_list"));   
+                    	for(var i = 0,pl = tab_list.length;i<pl;i++){
+                        var name_tag=get_childnodes(tab_list[i]);
+                        	if(name_tag[0].className==tab){
+                        		add_class(tab_list[i],"current");
+                            }else{
+                                rem_class(tab_list[i],"current");
+                            }
+                    	}
+                    	$("now_sx_img").src="./pic/xingzuo/"+sx+"_b.png";
+                    	var list_arr=["love","work","money","health"];
+                    	for (var i=0; i<list_arr.length;i++){
+                        	if(list_arr[i]==tab){
+                    			m.show($(tab+"_content"));
+                        	}else{
+                            	m.hide($(list_arr[i]+"_content"));
+                            	}
+                    	}
+                    }
+                    //点击事件
+                    
+                	for(var i = 0,pl = sx_list.length;i<pl;i++){
+                		sx_list[i].onclick=function(){
+                     		var arr=new Array();                		
+                     		var tmp=get_childnodes(this);               		
+                     		arr['sx']=tmp[0].className;
+                            add_query(arr);
+                            init();
+                          	var arr=get_q("sx");
+                          	m.loadJs(req_url+"/dispatch.php?type=sx&catch=all&animal="+arr['sx']);
+				m.loadJs(req_url+"/dispatch.php?type=sx&catch="+arr['tab']+"&animal="+arr['sx']);
+                          	$("birth_year").value="请输入您的出生年份";
+                          	$("birth_year").style.color="rgb(100,100,100)";				
+                            return false;
+                    	    }
+                	}
+                	for(var i = 0,pl = tab_list.length;i<pl;i++){
+                			tab_list[i].onclick=function(){             		
+                     		var arr=new Array(); 
+                     		var tmp=get_childnodes(this);               		
+                     		arr['tab']=tmp[0].className;
+                            add_query(arr);
+                            init();
+                          	var arr=get_q("sx");
+                          	m.loadJs(req_url+"/dispatch.php?type=sx&catch="+arr['tab']+"&animal="+arr['sx']);
+                            return false;
+                    	    }
+                	}
+                	
+
+               
+        </script>
+    <div class="section_box" id="blood_div">
+    	<h3 class="section_hd">血型</h3>
+        <div class="section_bd blood_box clearfix">
+        	<dl class="blood_a">
+            	<dt><img src="images/xingzuo/blood_b_a.png" alt="" /></dt>
+                <dd id="link_list0">
+                	<a href="">A型血的特质</a>
+                    <a href="">A型血的性格</a>
+                    <a href="">A型血生活观</a>
+                    <a href="">A型血金钱观</a>
+                    <a href="">A型血爱情观</a>
+                    <a style="display:none;" href="">A型血的感情</a>
+                    <a href="">A型血的性爱</a>
+                 </dd>
+            </dl>
+            <dl class="blood_b">
+            	<dt><img src="images/xingzuo/blood_b_b.png" alt="" /></dt>
+                <dd id="link_list1">
+                	<a href="">B型血的特质</a>
+                    <a href="">B型血的性格</a>
+                    <a href="">B型血生活观</a>
+                    <a href="">B型血金钱观</a>
+                    <a href="">B型血爱情观</a>
+                    <a style="display:none;" href="">B型血的感情</a>
+                    <a href="">B型血的性爱</a>
+                 </dd>
+            </dl>
+            <dl class="blood_o">
+            	<dt><img src="images/xingzuo/blood_b_o.png" alt="" /></dt>
+                <dd id="link_list2">
+                	<a href="">O型血的特质</a>
+                    <a href="">O型血的性格</a>
+                    <a href="">O型血生活观</a>
+                    <a href="">O型血金钱观</a>
+                    <a href="">O型血爱情观</a>
+                    <a style="display:none;" href="">O型血的感情</a>
+                    <a href="">O型血的性爱</a>
+                 </dd>
+            </dl>
+            <dl class="blood_ab">
+            	<dt><img src="images/xingzuo/blood_b_ab.png" alt="" /></dt>
+                <dd id="link_list3">
+                	<a href="">AB型血的特质</a>
+                    <a href="">AB型血的性格</a>
+                    <a href="">AB型血生活观</a>
+                    <a href="">AB型血金钱观</a>
+                    <a href="">ABA型血爱情观</a>
+                    <a style="display:none;"  href="">AB型血的感情</a>
+                    <a href="">AB型血的性爱</a>
+                 </dd>
+            </dl>
+        </div>
+    </div>
+    
+    
+</div>
+
+<script> 
+display_tip($("birth_year"),"请输入您的出生年份");
+m.loadJs(req_url+"/dispatch.php?type=sx_blood");
+var pageName='星座';
+
+</script>
+<!--  -->
+<script src="neiye/js/sosofooter.js" type="text/javascript"></script>
+<span style="display:none"><script type="text/javascript" src="css/tj.js"></script></span>
+<!--  -->
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gbk" />
+<title>新闻阅读_360安全网址导航</title>
+<base target="_blank"/>
+<style>
+/* initialization */
+body,h1,h2,h3,h4,p,dl,dt,dd,ul,li,form,th,td,table,label,article, aside, dialog, footer, header, section, footer, nav, figure,hgroup{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body,button,input,select,textarea,li,dt,dd,div,p,span{font:12px/1 Arial;}
+article,aside,dialog,footer,header,section,footer,nav,figure,hgroup{display:block;}
+ul{list-style:none;}
+img{border:none;}
+em,b{font-style:normal;}
+b{font-weight:normal;}
+a{cursor:pointer;}
+button,input,select,textarea{font-size:100%;outline:0;vertical-align:middle;margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+.clearfix:after{content:"\0020";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{clear:both;zoom:1;}
+/* public */
+a{text-decoration:none; color:#333; cursor:pointer;}
+a:hover{text-decoration:underline; color:#e60012;}
+/* hd */
+/* common div */
+/*=====================================================================================================================*/
+/* div container */
+#wrap{position:relative; margin:0 auto; padding:5px 0 0; width:960px;}
+#bd{margin:0 0 10px;}
+#ft{height:40px; line-height:40px; text-align:center; color:#666;}
+	#ft a{color:#2d80c4;}
+	#ft a:hover{color:#e60012;}
+/*hd*/
+.wrap-bg{background:#fff url("images/skin/blue_bg_0616.png") repeat-x left 30px;}
+/*top*/
+#top{background:url("images/top_bg.png") repeat-x;height:28px;min-width:960px; border-bottom:1px solid #D2EBFF;}
+	.top-bd{width:960px; margin:0 auto;position:relative; height:28px;line-height:28px; overflow:hidden;}
+		.top-left,.top-right{ line-height:28px; height:28px;}
+		.top-right{position:absolute; right:0; top:0; padding-top:8px;}
+			.top-right a{ border-right:1px solid #bfbfbf; padding-right:5px;margin-left:5px; position:relative; right:-1px; color:#333; display:block; float:left;height:14px; line-height:14px;line-height:18px\9;}
+			.top-right a:hover{ color:#f00;}
+			.top-right a.back-home{padding-left:18px; background:url("images/icon/icon_home.png") no-repeat 0 0;}
+/*=================hd==================*/
+#header{ height:50px; padding:6px 0; position:relative;overflow:hidden;}
+	#logo,.hd-search,.hd-hot{position:relative;float:left;height:44px;}
+	#logo{ width:240px;}
+		.logo-sup{position:absolute;left:190px;height:12px; top:4px; background:url("http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110602/news/sup_xinwen.png") no-repeat 0 0;display:block;width:34px;}
+	.hd-search{width:420px;padding-top:10px;}
+		.hd-search input{height:30px; border:none; font-size:14px; color:#333;*margin-top:-1px;}
+		#kw{background:#fff url("images/search_kw.png") no-repeat; width:239px; padding:0 4px 0 80px;line-height:30px\9;font-size:12px;}
+		.hd-search input.placeholder{color:#999;}
+        ::-webkit-input-placeholder {color:#999;}
+        input:-moz-placeholder{color:#999;}
+		#btn{ background:url("images/srarch_btn.png") no-repeat; width:81px; cursor:pointer; text-align:center;}	
+	.hd-hot{width:290px; line-height:44px; overflow:hidden; padding-top:4px;}
+		.hd-hot a{ border-left:1px solid #bfbfbf;padding-left:6px; margin-right:6px; position:relative; left:-1px; font-size:14px; color:#014d87}
+		.hd-hot a:hover{ color:#f00;}
+/*hd-selected-bar*/
+.hd-select{ position:absolute; left:240px; top:22px;z-index:1; padding-left:8px; width:66px;}
+	#hd-selected{height:26px;line-height:26px;line-height:30px\9;_line-height:28px; padding-right:16px; text-align:center;color:#666; background:url("images/search_selected_bg.png") no-repeat right 1px; cursor:pointer; overflow:hidden;}
+	#select-list{background:#fff;border:1px solid #bfbfbf;z-index:2;width:72px; margin-left:-8px;}
+		#select-list li{height:26px;line-height:26px;cursor:pointer;margin-bottom:1px;padding-left:8px;}
+		#select-list li.hover{color:#fff;background:#39f}
+	.fold{display:none;}
+	.unfold{display:block;}
+	#suggests{ border:1px solid #8bb6d8; width:262px; background:#fff; position:absolute; left:298px; top:52px; overflow:hidden;}
+		#suggests li{ height:24px; line-height:24px; padding:0 6px; margin-bottom:1px; background:#e6f7ff; cursor:pointer;overflow:hidden;}
+		#suggests li a{color:#333;}
+		#suggests li.hover{ background:#b1daee;}
+/*==========tx-nav==========*/
+.site-nav{position:relative; width:958px; border:1px solid #aaccee; overflow:hidden;}
+.site-nav h2.site-list{padding:0 10px; width:938px; background:#eff6fe;}
+	ul.site-nav-wrap{width:960px;}
+		ul.site-nav-wrap li{position:relative; float:left; top:1px; padding:0 0 0 19px; width:172px; height:32px; line-height:32px; color:#07519a; border-right:1px solid #ddebf8; border-bottom:1px solid #ddebf8; background:#f8fcff; display:inline;}
+		ul.site-nav-wrap li a{font-size:14px; color:#07519a;}
+		ul.site-nav-wrap li a:hover{color:#e60012;}
+/*==========wrap==========*/
+.content{margin:10px 0 0; padding:0 4px; width:950px; border:1px solid #aaccee; background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110602/news/bg_article.png) repeat-x top #f3faff; overflow:hidden; z-index:1;}
+.hgroup{padding:0 0 0; width:950px; _width:955px;}
+.section{float:left; padding:0 5px; width:465px; height:auto; display:table; overflow:hidden;}
+.details{position:relative; padding:0 19px; width:425px; height:339px; border:1px solid #bad6e6; background:#fefefe; overflow:hidden;}
+h2.content-header{position:relative; padding:0 5px; width:940px; height:34px; line-height:34px;}
+h2.site-list{padding:0 19px; width:920px; height:28px; font-weight:bold; line-height:28px; font-size:14px; color:#07519a; border-bottom:1px solid #aaccee; background:#f3faff; overflow:hidden;}
+	.tx-news{float:left; padding:0 20px 0 0; height:34px;line-height:34px;}
+	.tx-clock{float:left; padding:0 0 0 15px; height:34px; line-height:34px; color:#666; background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110602/news/icon_clock.png) no-repeat 0 11px;}
+	.rss-news{float:right;; margin:7px 0 0; padding:0 0 0 22px; width:56px; height:22px; line-height:22px; color:#333; background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110602/news/icon_news_label.png) no-repeat; cursor:pointer;}
+h3.details-header{position:relative; padding:4px 0 0; width:425px; height:34px; line-height:34px; font-size:14px; color:#333; border-bottom:2px solid #cdcdcd;}
+	h3.details-header .more{position:absolute; top:5px; right:3px; font-size:12px; font-weight:normal; color:#07519a;}
+	h3.details-header a:hover{color:#e60012;}
+           h3.details-header em{font-weight:normal; color:#7B7B7B; font-size:13px;}
+           h3.details-header img{float:left; margin-top:9px;}
+.nochecked{display:none;}
+	/*============================================================================*/
+	.rss-news-list{position:absolute; top:274px; right:10px; margin:7px 0 0; width:120px; height:483px; z-index:99;}
+		.display-rss-news{display:block;}
+		.hide-rss-news{display:none;}
+		.rss-news-list .list-header{position:absolute; top:0; right:0; padding:0 0 0 22px; width:56px; height:22px; line-height:22px; color:#333; background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110602/news/icon_news_nav.png) no-repeat; cursor:pointer; z-index:99;}
+		.rss-news-list .list-content{position:absolute; top:21px; right:0; width:118px; border:1px solid #aeaeae; background:#f2f2f2; overflow:hidden; z-index:98;}
+		.rss-news-list ul.tx-select{padding:10px 8px 0 8px; width:100%; border-bottom:1px solid #aeaeae; display:table;}
+			.rss-news-list ul.tx-select li{width:100px; height:22px;}
+			.rss-news-list ul.tx-select label{float:left; *line-height:22px; _line-height:22px; color:#07519a; display:inline;}
+			.rss-news-list ul.tx-select .input-checkboxs{float:left; margin:0 6px 0 0; display:inline;}
+		.rss-news-list ul.btn-select{padding:10px; width:98px; display:table;}
+			.rss-news-list ul.btn-select li{width:100px; height:22px; line-height:14px;}
+			.rss-news-list ul.btn-select a.init{color:#276907;}
+			.rss-news-list ul.btn-select a.init:hover{color:#e60012;}
+			.rss-news-list ul.btn-select a.cancel{color:#000;}
+			.rss-news-list ul.btn-select a.cancel:hover{color:#e60012;}
+	/*===============================================================================*/
+	ul.news-trends{padding:10px 0 0;}
+		ul.news-trends li{height:28px; line-height:28px; color:#666; overflow:hidden;}
+		ul.news-trends li b{font-weight:bold;}
+		ul.news-trends li em{padding:0 6px 0 0; _padding:0 3px 0 0; font-weight:700; color:#07519a;}
+		ul.news-trends li a{font-size:14px; color:#07519a;}
+		ul.news-trends li a:hover{color:#e60012;}
+		ul.news-trends li span{position:absolute; right:20px; margin:10px 0 0; *margin:5px 0 0; _margin:4px 0 0; color:#666;}	
+	.section ul.news-list li{float:left; padding:0 12px 0 0; width:200px; height:28px; line-height:28px; overflow:hidden;}
+		.section ul.news-list li a{font-size:14px; color:#07519a;}
+		.section ul.news-list li a:hover{color:#e60012;}		
+	.summary{padding:10px; width:445px; height:22px; overflow:hidden;}		
+	    .summary span{font-size:14px;}
+		.summary a{margin:0 5px; font-size:14px;}
+		.summary a:hover{text-decoration:none;}
+
+/*==========website-nav==========*/
+.newssite-nav{position:relative; margin:10px 0 0; width:958px; border:1px solid #aaccee; overflow:hidden;}
+	ul.newssite-list{width:960px;}
+		ul.newssite-list li{position:relative; float:left; top:1px; padding:0 0 0 19px; width:172px; height:32px; line-height:32px; color:#07519a; border-right:1px solid #ddebf8; border-bottom:1px solid #ddebf8; display:inline;}
+		ul.newssite-list li a{font-size:14px; color:#07519a;}
+		ul.newssite-list li a:hover{color:#e60012;}
+/*==========backtop==========*/
+.back-top{position:fixed; _position:absolute; margin-left:970px; bottom:100px; _bottom: "auto"; width:17px; height:61px; background:url(http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110602/news/bt_backtop1.png) no-repeat; cursor:pointer; display:none;}
+.m-0{margin:0;}
+.txt-weight{font-weight:bold;}
+</style>
+</head>
+<body class="wrap-bg">
+<div id="top">
+	<div class="top-bd">
+		<div class="top-left"></div>
+		<div class="top-right">
+			<a href="/" target="_self" class="back-home">返回首页</a>
+            <a onClick="try{ window.external.AddFavorite('http://hao.360.cn/xinwenmeiti.html','360新闻'); } catch(e){ (window.sidebar)?window.sidebar.addPanel('360新闻','http://hao.360.cn/xinwenmeiti.html',''):alert('请使用按键 Ctrl+d，收藏360新闻'); }">收藏</a>
+            <a href="http://ly.hao.360.cn/">反馈</a>
+		</div>
+	</div>
+</div>
+<div id="wrap">
+    <div id="header">
+    <div id="logo">
+        <a href="/" target="_self"><img src="images/logo.png" /></a>
+		<sup class="logo-sup"></sup>
+    </div>
+    <div class="hd-search">
+        <form id="search-form" action="http://news.baidu.com/ns" target="_blank">
+            <input type="text" id="kw" name="word" autocomplete="off" />
+			<input type="submit" value="搜索" id="btn" />
+			<span id="hide-input">
+				<input type="hidden" id="cl" name="cl" value="2">
+				<input type="hidden" id="ie" name="ie" value="gbk">
+				<input type="hidden" id="tn" name="tn" value="news">
+				<input type="hidden" id="rn" name="rn" value="20">
+			</span>
+		</form>
+    </div>
+    <div class="hd-hot">
+        <a href="kuandai.html">电影</a>
+        <a href="dianshi.htmlindex.php">电视剧</a>
+        <a href="wangshanggouwu.html">购物</a>
+        <a href="xiaoshuoyuedu.html">小说</a>
+        <a href="xiaoyouxi.html">小游戏</a>
+    </div>
+</div>
+<ul id="suggests" class="fold"></ul>
+<div class="hd-select">
+	<div id="hd-selected">百度新闻</div>
+	<ul id="select-list" class="fold">
+		<li engine="baidu">百度新闻</li>
+		<li engine="google">谷歌新闻</li>
+	</ul>
+</div>
+    <div id="bd">
+		<div class="site-nav">
+           <h2 class="site-list"><img src="http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110602/news/label_newsite.png"></h2>
+        	<ul class="site-nav-wrap">
+<li><a href="http://news.sina.com.cn">新浪新闻</a></li>
+<li><a href="http://news.sohu.com/">搜狐新闻</a></li>
+<li><a href="http://news.163.com/">网易新闻</a></li>
+<li><a href="http://www.ifeng.com/">凤凰网</a></li>
+<li><a href="http://news.qq.com/">腾讯新闻</a></li>
+<li><a href="http://www.xinhuanet.com/">新华网</a></li>
+<li><a href="http://www.people.com.cn/">人民网</a></li>
+<li><a href="http://www.chinanews.com.cn/">中国新闻网</a></li>
+<li><a href="http://news.cntv.cn/">CNTV新闻台</a></li>
+<li><a href="http://www.zaobao.com/">联合早报</a></li>
+<li><a href="http://www.stnn.cc/">星岛环球网</a></li>
+<li><a href="http://www.huanqiu.com/">环球网</a></li>
+<li><a href="http://news.21cn.com/">21CN新闻</a></li>
+<li><a href="http://www.cnr.cn/">中国广播网</a></li>
+<li><a href="http://www.pladaily.com.cn/">中国军网</a></li>
+<li><a href="http://www.china.com/">中华网</a></li>
+<li><a href="http://www.cri.cn/">CRI国际在线</a></li>
+<li><a href="http://www.cyol.net/">中国青年报</a></li>
+<li><a href="http://news.cn.yahoo.com/">中国雅虎</a></li>
+<li><a href="http://news.tom.com/">TOM新闻</a></li>
+<li><a href="http://www.wenweipo.com/">香港文汇报</a></li>
+<li><a href="http://www.nddaily.com/">南方都市报</a></li>
+<li><a href="http://www.ycwb.com/">羊城晚报</a></li>
+<li><a href="http://www.infzm.com/">南方周末</a></li>
+<li><a href="xinwendaohang.html">更多网站&#187;</a></li>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="newssite-nav">
+			<h2 class="site-list">新闻综合</h2>
+        	<ul class="newssite-list">
+
+<li><a href="http://www.gov.cn/index.htm">中国政府网</a></li>
+<li><a href="http://www.china.com.cn/">中国网</a></li> 
+<li><a href="http://www.banyuetan.org/">半月谈</a></li>
+<li><a href="http://www.gmw.cn/">光明网</a></li>
+<li><a href="http://www.dayoo.com/">大洋网</a></li>
+<li><a href="http://www.sz.net.cn/">深圳之窗</a></li>
+<li><a href="http://www.sznews.com/">深圳新闻网</a></li>
+<li><a href="http://www.wenweipo.com/">香港文汇报</a></li>
+<li><a href="http://www.takungpao.com/">大公报</a></li>
+<li><a href="http://www.zjol.com.cn/">浙江在线</a></li>
+<li><a href="http://www.dahe.cn/">大河网</a></li>
+<li><a href="http://www.online.sh.cn/">上海热线</a></li>
+<li><a href="http://www.eastday.com/">东方网</a></li>
+<li><a href="http://www.southcn.com/">南方网</a></li>
+<li><a href="http://www.newgx.com.cn/">广西新闻网</a></li>
+<li><a href="http://www.bjnews.com.cn/">新京报网</a></li>
+<li><a href="http://hsb.hsw.cn/">华商报</a></li>
+<li><a href="http://www.cqnews.net/">华龙网</a></li>
+<li><a href="http://www.yangtse.com/">扬子晚报</a></li> 
+<li><a href="http://www.taihainet.com/">台海网</a></li>
+<li><a href="http://ctdsw.cnhubei.com/">楚天都市报</a></li>
+<li><a href="http://www.fjsen.com/">福建东南网</a></li>
+<li><a href="http://www.nihaotw.com/">你好台湾</a></li>
+<li><a href="http://news.ifeng.com/taiwan/">凤凰网-台湾</a></li>
+<li><a href="http://news.baidu.com/n?cmd=1&class=taiwan">百度新闻-台湾</a></li>
+<li><a href="http://taiwan.huanqiu.com/">环球网-台湾</a></li>
+<li><a href="baozhi.html" class="red">各地报纸电子版</a></li>
+<li><a href="http://www.xj71.com/">宣讲家</a></li>
+<li><a href="dfxw3.html">各地新闻</a></li>
+</ul>
+        	<h2 class="site-list">国际媒体</h2>
+        	<ul class="newssite-list">
+      	<li><a href="http://www.nytimes.com/">纽约时报</a></li>
+        <li><a href="http://www.cnn.com/" >美国CNN</a></li>
+        <li><a href="http://www.time.com/" >美国时代周刊</a></li>
+        <li><a href="http://www.ruvr.ru/index.php?lng=pek" >俄罗斯之声</a></li>
+        <li><a href="http://online.wsj.com/" >华尔街日报</a></li>
+        <li><a href="http://chinese.joins.com/" >韩国中央日报</a></li>
+        <li><a href="http://cn.reuters.com/" >英国路透社</a></li>
+        <li><a href="http://www.nydailynews.com/" >纽约每日新闻</a></li>
+        <li><a href="http://www.newsday.com/" >华盛顿新闻报</a></li>
+        <li><a href="http://www.newsweek.com/" >美国新闻周刊</a></li>
+        <li><a href="http://www.timesonline.co.uk/" >英国泰晤士报</a></li>
+        <li><a href="http://chn.chosun.com/" >朝鲜日报(韩国)</a></li>
+        <li><a href="http://www.un.org/chinese/News/" >联合国新闻</a></li>
+        <li><a href="http://www.bbc.co.uk/" >BBC[英]</a></li>
+        <li><a href="gjxw3.html" >更多</a></li>
+            </ul>
+        	<h2 class="site-list">时事论坛</h2>
+        	<ul class="newssite-list">
+<li><a href="http://forum.home.news.cn/">新华网论坛</a></li><li><a href="http://bbs.people.com.cn">人民网强国社区</a></li><li><a href="http://www.tianya.cn/Publicforum/ArticlesList/0/worldlook.shtml">天涯社区国际观察</a></li><li><a href="http://bbs.phoenixtv.com">凤凰网论坛</a></li><li><a href="http://cpc.people.com.cn/GB/191862/191863/index.html">直通中南海</a></li>
+            </ul>
+	<h2 class="site-list">财经商业</h2>
+	<ul class="newssite-list">
+<li><a href="http://www.ce.cn/">中国经济网</a></li>
+<li><a href="http://www.yicai.com/">第一财经</a></li>
+<li><a href="http://www.caing.com/">财新网</a></li>
+<li><a href="http://cn.wsj.com/">华尔街日报</a></li>
+<li><a href="http://jingji.cntv.cn/">中国网络电视财经台</a></li>
+<li><a href="http://www.zgjrw.com/">中国金融网</a></li>
+<li><a href="http://www.eeo.com.cn/">经济观察网</a></li>
+<li><a href="http://www.ftchinese.com/">FT中文网</a></li>
+<li><a href="http://www.nbd.com.cn/">每日经济新闻</a></li>
+<li><a href="http://cn.ibtimes.com/">国际财经日报</a></li>
+<li><a href="http://www.caijing.com.cn/">财经网</a></li>
+<li><a href="http://www.guandian.cn/">观点地产网</a></li>
+<li><a href="http://www.chinavalue.net/">价值中国</a></li>
+<li><a href="http://paper.people.com.cn/gjjrb">国际金融报</a></li>
+<li><a href="http://zqrb.ccstock.cn/">证券日报</a></li>
+<li><a href="http://www.iceo.com.cn/">中国企业家网</a></li>
+<li><a href="http://www.gemag.com.cn/">环球企业家</a></li>
+<li><a href="http://www.ceocio.com.cn/">经理世界网</a></li>
+<li><a href="http://www.forbeschina.com/">福布斯中文网</a></li>
+<li><a href="http://www.21cbh.com/">21世纪网</a></li>
+<li><a href="http://www.cenn.cn/">中国企业新闻网</a></li>
+<li><a href="http://www.cb.com.cn/">中国经营网</a></li>
+<li><a href="http://www.chinaventure.com.cn/">投资中国</a></li>
+<li><a href="http://www.bwchinese.com/">BWCHINESE中文网</a></li>
+<li><a href="http://www.ebusinessreview.cn/">哈佛商业评论网</a></li>
+<li><a href="http://www.china.cnbc.com/">CNBC中文网</a></li>
+	</ul>
+	<h2 class="site-list">IT媒体</h2>
+	<ul class="newssite-list">
+<li><a href="http://www.ittime.com.cn/">IT时代周刊</a></li>
+<li><a href="http://www.ciweek.com/">互联网周刊</a></li>
+<li><a href="http://www.itxinwen.com/">IT商业新闻网</a></li>
+<li><a href="http://www.chinabyte.com/">比特网</a></li>
+<li><a href="http://www.techweb.com.cn/">TechWeb</a></li>
+<li><a href="http://www.cww.net.cn/">通信世界网</a></li>
+<li><a href="http://www.eguan.cn/">易观网</a></li>
+<li><a href="http://labs.chinamobile.com/">中国移动研究院</a></li>
+<li><a href="http://www.ccidnet.com/">赛迪网</a></li>
+<li><a href="http://www.iimedia.cn/">艾媒网</a></li>
+<li><a href="http://www.stdaily.com/">科技日报</a></li>
+<li><a href="http://www.zdnet.com.cn/">至顶网</a></li>
+<li><a href="http://www.cctime.com/">飞象网</a></li>
+	</ul>
+        </div><!--class='website-nav' end-->
+    </div><!--id='bd' end-->
+    <div id="ft">
+        <a href="about.html" target="_blank">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="http://ly.hao.360.cn/" target="_blank">意见反馈</a>&nbsp;&nbsp;Copyright &copy; 360网址导航. All Rights Reserved. &nbsp;&nbsp;
+        <a href="http://www.miibeian.gov.cn" class="icp">京ICP证080047号</a>
+    </div><!--id='ft' end-->
+    <div class="rss-news-list hide-rss-news">
+        <div class="list-header">
+            定制新闻
+        </div>
+		<div class="list-content">
+			<ul class="tx-select">
+				<li><input id="all-news" type="checkbox" class="input-checkboxs" checked><label for="all-news">显示全部新闻</label></li>
+				<li><input id="yaowen" type="checkbox" class="input-checkboxs" checked><label for="yaowen">要闻</label></li>
+				<li><input id="guonei" type="checkbox" class="input-checkboxs" checked><label for="guonei">国内</label></li>
+				<li><input id="guoji" type="checkbox" class="input-checkboxs" checked><label for="guoji">国际</label></li>
+				<li><input id="shiping" type="checkbox" class="input-checkboxs" checked><label for="shiping">时评</label></li>
+				<li><input id="tiyu" type="checkbox" class="input-checkboxs" checked><label for="tiyu">体育</label></li>
+				<li><input id="yule" type="checkbox" class="input-checkboxs" checked><label for="yule">娱乐</label></li>
+				<li><input id="junshi" type="checkbox" class="input-checkboxs" checked><label for="junshi">军事</label></li>
+				<li><input id="caijing" type="checkbox" class="input-checkboxs" checked><label for="caijing">财经</label></li>
+				<li><input id="qiche" type="checkbox" class="input-checkboxs" checked><label for="qiche">汽车</label></li>
+				<li><input id="shehui" type="checkbox" class="input-checkboxs" checked><label for="shehui">社会</label></li>
+				<li><input id="lishi" type="checkbox" class="input-checkboxs" checked><label for="lishi">历史</label></li>
+				<li><input id="taihai" type="checkbox" class="input-checkboxs" checked><label for="taihai">台海</label></li>
+				<li><input id="fangchan" type="checkbox" class="input-checkboxs" checked><label for="fangchan">房产</label></li>
+				<li><input id="keji" type="checkbox" class="input-checkboxs" checked><label for="keji">科技</label></li>
+			</ul>
+			<ul class="tx-select">
+				<li><input id="weiboredian" type="checkbox" class="input-checkboxs" checked><label for="weiboredian">微博热点</label></li>
+				<li><input id="xinwenresouci" type="checkbox" class="input-checkboxs" checked><label for="xinwenresouci">新闻热搜词</label></li>
+			</ul>
+			<ul class="btn-select">
+				<li>&nbsp;<a id="checkboxrest" class="init">恢复默认设置</a></li>
+				<li>
+                    <input id="save" type="button" value="保存" />&nbsp;&nbsp;
+                    <input id="cancel" type="button" value="取消" />
+                </li>
+			</ul>
+		</div>
+	</div><!--class='rss-news-list' end-->
+</div><!--id='wrap' end-->
+<script src="http://h.qhimg.com/js/jquery-1.6.1.min.js"></script>
+<script src="news_ch_20110607.js"></script>
+<script>
+$(function(){	 
+    //unfold
+    $('#hd-selected').click(function(){
+        var selectList = $('#select-list');
+        if(selectList.hasClass('unfold')){
+            selectList.removeClass('unfold')
+        }
+        else{
+            selectList.addClass('unfold');
+        }
+    });
+    //hover
+    $('#select-list li').mouseover(function(){
+        $(this).addClass('hover');
+    });
+    $('#select-list li').mouseout(function(){
+        $(this).removeClass('hover');
+    });
+    //choose 
+    var searchsite = {baidu:["http://news.baidu.com/ns", "word", "\u767e\u5ea6","cl:2;rn:20;tn:news;ie:gbk"],google:["http://www.google.com.hk/search", "q", "\u8c37\u6b4c", "client:aff-daohang;hl:zh-CN;ie:gbk;newwindow:1;tbm:nws"]};
+	
+     $('#select-list li').click(function(){
+        var formId = "search-form";
+        var kwId = "kw";
+		var hideId = "hide-input";
+		
+        var engineName = $(this).attr("engine");
+        var searchType = searchsite[engineName];
+        $("#" + formId).attr("action",searchType[0]);
+        $("#" + kwId).attr("name" , searchType[1]);
+        $("#select-list").removeClass("unfold");
+		var hideTxt = searchType[3];
+		var hideNum = hideTxt.split(";");
+		var hideHtml = "";
+		var length = hideNum.length;
+		for (var i=0; i<length; i++){
+			var hidenName = hideNum[i].split(":");
+			var input = "<input type=\"hidden\" name=\""+hidenName[0]+"\" value=\""+hidenName[1]+"\" /> ";
+			hideHtml += input;
+		}
+		$("#" +hideId).html(hideHtml);
+		$("#hd-selected").html(searchType[2] + "新闻");		
+		$("#select-list").removeClass("unfold");
+		
+    });	
+    $("body").click(function(e){
+        var target = e.target;
+        if($(target).attr("id")!=="hd-selected"&&$('#select-list').hasClass('unfold')&&$(target).parents("#select-list").length===0&&$(target).attr("id")!=="select-list")
+        {
+            $('#select-list').removeClass('unfold');
+        }
+    });			
+});
+</script>
+<script src=" http://hao.360.cn/css/monitorscript.js" type="text/javascript"></script>
+<script>moniter.getTrack().setId(['hd','bd','newssite-nav']);</script>
+
+</body>   
+</html>

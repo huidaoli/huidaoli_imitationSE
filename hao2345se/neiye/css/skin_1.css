@@ -1,0 +1,102 @@
+/* blue */
+.path{background:#f0f6ff; border-color:#b7c7ef;}
+.navico{background:url(../images/icons.gif) 27px -52px no-repeat; }
+.left{ border-color:#a5c0f7; background:#f0f6ff;}
+.wrap h2{ background:#cce3ff; color:#4c5693;}
+.m_1 td,.m_1 th{ border-color:#bcd3f7;}
+.foot{ border-color:#a0b4e2; background:#e4ebfc;}
+.inner-ft{ border-color:#f1f6fd; background:#fafbff;}
+.foot ul b {background:url(../images/icons.gif) 0 -482px no-repeat; }
+.foot-sch{ border-color:#d6e4f5; background:#f8faff;}
+.foot ul b{color:#4c5693;}
+.fh{ background:transparent url(../images/fh.gif) no-repeat; }
+.gb{ background:transparent url(../images/gb.gif) no-repeat; }
+
+/* 爱好 */
+.aihao td,.m_1 th .yuletab td{ border-color: #bcd3f7; }
+
+/*天气定制蓝*/
+#tq_search_l{font-family:"宋体";padding:10px 15px;width:610px; height:134px; float:left; position:relative;}
+#tq_search_r{font-family:"宋体";width:265px;height:154px;height:auto!important; min-height:154px; border-left:1px solid #fff; background-color:#F1F5FD; float:left;}
+#tq_search_l a:hover{ color:#fd5151;}
+#tq_search_l p{ height:35px; line-height:35px; padding-bottom:10px; border-bottom:1px dotted #bcbec2; font-size:14px;}
+#tq_search_l p .input01{padding:2px; width:370px; height:24px; line-height:24px; border:1px solid #aab8d5; font-size:14px; color:#444; vertical-align:middle}
+#tq_search_l p .input02{height:28px;font-size:14px; vertical-align:middle}
+#tq_search_city #city, #tq_search_r h2{background-image: url(../images/tq_img.png);background-repeat: no-repeat;}
+#tq_search_city{padding-top:10px; height:76px;}
+#tq_search_city #city{padding:10px 5px 5px;width:155px;height:62px;float:left;background-position: 0px 0px;}
+#tq_search_city #city h1{ width:140px;font-size:18px; line-height:21px; font-family:宋体; font-weight:bold; text-align:center;}
+#tq_search_city #city span{ width:140px;height:18px; line-height:18px; display:block; font-size:12px; text-align:center;}
+#tq_search_city #city span a{color:#9c9c9c; text-decoration:underline}
+#tq_search_city #city a:hover{ color:#f00; text-decoration:underline}
+#tq_search_city ul{width:440px; height:76px; float:left;}
+#tq_search_city li{width:150px;height:76px;float:left;background-image: url(../images/sk_1.png);background-repeat: no-repeat;background-position: right 0px;}
+#tq_search_city li h2, #tq_search_city li h4{background: none repeat scroll 0 0 transparent;font-size:12px; height:21px; line-height:21px; font-weight:normal; color:#000; text-align:center; display:block;  }
+#tq_search_city ul li h2{ background:none;}
+#tq_search_city li h3{height:30px; line-height:30px;font-size:12px; font-weight:normal; color:#000;}
+#tq_search_city li h3 span{width:35px;height:24px;margin:0 3px 0 15px; display:inline; float:left; }
+#tq_search_r h2{height:26px;line-height:26px;background-position: 0px -95px; text-align:left;}
+#tq_search_r h2 em{padding-left:10px; width:120px; color:#000;font-style:normal; float:left;}
+#tq_search_r h2 span{width:60px; text-align:center;float:right}
+#tq_search_r span a{color:#06c; text-decoration:underline}
+#tq_gz table td,#tq_gz table th{font-size:12px; }#tq_gz table td{border:none; height:32px;}
+#tq_gz th{padding-left:3px;height:22px; line-height:22px; font-weight:normal; border-bottom:1px solid #f1f1f2; background-color:#f9f9f9; text-align:left}
+#tq_gz td{padding-left:3px; line-height:30px; background-color:#F1F5FD;}
+#tq_gz table a{color:#000; text-decoration:none}
+#tq_gz table span.t1{color:#f00;font-weight:normal;}
+#tq_gz table span.t2{color:#4899be}
+#tq_gz table select, #tq_gz table input{ font-size:12px;}
+#tq_gz th a{ color:#5da0e3; text-decoration:none}
+#tq_search_l #lianx{width:370px; top:42px; left:117px;_left:120px;+left:120px; position:absolute; border:1px solid #aab8d5; background-color:#fff;padding:2px;}
+#tq_search_l #lianx a{height:26px; line-height:26px; display:block; font-size:14px;}
+.follow-set-mycity {
+color:#999;
+display:inline-block;
+padding:2px 0;
+}
+.follow-set-mycity a {
+background:url("../images/delete_s.gif") no-repeat scroll 0 0 transparent;
+display:inline-block;
+height:14px;
+margin-left:4px;
+vertical-align:middle;
+width:14px;
+}
+/*===多标签蓝===*/
+.cp_class{background-position: 0px 0px;}
+.cp_class a, .cp_class a:visited{color:#376ac6; border:1px solid #f7fbff; border-bottom:none; background:#ebf3ff;}
+.cp_class a:hover, .cp_class a.actvie{background-position: 0px 0px;border:1px solid #aabfe0; border-bottom:none; color:#474a4f;}
+.cp_title td{border-right:1px solid #BCD3F7;}
+.cptz td {border-left: 1px solid #C2D4EC;border-top: 1px solid #C2D4EC;}
+.cptz th {border-top: 1px solid #C2D4EC; }
+.tz dd .cp_name a{color:#0e6dbc;}
+
+/*******************房产*********************/
+/*===蓝===*/
+.house, .h_box_l, .h_box_r, .house_box, .h_box_r .box_m{ border-color:#a5c0f7; background:#f0f6ff;}
+.house_box, .h_box_r .box_m{ background:none}
+
+.house_menu{background-color:#d2e6ff; background-image: url(../images/house/house_bg.png)}
+.house_menu li a{background:url(../images/house/house_bg.png) no-repeat 0 -27px}
+.house_menu li a.active{background:url(../images/house/house_bg.png) no-repeat 0 0}
+.house_inp1, .house_inp2, .house_inp3{ background:#fff url(../images/house/house_bg.png) no-repeat right -91px;}
+.house_inp1, .house_inp2, .house_inp3, .inp1_m, .inp2_m, .inp3_m, .city_house dd .input01{ border:1px solid #7f9db9;}
+.city_nav{ background-color:#f9fbff; border:1px solid #aabfe0; }
+.city_nav h3, .city_nav dl{border-bottom:1px solid #d9e1ec;}
+.house_menu li a, .city_nav h3, .city_nav dl dt, .city_nav dl dd.pingyin a{color:#376ac6;}
+.city_nav dl dd.pingyin a:hover, .city_nav dl dd.pingyin a.active{background-color:#70aeff}
+
+
+/******移动导航***********/
+
+/*===蓝===*/
+.wide{border:1px solid #a5c0f7; border-top:0; background:#f0f6ff;}
+.tongxiu h3{ border-top:1px solid #a5c0f7;background-position: 0px 0px; }
+.youhui_img{ border:1px solid #d0e1e9;}
+.youhui_img img{border:1px solid #ddedf5;}
+
+.soft .right{background:#f5f9ff}
+.soft_cy{border-bottom:1px dotted #dce2eb}
+.soft_cy dt{color:#1b6ab0;}
+.yingjian_box{border:1px solid #bcd3f7}
+

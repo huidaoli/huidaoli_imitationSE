@@ -1,0 +1,122 @@
+* {
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+body {
+	font:12px/1.5 Tahoma, Helvetica, Arial, 'ËÎÌו', sans-serif
+}
+a {
+	color:#3366CC;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+	color:#f00
+}
+.red:link, .red:visited {
+	color:#f00;
+	text-decoration:none;
+}
+.red:hover {
+	color:#f00;
+	text-decoration:underline;
+}
+.hf:link, .hf:visited {
+	color:#aaa;
+}
+.hf:hover {
+	color:#f00
+}
+img {
+	border:0px;
+}
+.main {
+	width:100%;
+}
+.main li {
+	width:30%;
+	float:left;
+	margin-left:1%px;
+	margin-right:2%;
+	display:block;
+	overflow:hidden;
+}
+.m_img {
+	float:left;
+	width:105px;
+	height:120px;
+	display:block;
+	overflow:hidden;
+}
+.m_img span {
+	clear:both;
+	font-size:12px;
+	line-height:18px;
+	text-align:center;
+}
+.m_main {
+	float:left;
+	padding-left:5px;
+	display:block;
+	overflow:hidden;
+}
+.ie td {
+	padding-left:10px;
+}
+.tit {
+	width:100%;
+	height:26px;
+	background:url(2.gif) repeat-x;
+	margin-top:10px;
+	padding-top:6px;
+	padding-left:10px;
+}
+.clear {
+	clear:both;
+}
+.sear {
+	width:100%;
+	clear:both;
+	margin-top:10px;
+}
+.sear .logo {
+	float:left;
+	margin-left:10px;
+	display:inline;
+}
+.sear .input {
+	float:left;
+	margin-left:15px;
+	display:inline;
+	width:314px;
+	height:32px;
+	background:url(5.gif) no-repeat;
+}
+.sear .input input {
+	height:15px;
+	width:300px;
+	margin-left:7px;
+	display:inline;
+	border:0px;
+	margin-top:5px;
+	padding-top:3px
+}
+.sear .menu {
+	padding-left:10px;
+}
+.sear .menu input {
+	width:58px;
+	height:32px;
+	background:url(6.gif) no-repeat;
+	border:0px;
+	cursor:pointer;
+}
+.sear .tag {
+	float:left;
+	margin-left:10px;
+	display:inline;
+}
+.die {
+	padding-left:5px;
+}

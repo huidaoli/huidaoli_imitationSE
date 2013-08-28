@@ -1,0 +1,19 @@
+/*20121010ÁõºÆå«*/
+.miniBtmPart{margin:5px 0 0 0;width:100%;background:#fff;}
+h3.gmtTitle{height:33px;border:1px solid #ddd;background:3F6F6F6;line-height:33px;font-size:14px;color:#777;padding-left:15px;}
+.gmContList{border:1px solid #ddd;border-top:none;padding-bottom: 21px;}
+.gmContList li{display:inline;float:left;width:88px;height: 108px;padding: 21px 0 0 29px;overflow: hidden;text-align:center;}
+.gmContList li a{display:block;width:88px;height: 120px;}
+.gmContList li img{width:76px;height:77px;padding:3px;border:1px solid #ddd;}
+.gmContList li a:hover img{border:1px solid #f00;}
+.gmContList cite{width:90px;font-size:12px;font-style:normal;height: 20px;line-height: 20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
+.gmContList.np li{padding:21px 0 0 31px;}
+#speTiyu{margin-top:0px;}
+#speTiyu h3.gmtTitle{color:#0E6DBC;padding-left:10px;background:#EEF7FF;}
+#speTiyu h3.gmtTitle,#speTiyu .gmContList{border:1px solid #b2d2f3;border-top:none;}
+#spePets h3.gmtTitle{color:#1949A6;padding-left:10px;background:#B9DAFB;border:1px solid #b2d2f3;border-radius:5px 5px 0 0;}
+#spePets .gmContList{border:1px solid #b2d2f3;border-top:none;border-radius:0 0 5px 5px;}
+#speLady{margin-top:15px;}
+#speLady h3.gmtTitle{color:#1780d7;width:936px;height:26px;line-height:26px;border:none;border-bottom:2px solid #eee;font-size:24px;padding-left:0;margin:0 auto;}
+#speLady .gmContList{border:none;width:960px;margin;0 auto;}
+#speTiyu .gmContList li a:hover,#speLady .gmContList li a:hover{color:#f00;}

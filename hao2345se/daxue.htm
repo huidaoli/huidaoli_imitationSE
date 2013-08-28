@@ -1,0 +1,701 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<title>大学-我的网址导航</title>
+<link href="neiye/css/common_global.css" rel="stylesheet">
+<link href="css/college.css" rel="stylesheet">
+<style>
+/* head */
+.head{ width:990px; margin:0 auto;text-align:left;clear:both;}
+.head{ height:70px; overflow:hidden}
+#logo img{ margin:2px 0 0px 0px; }
+.search_gg{ text-align:center; float:right; padding:17px 16px 0 0; height:26px; }
+.search_gg span,.search_gg b{ display:block; float:left;}
+.search_gg b a{ font-family:"simsun"; font-weight:100; height:26px; line-height:30px; _line-height:36px; margin:0 6px; _margin:0 6px 0 3px;display:block; float:left; }
+.search_gg input,.search_gg img{ vertical-align:middle;}
+.input_gg_sch{ width:275px; height:26px; line-height:26px;  padding-left:4px; font-size:12px; border:1px solid #7f9db9;}
+.butn_gg_sch{ width:63px; height:28px; line-height:26px; margin-left:3px; font-size:12px; cursor:pointer;}
+
+/* foot */
+.foot-sch{ border:1px solid #d6e4f5; background:#f8faff; margin-top:10px; text-align:center; padding-top:13px; width:988px;}
+.foot-sch img{ vertical-align:middle; _margin-top:-13px;*margin-top:-13px;}
+.foot-sch p{ display:block;width:800px; margin:0 auto;}
+.foot-sch b{ font-weight:100; display:block; float:right; height:27px;*margin-top:3px;_margin-top:3px; line-height:30px; overflow:hidden;} 
+.foot-sch b a{ margin:0 6px;font-family:"宋体"; }
+.input_ss_sch{ width:440px; height:26px; line-height:26px; padding-left:4px; margin:0 3px 0 7px; }
+.butn_ss_sch{ width:78px; height:30px; line-height:27px; font-size:12px; cursor:pointer;}
+.option-grp{ height:40px; line-height:40px; clear:both; display:block;font-size:12px;}
+.option-grp input{ margin-left:18px; vertical-align:middle; width:19px; height:13px;line-height: 13px;margin: 0 0 0 18px;vertical-align: middle;width: 19px;}
+.option-grp a{zoom:1}
+.tool-bar{ padding-bottom:20px; font-size:16px;text-align:center; }
+.tool-bar p{line-height:70px;}
+.tool-bar img{ margin:0 25px; }
+.tool-bar input{ border:none; width:56px; height:19px; margin:0 20px; cursor:pointer; }
+.fh{ background:transparent url(images/car/fh.gif) no-repeat; }
+.gb{ background:transparent url(images/car/gb.gif) no-repeat; }
+.clear{ clear:both;}
+.keywords a:hover,.top a:hover,.hright a:hover,.orderli li a:hover{ color:#f00;}
+</style>
+
+</head>
+<base target="_blank" />
+<body>
+
+<!-- strat -->   
+<script type="text/javascript" src="neiye/js/xtop.1.20.js?fk=daxue.htm"></script>
+
+        <!-- head -->
+        <div class="head">
+<script type="text/javascript" src="neiye/js/sosohead.js"></script>
+        </div>
+        <!-- head end -->
+        <!-- menu -->
+        <div class="menu">
+        	<div class="menu_bd">
+            	<ul class="nav">
+                	<li><a class="cur" href=""><span>大学</span></a></li>
+                    <li><a href="kaoshi.htm"><span>考试</span></a></li>
+                    <li><a href="edu.htm"><span>教学</span></a></li>
+                    <li><a href="eng.htm"><span>英语</span></a></li>
+                </ul>
+                <div class="subnav">
+                	<a href="http://book.6164.com/" target="_blank">小说</a><a href="http://v.6164.com/" target="_blank">电影</a><a href="http://p.yiqifa.com/c?s=ff90ab53&w=253302&c=5112&i=9542&l=0&e=2345&t=http://www.mangocity.com/" target="_blank">旅游</a>
+                </div>
+            </div>
+        </div>
+        <!-- menu end -->
+
+<!-- end --> 
+<!-- wrapper -->
+<div class="wrapper clearfix">
+<!-- search -->
+<!-- tag1 -->
+<div id="tag1" class="search">
+<ul class="tag"><li><a target="_self" href="javascript:;" onclick="chg(1)" class="s_cur">大学搜索</a></li>
+<li><a target="_self" href="javascript:;" onclick="chg(2)">专业查询</a></li>
+<li><a target="_self" href="javascript:;" onclick="chg(3)">分数线查询</a></li>
+<li><a target="_self" href="javascript:;" onclick="chg(4)">地区批次线</a></li>
+<li><a target="_self" href="javascript:;" onclick="chg(5)">估分择校</a><i class="new"></i></li>
+<li><a target="_self" href="javascript:;" onclick="chg(6)">专业分数线</a></li>
+</ul>
+<div class="sbar clearfix">
+<form action="http://kaoshi.edu.sina.com.cn/collegedb/collegelist.php" id="fm1" target="_blank">
+<input type="hidden" name="_action" value="t">
+<input type="hidden" name="" id="cat">
+
+<select id="provid_select" class="sect105" name="provid">
+<option value="">院校所在地</option>
+<option value="1">北京</option>
+<option value="2">天津</option>
+<option value="3">上海</option>
+<option value="4">重庆</option>
+<option value="5">河北</option>
+<option value="6">河南</option>
+<option value="7">山东</option>
+<option value="8">山西</option>
+<option value="9">安徽</option>
+<option value="10">江西</option>
+<option value="11">江苏</option>
+<option value="12">浙江</option>
+<option value="13">湖北</option>
+<option value="14">湖南</option>
+<option value="15">广东</option>
+<option value="16">广西</option>
+<option value="17">云南</option>
+<option value="18">贵州</option>
+<option value="19">四川</option>
+<option value="20">陕西</option>
+<option value="21">青海</option>
+<option value="22">宁夏</option>
+<option value="23">黑龙江</option>
+<option value="24">吉林</option>
+<option value="25">辽宁</option>
+<option value="26">西藏</option>
+<option value="27">新疆</option>
+<option value="28">内蒙古</option>
+<option value="29">海南</option>
+<option value="30">福建</option>
+<option value="31">甘肃</option>
+<option value="32">港澳台</option>
+</select>
+<select id="cat_select" class="sect105">
+<option value="">院校类型</option>
+<option value="本科">本科 </option>
+<option value="专科">高职专科 </option>
+<option value="独立">独立学院 </option>
+<option value="教育部直属">教育部直属 </option>
+<option value="211工程">211工程 </option>
+<option value="985工程">985工程 </option>
+</select>
+<select id="type_select" class="sect105" name="type">
+<option value="">院校性质</option>
+<option value="综合">综合类</option>
+<option value="工科">工科类</option>
+<option value="师范">师范类</option>
+<option value="财经">财经类</option>
+<option value="政法">政法类</option>
+<option value="语言">语言类</option>
+<option value="医药">医药类</option>
+<option value="农业">农业类</option>
+<option value="林业">林业类</option>
+<option value="民族">民族类</option>
+<option value="艺术">艺术类</option>
+<option value="体育">体育类</option>
+<option value="军事">军事类</option>
+</select>
+<span class="xiao"><input id="v1" name="name" class="inbox110" type="text" autocomplete="off" value="输入大学名或不填" onfocus="if (this.value == '输入大学名或不填') this.value = '';">
+<ul id="college" style="display:none;">
+
+</ul>
+<iframe style="height:112px; display:none;" frameborder="0"></iframe>
+</span>
+<input class="butn64" type="button" value="搜高校" onclick="fcollege();cc('dxsgx');">
+</form>
+
+<span class="dashed"></span>
+<form id="fm2" action="http://kaoshi.edu.sina.com.cn/collegedb/majorlist.php" target="_blank">
+<input type="hidden" name="_action" value="t">
+<select id="c1" name="type" class="sect85" onchange="setCategory2(this.selectedIndex)"><option value="">大专业</option></select>
+<select id="c2" name="category" class="sect85"><option value="">小专业</option></select>
+
+<span class="xiao"><input id="v2" name="majorname" class="inbox110" type="text" autocomplete="off" value="输入专业名或不填" onfocus="if (this.value == '输入专业名或不填') this.value = '';">
+<ul id="speciality" style="display:none;">
+
+</ul>
+<iframe style="height:112px; display:none;" frameborder="0"></iframe>
+</span>
+<input class="butn64"  type="button" value="搜专业" onclick="fspeciality();cc('dxszy');">
+</form>
+</div>
+</div>
+<!-- tag2 -->
+<form id="fm3" action="http://kaoshi.edu.sina.com.cn/collegedb/majorlist.php" target="_blank">
+<div id="tag2" class="search" style="display:none;">
+<ul class="tag"><li><a href="javascript:;" onclick="chg(1)">大学搜索</a></li>
+<li><a href="javascript:;" onclick="chg(2)" class="s_cur">专业查询</a></li>
+<li><a href="javascript:;" onclick="chg(3)">分数线查询</a></li>
+<li><a href="javascript:;" onclick="chg(4)">地区批次线</a></li>
+<li><a href="javascript:;" onclick="chg(5)">估分择校</a><i class="new"></i></li>
+<li><a href="javascript:;" onclick="chg(6)">专业分数线</a></li>
+</ul>
+<div class="sbar clearfix">
+<input id="v3" class="inbox180" type="text" autocomplete="off" value="输入专业名或不填" onfocus="if (this.value == '输入专业名或不填') this.value = '';">
+<select id="c3" class="sect85" name="type" onchange="setCategory3(this.selectedIndex)"><option value="">大专业</option></select>
+<select id="c4" class="sect85" name="category"><option value="">小专业</option></select>
+<input class="butn64"  type="button" value="查询" onclick="fspeciality2();cc('dxzycx');">
+</div>
+</div>
+</form>
+<!-- tag3 -->
+<form action="http://kaoshi.edu.sina.com.cn/collegedb/index.php" target="_blank">
+<input type="hidden" name="_action" value="more">
+<input type="hidden" name="show" value="more_score">
+<div id="tag3" class="search" style="display:none;">
+<ul class="tag"><li><a href="javascript:;" onclick="chg(1)">大学搜索</a></li>
+<li><a href="javascript:;" onclick="chg(2)">专业查询</a></li>
+<li><a href="javascript:;" onclick="chg(3)" class="s_cur">分数线查询</a></li>
+<li><a href="javascript:;" onclick="chg(4)">地区批次线</a></li>
+<li><a href="javascript:;" onclick="chg(5)">估分择校</a><i class="new"></i></li>
+<li><a href="javascript:;" onclick="chg(6)">专业分数线</a></li>
+</ul>
+<div class="sbar clearfix">
+<select class="sect105" name="provid">
+<option value="">考生所在城市</option>
+<option value="1">北京</option>
+<option value="2">天津</option>
+<option value="3">上海</option>
+<option value="4">重庆</option>
+<option value="5">河北</option>
+<option value="6">河南</option>
+<option value="7">山东</option>
+<option value="8">山西</option>
+<option value="9">安徽</option>
+<option value="10">江西</option>
+<option value="11">江苏</option>
+<option value="12">浙江</option>
+<option value="13">湖北</option>
+<option value="14">湖南</option>
+<option value="15">广东</option>
+<option value="16">广西</option>
+<option value="17">云南</option>
+<option value="18">贵州</option>
+<option value="19">四川</option> 
+<option value="20">陕西</option> 
+<option value="21">青海</option> 
+<option value="22">宁夏</option> 
+<option value="23">黑龙江</option> 
+<option value="24">吉林</option> 
+<option value="25">辽宁</option> 
+<option value="26">西藏</option> 
+<option value="27">新疆</option> 
+<option value="28">内蒙古</option> 
+<option value="29">海南</option> 
+<option value="30">福建</option> 
+<option value="31">甘肃</option>
+</select>
+<select class="sect105" name="" onchange="prov(this.value)">
+<option value="">大学所在城市</option>
+<option value="1">北京</option>
+<option value="2">天津</option>
+<option value="3">上海</option>
+<option value="4">重庆</option>
+<option value="5">河北</option>
+<option value="6">河南</option>
+<option value="7">山东</option>
+<option value="8">山西</option>
+<option value="9">安徽</option>
+<option value="10">江西</option>
+<option value="11">江苏</option>
+<option value="12">浙江</option>
+<option value="13">湖北</option>
+<option value="14">湖南</option>
+<option value="15">广东</option>
+<option value="16">广西</option>
+<option value="17">云南</option>
+<option value="18">贵州</option>
+<option value="19">四川</option>
+<option value="20">陕西</option>
+<option value="21">青海</option>
+<option value="22">宁夏</option>
+<option value="23">黑龙江</option>
+<option value="24">吉林</option>
+<option value="25">辽宁</option>
+<option value="26">西藏</option>
+<option value="27">新疆</option>
+<option value="28">内蒙古</option>
+<option value="29">海南</option>
+<option value="30">福建</option>
+<option value="31">甘肃</option>
+<option value="32">港澳台</option>
+</select>
+<select class="sect85" name="collegeid" id="tag3_college"><option value="">大学</option></select>
+<select class="sect85" name="wl">          
+<option value="1">文科</option>
+<option value="2">理科</option>
+<option value="3">综合</option>
+</select>
+<input class="butn64" type="submit" value="查询" onclick="cc('dxfsxcx');">
+</div>
+</div>
+</form>
+<!-- tag4 -->
+<form action="http://kaoshi.edu.sina.com.cn/collegedb/pici.php" target="_blank">
+<div id="tag4" class="search" style="display:none;">
+<ul class="tag"><li><a href="javascript:;" onclick="chg(1)">大学搜索</a></li>
+<li><a href="javascript:;" onclick="chg(2)">专业查询</a></li>
+<li><a href="javascript:;" onclick="chg(3)">分数线查询</a></li>
+<li><a href="javascript:;" onclick="chg(4)" class="s_cur">地区批次线</a></li>
+<li><a href="javascript:;" onclick="chg(5)">估分择校</a><i class="new"></i></li>
+<li><a href="javascript:;" onclick="chg(6)">专业分数线</a></li>
+</ul>
+<div class="sbar clearfix">
+<select class="sect85" name="provid">
+<option value="1">北京</option> 
+<option value="2">天津</option> 
+<option value="3">上海</option> 
+<option value="4">重庆</option> 
+<option value="5">河北</option> 
+<option value="6">河南</option> 
+<option value="7">山东</option> 
+<option value="8">山西</option> 
+<option value="9">安徽</option> 
+<option value="10">江西</option> 
+<option value="11">江苏</option> 
+<option value="12">浙江</option> 
+<option value="13">湖北</option> 
+<option value="14">湖南</option> 
+<option value="15">广东</option>
+<option value="16">广西</option> 
+<option value="17">云南</option> 
+<option value="18">贵州</option> 
+<option value="19">四川</option> 
+<option value="20">陕西</option> 
+<option value="21">青海</option> 
+<option value="22">宁夏</option> 
+<option value="23">黑龙江</option> 
+<option value="24">吉林</option> 
+<option value="25">辽宁</option> 
+<option value="26">西藏</option> 
+<option value="27">新疆</option> 
+<option value="28">内蒙古</option> 
+<option value="29">海南</option> 
+<option value="30">福建</option> 
+<option value="31">甘肃</option>
+</select>
+<select class="sect85" name="wl">
+<option value="1">文科</option>
+<option value="2">理科</option>
+<option value="3">综合</option>
+<option value="0">其他</option>
+</select>
+<select class="sect85" name="year">
+<option value="2011">2011年</option>
+<option value="2010">2010年</option>
+<option value="2009">2009年</option>
+<option value="2008">2008年</option>
+<option value="2007">2007年</option>
+<option value="2006">2006年</option> 
+<option value="2005">2005年</option> 
+<option value="2004">2004年</option> 
+<option value="2003">2003年</option>
+</select>
+<input class="butn64" type="submit" value="查询" onclick="cc('dxpcxcx');">
+</div>
+</div>
+</form>
+<!-- tag5 -->
+<form action="http://exam.edu.sina.com.cn/zhiyuan/search_college_score.php" target="_blank">
+<div id="tag5" class="search" style="display:none;">
+<ul class="tag"><li><a href="javascript:;" onclick="chg(1)">大学搜索</a></li>
+<li><a href="javascript:;" onclick="chg(2)">专业查询</a></li>
+<li><a href="javascript:;" onclick="chg(3)">分数线查询</a></li>
+<li><a href="javascript:;" onclick="chg(4)">地区批次线</a></li>
+<li><a href="javascript:;" onclick="chg(5)" class="s_cur">估分择校</a><i class="new"></i></li>
+<li><a href="javascript:;" onclick="chg(6)">专业分数线</a></li>
+</ul>
+<div class="sbar clearfix">
+<input class="inbox110" name="prescore" type="text" autocomplete="off" value="550">
+<select class="sect85" name="provid">
+<option value="1" selected="selected">北京</option> 
+<option value="2">天津</option> 
+<option value="3">上海</option> 
+<option value="4">重庆</option> 
+<option value="5">河北</option> 
+<option value="6">河南</option> 
+<option value="7">山东</option> 
+<option value="8">山西</option> 
+<option value="9">安徽</option> 
+<option value="10">江西</option> 
+<option value="11">江苏</option> 
+<option value="12">浙江</option> 
+<option value="13">湖北</option> 
+<option value="14">湖南</option> 
+<option value="15">广东</option>
+<option value="16">广西</option> 
+<option value="17">云南</option> 
+<option value="18">贵州</option> 
+<option value="19">四川</option> 
+<option value="20">陕西</option> 
+<option value="21">青海</option> 
+<option value="22">宁夏</option> 
+<option value="23">黑龙江</option> 
+<option value="24">吉林</option> 
+<option value="25">辽宁</option> 
+<option value="26">西藏</option> 
+<option value="27">新疆</option> 
+<option value="28">内蒙古</option> 
+<option value="29">海南</option> 
+<option value="30">福建</option> 
+<option value="31">甘肃</option>
+</select>
+<select class="sect85" name="wl">
+<option value="1">文科</option>
+<option value="2">理科</option>
+<option value="3">综合</option>
+<option value="0">其他</option>
+</select>
+<select class="sect105" name="batch">
+<option value="01" label="本科提前批">本科提前批</option>
+<option value="11" label="本科一批">本科一批</option>
+<option value="12" label="本科二批">本科二批</option>
+<option value="13" label="本科三批">本科三批</option>
+</select>
+<input class="butn64" type="submit" value="查询" onclick="cc('dxgfzxcx');">
+</div>
+</div>
+</form>
+<!-- tag6 -->
+<form id="fm6" action="http://kaoshi.edu.sina.com.cn/collegedb/collegebang.php" target="_blank">
+<input type="hidden" name="_action" value="college_major_score">
+<input type="hidden" name="syear" value="2011">
+<div id="tag6" class="search" style="display:none;">
+<ul class="tag"><li><a href="javascript:;" onclick="chg(1)">大学搜索</a></li>
+<li><a href="javascript:;" onclick="chg(2)">专业查询</a></li>
+<li><a href="javascript:;" onclick="chg(3)">分数线查询</a></li>
+<li><a href="javascript:;" onclick="chg(4)">地区批次线</a></li>
+<li><a href="javascript:;" onclick="chg(5)">估分择校</a><i class="new"></i></li>
+<li><a href="javascript:;" onclick="chg(6)" class="s_cur">专业分数线</a></li>
+</ul>
+<div class="sbar clearfix">
+<input id="v61" class="inbox110" type="text" autocomplete="off" value="专业名" name="majorname" onfocus="if (this.value == '专业名') this.value = '';">
+<span class="xiao"><input id="v62" class="inbox110" type="text" autocomplete="off" value="院校名" name="collegename" onfocus="if (this.value == '院校名') this.value = '';">
+<ul id="college6" style="display:none;">
+</ul>
+</span>
+<select class="sect85" name="provid">
+<option value="1" selected="selected">北京</option> 
+<option value="2">天津</option> 
+<option value="3">上海</option> 
+<option value="4">重庆</option> 
+<option value="5">河北</option> 
+<option value="6">河南</option> 
+<option value="7">山东</option> 
+<option value="8">山西</option> 
+<option value="9">安徽</option> 
+<option value="10">江西</option> 
+<option value="11">江苏</option> 
+<option value="12">浙江</option> 
+<option value="13">湖北</option> 
+<option value="14">湖南</option> 
+<option value="15">广东</option>
+<option value="16">广西</option> 
+<option value="17">云南</option> 
+<option value="18">贵州</option> 
+<option value="19">四川</option> 
+<option value="20">陕西</option> 
+<option value="21">青海</option> 
+<option value="22">宁夏</option> 
+<option value="23">黑龙江</option> 
+<option value="24">吉林</option> 
+<option value="25">辽宁</option> 
+<option value="26">西藏</option> 
+<option value="27">新疆</option> 
+<option value="28">内蒙古</option> 
+<option value="29">海南</option> 
+<option value="30">福建</option> 
+<option value="31">甘肃</option>
+</select>
+<select class="sect85" name="wl">
+<option label="文科" value="1">文科</option>
+<option label="理科" value="2">理科</option>
+<option label="综合" value="3">综合</option>          
+</select>
+<input class="butn64" type="button" value="查询" onclick="fm6();cc('dxzyfsxcx');">
+</div>
+</div>
+</form>
+<!-- search end -->
+<div class="main">
+<div class="box sidenav">
+<h2><strong>热门大学</strong></h2>
+<div class="hotli">
+<dl class="clearfix">
+<dd><a href="http://www.pku.edu.cn/" target="_blank">北京大学</a></dd>
+<dd><a href="http://www.seu.edu.cn/" target="_blank">东南大学</a></dd>
+<dd><a href="http://www.xmu.edu.cn/" target="_blank">厦门大学</a></dd>
+<dd><a href="http://www.tju.edu.cn/index.htm" target="_blank">天津大学</a></dd>
+<dd><a href="http://www.fudan.edu.cn/" target="_blank">复旦大学</a></dd>
+<dd><a href="http://www.tsinghua.edu.cn/publish/th/index.html" target="_blank">清华大学</a></dd>
+<dd><a href="http://www.tongji.edu.cn/" target="_blank">同济大学</a></dd>
+<dd><a href="http://www.nankai.edu.cn/" target="_blank">南开大学</a></dd>
+</dl>
+<dl class="bort clearfix">
+<dd><a href="http://www.2345.com/daxue/211.htm" target="_blank">211高校</a></dd>
+<dd><a href="http://gkcx.eol.cn/schoolInfoSearch/985/985_1.htm" target="_blank">985高校</a></dd>
+<dd><a href="http://gkcx.eol.cn/schoolInfoSearch/jybzs/jybzs_1.htm" target="_blank">教育部直属</a></dd>
+<dd><a href="http://edu.sina.com.cn/gaokao/gabk/" target="_blank">港澳高校</a></dd>
+<dd><a href="http://edu.sina.com.cn/gaokao/guofangsheng/" target="_blank">国防生</a></dd>
+<dd><a href="http://edu.sina.com.cn/gaokao/ystcs/" target="_blank">艺术特长生</a></dd>
+</dl>
+</div>
+<h3 class="h3tag"><a id="hot1" class="curr" href="javascript:;" onclick="chg2('1', '2')">专业人气榜</a><a id="hot2" href="javascript:;" onclick="chg2('2', '1')">高校推荐榜</a></h3>
+<div class="hot2" style="display:;" id="hotdiv1">
+<h4><span class="line1">排名</span><span class="line2">专业名称</span><span class="line3">人气值</span></h4>
+<ol id="hotlist">
+
+</ol>
+</div>
+<div class="hot3" style="display:none;" id="hotdiv2">
+<h4><span class="line4">学校名称</span><span class="line5">推荐理由</span></h4>
+<ol>
+<li><span>校园环境优美</span><a href="http://www.xmu.edu.cn/" target="_blank">厦门大学</a></li>
+<li><span>特色小吃云集</span><a href="http://www.whu.edu.cn/index.html" target="_blank">武汉大学</a></li>
+<li><span>最具小资气质</span><a href="http://www.fudan.edu.cn/" target="_blank">复旦大学</a></li>
+<li><span>众多美女任你把</span><a href="http://www.bfa.edu.cn/" target="_blank">北京电影学院</a></li>
+<li><span>帅哥一抓一大把</span><a href="http://www.bsu.edu.cn/new/web/" target="_blank">北京体育大学</a></li>
+<li><span>食堂最豪华</span><a href="http://www.ruc.edu.cn/" target="_blank">中国人民大学</a></li>
+<li><span>男生最稀缺</span><a href="http://www.dlufl.edu.cn/" target="_blank">大连外国语大学</a></li>
+<li><span>生活条件最好</span><a href="http://www.blcu.edu.cn/blcu.asp" target="_blank">北京语言大学</a></li>
+<li><span>占地面积最大</span><a href="http://www.cafuc.edu.cn/structure/NewWeb/index.htm" target="_blank">中国民航飞行学院</a></li>
+<li><span>就业率最高</span><a href="http://www.hku.hk/c_index.html" target="_blank">香港大学</a></li>
+</ol>
+</div>
+</div>
+<div class="map">
+  <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="700" height="590">
+    <param name="movie" value="http://www.2345.com/pic/college/china.swf">
+    <param name="quality" value="high">
+    <param name="wmode" value="opaque">
+    <param name="swfversion" value="9.0.45.0">
+    <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+    <param name="expressinstall" value="http://www.2345.com/Scripts/expressInstall.swf">
+    <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+    <!--[if !IE]>-->
+    <object type="application/x-shockwave-flash" data="http://www.2345.com/pic/college/china.swf" width="700" height="590">
+      <!--<![endif]-->
+      <param name="quality" value="high">
+      <param name="wmode" value="opaque">
+      <param name="swfversion" value="9.0.45.0">
+      <param name="expressinstall" value="http://www.2345.com/Scripts/expressInstall.swf">
+      <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+      <div>
+        <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+        <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+      </div>
+      <!--[if !IE]>-->
+    </object>
+    <!--<![endif]-->
+  </object>
+</div>
+</div>
+<div class="box border mt10">
+<h2><a style="color:#666; font-size:12px; font-weight:100; float:right; margin-right:10px;" href="daxue_0515.htm
+" target="_self" >更多>></a><strong>全国大学</strong></h2>
+<div class="boxbd">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th width="84">地区</th>                                                     
+    <th>普通本科院校<font>(792所)</font></th>
+    <th>高职院校<font>(1231所)</font></th>
+    <th>独立学院<font>(316所)</font></th>
+    <th class="righttd">分校办学点<font>(68所)</font></th>
+  </tr>
+  <tr>
+    <td>北京</td>
+    <td>58所<a href="daxue/edubj.htm#daxue1" target="_blank">[点击查看]</a></td>
+    <td>25所<a href="daxue/edubj.htm#daxue2" target="_blank">[点击查看]</a></td>
+    <td>5所<a href="daxue/edubj.htm#daxue3" target="_blank">[点击查看]</a></td>
+    <td class="righttd">1所<a href="daxue/edubj.htm#daxue4" target="_blank">[点击查看]</a></td>
+  </tr>
+  <tr>
+    <td>江苏</td>
+    <td>45所<a href="daxue/edujs.htm#daxue1" target="_blank">[点击查看]</a></td>
+    <td>79所<a href="daxue/edujs.htm#daxue2" target="_blank">[点击查看]</a></td>
+    <td>26所<a href="daxue/edujs.htm#daxue3" target="_blank">[点击查看]</a></td>
+    <td class="righttd">4所<a href="daxue/edujs.htm#daxue4" target="_blank">[点击查看]</a></td>
+  </tr>
+  <tr>
+    <td>上海</td>
+    <td>31所<a href="daxue/edush.htm#daxue1" target="_blank">[点击查看]</a></td>
+    <td>31所<a href="daxue/edush.htm#daxue2" target="_blank">[点击查看]</a></td>
+    <td>3所<a href="daxue/edush.htm#daxue3" target="_blank">[点击查看]</a></td>
+    <td class="righttd">&nbsp;</a></td>
+  </tr>
+  <tr>
+    <td>湖北</td>
+    <td>35所<a href="daxue/eduhub.htm#daxue1" target="_blank">[点击查看]</a></td>
+    <td>54所<a href="daxue/eduhub.htm#daxue2" target="_blank">[点击查看]</a></td>
+    <td>31所<a href="daxue/eduhub.htm#daxue3" target="_blank">[点击查看]</a></td>
+    <td class="righttd">2所<a href="daxue/eduhub.htm#daxue4" target="_blank">[点击查看]</a></td>
+  </tr>
+  <tr class="lasttr">
+    <td>四川</td>
+    <td>31所<a href="daxue/edusc.htm#daxue1" target="_blank">[点击查看]</a></td>
+    <td>48所<a href="daxue/edusc.htm#daxue2" target="_blank">[点击查看]</a></td>
+    <td>13所<a href="daxue/edusc.htm#daxue3" target="_blank">[点击查看]</a></td>
+    <td class="righttd">2所<a href="daxue/edusc.htm#daxue4" target="_blank">[点击查看]</a></td>
+  </tr>
+</table>
+</div>
+</div>
+<div class="box border mt10">
+<h2><strong>大学相关网址</strong></h2>
+<div class="boxbd clearfix">
+<ul class="dottlist clearfix">
+<li><img src="images/college/001.png"><a href="daxue/gwdx.htm" target="_blank">国外大学</a></li>
+<li><img src="images/college/015.jpg"><a href="daxue/yjs.htm" target="_blank">研究生院校</a></li>
+<li><img src="images/college/020.png"><a href="daxue/kxy.htm" target="_blank">科研院校</a></li>
+<li><img src="images/college/007.png"><a href="http://www.2345.com/liuxue.htm" target="_blank">出国留学</a></li>
+<li><img src="images/college/003.png"><a href="daxue/college_bbs.htm" target="_blank">大学社区</a></li>
+<li><img src="images/college/006.png"><a href="http://gaokao.chsi.com.cn/sch/" target="_blank">高校信息库</a></li>
+<li><img src="images/college/017.png"><a href="http://gaokao.chsi.com.cn/" target="_blank">阳光高考</a></li>
+<li><img src="images/college/017.png"><a href="http://edu.sina.com.cn/gaokao/" target="_blank">新浪高考</a></li>
+<li><img src="images/college/016.png"><a href="http://edu.sina.com.cn/gaokao/2012xzzy/" target="_blank">2012新增及撤销专业名单</a></li>
+<li><img src="images/college/013.png"><a href="http://roll.edu.sina.com.cn/s_gxzsjz_all/1/index.shtml" target="_blank">2012年高校招生计划</a></li>
+<li><img src="images/college/013.png"><a href="http://roll.edu.sina.com.cn/s_gxzsjz_all/2/index.shtml" target="_blank">2012年高校招生简章</a></li>
+<li><img src="images/college/014.jpg"><a href="http://edu.sina.com.cn/gaokao/2012utop/" target="_blank">2012年中国大学排行榜</a></li>
+<li><img src="images/college/014.jpg"><a href="http://edu.sina.com.cn/gaokao/2012-05-10/1005337481.shtml" target="_blank">大学教师学术水平排行榜</a></li>
+<li><img src="images/college/012.png"><a href="http://kaoshi.edu.sina.com.cn/collegedb/collegeinfolist.php?listtype=fee" target="_blank">高校收费标准查询</a></li>
+<li><img src="images/college/019.png"><a href="http://kaoshi.edu.sina.com.cn/collegedb/collegeinfolist.php?listtype=luqu" target="_blank">高校录取规则查询</a></li>
+<li><img src="images/college/010.png"><a href="http://kaoshi.edu.sina.com.cn/collegedb/collegeinfolist.php" target="_blank">高校联系方式查询</a></li>
+<li class="lastli"><img src="images/college/009.png"><a href="http://www.2345.com/jiuye.htm" target="_blank">全国毕业生就业信息</a></li>
+<li class="lastli"><img src="images/college/018.png"><a href="http://shiti.edu.sina.com.cn/shiti/index.php" target="_blank">在线模拟考试</a></li>
+<li class="lastli"><img src="images/college/008.png"><a href="http://www.chsi.com.cn/xlcx/?0" target="_blank">学历真伪查询</a></li>
+<li class="lastli"><img src="images/college/021.png"><a href="http://cet.99sushe.com/?0" target="_blank">四六级成绩查询</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- wrapper end --> 
+<!-- start -->
+        <!-- foot search -->
+        <!-- foot feedback -->
+<script src="neiye/js/sosofooter.js" type="text/javascript"></script>
+        <!-- foot feedback end -->
+<!--end-->
+
+<script type="text/javascript" src="neiye/js/college.js"></script>
+<script type="text/javascript">
+setCategory1();
+
+function chg(id)
+{
+	for (var i = 1; i <= 6; i++)
+	{
+		$('tag'+i).style.display = 'none';
+	}
+	$('tag'+id).style.display = '';
+}
+
+function chg2(a, b)
+{
+	$('hot' + a).className = 'curr';
+	$('hot' + b).className = '';
+	$('hotdiv' + a).style.display = '';
+	$('hotdiv' + b).style.display = 'none';
+}
+
+function doHot(data)
+{
+	var str = '';
+	for (x in data)
+	{
+		str += '<li><span>' + data[x]['num'] + '</span><i';
+		if (x < 3)
+		{
+			str += ' class="best"';
+		}
+		str += '>' + (parseInt(x) + 1) + '</i><a target="_blank" href="http://kaoshi.edu.sina.com.cn/college/m/' + data[x]['id'] + '.shtml">' +  data[x]['name'] + '</a></li>'
+	}
+	$('hotlist').innerHTML = str;
+}
+</script>
+<script type="text/javascript" src="http://d.2345.com/college/hot.js"></script>
+<script type="text/javascript">
+function cc(a) {
+	var b = arguments,
+	web = "ajax4",
+	a2,
+	i1 = document.cookie.indexOf("uUiD="),
+	i2;
+	if (b.length > 1) web = b[1];
+	if (i1 != -1) {
+		i2 = document.cookie.indexOf(";", i1);
+		a2 = i2 != -1 ? document.cookie.substring(i1 + 5, i2) : document.cookie.substr(i1 + 5);
+	}
+	if (!a2) {
+		a2 = Math.floor(Math.random() * 100000) + "" + new Date().getTime() + Math.floor(Math.random() * 100000);
+		document.cookie = "uUiD=" + a2 + ";expires=Thu, 21 Sep 2096 10:37:29 GMT; path=/";
+	}
+	if (a.length > 0) {
+		var from=location.search;
+		if(from=='?fgz'){
+			from='_fgz';
+		}else{
+			from='';
+		}
+		var c = "http://union2.50bang.org/web/" + web + "?uId2=SPTNPQRLSX&uId=" + a2 + "&r=" + encodeURIComponent(location.href) + "&lO=" + encodeURIComponent(a)+ from;
+		var b = document.createElement("script");
+		b.setAttribute("type", "text/javascript");
+		b.setAttribute("src", c);
+		document.getElementsByTagName("head")[0].appendChild(b);
+	}
+	return true;
+}
+</script>
+<script type="text/javascript" src="neiye/js/libnew.js"></script>
+<span style="display:none"><script type="text/javascript" src="css/tj.js"></script></span>
+</body>
+</html>

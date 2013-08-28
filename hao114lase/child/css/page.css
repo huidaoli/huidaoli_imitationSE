@@ -1,0 +1,12 @@
+#logo a.logo-cur{
+    background:url(../images/logo_cur.png) no-repeat 0 0;
+}
+#logo a.logo-cur:hover{
+    background-position:0 bottom;
+}
+
+.comm { border-top: 1px solid #A5C9EE; padding:20px 0 0 15px;}
+.comm .i { width:118px; height:118px; float:left; text-align:center; font-size:12px;}
+.comm .i .img { display:block; width:76px; height:76px; overflow:hidden; padding:2px; cursor:pointer; margin:0 auto 2px auto;}
+.comm .i .img { width:76px; height:76px;}
+.comm .i .img:hover { border:2px solid #f60; padding:0;}

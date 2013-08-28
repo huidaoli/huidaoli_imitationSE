@@ -1,0 +1,156 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="ie=7" http-equiv="x-ua-compatible">
+<meta content="text/html; charset=gb2312" http-equiv="Content-Type">
+<title>股票基金</title>
+<link type="text/css" rel="stylesheet" href="css/style.css?20110113">
+<style type="text/css"> 
+.red {
+	color:red;
+}
+.green {
+	color:green;
+}
+</style>
+</head>
+<body>
+<div id="page">
+<div class="container">
+<div id="imgView">
+ 
+<div class="img"><img width="250" height="125" id="js_img_first" src="http://image.sinajs.cn/newchart/small/nsh000001.gif?1271121874507"></div>
+<div id="js_all_first" class="item">
+</div>
+ 
+</div>
+<div id="content">
+<div class="clearfix" id="inputStock">
+<ul id="js_menu_ul" class="tab">
+<li><a class="current" onClick="SelectMenu(0,this);this.blur();" id="js_mystock_menu" href="javascript:;">我的股票</a></li>
+<li><a onClick="SelectMenu(1,this);this.blur();" id="js_myfund_menu" href="javascript:;">我的基金</a></li>
+</ul>
+<div class="input-form">
+<form onSubmit="return (document.getElementById('stock_inp').value != '' &amp;&amp; canSubmit)" target="_blank" id="js_show_form" method="get">
+<select id="js_stock_type" onChange="ChangeViewInputs(this);">
+<option value="">-全部-</option>
+<option selected="selected" value="stock">沪深</option>
+<option value="fund">基金</option>
+<option value="hkstock">港股</option>
+<option value="usstock">美股</option>
+</select>
+<input onChange="ChangeHandler();" id="stock_inp" class="stock-inp" style="color: rgb(102, 102, 102);" autocomplete="off">
+<a style="color: rgb(51, 51, 51);" target="_blank" onClick="return StrategySelector.Goto(this,document.getElementById('stock_inp').value);" class="view" id="js_find_stock" href="#">查行情</a>
+<input type="button" onClick="StrategySelector.Add(document.getElementById('stock_inp').value);" value="添 加" class="button">
+</form>
+</div>
+ 
+</div>
+<div id="manager">
+<div id="my_stock_list">
+ 
+</div>
+<div style="display: none;" id="my_fund_list">
+ 
+</div>
+</div>
+ 
+<div class="meta">
+<p class="date"><span id="update_time"></span>（本股票行情实时更新）</p>
+ 
+<a href="http://hq.cindasc.com/hq/flashMinuteHQ.jsp" class="red" target="_blank">详细股票行情</a> | 
+<a target="_blank" href="/feedback/">意见反馈</a>&nbsp; </div>
+ 
+</div>
+ 
+<div class="clearfix"></div>
+<!--/ content-->
+</div>
+<!--/ wrap-->
+</div>
+<!--/ page-->
+<div style="display: none;" id="js_top_load_box"></div>
+<script type="text/javascript" src="js/access.js?20110113"></script>
+<script type="text/javascript" src="js/sina_sug.js"></script>
+<script type="text/javascript" src="js/gp.js?v=20100720"></script>
+<script type="text/javascript"> 
+	var isFound = false;
+	var sug = new SuggestServer();
+	var canSubmit = false;
+	sug.bind({
+		"input": "stock_inp",
+		"default": "请输入 代码/拼音/名称",
+		"type": "",
+		"width": 220,
+		"head": ["选项", "代码", "中文名称"],
+		"body": [-1, 2, 4],
+		"callback": function () {
+			var ele = document.getElementById("js_find_stock");
+			var form = document.getElementById("js_show_form");
+			
+			if(StrategySelector.Goto(ele,document.getElementById('stock_inp').value)){
+				//window.open(ele.href);
+				form.action = ele.href;
+				canSubmit = true;
+				if(event.keyCode != 0){
+					form.submit();
+				}
+			}
+			else{
+				canSubmit = false;
+			}
+			ele.focus();
+		 }
+	});
+	var ChangeHandler = function(){
+		var ele = document.getElementById("js_find_stock");
+		var form = document.getElementById("js_show_form");
+		if(StrategySelector.Goto(ele,document.getElementById('stock_inp').value)){
+			form.action = ele.href;
+			canSubmit = true;
+		}
+		else{
+			canSubmit = false;
+		}
+	}
+	
+	var ChangeViewInputs = function(ele){
+		document.getElementById("stock_inp").value = "";
+		var v = ele.value;
+		sug.changeType(v);
+		isFound = (v == "fund");
+	}
+	
+	var SelectMenu = function(type,ele){
+		ShowTable(type);
+		var alist = document.getElementById("js_menu_ul").getElementsByTagName("a");
+		for(var i = 0,len = alist.length; i < len; i++){
+			alist[i].className = "";
+		}
+		ele.className = "current";
+		document.getElementById("js_stock_type").value = ((type == 1) ? "fund" : "stock");
+		ChangeViewInputs(document.getElementById("js_stock_type"));
+	}
+	
+	var ShowTable = function(type){
+		var stockTb = document.getElementById("my_stock_list");
+		var foundTb = document.getElementById("my_fund_list");
+		stockTb.style.display = "none";
+		foundTb.style.display = "none";
+		switch(type){
+			case 0:
+				stockTb.style.display = "";
+				break;
+			case 1:
+				foundTb.style.display = "";
+				break;
+		}
+	}
+	
+function ResumeError(){return true}
+window.onerror=ResumeError;
+	
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*宽屏版*/
+#widescreen .wrapper,
+#widescreen .footer{width:1200px;}
+#widescreen .btmWrap{width:1198px;}
+#widescreen .lifeTools{width:1178px;}
+#widescreen .search{width:674px;}
+#widescreen .content ul{width:581px;}
+#widescreen .content ul li a{margin-left:35px;}
+* html #widescreen .content ul li a{margin-left:32px;}
+#widescreen .content ul li span a{margin-left:0px;}
+#widescreen .gamewrap{width:1300px;}
+#widescreen .gamewrap dl{width:270px;}
+#widescreen ul.many{width:1230px;}
+#widescreen ul.many li{width:138px;}
+#widescreen .search input{width:490px;}
+#widescreen ul.cense{text-align:center;}
+#widescreen ul.cense li{float:none;}
+#widescreen .rowbox{width:1230px;}
+#widescreen .rowbox dl{width:259px;padding-left:20px;}
+#widescreen .useful ul{+width:1178px;}

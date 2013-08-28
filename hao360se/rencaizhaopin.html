@@ -1,0 +1,638 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>人才招聘_360安全网址导航</title>
+<meta name="keywords" content="360安全网址导航,360安全网址大全,360,网址之家,上网导航,人才,招聘,简历,求职" />
+<meta name="description" content="360安全网址导航人才招聘频道,最实用招聘求职类网站汇集,简历写作模板,各行业人才招聘求职类网站收集" />
+<base target="_blank" />
+<link href="css/newstyle907.css?v=1306357347" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.logo-yh a{ height:70px; overflow:hidden; text-align:center;}
+.listone {background:none repeat scroll 0 0 #F8FCFF;float:left;font-size:14px;width:100%;position:relative;top:1px;border-bottom:1px solid #D6E7FB}
+.hunter{ width:20%; margin:20px 0 0 35px; float:left; border:1px solid #D6E7FB; display:inline; }
+.hunter p{border-bottom:1px solid #D6E7FB;color:#2C80C5; font-weight:normal;padding:0;text-align:center;width:100%; font-size:12px; display:block;}
+.hunter .zhaopin_ul{ margin:0; padding:15px 0 15px 0; display:block;}
+.hunter .zhaopin_ul li{ list-style:none; background: url("http://img.qihoo.com/images/2008/hao360/20101202/li.gif") no-repeat scroll 15px 50%; padding-left:22px; }
+.hunter .zhaopin_ul li a{ color:#000; text-decoration:none; border:none;}
+.empty{ width:100%; height:20px; clear:both; font-size:0; overflow:hidden;}
+#city_map{padding:15px 0 15px 0; text-align:center;}
+/*=======author:chenhong==========================================================================*/
+.job_src{height:90px;width:948px;font-size:12px;text-align:left; }
+.job_src img,.job_src input,.job_src select,.job_src button{vertical-align:middle;}
+.job_div_left{height:90px; width:683px; color: #333333; float: left;margin-left:5px; display:inline;}
+.job_div_right{float:left; height:90px; width:260px;}
+.job_clearboth{clear:both;}
+.job_search_1{border: 1px solid rgb(165, 165, 167); width: 305px;height: 28px;background-image:url("http://img01.51jobcdn.com/im/2009/searchbg.gif");background-repeat: no-repeat;background-color: #FFFFFF;background-position: 5px center;padding-left:25px;font-weight:bold;font-size:14px;}
+.job_right_tab{width:260px;height:90px;}
+.job_right_tab img{margin-right:10px; margin-top:5px; margin-bottom:4px;}
+.job_kt_bg1 {background-image: url("http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110620/job/lab11.gif");background-repeat: no-repeat;cursor: pointer; height: 22px;padding-top: 3px;text-align: center; width: 67px; line-height:10px;}
+.job_kt_bg2 {background-image: url("http://img01.51jobcdn.com/im/2009/lab2.gif"); background-repeat: no-repeat; color: #FF7300; cursor: pointer; font-weight: bold; height: 23px; text-align: center; width: 67px;line-height:14px; padding-top: 2px;}
+.job_kt_bg3 {background-image: url("http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110620/job/lab3.gif"); background-repeat: no-repeat; background-color: #f8fcff; cursor: pointer; height: 22px; padding-top: 3px; text-align: center; width: 67px; line-height:10px;}
+</style>
+<script type="text/javascript" language="javascript" src="http://js.51jobcdn.com/in/js/2009/jobarea_array_c.js"></script>
+<script type="text/javascript" language="javascript">
+function jobShowJobArea(provinceID)
+{
+	var sltCityIndex = 0;
+	var subprov = provinceID.substring(0,2);
+	var sltCity = document.getElementById('job_jobarea');
+	if( provinceID =='' || ja[provinceID] == '' )
+		return false;
+	sltCity.length = 0;
+	if( '0000' == provinceID)
+	{
+		sltCity[sltCityIndex] = new Option('--地区--','0000');
+		return false;
+	}
+	for(var index in ja)
+	{
+		if( index.substring(0,2) == subprov)
+		{
+			sltCity[sltCityIndex++] = new Option(ja[index],index);
+		}
+	}
+}
+
+function jobSetKwtc(opt)
+
+{
+	var vkobj0 = document.getElementById('job_vk0');
+	var vkobj1 = document.getElementById('job_vk1');
+	var vkobj2 = document.getElementById('job_vk2');
+	var kwt    = document.getElementById('job_keywordtype');
+	if(opt == 1)
+	{
+		vkobj2.className = 'job_kt_bg1';
+		vkobj1.className = 'job_kt_bg2';
+		vkobj0.className = 'job_kt_bg3';
+		kwt.value = opt;
+	}else if(opt == 2)
+	{
+		vkobj2.className = 'job_kt_bg2';
+		vkobj1.className = 'job_kt_bg3';
+		vkobj0.className = 'job_kt_bg3';
+		kwt.value = opt;
+	}else if(opt == 0)
+	{
+		vkobj2.className = 'job_kt_bg1';
+		vkobj1.className = 'job_kt_bg1';
+		vkobj0.className = 'job_kt_bg2';
+		kwt.value = opt;
+	}
+}
+function jobChkSrhCond()
+{
+	var alertStr = '请输入关键字,或者选择行业类别/工作地点!';
+	var kwdValue = document.jobSearchForm.job_keyword.value;
+	var indValue = document.jobSearchForm.job_industrytype.value;
+	var jobareaValue = document.jobSearchForm.job_jobarea.value;
+	if( (kwdValue == '' || kwdValue == '请输入关键字') && indValue == '00' && jobareaValue == '0000' )
+	{
+		alert(alertStr);
+		return false;
+	}
+	return true;
+}
+</script>
+
+</head>
+
+<body>
+<div class="wrap">
+</div>
+<style type="text/css">
+<!--
+/*-----------------------------------------------
+	reset
+------------------------------------------------*/
+body,h1,h2,h3,h4,p,dl,dt,dd,ul,li,form,th,td,table,label{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body,button,input,select,textarea,li,dt,dd,div,p,span{font:12px/1.5 Arial;}
+ul{list-style:none;}
+img{border:none;}
+em,b{font-style:normal;}
+b{font-weight:normal;}
+button,input,select,textarea{font-size:100%;outline:0;vertical-align:middle;margin:0;padding:0;}
+a,button{cursor:pointer;}
+table{border-collapse:collapse;border-spacing:0;}
+.clearfix:after{content:"\0020";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{clear:both;zoom:1;}
+/*public*/
+a{cursor:pointer;}
+body{background:#fff url("images/skin/blue_bg_0616.png") repeat-x left 30px;min-height:600px;}
+/*top*/
+#v2-top{background:url("images/top_bg.png") repeat-x;height:28px;min-width:950px;border-bottom:1px solid #D2EBFF;}
+	.top-bd{width:950px;margin:0 auto;position:relative;height:28px;line-height:28px;overflow:hidden;}
+		.top-left,.top-right{line-height:28px;height:28px;}
+		.top-right{position:absolute;right:0;top:0;padding-top:8px;}
+			.top-right a{border-right:1px solid #bfbfbf;padding-right:5px;margin-left:5px;position:relative;right:-1px;color:#333;display:block;float:left;height:14px;line-height:14px;}
+			.top-right a:hover{color:#f00;}
+			.top-right a.back-home{padding-left:18px;background:url("images/icon/icon_home.png") no-repeat 0 0;}
+/*hd*/
+#hd{height:50px;padding-top:6px;position:relative;overflow:hidden;}
+	#v2-logo,.hd-search,.hd-hot{position:relative;float:left;height:44px;}
+	#v2-logo{width:240px;}
+	.hd-search{width:420px;top:10px;}
+		.hd-search input{height:30px;border:none;font-size:14px;color:#333;*margin-top:-1px;}
+		#v2-kw{background:#fff url("images/search_kw.png") no-repeat;width:255px;padding:0 4px 0 64px;line-height:30px;font-size:12px;}
+		#v2-btn{background:url("images/srarch_btn.png") no-repeat;width:81px;cursor:pointer;text-align:center;}	
+	.hd-hot{width:290px;line-height:44px;overflow:hidden;padding-top:4px;}
+		.hd-hot a{border-left:1px solid #bfbfbf;padding-left:6px;margin-right:6px;position:relative;left:-1px;font-size:14px;color:#014d87}
+		.hd-hot a:hover{color:#f00;}
+/*selected-bar*/
+.hd-select{left:240px;padding-left:8px;position:absolute;top:23px;width:52px;z-index:5;background:redl}
+	#hd-selected{height:26px;line-height:26px;line-height:30px\9;_line-height:28px;padding-right:16px;text-align:center;color:#666;background:url("images/search_selected_bg.png") no-repeat right 1px;cursor:pointer;overflow:hidden;}
+	#select-list{background:#fff;border:1px solid #bfbfbf;z-index:2;width:58px;margin-left:-8px;}
+		#select-list li{height:26px;line-height:26px;cursor:pointer;margin-bottom:1px;padding-left:12px;}
+		#select-list li.hover{color:#fff;background:#39f;}
+	.fold{display:none;}
+	.unfold{display:block;}
+/*wrap*/
+#wrap,.wrap{display:none;}
+#v2-wrap{width:950px;margin:0 auto;position:relative;padding-top:5px;}
+#content,.tong{z-index:1;}
+#crumbs:after{content:"\0020";display:block;height:0;clear:both;visibility:hidden;}
+#crumbs{clear:both;zoom:1;height:24px;line-height:20px;}
+div.title-zw{float:none;}
+-->
+</style>
+<div id="v2-top">
+	<div class="top-bd">
+		<div class="top-left"></div>
+		<div class="top-right">
+			<a href="/" target="_self" class="back-home">返回首页</a>
+            <a onClick="try{ window.external.AddFavorite('http://hao.360.cn/','360安全网址导航'); } catch(e){ (window.sidebar)?window.sidebar.addPanel('360安全网址导航','http://hao.360.cn/',''):alert('请使用按键 Ctrl+d，收藏360安全网址导航'); }">收藏</a>
+            <a href="book/">反馈</a>
+		</div>
+	</div>
+</div>
+<div id="v2-wrap">
+	<ul id="suggests"></ul>
+	<div id="hd" class="clearfix">
+		<div id="v2-logo">
+			<a href="/" target="_self"><img src="images/logo.png" /></a>
+		</div>
+		<div class="hd-search">
+			 <form  id="search-form" action="http://www.youdao.com/search" method="GET" target="_blank">
+				<input type="text" autocomplete="off" id="v2-kw"  name="q" />	
+				<input type="submit" value="搜索" id="v2-btn" />        
+				<span id="hide-input">
+					<input type="hidden" name="keyfrom" value="dh.win7000" />
+					<input type="hidden" name="vendor" value="dh.win7000_3523" />
+					<input type="hidden" name="ue" value="gb2312" />
+
+				</span>
+			</form>
+          </div>
+		<div class="hd-hot">
+			<a href="kuandai.html">电影</a>
+			<a href="dianshi.html">电视剧</a>
+			<a href="wangshanggouwu.html">购物</a>
+			<a href="xiaoshuoyuedu.html">小说</a>
+			<a href="xiaoyouxi.html">小游戏</a>
+		</div>
+			</div>
+<div class="hd-select">
+			<div id="hd-selected">有道</div>
+			<ul id="select-list" class="fold">
+				<li engine="baidu">百度</li>
+				<li engine="youdao">有道</li>
+			</ul>
+		</div>
+
+<script src="js/jquery-1.6.1.min.js" type="text/javascript"></script>
+<script>
+$(function(){	 
+    //unfold
+    $('#hd-selected').click(function(){
+        var selectList = $('#select-list');
+        if(selectList.hasClass('unfold')){
+            selectList.removeClass('unfold')
+        }
+        else{
+            selectList.addClass('unfold');
+        }
+    });
+    //hover
+    $('#select-list li').mouseover(function(){
+        $(this).addClass('hover');
+    });
+    $('#select-list li').mouseout(function(){
+        $(this).removeClass('hover');
+    });
+    //choose 
+    var searchsite = {baidu:["http://www.baidu.com/s", "word", "\u767e\u5ea6", "cl:2;lm:-1;ct:201326592;ie:gbk"],youdao:["http://www.youdao.com/search", "q", "\u6709\u9053", "keyfrom:dh.win7000;vendor:dh.win7000_3523;ue:gb2312"]};
+	
+     $('#select-list li').click(function(){
+        var formId = "search-form";
+        var kwId = "v2-kw";
+        var btnId = "v2-btn";
+		var hideId = "hide-input";
+		
+        var engineName = $(this).attr("engine");
+        var searchType = searchsite[engineName];
+        $("#" + formId).attr("action",searchType[0]);
+        $("#" + kwId).attr("name" , searchType[1]);
+        $("#hd-selected").html(searchType[2]);
+        $("#select-list").removeClass("unfold");
+		var hideTxt = searchType[3];
+		var hideNum = hideTxt.split(";");
+		var hideHtml = "";
+		var length = hideNum.length;
+		for (var i=0; i<length; i++){
+			var hidenName = hideNum[i].split(":");
+			var input = "<input type=\"hidden\" name=\""+hidenName[0]+"\" value=\""+hidenName[1]+"\" /> ";
+			hideHtml += input;
+		}
+		
+		$("#" +hideId).html(hideHtml);
+		$("#selected").html(searchType[2]);
+		$("#select-list").removeClass("unfold");
+		
+    });	
+    $("body").click(function(e){
+        var target = e.target;
+        if($(target).attr("id")!=="hd-selected"&&$('#select-list').hasClass('unfold')&&$(target).parents("#select-list").length===0&&$(target).attr("id")!=="select-list")
+        {
+            $('#select-list').removeClass('unfold');
+        }
+    });			
+});
+
+$(function(){
+    $("#suggests li").mouseover(function(){
+        $(this).addClass("hover");
+    });
+    $("#suggests li").mouseout(function(){
+        $(this).removeClass("hover");
+    });
+});
+</script>
+<div class="title-zw">
+               <p class="guide">您的位置：<a href="/" target="_self">导航首页</a> &gt; 人才招聘</p>
+            </div>	
+	
+	
+    <div class="all-list tong">
+	<h1>职位搜索</h1>
+	<div class="logo-yh">
+		<div class="job_src clearfix">
+	<form name="jobSearchForm" method='post' action='http://my.51job.com/partner/360/search.php' onsubmit="return jobChkSrhCond();" style="margin:0px;padding:0px;" target="_blank">
+	<div class="job_div_left">
+		<ul style="margin:0px;padding:0px;">
+			<li title="搜职位发布所有内容" class="job_kt_bg2" id="job_vk2" style="float:left;list-style-type:none;" onclick="jobSetKwtc(2);">全文</li>
+			<li title="仅搜职位名关键字" class="job_kt_bg3" id="job_vk1" style="float:left;list-style-type:none;" onclick="jobSetKwtc(1);">职位名</li>
+			<li title="仅搜公司名关键字" class="job_kt_bg3" id="job_vk0" style="float:left;list-style-type:none;" onclick="jobSetKwtc(0);">公司名</li>
+		</ul>
+		<div class="job_clearboth"></div>
+		<div style="width:610px; float:left; height:60px;">
+			<input align="absmiddle" type="hidden" value="2" name="job_keywordtype" id="job_keywordtype">
+<input type="text" value="请输入关键字" style="color: rgb(181, 181, 181); width:354px;margin-top:0px;" class="job_search_1" maxlength="180" name="job_keyword" onfocus="if(this.value == '请输入关键字') this.value='';">
+			<select name="job_province" style="width:105px;" onchange="jobShowJobArea(this.options[this.options.selectedIndex].value);">
+				<option selected="selected" value="0000">--省份--</option>
+				<option value="0100">北京</option>
+				<option value="0200">上海</option>
+				<option value="0300">广东省</option>
+				<option value="0400">深圳</option>
+				<option value="0500">天津</option>
+				<option value="0600">重庆</option>
+				<option value="0700">江苏省</option>
+				<option value="0800">浙江省</option>
+				<option value="0900">四川省</option>
+				<option value="1000">海南省</option>
+				<option value="1100">福建省</option>
+				<option value="1200">山东省</option>
+				<option value="1300">江西省</option>
+				<option value="1400">广西</option>
+				<option value="1500">安徽省</option>
+				<option value="1600">河北省</option>
+				<option value="1700">河南省</option>
+				<option value="1800">湖北省</option>
+				<option value="1900">湖南省</option>
+				<option value="2000">陕西省</option>
+				<option value="2100">山西省</option>
+				<option value="2200">黑龙江省</option>
+				<option value="2300">辽宁省</option>
+				<option value="2400">吉林省</option>
+				<option value="2500">云南省</option>
+				<option value="2600">贵州省</option>
+				<option value="2700">甘肃省</option>
+				<option value="2800">内蒙古</option>
+				<option value="2900">宁夏</option>
+				<option value="3000">西藏</option>
+				<option value="3100">新疆</option>
+				<option value="3200">青海省</option>
+				<option value="3300">香港</option>
+				<option value="3400">澳门</option>
+				<option value="3500">台湾</option>
+				<option value="3600">国外</option>
+			</select>
+			<select name="job_jobarea" id="job_jobarea" style="width:105px;">
+				<option selected="" value="0000">--地区--</option>
+			</select>
+			<div class="job_clearboth"></div>
+			<select name="job_industrytype" style="width:277px;margin-top:2px;">
+				<option selected="selected" value="00">--请选择行业--</option>
+				<option value="01">计算机软件</option>
+				<option value="37">计算机硬件</option>
+				<option value="38">计算机服务(系统、数据服务、维修)</option>
+				<option value="31">通信/电信/网络设备</option>
+				<option value="39">通信/电信运营、增值服务</option>
+				<option value="32">互联网/电子商务</option>
+				<option value="40">网络游戏</option>
+				<option value="02">电子技术/半导体/集成电路</option>
+				<option value="35">仪器仪表/工业自动化</option>
+				<option value="41">会计/审计</option>
+				<option value="03">金融/投资/证券</option>
+				<option value="42">银行</option>
+				<option value="43">保险</option>
+				<option value="04">贸易/进出口</option>
+				<option value="22">批发/零售</option>
+				<option value="05">快速消费品(食品、饮料、化妆品)</option>
+				<option value="06">服装/纺织/皮革</option>
+				<option value="44">家具/家电/工艺品/玩具/珠宝</option>
+				<option value="60">奢侈品/收藏品</option>
+				<option value="45">办公用品及设备</option>
+				<option value="14">机械/设备/重工</option>
+				<option value="33">汽车及零配件</option>
+				<option value="08">制药/生物工程</option>
+				<option value="46">医疗/护理/卫生</option>
+				<option value="47">医疗设备/器械</option>
+				<option value="12">广告</option>
+				<option value="48">公关/市场推广/会展</option>
+				<option value="49">影视/媒体/艺术/文化传播</option>
+				<option value="13">文字媒体/出版</option>
+				<option value="15">印刷/包装/造纸</option>
+				<option value="26">房地产开发</option>
+				<option value="09">建筑/建材/工程</option>
+				<option value="50">家居/室内设计/装潢</option>
+				<option value="51">物业管理/商业中心</option>
+				<option value="34">中介服务</option>
+				<option value="07">专业服务(咨询、人力资源、财会)</option>
+				<option value="59">外包服务</option>
+				<option value="52">检测，认证</option>
+				<option value="18">法律</option>
+				<option value="23">教育/培训/院校</option>
+				<option value="24">学术/科研</option>
+				<option value="11">餐饮业</option>
+				<option value="53">酒店/旅游</option>
+				<option value="17">娱乐/休闲/体育</option>
+				<option value="54">美容/保健</option>
+				<option value="27">生活服务</option>
+				<option value="21">交通/运输/物流</option>
+				<option value="55">航天/航空</option>
+				<option value="19">石油/化工/矿产/地质</option>
+				<option value="16">采掘业/冶炼</option>
+				<option value="36">电力/水利</option>
+				<option value="61">新能源</option>
+				<option value="56">原材料和加工</option>
+				<option value="28">政府/公共事业</option>
+				<option value="57">非盈利机构</option>
+				<option value="20">环保</option>
+				<option value="29">农/林/牧/渔</option>
+				<option value="58">多元化业务集团公司</option>
+				<option value="30">其他行业</option>
+			</select>
+			<select name="job_degreefrom" style="width:100px;margin-top:2px;">
+				<option value="99" selected="selected">--学历要求--</option>
+				<option value="1">初中</option>
+				<option value="2">高中</option>
+				<option value="3">中技</option>
+				<option value="4">中专</option>
+				<option value="5">大专</option>
+				<option value="6">本科</option>
+				<option value="7">硕士</option>
+				<option value="8">博士</option>
+				<option value="9">其他</option>
+			</select>
+			<select name="job_workyear" style="width:105px;margin-top:2px;">
+				<option value="99" selected="selected">--工作年限--</option>
+				<option value="1">在读学生</option>
+				<option value="2">应届毕业生</option>
+				<option value="3">一年以上</option>
+				<option value="4">二年以上</option>
+				<option value="5">三年以上</option>
+				<option value="6">五年以上</option>
+				<option value="7">八年以上</option>
+				<option value="8">十年以上</option>
+				<option value="9">不限</option>
+            </select>
+			<select name="job_cotype" style="width:105px;margin-top:2px;">
+				<option value="99" selected="selected">--公司性质--</option>
+				<option value="01">外资(欧美)</option>
+				<option value="02">外资(非欧美)</option>
+				<option value="03">合资(欧美)</option>
+				<option value="04">合资(非欧美)</option>
+				<option value="05">国企</option>
+				<option value="06">民营公司</option>
+				<option value="07">外企代表处</option>
+				<option value="09">政府机关</option>
+				<option value="10">事业单位</option>
+				<option value="11">非盈利机构</option>
+				<option value="08">其它性质</option>
+			</select>
+		</div>
+		<div style="width:73px; float:left; margin-bottom:0px; margin-left:0px;"><input align="absmiddle" type="image" src="http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110620/job/ss_bt.jpg" name="image" border="0"></div>
+	</div>
+	</form>
+	<div class="job_div_right">
+		<table border="0" align="center" cellpadding="0" cellspacing="0" class="job_right_tab">
+			<tr>
+				<td height="30" align="right" valign="middle"><a href="http://my.51job.com/my/trace.php?adsnum=232055&ajp=aHR0cDovL3d3dy41MWpvYi5jb20v" target="_blank"><img src="http://img01.51jobcdn.com/im/2009/partner/360/51logo.jpg" alt="前程无忧招聘网" width="73" height="30" border="0" /></a></td>
+			</tr>
+			<tr>
+				<td height="60" align="center" valign="top"><table width="256" height="46" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="32" height="23" align="center" valign="middle">
+						<a href="http://my.51job.com/my/trace.php?adsnum=232021&ajp=aHR0cDovL3d3dy41MWpvYi5jb20vZGVmYXVsdC1hcmVhLnBocD9hcmVhPTAxMDA=" target="_blank" style="color:#2a7ec4; font-size:12px;">北京</a>
+					</td>
+                    <td width="32" align="center" valign="middle">
+						<a href="http://my.51job.com/my/trace.php?adsnum=232022&ajp=aHR0cDovL3d3dy41MWpvYi5jb20vZGVmYXVsdC1hcmVhLnBocD9hcmVhPTAyMDA=" target="_blank" style="color:#2a7ec4; font-size:12px;">上海</a>
+					</td>
+                    <td width="32" align="center" valign="middle">
+						<a href="http://my.51job.com/my/trace.php?adsnum=232023&ajp=aHR0cDovL3d3dy41MWpvYi5jb20vZGVmYXVsdC1hcmVhLnBocD9hcmVhPTAzMDI=" target="_blank" style="color:#2a7ec4; font-size:12px;">广州</a>
+					</td>
+                    <td width="32" align="center" valign="middle">
+						<a href="http://my.51job.com/my/trace.php?adsnum=232024&ajp=aHR0cDovL3d3dy41MWpvYi5jb20vZGVmYXVsdC1hcmVhLnBocD9hcmVhPTA0MDA=" target="_blank" style="color:#2a7ec4; font-size:12px;">深圳</a>
+					</td>
+                    <td width="32" align="center" valign="middle">
+						<a href="http://my.51job.com/my/trace.php?adsnum=232033&ajp=aHR0cDovL3d3dy41MWpvYi5jb20vZGVmYXVsdC1hcmVhLnBocD9hcmVhPTE4MDI=" target="_blank" style="color:#ff7300; font-size:12px;">武汉</a>
+					</td>
+                    <td width="32" align="center" valign="middle">
+						<a href="http://my.51job.com/my/trace.php?adsnum=232026&ajp=aHR0cDovL3d3dy41MWpvYi5jb20vZGVmYXVsdC1hcmVhLnBocD9hcmVhPTA4MDI=" target="_blank" style="color:#2a7ec4; font-size:12px;">杭州</a>
+					</td>
+                    <td width="64" align="center" valign="middle"><a href="http://my.51job.com/my/trace.php?adsnum=232029&ajp=aHR0cDovL3h5LjUxam9iLmNvbS9kZWZhdWx0LXhzLnBocA==" target="_blank" style="color:#ff7300; font-size:12px;">校园招聘</a></td>
+                  </tr>
+                  <tr>
+				  <td width="32" align="center" valign="middle"><a href="http://my.51job.com/my/trace.php?adsnum=232027&ajp=aHR0cDovL3NlYXJjaC41MWpvYi5jb20vam9ic2VhcmNoL3NlYXJjaF9yZXN1bHQucGhwP2Zyb21Kcz0xJmpvYmFyZWE9MDAwMCZmdW50eXBlPTAwMDAmaW5kdXN0cnl0eXBlPTAwJmtleXdvcmQ9JUU1JUFFJTlFJUU0JUI5JUEwJmtleXdvcmR0eXBlPTEmbGFuZz1jJnN0eXBlPTEmcG9zdGNoYW5uZWw9MDAwMCZmcm9tVHlwZT0x" target="_blank" style="color:#ff7300; font-size:12px;">实习</a></td>
+
+                    <td width="32" height="23" align="center" valign="middle"><a href="http://my.51job.com/my/trace.php?adsnum=232028&ajp=aHR0cDovL3NlYXJjaC41MWpvYi5jb20vam9ic2VhcmNoL3NlYXJjaF9yZXN1bHQucGhwP2Zyb21Kcz0xJmpvYmFyZWE9MDAwMCZmdW50eXBlPTAwMDAmaW5kdXN0cnl0eXBlPTAwJmtleXdvcmQ9JUU2JUI4JUI4JUU2JTg4JThGJmtleXdvcmR0eXBlPTEmbGFuZz1jJnN0eXBlPTEmcG9zdGNoYW5uZWw9MDAwMCZmcm9tVHlwZT0x" target="_blank" style="color:#2a7ec4; font-size:12px;">游戏</a></td>
+
+                    <td width="32" align="center" valign="middle"><a href="http://my.51job.com/my/trace.php?adsnum=232030&ajp=aHR0cDovL3NlYXJjaC41MWpvYi5jb20vam9ic2VhcmNoL3NlYXJjaF9yZXN1bHQucGhwP2Zyb21Kcz0xJmpvYmFyZWE9MDAwMCZmdW50eXBlPTAwMDAmaW5kdXN0cnl0eXBlPTAwJmtleXdvcmQ9JUU2JTk2JTg3JUU1JTkxJTk4JmtleXdvcmR0eXBlPTEmbGFuZz1jJnN0eXBlPTEmcG9zdGNoYW5uZWw9MDAwMCZmcm9tVHlwZT0x" target="_blank" style="color:#ff7300; font-size:12px;">文员</a></td>
+
+                    <td width="32" align="center" valign="middle"><a href="http://my.51job.com/my/trace.php?adsnum=232031&ajp=aHR0cDovL3NlYXJjaC41MWpvYi5jb20vbGlzdC8wMDAwLDAwMDAsMDAwMCwwMCw5LDk5LCUyNUI5JTI1RkElMjVDNiUyNUYzLDIsMS5odG1sP2xhbmc9YyZzdHlwZT0xJnBvc3RjaGFubmVsPTAwMDAmd29ya3llYXI9OTkmY290eXBlPTA1JmRlZ3JlZWZyb209OTkmam9idGVybT0wMSZsb25sYXQ9MCUyQzAmcmFkaXVzPS0xJm9yZF9maWVsZD0wJmxpc3Q=" target="_blank" style="color:#ff7300; font-size:12px;">国企</a></td>
+
+                    <td width="32" align="center" valign="middle"><a href="http://my.51job.com/my/trace.php?adsnum=232025&ajp=aHR0cDovL3NlYXJjaC41MWpvYi5jb20vam9ic2VhcmNoL3NlYXJjaF9yZXN1bHQucGhwP2Zyb21Kcz0xJmpvYmFyZWE9MDAwMCZmdW50eXBlPTAwMDAmaW5kdXN0cnl0eXBlPTAwJmtleXdvcmQ9JUU5JTk0JTgwJUU1JTk0JUFFJmtleXdvcmR0eXBlPTEmbGFuZz1jJnN0eXBlPTEmcG9zdGNoYW5uZWw9MDAwMCZmcm9tVHlwZT0x" target="_blank" style="color:#2a7ec4; font-size:12px;">销售</a></td>
+
+                    <td width="32" align="center" valign="middle"><a href="http://my.51job.com/my/trace.php?adsnum=232034&ajp=aHR0cDovL3NlYXJjaC41MWpvYi5jb20vam9ic2VhcmNoL3NlYXJjaF9yZXN1bHQucGhwP2Zyb21Kcz0xJmpvYmFyZWE9MDAwMCZmdW50eXBlPTAwMDAmaW5kdXN0cnl0eXBlPTAwJmtleXdvcmQ9JUU1JTg1JUJDJUU4JTgxJThDJmtleXdvcmR0eXBlPTEmbGFuZz1jJnN0eXBlPTEmcG9zdGNoYW5uZWw9MDAwMCZmcm9tVHlwZT0x" target="_blank" style="color:#ff7300; font-size:12px;">兼职</a></td>
+
+                    <td width="64" align="center" valign="middle"><a href="http://my.51job.com/my/trace.php?adsnum=232032&ajp=aHR0cDovL3d3dy41MWpvYi5jb20vY2FyZWVycG9zdC9qaWFubGlzaHVvbWluZy9pbmRleC5waHA=" target="_blank" style="color:#ff7300; font-size:12px;">简历模板</a></td>
+                  </tr>
+                </table>			  </td>
+			</tr>
+	  </table>
+	</div>
+</div>
+	</div>
+
+   <h1>人才名站</h1>
+	  <div class="list">
+<a href="http://my.51job.com/my/trace.php?adsnum=19423&ajp=aHR0cDovL3d3dy41MWpvYi5jb20v">前程无忧</a>
+<a href="http://www.zhaopin.com/">智联招聘</a>
+<a href="http://www.chinahr.com/index.htm">中华英才网</a>
+<a href="http://www.lietou.com/zhaopin/">猎聘网</a>
+<a href="http://job.dajie.com/">大街校园招聘</a>
+<a href="http://www.gdrc.com/">广东人才网</a>
+<a href="http://www.jobcn.com/">卓博人才网</a>
+<a href="http://www.job5156.com/">智通人才网</a>
+<a href="http://www.1010jz.com/">1010兼职网</a>
+<a href="http://www.cjol.com/">中国人才热线</a>
+<a href="http://innerapp.wealink.com/hunter/jobs/index/" style="color:#ff0000;">若邻社交招聘网</a>
+<a href="http://www.job168.com/">南方人才网</a>
+<a href="http://www.528.com.cn/">528招聘网</a>
+<a href="http://www.zjrc.com/">浙江人才网</a>
+<a href="http://www.szhr.com.cn/">深圳人才网</a>
+<a href="http://www.hnrcsc.com/">湖南人才网</a>
+<a href="http://www.jjoobb.cn/">河南九博人才网</a>
+<a href="http://www.job1998.com/">天津易才网</a>
+<a href="http://www.xmrc.com.cn/">厦门人才网</a>
+<a href="http://www.hzrc.com/">杭州人才网</a>
+<a href="http://jobs.12333sh.gov.cn/">上海公共招聘网</a>
+<a href="http://www.scrc168.com/">四川省人才网</a>
+<a href="http://www.bjrc.com/">北京人才网</a>
+<a href="http://www.qlrc.com/">齐鲁人才网</a>
+<a href="http://www.hbsc.cn/">河北搜才网</a>
+<a href="http://www.nbrc.com.cn/">宁波人才网</a>
+<a href="http://www.01job.cn/">上海第一招聘网</a>
+<a href="http://www.qlrc.com/">齐鲁人才网</a>
+<a href="http://www.szrc.cn/szrc/default.html">苏州人才网</a>
+<a href="http://www.ahzp.com/">安徽招聘网</a>
+<a href="http://www.cqjob.com/">重庆人才网</a>
+<a href="http://www.baijob.com/">百伯网</a>
+<a href="http://www.58.com/?path=job.shtml">58同城招聘</a>
+<a href="http://www.ganji.com/zhaopin/">赶集网招聘</a>
+<a href="city/index.html">更多城市 >></a>
+      </div>
+     <h1>求职招聘</h1>
+		<div class="listone">
+		<div class="hunter">
+			<p>招聘会</p>
+			<ul class="zhaopin_ul">
+			<li><a href="http://www.58.com/zhaopinhui/">58同城招聘会</a></li>
+			<li><a href="http://www.ganji.com/zhaopinhui/">赶集网招聘会</a></li>
+			<li><a href="http://zph.yingjiesheng.com/">应届生招聘会</a></li>
+			<li><a href="http://www.zph.com.cn/">全国招聘会</a></li>
+			<li><a href="http://www.bjzph.com/">北京招聘会</a></li>
+			<li><a href="http://www.zhaopinhui.org/">招聘会信息网</a></li>
+
+			</ul>
+		</div>
+		<div class="hunter">
+			<p>校园招聘</p>
+				<ul class="zhaopin_ul">
+				<li><a href="http://www.yingjiesheng.com/">应届生求职网</a></li>
+				<li><a href="http://job.dajie.com/">大街校园招聘</a></li>
+				<li><a href="http://www.guolairen.com/">过来人求职网</a></li>
+				<li><a href="http://www.yjbys.com/">应届毕业生网</a></li>
+			    <li><a href="http://www.54yjs.cn/">我是应届生</a></li>
+				<li><a href="biyeshengjiuye.html">各地毕业生就业信息网</a></li>
+				</ul>
+		</div>
+		<div class="hunter">
+			<p>教师招聘</p>
+				<ul class="zhaopin_ul">
+				<li><a href="http://www.shifansheng.com/">师范生教师招聘网</a></li>
+				<li><a href="http://www.jiaoshi.com.cn/">中国教师人才网</a></li>
+				<li><a href="http://teacher.eol.cn/">教师招聘平台</a></li>
+				<li><a href="http://www.pinjiao.com/">聘教网</a></li>
+				<li><a href="http://www.job910.com/">万行教师人才网</a></li>
+				<li><a href="http://www.jiaoshizhaopin.net/">教师招聘网</a></li>
+				</ul>
+		</div>
+		<div class="hunter">
+		<p>职场</p>
+				<ul class="zhaopin_ul">
+				<li><a href="http://tv.sohu.com/fnms/">非你莫属</a></li>
+				<li><a href="http://www.qiyi.com/zongyi/zlzw.html">职来职往</a></li>
+				<li><a href="http://www.fenzhi.com">晒工资薪水</a></li>
+				<li><a href="http://www.gerenjianli.com/">个人简历网</a></li>
+				<li><a href="http://interview.guolairen.com/">面试技巧</a></li>
+				<li><a href="http://edu.qq.com/job/">腾讯求职</a></li>
+
+				</ul>
+		</div>
+		<div class="empty"></div>
+		</div>
+
+    <h1>银行招聘</h1>
+	  <div class="list">
+        <a href="http://job.icbc.com.cn/ICBC/%e4%ba%ba%e6%89%8d%e6%8b%9b%e8%81%98/default.htm">工商银行招聘</a><a href="http://job.ccb.com/ccbjob/cn/job/index.jsp">建设银行招聘</a><a href="http://www.boc.cn/bocinfo/bi4/">中国银行招聘</a><a href="http://www.bankcomm.com/Engage2/jsp/index.jsp">交通银行招聘</a><a href="http://cebbank.51job.com/company/index.php">光大银行招聘</a><a href="http://career.cmbchina.com/cmbcareer/">招商银行招聘</a><a href="http://job.abchina.com/rio/index.do?action=openHome">农业银行招聘</a><a href="http://www.spdb.com.cn/chpage/c456/doclist.aspx">浦发银行招聘</a><a href="http://career.cmbc.com.cn:8080/portal/main/index.jsp">民生银行招聘</a><a href="http://www.gdb.com.cn/Channel/24551">广发银行招聘</a><a href="http://www.cib.com.cn/netbank/cn/About_IB/Want_Ad/">兴业银行招聘</a>
+      </div>
+
+      <h1>行业人才</h1>
+	  <div class="list">
+        <a href="http://www.21wecan.com/">中国卫生人才网</a><a href="http://www.tradehr.com">外贸英才网</a><a href="http://www.buildhr.com/">建筑英才网</a><a href="http://www.doctorjob.com.cn/">医疗人才网</a><a href="http://www.jobeast.com">中国外语人才网</a><a href="http://www.cfw.cn">中国服装人才网</a><a href="http://www.gaoxiaojob.com">高校人才网</a><a href="http://www.138job.com">中国美容人才网</a><a href="http://www.800hr.com/">英才网联</a><a href="http://job.aweb.com.cn/">农业人才网</a><a href="http://www.epjob88.com/">电力英才网</a><a href="http://www.tourjob.net">中国旅游人才网</a><a href="http://www.carjob.com.cn">中国汽车人才网</a><a href="http://www.pjob.net">中国印刷人才网</a><a href="http://www.veryeast.cn/">最佳东方酒店人才</a><a href="http://www.buildjob.net">中国建筑人才网</a> <a href="http://www.job36.com/">行业招聘网</a> <a href="http://www.job120.com">万行医疗卫生人才网</a><a href="http://z.paidai.com/">派代电商招聘</a><a href="http://www.liuxuehr.com/">留学人才网</a>
+      </div>
+
+<h1>各省人才市场</h1>
+	  <div class="list">
+	   <div id="city_map"> 
+	   <img src="http://img.qihoo.com/images/2008/hao360/20101125/map.gif" width="531" height="448" useMap="#map" alt="" />
+      <map name="map" id="js_map_areas">
+        <area shape="rect" rel="北京"  coords='386, 157, 415, 172' href="difangrencai.html#01" />
+        <area shape="rect" rel="天津"  coords='398, 176, 429, 190' href="difangrencai.html#03" />
+        <area shape="rect" rel="上海"  coords='452, 267, 480, 284' href="difangrencai.html#02" />
+        <area shape="rect" rel="江苏"  coords='423, 238, 452, 256' href="difangrencai.html#11" />
+        <area shape="rect" rel="浙江"  coords='431, 292, 462, 310' href="difangrencai.html#12" />
+        <area shape="rect" rel="湖北"  coords='346, 276, 377, 296' href="difangrencai.html#18" />
+        <area shape="rect" rel="广东"  coords='366, 362, 398, 380' href="difangrencai.html#20" />
+        <area shape="rect" rel="陕西"  coords='308, 244, 337, 262' href="difangrencai.html#25" />
+        <area shape="rect" rel="四川"  coords='239, 280, 277, 303' href="difangrencai.html#22" />
+        <area shape="rect" rel="重庆"  coords='292, 292, 321, 311' href="difangrencai.html#04" />
+        <area shape="rect" rel="辽宁"  coords='435, 140, 465, 157' href="difangrencai.html#08" />
+        <area shape="rect" rel="黑龙江"  coords='449, 68, 500, 91' href="difangrencai.html#10" />
+        <area shape="rect" rel="湖南"  coords='342, 319, 376, 337' href="difangrencai.html#19" />
+        <area shape="rect" rel="安徽"  coords='399, 261, 430, 277' href="difangrencai.html#13" />
+        <area shape="rect" rel="山西"  coords='341, 208, 370, 226' href="difangrencai.html#06" />
+        <area shape="rect" rel="吉林"  coords='457,111,489,129' href="difangrencai.html#09" />
+        <area shape="rect" rel="福建"  coords='413, 330, 450, 350' href="difangrencai.html#14"  />
+        <area shape="rect" rel="河南"  coords='355, 240, 385, 258' href="difangrencai.html#17"  />
+        <area shape="rect" rel="河北"  coords='365, 188, 396, 204' href="difangrencai.html#05"  />
+        <area shape="rect" rel="内蒙古"  coords='290, 160, 337, 182' href="difangrencai.html#07"  />
+        <area shape="rect" rel="江西"  coords='391, 307, 419, 321' href="difangrencai.html#15"  />
+        <area shape="rect" rel="广西"  coords='322, 365, 355, 384' href="difangrencai.html#21"  />
+        <area shape="rect" rel="海南"  coords='310, 420, 341, 442' href="difangrencai.html#29"  />
+        <area shape="rect" rel="贵州"  coords='297, 328, 323, 347' href="difangrencai.html#24"  />
+        <area shape="rect" rel="云南"  coords='235, 356, 264, 379' href="difangrencai.html#23"  />
+        <area shape="rect" rel="西藏"  coords='99, 256, 132, 275' href="difangrencai.html#31"  />
+        <area shape="rect" rel="甘肃"  coords='193, 166, 224, 185' href="difangrencai.html#26"  />
+        <area shape="rect" rel="青海"  coords='179, 214, 216, 234' href="difangrencai.html#27"  />
+        <area shape="rect" rel="宁夏"  coords='282, 204, 314, 224' href="difangrencai.html#28" />
+        <area shape="rect" rel="新疆"  coords='96, 137, 133, 161' href="difangrencai.html#30"  />
+        <area shape="rect" rel="山东"  coords='393, 210, 425, 226' href="difangrencai.html#16"  />
+        <area shape="rect" rel="澳门"  coords="361, 394, 389, 407"  href="difangrencai.html#32"  />
+        <area shape="rect" rel="香港"  coords="398, 379, 431, 395" href="difangrencai.html#32"  />
+        <area shape="rect" rel="台湾"  coords="457, 362, 485, 376" href="difangrencai.html#32"  />      </map>
+    </div>
+	
+	 </div>
+</div>
+
+<div class="foot">
+<a href="about.html" target="_blank">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="book/" target="_blank">意见反馈</a>&nbsp;Copyright &copy; 360网址导航. All Rights Reserved. &nbsp;&nbsp;<a href="http://www.miibeian.gov.cn" class="icp" >京ICP证080047号</a></div>
+<span style="display:none"><script src="js/tj.js?v1325208813"  type="text/javascript"></script></span>
+
+</div>
+</body>
+</html><!-- edit end mark --><!-- edit end mark -->

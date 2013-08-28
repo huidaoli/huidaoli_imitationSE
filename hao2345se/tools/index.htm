@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>工具箱_实用查询_实用工具_2345网址导航-2345.com</title>
+<meta name="Keywords" content="工具箱，实用查询，实用工具"/>
+<meta name="Description" content="2345网址导航为您提供最全最好的实用查询工具,便民服务工具以及站长工具。包括天气预报,公交查询,网速测试,万年历,手机号码归属地查询,身份证查询,IP查询,代码转换,实时汇率,在线查询尽在2345。" />
+<link type="text/css" rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/tool.css" />
+<link type="text/css" rel="stylesheet" href="css/toolTop.css" />
+<style>
+/* head */
+.head{ width:990px; margin:0 auto;text-align:left;clear:both;}
+.head{ height:70px; overflow:hidden}
+#logo img{ margin:2px 0 0px 0px; }
+.search_gg{ text-align:center; float:right; padding:17px 16px 0 0; height:26px; }
+.search_gg span,.search_gg b{ display:block; float:left;}
+.search_gg b a{ font-family:"simsun"; font-weight:100; height:26px; line-height:30px; _line-height:36px; margin:0 6px; _margin:0 6px 0 3px;display:block; float:left; }
+.search_gg input,.search_gg img{ vertical-align:middle;}
+.input_gg_sch{ width:275px; height:26px; line-height:26px;  padding-left:4px; font-size:12px; border:1px solid #7f9db9;}
+.butn_gg_sch{ width:63px; height:28px; line-height:26px; margin-left:3px; font-size:12px; cursor:pointer;}
+
+/* foot */
+.foot-sch{ border:1px solid #d6e4f5; background:#f8faff; margin-top:10px; text-align:center; padding-top:13px; width:988px;}
+.foot-sch img{ vertical-align:middle; _margin-top:-13px;*margin-top:-13px;}
+.foot-sch p{ display:block;width:800px; margin:0 auto;}
+.foot-sch b{ font-weight:100; display:block; float:right; height:27px;*margin-top:3px;_margin-top:3px; line-height:30px; overflow:hidden;} 
+.foot-sch b a{ margin:0 6px;font-family:"宋体"; }
+.input_ss_sch{ width:440px; height:26px; line-height:26px; padding-left:4px; margin:0 3px 0 7px; }
+.butn_ss_sch{ width:78px; height:30px; line-height:27px; font-size:12px; cursor:pointer;}
+.option-grp{ height:40px; line-height:40px; clear:both; display:block;font-size:12px;}
+.option-grp input{ margin-left:18px; vertical-align:middle; width:19px; height:13px;line-height: 13px;margin: 0 0 0 18px;vertical-align: middle;width: 19px;}
+.option-grp a{zoom:1}
+.tool-bar{ padding-bottom:20px; font-size:16px;text-align:center; }
+.tool-bar p{line-height:70px;}
+.tool-bar img{ margin:0 25px; }
+.tool-bar input{ border:none; width:56px; height:19px; margin:0 20px; cursor:pointer; }
+.fh{ background:transparent url(../images/fh.gif) no-repeat; }
+.gb{ background:transparent url(../images/gb.gif) no-repeat; }
+.clear{ clear:both;}
+.keywords a:hover,.top a:hover,.hright a:hover,.orderli li a:hover{ color:#f00;}
+</style>
+<script type="text/javascript">
+var aim = 5;
+function clearInput(id)
+{
+	document.getElementById(id).value = '';
+}
+function setDate()
+{
+	var dd = new Date();
+//	dd.setDate(dd.getDate()+AddDayCount);//获取AddDayCount天后的日期
+	var y = dd.getFullYear();
+	var m = dd.getMonth()+1;//获取当前月份的日期
+	var d = dd.getDate();
+	if(m < 10){
+		m = '0' + m;
+	}
+	if(d < 10){
+		d = '0' + d;
+	}
+	var dd = y+"-"+m+"-"+d;
+	document.getElementById('hideDate').value = dd;
+}
+
+function check_form()
+{
+	var objForm = document.getElementById('form1');
+	var obj = document.getElementById('post');
+	var v = obj.value;
+	if(v == '')
+	{
+		alert('请输入邮编或者地址');
+		return false;
+	}
+	else
+	{
+		var newPar = /^\d+$/;
+		if(newPar.test(v) && v.length == 6)
+		{
+			obj.name = 'zip';
+			objForm.action = 'http://alexa.ip138.com/post/Search.aspx?Front=1';
+		}
+	}
+
+	objForm.submit();
+	obj.name = 's';
+	objForm.action = 'http://www.youbian.com/search.html';
+}
+
+function check_enter(event)
+{
+	if (event.keyCode == 13)
+	{
+		return false;
+	}
+}
+
+function check_value()
+{
+	var v = document.getEleMentById('post').value;
+	if (v == '')
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+
+}
+</script>
+<SCRIPT type="text/javascript" src="js/cityList.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="js/cc.js"></SCRIPT>
+</head>
+
+<body onload="setHistoryHtml();">
+
+<!-- top -->
+<script type="text/javascript" src="../neiye/js/xtop.js"></script>
+
+<div class="head"><script type="text/javascript" src="../neiye/js/sosohead.js"></script></div>
+<!-- top end --> 
+
+<!-- maenu -->
+<div class="menu clearfix">
+  <ul>
+    <li class="curr"><a href="index.htm" target="_parent"><b>查询首页</b></a></li>
+    <li><a href="life.htm"><b>生活服务</b></a></li>
+    <li><a href="jiaotong.htm"><b>交通出行</b></a></li>
+    <li><a href="xingzuo.htm"><b>星座命理</b></a></li>
+    <li><a href="licai.htm"><b>金融理财</b></a></li>
+    <li><a href="xuexi.htm"><b>教育学习</b></a></li>
+    <li><a href="yule.htm"><b>休闲娱乐</b></a></li>
+    <li><a href="jiankang.htm"><b>健康养生</b></a></li>
+    <li><a href="network.htm"><b>上网工具</b></a></li>
+    <script type="text/javascript" src="js/hiscx120224.js"></script>
+  </ul>
+</div>
+<!-- menu end -->
+<!-- wrap -->
+<div class="wrap clearfix">
+   <!-- 图标查询 -->
+  <div class="iconGroup mt15">
+    <ul class="iconIten clearfix">      
+      <li class="formli"><a href="http://p.yiqifa.com/c?s=26390d3a&w=253302&c=6451&i=19382&l=0&e=2345&t=http://tj.tieyou.com/gw.php" id="tools_1" target="_blank"><img alt="网上预订火车票" src="img201202/jiaotong004.png" /></a>
+        <p><a href="http://p.yiqifa.com/c?s=26390d3a&w=253302&c=6451&i=19382&l=0&e=2345&t=http://tj.tieyou.com/gw.php" id="tools_1" target="_blank">火车票查询</a></p>
+        <span class="iconForm">
+		<form id="liecheForm" action="http://www.tieyou.com/route.php?income=daigou" method="post" target="_blank">
+		<input type="hidden" value="yuding" id="hide" name="form_type">
+		<input type="hidden" id="hideDate" name="date" value="">
+        <input class="inbox01" type="text" id="begin2_city" name="from" value="北京" onfocus="showCity('begin2_city');" onblur="hideCity();" /><em></em>
+		<input class="inbox01"  type="text" id="end2_city" name="to" value="上海" onblur="hideCity();" onfocus="showCity('end2_city');" /><input class="btn01 ml5" type="button" value="查询" onclick="go_to_partner();my_2345_2012_cc('lieche_index')" />
+        </form>
+		</span></li>
+      <li class="formli"><a href="http://qq.ip138.com/idsearch/" id="tools_2" target="_blank"><img alt="身份证号码大全查询" src="img201202/life004.png" /></a>
+        <p><a href="http://qq.ip138.com/idsearch/" id="tools_2" target="_blank">身份证号码查询</a></p>
+        <span class="iconForm">
+		<form action="http://qq.ip138.com/idsearch/index.asp" target="_blank">
+		<input type="hidden" value="idcard" name="action">
+        <input class="inbox01 width80" type="text" name="userid" value="15或18位" onblur="if(!this.value)this.value='15或18位';" onclick="if(this.value=='15或18位')this.value='';" />
+        <input class="btn01 ml5" type="submit" value="查询" onclick="my_2345_2012_cc('sfz_index')" />
+		</form>
+        </span></li>
+      <li class="formli"><a href="http://www.ip138.com/sj/" id="tools_3" target="_blank"><img alt="手机号码归属地查询" src="img201202/life005.png" /></a>
+        <p><a href="http://www.ip138.com/sj/" id="tools_3" target="_blank">手机号码归属地</a></p>
+        <span class="iconForm">
+		<form action="http://guishu.showji.com/search.htm" target="_blank">
+		<input type="hidden" name="action" value="mobile" />
+        <input class="inbox01 width80" type="text" id="m" name="m" value="" />
+        <input class="btn01 ml5" type="submit" value="查询" onclick="my_2345_2012_cc('shouji_index')" />
+		</form>
+        </span></li>
+      <li class="formli"><a href="http://www.ip138.com/post/" id="tools_4" target="_blank"><img alt="邮编查询" src="img201202/life009.png" /></a>
+        <p><a href="http://www.ip138.com/post/" id="tools_4" target="_blank">邮政编码查询</a></p>
+        <span class="iconForm">
+		<form action="http://www.youbian.com/search.html" method="post" name="form1" id="form1" target="_blank">
+        <input class="inbox01 width80" name="s" type="text" id="post" value="地址或邮编" onblur="if(!this.value)this.value='地址或邮编';" onclick="if(this.value=='地址或邮编')this.value='';" onkeydown = "return check_enter(event);" />
+        <input class="btn01 ml5" type='button' value='查询' onclick="check_form();my_2345_2012_cc('youbian_index')" />
+		</form>
+        </span></li>
+      <li class="formli"><a href="http://www.ip138.com/ips1388.asp" id="tools_5" target="_blank"><img alt="ip归属地查询" src="img201202/network001.png" /></a>
+        <p><a href="http://www.ip138.com/ips1388.asp" id="tools_5" target="_blank">IP地址查询</a></p>
+        <span class="iconForm">
+		<form action="http://www.ip138.com/ips.asp" target="_blank">
+		<input type="hidden" value="2" name="action">
+        <input class="inbox01 width80" id="ip" name="ip" type="text" value="域名或ip地址" onclick="clearInput('ip');" onblur="if(!this.value){this.value = '域名或ip地址'}" />
+        <input class="btn01 ml5" type="submit" value="查询" onclick="my_2345_2012_cc('ipcx_index')" />
+		</form>
+        </span></li>
+        
+      <li><a href="http://weather.news.sina.com.cn/" id="tools_106" target="_blank"><img alt="全国天气预报" src="img201202/tianqi.png" /><p>天气预报<i class="iconhot"></i></p></a></li>
+      <li><a href="http://www.6164.com/haoserver/kuaidi.htm" id="tools_9" target="_blank"><img alt="快递单号查询" src="img201202/life002.png" /><p>快递查询</p></a></li>
+      <li><a href="http://tools.2345.com/naonao/"  id="tools_7" target="_blank"><img alt="闹闹女巫店" src="img201202/xingzuo003.png" /><p>闹闹女巫店</p></a></li>
+      <li><a href="http://www.51jiemeng.com/" id="tools_17" target="_blank"><img alt="周公解梦大全" src="img201202/xingzuo011.png" /><p>周公解梦</p></a></li>
+      <li><a href="http://www.buyiju.com/" id="tools_20" target="_blank"><img alt="生辰八字算命" src="img201202/xingzuo002.png" /><p>免费算命</p></a></li>
+      
+      <li><a href="http://www.ip138.com/weizhang.htm" id="tools_12" target="_blank"><img alt="车辆违章查询" src="img201202/jiaotong007.png" /><p>交通违章查询</p></a></li>
+      <li><a href="http://www.ip138.com/carlist.htm" id="tools_13" target="_blank"><img alt="汽车牌照查询" src="img201202/jiaotong001.png" /><p>车牌号查询</p></a></li>
+      <li><a href="http://www.8684.cn/" id="tools_16" target="_blank"><img alt="公交线路查询" src="img201202/jiaotong003.png" /><p>公交查询</p></a></li>
+      <li><a href="http://www.trip8080.com/" id="tools_15" target="_blank"><img alt="长途汽车时刻表查询" src="img201202/jiaotong009.png" /><p>汽车票查询</p></a></li>
+      <li><a rel="nofollow" href="http://p.yiqifa.com/c?s=e3dbe8cf&w=253302&c=278&i=15362&l=0&e=2345&t=http://www.etpass.com/" target="_blank"><img alt="航班查询" src="img201202/jiaotong006.png" /><p>航班查询<i class="iconnew"></i></p></a></li>
+      
+      <li><a href="http://translate.google.cn/" id="tools_27" target="_blank"><img alt="英汉互译" src="img201202/xuexi007.png" /><p>在线翻译</p></a></li>
+      <li><a href="http://www.jxedt.com/diqu/" id="tools_28" target="_blank"><img alt="驾校考试" src="img201202/jiaotong010.png" /><p>驾校查询<br />驾驶员考试</p></a></li>
+      <li><a href="../chongzhi.htm" id="tools_10" target="_blank"><img alt="手机话费查询" src="img201202/life006.png" /><p>手机话费充值/查询</p></a></li>
+      <li><a href="http://www.114best.com/" id="tools_193" target="_blank"><img alt="固定电话所在地查询" src="img201202/guahua.png" /><p>固定电话所在地查询</p></a></li>
+      <li><a href="http://www.ip138.com/tel.htm" id="tools_36" target="_blank"><img alt="固定电话号码查询" src="img201202/life001.png" /><p>常用电话号码查询</p></a></li>
+
+      <li><a href="http://www.9188.com/user/from.go?comeFrom=765h&backurl=http://www.9188.com/kaijiang/" id="tools_22" target="_blank"><img alt="福彩体彩" src="img201202/licai001.png" /><p>彩票开奖<i class="iconhot"></i></p></a></li>
+      <li><a href="http://tools.2345.com/gjjcx.htm" id="tools_26" target="_blank"><img alt="公积金贷款计算器" src="img201202/licai004.png" /><p>住房公积金查询</p></a></li>
+      <li><a href="http://lilv.911cha.com/" id="tools_24" target="_blank"><img alt="银行存款利率" src="img201202/lilvbiao.png" /><p>银行存/贷利率</p></a></li>
+      <li><a href="http://gold.zhijinwang.com/" id="tools_25" target="_blank"><img alt="黄金价格" src="img201202/licai005.png" /><p>黄金价格走势图</p></a></li>
+      <li><a  rel="nofollow" href="http://finance.sina.com.cn/realstock/" id="tools_23" target="_blank"><img alt="股市行情" src="img201202/licai008.png" /><p>股市行情</p></a></li>
+      
+      <li><a href="http://baby.sina.com.cn/tools/weizhun/anquanqi.html" id="tools_29" target="_blank"><img alt="安全期计算器" src="img201202/jiankang001.png" /><p>安全期计算器</p></a></li>
+      <li><a href="http://myweb.gzsums.edu.cn/liulei/cardiology/heart/baojian/bodyweight.htm" id="tools_31" target="_blank"><img alt="体质测试" src="img201202/jiankang008.png" /><p>标准体重</p></a></li>
+      <li><a href="http://snsnb.xuduo.com/" id="tools_30" target="_blank"><img alt="清宫生男生女表" src="img201202/jiankang004.png" /><p>生男生女预测表</p></a></li>
+      <li><a href="http://www.1518.com/" id="tools_21" target="_blank"><img alt="姓名测试" src="img201202/xingzuo008.png" /><p>姓名分析</p></a></li>
+      <li><a href="http://www.tongmingtongxing.com/" id="tools_34" target="_blank"><img alt="姓名查询" src="img201202/xingzuo006.png" /><p>同名同姓查询</p></a></li>
+      
+      <li><a href="http://site.baidu.com/list/wannianli.htm" id="tools_6" target="_blank"><img alt="黄历吉日查询" src="img201202/life007.png" /><p>万年历/黄历吉日<i class="iconhot"></i></p></a></li>
+      <li><a href="../xingzuo.htm" id="tools_18"target="_blank"><img alt="星座运势" src="img201202/xingzuo007.png" /><p>星座运势</p></a></li>
+      <li><a href="http://www.buyiju.com/cha/shengxiao.asp" id="tools_19" target="_blank"><img alt="十二生肖查询" src="img201202/xingzuo004.png" /><p>生肖属相</p></a></li>
+      <li><a href="http://www.sheup.com/zhiwen.php" id="tools_32" target="_blank"><img alt="手指纹算命" src="img201202/xingzuo010.png" /><p>指纹算命</p></a></li>
+      <li><a href="http://jixiong.showji.com/" id="tools_35" target="_blank"><img alt="手机号码吉凶预测" src="img201202/xingzuo001.png" /><p>号码吉凶查询</p></a></li>
+
+      <li><a href="http://www.qqcai.com/" id="tools_108" target="_blank"><img alt="家常菜菜谱大全" src="img201202/caipu.png" /><p>家常菜菜谱大全</p></a></li>
+      <li><a href="http://home.meishichina.com/collect-39867.html" id="tools_204" target="_blank"><img alt="减肥瘦身菜谱查询" src="img201202/shoushenshipu.png" /><p>瘦身菜谱</p></a></li>
+      <li><a href="http://www.meishij.net/chufang/diy/tangbaocaipu/" id="tools_204" target="_blank"><img alt="粥谱大全查询" src="img201202/zhoupu.png" /><p>粥谱大全</p></a></li>
+      <li><a href="http://www.haodou.com/recipe/collect/84512" id="tools_205" target="_blank"><img alt="夏日冷饮大全" src="img201202/lengyin.png" /><p>夏日冷饮大全<i class="iconnew"></i></p></a></li>
+      <li><a href="http://my.meishichina.com/pianfang/" id="tools_171" target="_blank"><img alt="民间偏方大全" src="img201202/pianfang.png" /><p>民间偏方大全<i class="iconnew"></i></p></a></li>
+    </ul>
+  </div>
+  
+  <!-- 链接块 -->
+  <div class="linkBoxGp mt15 clearfix">
+    <div class="linkBox">
+      <h6><a href="life.htm" target="_blank">生活便民查询</a></h6>
+      <ul><li><a href="http://tools.2345.com/tefudh.htm" id="tools_36" target="_blank">常用电话号码查询</a></li>
+      <li><a href="http://tools.2345.com/guhua.htm" id="tools_193" target="_blank">固定电话所在地查询</a><i class="iconnew"></i></li>
+      <li><a href="http://tools.2345.com/tscx.htm" id="tools_37" target="_blank">天数计算器</a></li>
+      <li><a href="http://tools.2345.com/domesticpost.htm" id="tools_38" target="_blank">国内电话区号</a></li>
+      <li><a href="http://tools.2345.com/chinapost.htm" id="tools_40" target="_blank">平邮/挂号信查询</a></li>
+      <li><a href="http://tools.2345.com/baike.htm" id="tools_41" target="_blank">生活小百科</a></li>
+      </ul>
+      <p><a href="life.htm">更多>></a></p>
+    </div>
+    <div class="linkBox">
+      <h5><a href="jiaotong.htm" target="_blank">交通出行</a></h5>
+      <ul><li><a href="http://tools.2345.com/huocherx.htm" id="tools_42" target="_blank">火车/长途车服务热线</a><i class="iconnew"></i></li>
+      <li><a href="http://tools.2345.com/bus.htm" id="tools_16" target="_blank">公交查询</a></li>
+      <li><a rel="nofollow" href="http://map.baidu.com/subways/index.html" id="tools_43" target="_blank">地铁查询</a></li>
+      <li><a rel="nofollow" href="http://ditu.mapabc.com/lukuang/index.shtml" id="tools_44" target="_blank">市区路况查询</a></li>
+      <li><a rel="nofollow" href="http://www.chinahighway.gov.cn/roadmanager/qglk.jsp?0" id="tools_45" target="_blank">全国路况查询</a></li>
+      <li><a href="http://tools.2345.com/taxi.htm" id="tools_46" target="_blank">出租车叫车电话</a></li>
+      </ul>
+      
+      <p><a href="jiaotong.htm" target="_blank">更多>></a></p>
+    </div>
+    <div class="linkBox">
+      <h6><a href="http://tools.2345.com/xingzuo.htm" target="_blank">星座、算命、占卜</a></h6>
+      <ul>
+      <li><a href="http://tools.2345.com/naonao/index.htm" id="tools_7" target="_blank">闹闹女巫店</a><i class="iconhot"></i></li>
+      <li><a href="http://tools.2345.com/xingzuoyc.htm" id="tools_18" target="_blank">星座配对</a></li>
+      <li><a href="http://tools.2345.com/fengshui/" id="tools_212" target="_blank">风水测算</a><i class="iconnew"></i></li>
+      <li><a href="http://tools.2345.com/shouxiang/" id="tools_48" target="_blank">手相查询</a></li>
+      <li><a href="http://tools.2345.com/yanpi.htm" id="tools_50" target="_blank">眼皮跳测吉凶</a></li>
+      <li><a href="http://tools.2345.com/penti.htm" id="tools_116" target="_blank">打喷嚏吉凶预测</a></li>
+      </ul>
+      <p><a href="xingzuo.htm" target="_blank">更多>></a></p>
+    </div>
+    
+    <div class="linkBox">
+      <h5><a href="licai.htm" target="_blank">生活理财、金融服务</a></h5>
+      <ul><li><a href="http://tools.2345.com/sshl.htm" id="tools_52" target="_blank">汇率换算</a></li>
+      <li><a href="http://tools.2345.com/fapiaocx.htm" id="tools_53" target="_blank">发票真伪查询</a></li>
+      <li><a href="http://tools.2345.com/grsds.htm" id="tools_54" target="_blank">个人所得税计算器</a></li>
+      <li><a href="http://tools.2345.com/txjjsq.htm" id="tools_55" target="_blank">退休金计算器</a></li>
+      <li><a rel="nofollow" href="http://price.pcauto.com.cn/vbuycar.jsp" id="tools_56" target="_blank">购车计算器</a></li>
+      <li><a href="http://tools.2345.com/house.htm" id="tools_57" target="_blank">房屋贷款计算器</a></li>
+      </ul>
+      <p><a href="licai.htm">更多>></a></p>
+    </div>
+    
+    <div class="linkBox">
+      <h6><a href="xuexi.htm" target="_blank">教育学习、科学工具</a></h6>
+      <ul><li><a href="http://tools.2345.com/translate.htm" id="tools_27" target="_blank">在线翻译</a></li>
+      <li><a href="http://tools.2345.com/zidcd.htm" id="tools_58" target="_blank">新华字典在线查字</a></li>
+      <li><a href="http://tools.2345.com/hzzpy.htm" id="tools_59" target="_blank">汉字转拼音</a></li>
+      <li><a href="http://tools.2345.com/jianfanzh.htm" id="tools_60" target="_blank">繁简转换</a></li>
+      <li><a href="http://tools.2345.com/jishunqi.htm" id="tools_61" target="_blank">在线计算器</a></li>
+      <li><a rel="nofollow" href="http://cet.99sushe.com/?0" id="tools_62" target="_blank">英四六级成绩查询</a></li>
+      </ul>
+      <p><a href="xuexi.htm" target="_blank">更多>></a></p>
+    </div>
+    
+    <div class="linkBox">
+      <h5><a href="yule.htm" target="_blank">休闲娱乐</a></h5>
+      <ul>
+      <li><a href="http://www.128p.com/" id="tools_65" target="_blank">美女图片大全</a></li>
+      <li><a href="http://tools.2345.com/conaoto.htm" id="tools_66" target="_blank">大脑分析</a></li>
+      <li><a href="http://tools.2345.com/rpjsq.htm" id="tools_67" target="_blank">人品计算器</a></li>
+      <li><a href="http://tools.2345.com/duanxin/" id="tools_219" target="_blank">短信大全</a></li>
+      <li><a href="http://tools.2345.com/miyu/" id="tools_215" target="_blank">谜语大全</a></li>
+      <li><a rel="nofollow" href="http://www.qqjia.com/test/iq1.htm" id="tools_148" target="_blank">IQ测试</a></li>
+      </ul>
+      <p><a href="yule.htm" target="_blank">更多>></a></p>
+    </div>
+    
+    <div class="linkBox">
+      <h6><a href="jiankang.htm" target="_blank">健康、养生、保健</a></h6>
+      <ul><li><a href="http://tools.2345.com/sasvyc.htm" id="tools_30" target="_blank">生男生女预测表</a></li>
+      <li><a href="http://tools.2345.com/womensafe.htm" id="tools_29" target="_blank">安全期计算器</a></li>
+      <li><a href="http://tools.2345.com/study_tizhong.htm" id="tools_31" target="_blank">标准体重</a></li>
+      <li><a href="http://tools.2345.com/reliang/" id="tools_162" target="_blank">食品营养成分/热量大全</a><i class="iconnew"></i></li>
+      <li><a href="http://tools.2345.com/pianfang/" id="tools_171" target="_blank">民间偏方大全</a></li>
+      <li><a href="http://tools.2345.com/meishi/meirong.htm" id="tools_204" target="_blank">瘦身菜谱</a></li>
+      </ul>
+      <p><a href="jiankang.htm" target="_blank">更多>></a></p>
+    </div>
+    
+    <div class="linkBox">
+      <h5><a href="network.htm" target="_blank">网络工具、应用</a></h5>
+      <ul><li><a rel="nofollow" href="http://www.linkwan.com/gb/broadmeter/SpeedAuto/" id="tools_72" target="_blank">网速测试</a></li>
+      <li><a rel="nofollow" href="../soft.htm" id="tools_73" target="_blank">上网常用软件</a></li>
+      <li><a rel="nofollow" href="../shouji.htm" id="tools_74" target="_blank">手机软件大全</a></li>
+      <li><a rel="nofollow" href="../kv.htm" id="tools_75" target="_blank">杀毒软件下载</a></li>
+      <li><a rel="nofollow" href="http://zhidao.baidu.com/browse/74" id="tools_76" target="_blank">电脑问题解答</a></li>
+      <li><a rel="nofollow" href="http://aq.qq.com/cn2/index?0" id="tools_77" target="_blank">QQ密码保护</a></li>
+      </ul>
+      <p><a href="network.htm" target="_blank">更多>></a></p>
+    </div>
+    
+    <div class="linkBox">
+      <h6><a href="xuexi.htm" target="_blank">常用单位转换工具</a></h6>
+      <ul>
+      <li><a href="http://tools.2345.com/converter.htm" id="tools_82" target="_blank">单位换算</a></li>
+      <li><a href="http://tools.2345.com/study_yali.htm" id="tools_78" target="_blank">压力单位换算</a></li>
+      <li><a href="http://tools.2345.com/study_tiji.htm" id="tools_79" target="_blank">体积单位换算</a></li>
+      <li><a href="http://tools.2345.com/study_gong.htm" id="tools_80" target="_blank">热量单位换算</a></li>
+      <li><a href="http://tools.2345.com/study_gonglv.htm" id="tools_81" target="_blank">功率单位换算</a></li>
+      <li><a href="http://tools.2345.com/study_wendu.htm" id="tools_83" target="_blank">温度单位换算</a></li>
+      </ul>
+      <p><a href="xuexi.htm" target="_blank">更多>></a></p>
+    </div>
+    
+    <div class="linkBox">
+      <h5><a href="network.htm" target="_blank">站长工具</a></h5>
+      <ul><li><a href="http://tools.2345.com/rgbsj1.htm" id="tools_84" target="_blank">RGB颜色表</a></li>
+      <li><a href="http://tools.2345.com/htmjs.htm" id="tools_85" target="_blank">HTML转JS</a></li>
+      <li><a href="http://tools.2345.com/jshtm.htm" id="tools_86" target="_blank">JS转HTML</a></li>
+      <li><a href="http://tools.2345.com/jmjm.htm" id="tools_87" target="_blank">网页加密解密</a></li>
+      <li><a rel="nofollow" href="http://www.youmade.com/font/" id="tools_88" target="_blank">字体在线查询</a></li>
+      <li><a rel="nofollow" href="http://tool.chinaz.com/" id="tools_89" target="_blank">站长之家</a></li>
+      </ul>
+      <p><a href="network.htm" target="_blank">更多>></a></p>
+    </div>
+    
+    <div class="linkBox">
+      <h6><a href="xuexi.htm" target="_blank">资料检索</a></h6>
+      <li><a href="http://www.81baobao.com/tangshi/" id="tools_200" target="_blank">唐诗三百首</a></li>
+      <li><a href="http://tools.2345.com/chengyu/" id="tools_202" target="_blank">成语大全</a><i class="iconnew"></i></li>
+      <li><a rel="nofollow" href="http://www.diyifanwen.com/guoxue/" id="tools_130" target="_blank">国学经典</a></li>
+      <li><a rel="nofollow" href="http://www.dalianbus.com/world/" id="tools_91" target="_blank">各国国旗国徽国歌</a></li>
+      <li><a rel="nofollow" href="http://www.sipo.gov.cn/zljs/" id="tools_92" target="_blank">专利检索</a></li>
+      <li><a rel="nofollow" href="http://member.guinnessworldrecords.com/zh/" id="tools_93" target="_blank">吉尼斯纪录大全</a></li>
+      </ul>
+      <p><a href="xuexi.htm" target="_blank">更多>></a></p>
+    </div>
+    
+    <div class="linkBox">
+      <h5><a href="licai.htm" target="_blank">报价、比价、折扣</a></h5>
+      <ul><li><a rel="nofollow" href="http://product.pconline.com.cn/mobile/" id="tools_95" target="_blank">手机报价</a></li>
+      <li><a rel="nofollow" href="http://product.pconline.com.cn/notebook/?frame?0" id="tools_96" target="_blank">电脑报价</a></li>
+      <li><a rel="nofollow" href="http://www.21food.cn/news/pricemarket.htm?0" id="tools_99" target="_blank">农产品价格</a></li>
+      <li><a rel="nofollow" href="http://tuan.6164.com/" id="tools_98" target="_blank">购物网站大全</a></li>
+      <li><a rel="nofollow" href="http://price.pcauto.com.cn/vbuycar.jsp" id="tools_56" target="_blank">购车计算器</a></li>
+     <li><a rel="nofollow" href="http://data.auto.sina.com.cn/oil_use/" id="tools_123"  target="_blank">汽车油耗查询</a></li>
+      </ul>
+      <p><a href="licai.htm" target="_blank">更多>></a></p>
+    </div>
+  </div>
+</div>
+
+<center>
+<script src="../neiye/js/sosofooter.js" type="text/javascript"></script>
+</center>
+<span style="display:none"><script type="text/javascript" src="../css/tj.js"></script></span>
+
+</body>
+</html>

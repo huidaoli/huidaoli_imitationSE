@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>软件-我的网址导航</title>
+<link href="neiye/css/main_990.css" rel="stylesheet" type="text/css" />
+<script src="neiye/js/clickDownAjax6.js" type="text/javascript"></script>
+<script type="text/javascript" src="neiye/js/libnew.js"></script> 
+<style type="text/css">
+.soft .left{width:689px}
+.soft .right{width:291px;}
+.soft h2, .soft h2{height:25px; line-height:25px;}
+
+.soft_search{padding:15px 0 15px 30px}
+.soft_search .input01{width:240px; height:21px; line-height:21px;}
+.soft_cy{padding-bottom:9px; margin:9px 5px 0px; height:48px; }
+.soft_cy dt{width:78px; float:left; font-size:14px; line-height:24px; font-weight:bold; text-align:center;}
+.soft_cy dd{width:200px; float:left;}
+.soft_cy dd li{padding-left:3px;width:97px; height:24px; line-height:24px; float:left;}
+.soft_cy dd li i{ margin:3px 3px 0 0;width:16px; height:16px; float:left; display:inline}
+
+.soft_more{height:33px; line-height:33px; padding:0 10px; text-align:right}
+.soft_more a{color:#03c}
+
+
+.yingjian_box{ margin-top:5px;}
+.yingjian_m th{height:28px; line-height:28px; text-align:center; font-weight:normal;}
+.yingjian_m td{padding:8px 5px;background-color:#fff; }
+.yingjian_m th.r_line, .yingjian_m td.r_line{border-right:0}
+.brand p.new{padding-left:10px;width:80px; line-height:22px; float:left;}
+.brand p.new span a{font-size:14px; color:red; font-weight:bold;}
+.brand p.new img{border:1px solid #ebeef2; border-bottom-width:3px; border-right-width:3px; margin-bottom:10px;}
+.list{width:142px; float:right}
+.list li{padding-left:5px;width:66px; height:28px; line-height:28px; float:left; border-bottom:1px dotted #ccc; background-image:url(soft_ico.gif); background-repeat:no-repeat; background-position:0 10px;}
+.hot_notebook{ margin-left:15px;width:175px; float:left;background: url(soft_ico.gif) no-repeat scroll 0 -19px transparent;}
+.hot_notebook2{margin-left:15px;width:175px; float:left;background: url(soft_ico.gif) no-repeat scroll 0 -175px transparent;}
+.hot_notebook li, .hot_notebook2 li{ height: 28px; border-bottom:1px dotted #ccc;line-height: 28px;padding-left: 18px;}
+.soft_fenlei p{padding:0 6px; width:140px;height:145px; float:left; color:#999;}
+.soft_fenlei p.line{border-right:1px solid #d9d9d9}
+.soft_fenlei i{font-style:normal; font-weight:bold; color:#000}
+.soft_fenlei span a{margin:0 2px;}
+.clear{clear:both}
+.yingjian_m{border-top:1px solid #ddd}
+.yingjian_m th{color:#000; background-color:#f9f9f9; border:1px solid #ddd;border-left:0; border-top:0}
+.yingjian_m td{border-right:1px solid #ddd; }*/
+
+/*变色样式，请加到不同的样式表中*/
+
+</style>
+
+
+<script>
+function n(str){
+	return document.getElementsByName(str);
+}
+function id(str){
+	return document.getElementById(str);
+}
+
+function doSearch(){
+	var v = n('schmode');
+	var s = id('textfield').value;
+	n('so')[0].value = s 
+	n('searchname')[0].value = s
+	n('ss_name')[0].value = s
+	for(var i=0; i<v.length; i++){
+		if (v[i].checked){
+			if (v[i].value =='huajun') document.charset = 'utf-8'
+			id(v[i].value+'form').submit();
+		}
+	}
+	setTimeout(function(){document.charset = 'gb2312'},1)
+}
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Hide
+function killErrors() {
+return true;
+}
+window.onerror = killErrors;
+// -->
+</SCRIPT>
+
+</head>
+
+<body>
+<script id="xtopjs" src="neiye/js/xtop.js"></script>
+
+<div class="head">
+<script type="text/javascript" src="neiye/js/sosohead.js"></script>
+</div>
+
+<div class="path"> 
+<span> 
+<a href="hardware.htm" target="_self">硬件</a>|
+<a target="_self" href="kv.htm">杀毒</a>|
+<a target="_self" href="shuma.htm">数码</a>|
+<a target="_self" href="homepage.htm">建站</a>&nbsp;
+</span> 
+<ul><li style="display:inline;"><a target="_self" href="/">首页</a></li>&nbsp;&gt;&nbsp;<li style="display:inline;"><a target="_self" href="shwz.htm">生活网站</a></li>&nbsp;&gt;&nbsp;<li style="display:inline;">软件</li></ul> 
+</div> 
+<div class="wrap soft">
+  <div class="left">
+    <h2>软件下载</h2>
+    <div class="soft_search">
+      <p>
+        <input name="textfield" type="text" class="input01" id="textfield" />
+        <input type="submit" name="button2" id="button2" onclick="doSearch()" value="软件搜索" style="width:80px; height:26px" />
+        <input type="checkbox" name="schmode" checked="checked" id="duote" value="duote" /> 2345软件大全     
+        <input type="checkbox" name="schmode" id="sky" value="sky" /> 天空软件
+        <input type="checkbox" name="schmode" id="huajun" value="huajun" /> 华军软件园      
+      </p>
+      <form id="duoteform" target="_blank" method="get" action="http://www.duote.com/search.php"><input type="hidden" name="so" /></form>
+      <form id="skyform" target="_blank" method="get" action="http://skycn.com/search.php"><input type="hidden" name="ss_name" /><input type="hidden" name="sf" value="index" /></form>
+      <form id="huajunform" target="_blank" method="get" action="http://search.newhua.com/search_list.php"><input type="hidden" name="search" value="1" /><input type="hidden" name="searchname" /></form>
+    </div>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" class="m_1">
+      <tr>
+        <td width="20%"><a href="http://www.duote.com/?9991">多特软件站</a></td>
+        <td width="20%"><a href="http://www.onlinedown.net/">华军软件园</a></td>
+        <td width="20%"><a href="http://www.skycn.com/">天空软件站</a></td>
+        <td width="20%"><a href="http://dl.pconline.com.cn/">太平洋下载</a></td>
+        <th width="20%"><a href="http://tech.sina.com.cn/down/">新浪下载</a></th>
+      </tr>
+      <tr>
+        <td><a href="http://www.crsky.com">非凡软件站</a></td>
+        <td><a href="http://xiazai.zol.com.cn/">中关村下载</a></td>
+        <td><a href="shouji.htm">手机软件下载</a></td>
+        <td><a href="http://download.pchome.net/">电脑之家下载</a></td>
+        <th><a href="http://mydown.yesky.com/">天极下载</a></th>
+      </tr>
+      <tr>
+        <td><a href="http://download.pcpop.com/">泡泡网下载</a></td>
+        <td><a href="http://www.xdowns.com/">绿色软件联盟</a></td>
+        <td><a href="http://download.enet.com.cn/">硅谷动力下载</a></td>
+        <td><a href="http://www.onegreen.net/index.html">绿色软件站</a></td>
+        <th><a href="http://download.it168.com/">IT168下载</a></th>
+      </tr>
+      <tr>
+        <td><a href="http://www.xiazaiba.com/">下载吧</a></td>
+        <td><a href="/softzixun.htm">软件资讯/交流</a></td>
+        <td><a href="/soft/shouji.htm">手机常用软件</a></td>
+        <td><a href="http://www.ttdown.com/">天天精品下载</a></td>
+        <th><a href="http://drivers.qudong.com/">驱动中国</a></th>
+      </tr>
+      <tr>
+        <td><a href="http://www.rsdown.cn/">红软基地</a></td>
+        <td><a href="http://www.appinn.com/">小众软件</a></td>
+        <td><a href="http://soft.gougou.com/">狗狗软件搜索</a></td>
+        <td class="tbl1"><a href="http://www.d9soft.com/">第九软件网</a></td>
+        <th><a href="http://www.orsoon.com">未来软件园</a></th>
+      </tr>
+      <tr>
+        <td><a href="http://www.duote.com/bang/all_soft_1.html">软件下载排行榜</a></td>
+        <td><a href="http://download.cnet.com/windows/">Download.com</a></td>
+        <td><a href="http://www.3987.com/">统一下载站</a></td>
+        <td><a href="http://www.suxiazai.com/">速下载</a></td>
+        <th><a href="http://www.7do.net/">苹果电脑软件</a></th>
+      </tr>
+    </table>
+    <h2>系统/驱动下载</h2>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" class="m_1">
+      <tr>
+        <td width="20%"><a href="http://www.160.com/">驱动人生</a></td>
+        <td width="20%"><a href="http://www.duote.com/soft/7545.html">万能显卡驱动</a></td>
+        <td width="20%"><a href="http://www.duote.com/soft/7548.html">万能声卡驱动</a></td>
+        <td width="20%"><a href="http://www.mydrivers.com/">驱动之家</a></td>
+        <th width="20%"><a href="http://drivers.qudong.com/">驱动中国</a></th>
+      </tr>
+      <tr>
+        <td><a href="http://www.duote.com/soft/3516.html">USB万能驱动</a></td>
+        <td><a href="http://driver.zol.com.cn/detail/13/124219.shtml">手机USB驱动</a></td>
+        <td><a href="http://www.duote.com/soft/199.html">驱动精灵</a></td>
+        <td><a href="http://www.duote.com/soft/7529.html">万能网卡驱动</a></td>
+        <th><a href="http://www.duote.com/soft/7491.html">万能摄像头驱动</a></th>
+      </tr>
+      <tr>
+        <td><a href="http://www.ludashi.com/">鲁大师</a></td>
+        <td><a href="http://www.duote.com/soft/21429.html">超级兔子</a></td>
+        <td><a href="http://www.duote.com/soft/503.html">多特装机必备</a></td>
+        <td><a href="http://www.duote.com/soft/7513.html">Windows助手</a></td>
+        <th>&nbsp;</th>
+      </tr>
+    </table>
+<h2>软件教程</h2>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="m_1">
+  <tr>
+    <td width="20%"><a href="http://www.duote.com/tech/">多特软件教程</a></td>
+    <td width="20%"><a href="http://www.ludashi.com/html/list_14_1.html">电脑讲堂</a></td>
+    <td width="20%"><a href="http://www.duote.com/QZONE/">QQ空间代码</a></td>
+    <td width="20%"><a href="http://www.enet.com.cn/eschool/">硅谷学院</a></td>
+    <th width="20%" class="tbl1"><a href="http://edu.itbulo.com/">软件学院</a></th>
+  </tr>
+  <tr>
+    <td><a href="http://www.chinaitlab.com/">it实验室</a></td>
+    <td><a href="http://www.68ps.com/">68ps联盟</a></td>
+    <td><a href="http://www.duote.com/tech/ios/20383.html">ipad2使用答疑</a></td>
+    <td><a style="color:#178517; " href="http://down.51cto.com/tj.php?type=404&id=1205">51CTO教程下载</a></td>
+    <th>&nbsp;</th>
+  </tr>
+</table>
+<h2>实用技巧</h2>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="m_1">
+  <tr>
+    <td width="20%"><a href="http://www.duote.com/tech/5/13520.html">提高下载速度</a></td>
+    <td width="20%"><a href="http://www.duote.com/tech/2/5459.html">Win 7免费看电影</a></td>
+    <td width="20%"><a href="http://www.duote.com/tech/4/10831.html">搜狗拼音秘技</a></td>
+    <td width="20%"><a href="http://www.duote.com/tech/5/13737.html">避免输入错别字</a></td>
+    <th width="20%"><a href="http://www.duote.com/tech/3/6495.html">网速测试技巧</a></th>
+  </tr>
+  <tr>
+    <td><a href="http://www.duote.com/tech/1/191.html">MP3剪切技巧</a></td>
+    <td><a href="http://www.duote.com/tech/1/517.html">快播实用技巧</a></td>
+    <td><a href="http://www.duote.com/tech/1/253.html">妙招教你玩酷狗</a></td>
+    <td><a href="http://www.duote.com/tech/1/79.html">QQ探IP、显隐身</a></td>
+    <th class="tbl1"><a href="http://www.duote.com/tech/5/14464.html">Ps打造质感字体</a></th>
+  </tr>
+  <tr>
+    <td><a href="http://www.duote.com/tech/5/13930.html">可牛合成照片</a></td>
+    <td><a href="http://www.duote.com/QZONE/mokuai/music.html">QQ空间背景音乐</a></td>
+    <td><a href="http://www.duote.com/tech/1/53.html">五笔使用技巧</a></td>
+    <td><a href="http://www.duote.com/tech/5/13891.html">iSee封面设计</a></td>
+    <th><a href="http://www.duote.com/tech/5/13601.html">DNS故障修复</a></th>
+  </tr>
+</table>
+
+  </div>
+  <div class="right">
+    <h2>常用软件</h2>
+    <dl class="soft_cy">
+    	<dt>聊&nbsp;&nbsp;天</dt>
+        <dd>
+        	<ul>
+            	<li><i><img src="images/soft/qq.jpg" width="16" height="16" /></i><a href="http://im.qq.com/">腾讯QQ</a></li>
+                <li><i><img src="images/soft/skywldh.jpg" width="16" height="16" /></i><a href="http://www.alicall.com/down.asp?linkid=8930492">阿里网络电话</a></li>
+                <li><i><img src="images/soft/wangwang.gif" width="16" height="16" /></i><a href="http://www.taobao.com/wangwang/">阿里旺旺</a></li>
+                <li><i><img src="images/soft/feixin.jpg" width="16" height="16" /></i><a href="http://feixin.10086.cn/download/pcclient/">飞信</a></li><div class="clear"></div>
+            </ul>
+        </dd><div class="clear"></div>
+    </dl>
+    <dl class="soft_cy">
+    	<dt>输入法</dt>
+        <dd>
+        	<ul>
+            	<li><i><img src="images/soft/sogou.jpg" width="16" height="16" /></i><a href="http://pinyin.sogou.com/?s=alading">搜狗拼音</a></li>
+                <li><i><img src="images/soft/qqpy.gif" width="16" height="16" /></i><a href="http://www.duote.com/soft/12563.html">QQ拼音</a></li>
+                <li><i><img src="images/soft/jipin6.jpg" width="16" height="16" /></i><a href="http://www.duote.com/soft/113.html">极品五笔</a></li>
+                <li><i><img src="images/soft/wnwb.jpg" width="16" height="16" /></i><a href="http://www.duote.com/soft/1488.html">万能五笔</a></li><div class="clear"></div>
+            </ul>
+        </dd><div class="clear"></div>
+    </dl>
+    <dl class="soft_cy">
+    	<dt>音&nbsp;&nbsp;乐</dt>
+        <dd>
+        	<ul>
+            	<li><i><img src="images/soft/shoujikugou.gif" width="16" height="16" /></i><a href="http://www.duote.com/soft/20536.html/">酷狗</a></li>
+                <li><i><img src="images/soft/koowo.gif" width="16" height="16" /></i><a href="http://www.koowo.com/mbox.down2?src=kwun0271">酷我音乐</a></li>
+                <li><i><img src="images/soft/qqyy.gif" width="16" height="16" /></i><a href="http://www.duote.com/soft/6325.html">QQ音乐</a></li>
+                <li><i><img src="images/soft/ttplayer.gif" width="16" height="16" /></i><a href="http://www.duote.com/soft/5500.html">千千静听</a></li>
+            </ul>
+        </dd><div class="clear"></div>
+    </dl>
+    <dl class="soft_cy">
+    	<dt>视&nbsp;&nbsp;频</dt>
+        <dd>
+        	<ul>
+                <li><i><img src="images/soft/pps.gif" width="16" height="16" /></i><a href="http://click.t3nlink.com/link/131482/">PPTV</a></li>
+                <li><i><img src="images/soft/qqplayer.gif" width="16" height="16" /></i><a href="http://www.duote.com/soft/12007.html">QQ影音</a></li>
+                <li><i><img src="images/soft/kuaibo.jpg" width="16" height="16" /></i><a href="http://www.duote.com/soft/34741.html">快播</a></li>
+            	<li><i><img src="images/soft/U616P176T6D5162F19DT20040402094048.gif" width="16" height="16" /></i><a href="http://www.duote.com/soft/9958.html">暴风影音</a></li>
+            </ul>
+        </dd><div class="clear"></div>
+    </dl>
+    <dl class="soft_cy">
+    	<dt>浏览器</dt>
+        <dd>
+        	<ul>
+            	<li><i><img src="images/soft/msie5ico.gif" width="16" height="16" /></i><a href="http://www.duote.com/soft/3554.html">IE6</a>/<a href="http://www.duote.com/soft/3798.html">IE7</a>/<a href="http://www.duote.com/soft/23334.html">IE8</a></li>
+                <li><i><img src="images/soft/ie2345.jpg" width="16" height="16" /></i><a href="http://download.2345.com/down/2345Explorer_239391.exe">2345浏览器</a></li>
+                <li><i><img src="images/soft/360.jpg" width="16" height="16" /></i><a href="http://www.duote.com/soft/795.html">360浏览器</a></li>
+                <li><i><img src="images/soft/chrome.gif" width="16" height="16" /></i><a href="http://www.duote.com/soft/11512.html">谷歌浏览器</a></li>
+            </ul>
+        </dd><div class="clear"></div>
+    </dl>
+    <dl class="soft_cy">
+    	<dt>下&nbsp;&nbsp;载</dt>
+        <dd>
+        	<ul>
+            	<li><i><img src="images/soft/xunlei.jpg" width="16" height="16" /></i><a href="http://www.xunlei.com/">迅雷</a></li>
+                <li><i><img src="images/soft/dianlv.jpg" width="16" height="16" /></i><a href="http://www.duote.com/soft/23.html">电驴</a></li>
+                <li><i><img src="images/soft/qqx.gif" width="16" height="16" /></i><a href="http://www.duote.com/soft/7909.html">QQ旋风</a></li>
+                <li><i><img src="images/soft/bitcomet.gif" width="16" height="16" /></i><a href="http://www.duote.com/soft/21457.html">BitComet</a></li>
+            </ul>
+        </dd><div class="clear"></div>
+    </dl>
+    <dl class="soft_cy">
+    	<dt>安&nbsp;&nbsp;全</dt>
+        <dd>
+        	<ul>
+                <li><i><img src="images/soft/jinshanweishi.gif" width="16" height="16" /></i><a href="http://j.union.ijinshan.com/jump.php?u_key=552">金山毒霸</a></li>
+            	<li><i><img src="images/soft/360ws.jpg" width="16" height="16" /></i><a href="http://www.duote.com/soft/5841.html">360安全卫士</a></li>
+                <li><i><img src="images/soft/kaspersky.gif" width="16" height="16" /></i><a href="http://count.chanet.com.cn/click.cgi?a=212181&d=101083&u=&e=2345">卡巴斯基</a></li>
+                <li><i><img src="images/soft/rising.gif" width="16" height="16" /></i><a href="http://www.duote.com/soft/12490.html">瑞星杀毒</a></li>
+            </ul>
+        </dd><div class="clear"></div>
+    </dl>
+    <dl class="soft_cy">
+    	<dt>图&nbsp;&nbsp;像</dt>
+        <dd>
+        	<ul>
+            	<li><i><img src="images/soft/xx.gif" width="16" height="16" /></i><a href="http://www.duote.com/soft/14700.html">美图秀秀</a></li>
+                <li><i><img src="images/soft/isee.jpg" width="16" height="16" /></i><a href="http://www.duote.com/soft/1181.html">iSee图片专家</a></li>
+             <li><i><img src="images/soft/keniu.png" width="16" height="16" /></i><a href="http://www.duote.com/soft/6462.html">可牛影像</a></li>
+                <li><i><img src="images/soft/gy.gif" width="16" height="16" /></i><a href="http://www.duote.com/soft/868.html">光影魔术手</a></li>
+            </ul>
+        </dd><div class="clear"></div>
+    </dl>
+    <dl class="soft_cy">
+    	<dt>手机\其他</dt>
+        <dd>
+        	<ul>
+            	<li><i><img src="images/soft/shoujiqq.jpg" width="16" height="16" /></i><a href="http://mobile.qq.com/">手机QQ</a></li>
+                <li><i><img src="images/soft/weixin.jpg" width="16" height="16" /></i><a href="http://weixin.qq.com/">微信</a></li>
+                <li><i><img src="images/soft/shmh.png" width="16" height="16" /></i><a href="http://download.mini.sohu.com/5063/sohumini-0.9.8beta.exe">搜狐微门户</a></li><div class="clear"></div>
+            </ul>
+        </dd><div class="clear"></div>
+    </dl>
+    <div class="soft_more"><a href="http://www.6164.com/software.htm">更多>></a></div>
+  </div>
+  <div class="clear"></div>
+  <div class="yingjian_box">
+  <h2>硬件相关</h2>
+  <table width="100%" cellspacing="0" cellpadding="0" border="0" class="yingjian_m">
+    <tbody>
+      <tr>
+        <th width="250">热门品牌</th>
+        <th width="415">热门笔记本排行榜</th>
+        <th class="r_line">电脑筛选</th>
+      </tr>
+      <tr>
+        <td class="brand"><p class="new"><a href="http://product.it168.com/list/b/14160022_i10302_1.shtml"><img width="68" height="57" src="images/soft/pic.jpg" /></a> <span><a href="http://product.it168.com/list/b/0301_1.shtml"><font color="#000000">笔记本大全</font></a></span><br />
+          <a href="http://product.it168.com/list/b/0301_dated_1.shtml">笔记本新品</a><br />
+          <a href="http://product.it168.com/list/b/14160022_1.shtml">iPad/iPad2</a> </p>
+          <ul class="list">
+            <li><a href="http://product.it168.com/list/b/03010377_1.shtml">联想</a></li>
+            <li><a href="http://product.it168.com/list/b/03016310_1.shtml">ThinkPad</a></li>
+            <li><a href="http://product.it168.com/list/b/03010064_1.shtml">戴尔</a></li>
+            <li><a href="http://product.it168.com/list/b/03010112_1.shtml">惠普</a></li>
+            <li><a href="http://product.it168.com/list/b/03021985_1.shtml">宏碁</a></li>
+            <li><a href="http://product.it168.com/list/b/03010348_1.shtml">华硕</a></li>
+            <li><a href="http://product.it168.com/list/b/03010022_1.shtml">苹果</a></li>
+            <li><a href="http://product.it168.com/list/b/03010230_1.shtml">索尼</a></li>
+            <li><a href="http://product.it168.com/list/b/03011112_1.shtml">神舟</a></li>
+            <li><a href="http://product.it168.com/list/b/03010209_1.shtml">三星</a></li>
+          </ul></td>
+        <td><ul class="hot_notebook">
+          <li><a href="http://product.it168.com/detail/doc/412273/index.shtml">惠普 CQ42-153TX(WP63)</a></li>
+          <li><a href="http://product.it168.com/detail/doc/411147/index.shtml">苹果 MacBook Pro(MC37</a></li>
+          <li><a href="http://product.it168.com/detail/doc/381183/index.shtml">苹果 MacBook(MC207C)</a></li>
+          <li><a href="http://product.it168.com/detail/doc/413398/index.shtml">惠普 321(WT981PA)</a></li>
+          <li><a href="http://product.it168.com/detail/doc/411207/index.shtml">苹果 MacBook</a></li>
+        </ul>
+          <ul class="hot_notebook2">
+            <li><a href="http://product.it168.com/detail/doc/410254/index.shtml">方正 T400IG-P745AX</a></li>
+            <li><a href="http://product.it168.com/detail/doc/385038/index.shtml">苹果 MacBook(MC516</a></li>
+            <li><a href="http://product.it168.com/detail/doc/412068/index.shtml">惠普 CQ42-153TX</a></li>
+            <li><a href="http://product.it168.com/detail/doc/417565/index.shtml">东芝 Satellite L600D</a></li>
+            <li><a href="http://product.it168.com/detail/doc/206487/index.shtml">ThinkPad W700 2752NA1</a></li>
+          </ul></td>
+        <td class="r_line"><div class="soft_fenlei">
+          <p class="line"> <i>笔记本CPU</i><br />
+            <span><a href="http://product.it168.com/list/b/0301_s_21-12047s_1.shtml">酷睿i7</a>|<a href="http://product.it168.com/list/b/0301_s_21-12048s_1.shtml">酷睿i5</a>|<a href="http://product.it168.com/list/b/0301_s_21-12049s_1.shtml">酷睿i3</a>|<a href="http://product.it168.com/list/b/0301_s_21-12622s_1.shtml">APU</a>|<a href="http://product.it168.com/list/b/0301_s_21-12526s_1.shtml">SNB</a></span> <br />
+            <br />
+            <i>平板电脑</i><br />
+            <span><a href="http://product.it168.com/list/b/1416_s_15013-12652s_1.shtml">安卓Android</a>|<a href="http://product.it168.com/list/b/1416_s_15013-12576s_1.shtml">安卓3.0</a>|<a href="http://product.it168.com/list/b/1416_s_15013-12556s_1.shtml">苹果iOS</a>|<a href="http://product.it168.com/list/b/1416_s_15013-12554s_1.shtml">微软Windows</a>|<a href="http://product.it168.com/list/b/1416_s_15013-12658s_1.shtml">联想乐OS</a></span> </p>
+          <p><i>数码相机</i><br />
+            <span><a href="http://product.it168.com/list/b/03050046_1.shtml">佳能</a>|<a href="http://product.it168.com/list/b/03050230_1.shtml">索尼</a>|<a href="http://product.it168.com/list/b/03050171_1.shtml">尼康</a>|<a href="http://product.it168.com/list/b/03050209_1.shtml">三星</a>|<a href="http://product.it168.com/list/b/03050096_1.shtml">富士</a>|<a href="http://product.it168.com/list/b/03050182_1.shtml">松下</a>|<a href="http://product.it168.com/list/b/03050131_1.shtml">柯达</a>|<a href="http://product.it168.com/list/b/03050179_1.shtml">奥林巴斯</a>|<a href="http://product.it168.com/list/b/03050048_1.shtml">卡西欧</a></span> <br />
+            <br />
+            <i>服务器</i><br />
+            <span><a href="http://product.it168.com/list/b/04020115_1.shtml">IBM</a>|<a href="http://product.it168.com/list/b/04020112_1.shtml">惠普</a>|<a href="http://product.it168.com/list/b/04020064_1.shtml">Dell|</a><a href="http://product.it168.com/list/b/04020377_1.shtml">联想</a>|<a href="http://product.it168.com/list/b/04020417_1.shtml">曙光</a></span></p>
+          <div class="clear"></div>
+        </div></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>搜狗热搜</h2>
+  <table width="100%" cellspacing="0" cellpadding="0" border="0"  class="m_1">
+          <tr> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=笔记本报价&pid=sogou-site-220c77af02f8ad85">笔记本报价</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=个人贷款购车&pid=sogou-site-220c77af02f8ad85">个人贷款购车</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=学什么技术赚钱&pid=sogou-site-220c77af02f8ad85">学什么技术赚钱</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=创业好项目&pid=sogou-site-220c77af02f8ad85">创业好项目</a></td> 
+            <th width="20%"><a href="http://www.sogou.com/sogou?query=最赚钱的技术&pid=sogou-site-220c77af02f8ad85">最赚钱的技术</a></th> 
+          </tr> 
+          <tr> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=网络怎么赚钱&pid=sogou-site-220c77af02f8ad85">网络怎么赚钱</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=联想电脑报价&pid=sogou-site-220c77af02f8ad85">联想电脑报价</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=如何快速赚钱&pid=sogou-site-220c77af02f8ad85">如何快速赚钱</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=在网上赚钱&pid=sogou-site-220c77af02f8ad85">在网上赚钱</a></td> 
+            <th width="20%"><a href="http://www.sogou.com/sogou?query=什么行业赚钱&pid=sogou-site-220c77af02f8ad85">什么行业赚钱</a></th> 
+          </tr> 
+  </table>
+  </div>
+</div>
+  <!-- right end -->
+
+<script>var pageName='软件';</script>
+<script src="neiye/js/sosofooter.js" type="text/javascript"></script>
+</body> 
+</html> 
+<span style="display:none"><script type="text/javascript" src="css/tj.js"></script></span>

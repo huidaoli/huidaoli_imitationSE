@@ -1,0 +1,87 @@
+@charset "gb2312";
+/* exam */
+body{ background:#fff;}
+.wrap{ width:990px; margin:0 auto; text-align:left;}
+.left{ width:750px; float:left; border:1px solid #a5c0f7;background:#f0f6ff;}
+.right{ width:230px; float:right; border:1px solid #a5c0f7;background:#f0f6ff;}
+.per5{ width:50%;} 
+.w374{ width:374px; border-right:1px solid #a5c0f7;}
+.fleft{ float:left;}
+.fright{ float:right;}
+.wrap h2{ display:block; height:25px; line-height:25px; background:#cce3ff; font-weight:100; text-align:center; color:#4c5693; font-size:12px;border-bottom:1px solid #ace; }
+.wrap h2.tab{ height:30px; line-height:30px;}
+.wrap h2.tab a{ display:inline-block; height:25px; line-height:25px; padding:0 15px;  margin:4px 0 0 5px; float:left;
+-moz-border-radius: 3px 3px 0 0;
+-khtml-border-radius: 3px 3px 0 0;
+-webkit-border-radius: 3px 3px 0 0;
+border-radius: 3px 3px 0 0; }
+.wrap h2.tab a.tcur,.wrap h2.tab a:hover{ border:1px solid #aaccee; border-bottom:0; background:#fff;  text-decoration:none; position:relative; margin-bottom:-1px; height:26px;}
+.box_1_bd{ clear:both;}
+.sort_1{ background:#fff;}
+.sort_1 dl{ clear:both; height:29px; line-height:29px; overflow:hidden; margin:4px;}
+.sort_1 dl.bgblue{background:#f4f9ff; }
+.sort_1 dl dt{ float:left; width:53px;background:#fff url(../images/exam/kaoshi_bg1.gif); color:#3c75be; padding:0 6px 0 23px; }
+.sort_1 dl dd{float:left; width:89px; padding-left:5px; font-size:14px;}
+.sort_1 dl dd a{ display:inline-block; height:23px; line-height:23px; margin-top:3px; padding:0 7px; }
+.sort_1 dl dd a:hover{background:#7fb9ef; 
+-moz-border-radius: 3px;
+-khtml-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+color:#fff; font-weight:bold; }
+.tbli_1{ height:100%; overflow:hidden; }
+.tbli_1 li{ font-size:16px; width:139px; padding-left:10px; height:35px; line-height:35px; float:left; border-right:1px solid #bcd3f7; border-bottom:1px solid #bcd3f7;}
+.row4 li{ width:189px;}
+.row4 li.nrb{ width:190px;}
+.tbli_1 li.nrb{ border-right:0; width:140px;}
+.tbli_1 li.nbb{ border-bottom:0;}
+
+.btline{ border-bottom:1px solid #ace;}
+.tbli_2{  padding:7px 10px 6px 20px; height:100%; overflow:hidden;}
+.tbli_2 li{ height:26px; line-height:26px; text-align:left; font-size:14px; float:left;width:340px;}
+.tbli_2 li b{ font-weight:100; display:inline-block; width:190px; float:left;}
+.tbli_2 li font{ font-size:14px; display:inline-block; float:left; width:80px;}
+.tbli_2 a{ float:right; color:#2c59b4;}
+.tbli_2 a:hover{ color:#fd5151;}
+.liper50 li{ width:50%;}
+.liper50 li.nrb{ width:166px;}
+
+.piclist ul{padding:13px 0 10px 20px; height:100%; overflow:hidden;  }
+.piclist ul li{ float:left; margin-right:26px; text-align:center; font-size:14px; line-height:20px;}
+.piclist ul li.lastli{ margin-right:0;}
+.piclist li img{ padding:3px; background:#fff; border:1px solid #bcd3f7; margin-bottom:5px;}
+
+h2.new_kaoshi{padding-left:10px; text-align:left;}
+.time{ margin:1px 1px 0 0;width:95px; height:22px; line-height:22px; font-weight:bold;background:url("../images/exam/kaoshi_bg1.gif") no-repeat 0 -29px; font-size:13px; color:#3eb4ff; text-align:center; overflow:hidden; float:right}
+.time span{width:14px; height:14px; display:block;background:url("../images/exam/kaoshi_bg1.gif") no-repeat -30 -52px; }
+.time .up{ margin:3px 0 0 5px;float:left;}
+.time .down{ margin:3px 5px 0 0; background-position:-45px -52px;float:right;}
+.time .up a{width:14px; height:14px; display:block; background:url("../images/exam/kaoshi_bg1.gif") no-repeat 0 -52px;}
+.time .down a{ width:14px; height:14px; display:block;background:url(../images/exam/kaoshi_bg1.gif) no-repeat -15px -52px;}
+.kaoshi_list, .haoshi_right_box{padding:6px 15px;}
+.kaoshi_list{padding:10px;}
+.kaoshi_list td a:link{color:#2c59b4; text-decoration:underline}
+.kaoshi_list td a:hover{color:#fd5151; text-decoration:underline}
+.kaoshi_list td a:visited{color:#5FA7DC; text-decoration:underline}
+.kaoshi_list td{height:28px; font-size:13px; line-height:28px;}.haoshi_pm li{ height:30px; line-height:30px; font-size:14px; border-bottom:1px dotted #e0e0e0; text-align:left;}
+.haoshi_pm li i{ margin:4px 10px 0 0;width:14px; height:15px; line-height:15px; display:inline-block; font-size:10px; text-align:center; background:url("../images/exam/kaoshi_bg1.gif") no-repeat 0 -71px; font-style:normal; color:#fff;-webkit-text-size-adjust:none}
+.haoshi_pm li em{ margin:5px 5px 0 0;width:18px; height:18px; display:block; float:left;}
+.teacher{float:left; margin:10px 0 10px 13px;}
+.teacher li{width:101px; height:106px; margin-bottom:8px; display:inline; float:left;}
+.teacher li a{width:73px; height:104px; display:block; margin:0 auto; border:1px solid #bcd3f7; text-decoration:none}
+.teacher li a img{padding:3px; background:#fff;}
+.teacher li span{ height:21px;line-height:21px; text-align:center; display:block; }
+.teacher li a:hover{border:1px solid #79a3e5}
+.kv td, .kv th{height:auto;}
+.kv_down{padding:8px 8px 8px 0;}
+.kv_down li{padding-left:5px;height:35px; font-size:16px; line-height:35px; clear:both;}
+.kv_down li i{ margin:8px 5px 0 0;width:18px; height:18px; float:left;}
+.kv_down li i img{width:18px; height:18px;}
+.kv_down li span{float:right; font-size:12px;}
+.kv_down li span a{color:#888}
+
+.sel_zhenti{ display:block; margin:9px 0 -10px 10px; height:30px; overflow:hidden;}
+.sel_zhenti select{ width:145px; height:25px; line-height:25px; border:1px solid #7f9db9; font-size:12px; float:left; _margin-top:4px;}
+.sel_zhenti input{ color:#fff; width:57px; height:26px; line-height:26px; margin-left:6px; cursor:pointer; float:left; background:url(../images/exam/kaoshi_bg1.gif) no-repeat -43px -69px; border:0;}
+#kmons table{ background:#dce9f5;}
+#kmons table td{ background:#f0f6ff; padding-left:5px;}

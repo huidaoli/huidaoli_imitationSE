@@ -1,0 +1,21 @@
+@charset "gb2312";
+/* CSS Document */
+.pics-wrap{height:330px;position: relative;}
+.pics-wrap ul{padding-left:10px;}
+.pics-wrap .imgs-list li{position: absolute;height:145px;width:145px;}
+.pics-wrap .imgs-list .li-01{height:295px;width:145px;top:15px;left:5px; overflow:hidden}
+.pics-wrap .imgs-list .li-02,
+.pics-wrap .imgs-list .li-07,.pics-wrap .imgs-list .li-02 img,
+.pics-wrap .imgs-list .li-07 img{height:145px;width:300px;}
+
+.pics-wrap .imgs-list .li-02{ width:295px; overflow:hidden;top:15px;left:155px;}
+.pics-wrap .imgs-list .li-03{top:165px;left:155px;}
+.pics-wrap .imgs-list .li-04{top:165px;left:305px;}
+.pics-wrap .imgs-list .li-05{top:15px;left:455px;}
+.pics-wrap .imgs-list .li-06{top:15px;left:605px;}
+.pics-wrap .imgs-list .li-07{ width:295px; overflow:hidden;top:165px;left:455px;}
+.pics-wrap .imgs-list .li-08{top:15px;left:755px;}
+.pics-wrap .imgs-list .li-09{top:165px;left:755px;}
+.pics-wrap .bg{background:#000;height:29px;position: absolute;bottom:0;width:100%;filter:alpha(opacity=60);-moz-opacity:0.6;-khtml-opacity: 0.6;opacity: 0.6;left:0;}
+.pics-wrap .text{height:29px;position: absolute;bottom:0;width:100%;line-height:29px;color:#fff;text-indent:10px;left:0;z-index:8;overflow: hidden;}
+.pics-wrap a:hover .text{color:#fff;text-decoration:underline;}

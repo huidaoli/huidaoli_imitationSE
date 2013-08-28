@@ -1,0 +1,32 @@
+@charset "gb2312";
+body{background:#f2a7d8;}
+#classicsWrap{ background:#fff; margin:0 auto;width:980px; overflow:hidden;}
+#wrap,.topbar .sets .sethome,.header .notice,.m-search,.m-search-tab .active,.m-search-tab .active116{ background-image:url(../../images/skin/pink_spirit.png);}
+#wrap,.topbar{ margin:0 10px;}
+#wrap{ border-top:0; background:url(../../images/skin/h_p_reg.png) repeat-x;}
+.m-search-tab .active{ background-position:0 -23px; background-repeat:no-repeat; }
+.m-search-tab .active116{ background-position:0 -48px; background-repeat:no-repeat;}
+.topbar .sets .sethome{ background-position:0 -84px; background-repeat:no-repeat;}
+.header .notice{ background-position:0 3px; background-repeat:no-repeat;}
+.m-search{  border-color:#f4bce2; background-position:0 -128px;background-repeat:repeat-x;  margin-top:10px;}
+.header{border:1px solid #f4bce2; border-top:0; height:78px; width:958px;}
+.header .logo{background-image:url(../../images/skin/pink_logo.png);_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="");}
+.header .header-bd{ border-top:1px solid #fff;}
+.topbar{  border-left:1px solid #f4bce2; border-right:1px solid #f4bce2; border-bottom-color:#f4bce2; padding:0 0 0 10px;}
+.topbar .top-bd{ width:938px;}
+.col-hotKeys .hotKeys a,.box-prlInq .tit,.box-prlInq .more,.usage-tab .active,.col-coolsite .tit,.usage-con .tbox .ipt-text,.fmSite-tab li,.box-tuan a,.sortSite .tit a,.recomSite .tit a{ color:#c5479d;}
+.topbar .setColor .blue{ background-position:-1px -568px;}
+.skin-list .default-setColor .blue{ background-position:0px -590px;}
+.sideBar,.col-usage,.col-coolsite,.col,.fmSite-tab li,.box-tuan{ border-color:#f4bce2;}
+.starBar{border-color:#f9cceb;}
+.starBar li.hover{ background-color:#fbdef5;}
+.fmSite-tab li span,.box-tuan a{ background-color:#f9e2f4;}
+.sortSite{border-color:#ffe4fa; background-color:#fff9fe;}
+.sideBar{ background-color:#fbf1f9;}
+.col-recomSite{background-color:#fff9fe;}
+.box-mySetting{right:-12px;}
+.usage-tab li{ background-color:#fbdef5;}
+.usage-tab .active{background-color:#f18cd1; color:#fff;}
+.kpWrap{ width:1080px!important;}
+.kpWrap .topbar .top-bd{width:1038px!important;}
+.kpWrap .header{ width:1058px!important;}

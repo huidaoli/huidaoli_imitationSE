@@ -1,0 +1,174 @@
+/* star */
+*{ margin:0; padding:0;}
+ul,ol,li,dl,dd,dt{ list-style:none;}
+img,iframe{ border:none;}
+font,h1,h2,h3,h4,h5,h6,i,em,b{ font-style:normal; font-weight:100; font-size:100%;}
+a{ color:#000; text-decoration:none;}
+a:hover{ color:#f00; text-decoration:underline}
+body{ text-align:center; font:12px/1.5 'Arial','Tahoma','simsun'; _position:relative;}
+.head,.path,.wrap,.foot{ width:990px; margin:0 auto; clear:both;}
+.head{ height:70px; text-align:left;}
+.head span img{ margin-top:5px;}
+.head .logo{ float:left; margin:3px 0 0;}
+/* path */
+.path{height:25px; line-height:25px;border-top:1px solid #b7c7ef; background:#f0f6ff;}
+.path p{ float:left; width:300px;}
+.path p a{ float:left;} 
+.path span{ float:right; text-align:right; display:block; height:25px; width:400px;}
+.s_home{ background:url(../images/tongxun/icons.gif) -175px 5px no-repeat; display:block; padding-left:27px; color:#d35e04;}
+.advice{ background:url(../images/tongxun/icons.gif) -184px -25px no-repeat; display:block; padding-left:19px; margin-left:15px;}
+.path,.path a{ color:#666;} .path a:hover{color:#fd5151; }
+.navico{padding-right:15px; float:right; width:25px; cursor:pointer; position:relative;background: url(../images/tongxun/icons.gif) -156px -52px transparent;}
+.nav_d{ border:1px solid #ccc; background:#fff; left: -72px; padding: 5px; position: absolute; top: 25px;width:100px;}
+.nav_d li {float: left; height: 20px; line-height: 20px; text-align: center; width: 50px;}
+/* path end */
+.hotwords{ border:1px solid #bcd3f7; background:#f4fafe url(../images/tongxun/icons.gif) -175px -111px no-repeat; text-align:left; padding-left:25px; height:33px; line-height:33px; color:#075f9d; font-size:14px; margin-bottom:3px;overflow:hidden;}
+.hotwords a{color:#075f9d; margin:0 9px; zoom:1;}
+.hotwords a.more{ float:right; color:#f00;}
+
+.box{ border:1px solid #94b6fb; border-bottom:none; height:100%; overflow:hidden; clear:both;}
+.box h2{height:27px; background:url(../images/tongxun/icons.gif) 0 -186px repeat-x;}
+.box h2 span{ display:block; height:27px;line-height:27px; font-weight:bold; color:#075f9d; font-size:14px;}
+/*.box h2 span{ display:block; height:27px;line-height:27px; background:url(../images/tongxun/icons.gif) 0 -156px no-repeat; font-weight:bold; color:#075f9d; font-size:14px;}*/
+.share{ font-style:normal; width:242px; height:27px; display:block; float:right; background:url(../images/tongxun/icons2.gif) 0 -35px no-repeat; margin-right:12px; _margin-right:6px; font-size:12px; font-weight:100; color:#000; text-align:left; padding:0 3px 0 6px;}
+
+.box2 td,.box2 th{ height:37px; line-height:37px; border-bottom:1px solid #edf3fd; border-right:1px solid #edf3fd; font-size:16px; text-align:center; width:153px;}
+.box2 th{ border-right:none; font-weight:100;}
+.box2 tr.nbb td{ border-bottom:none;}
+.lineblue { border-bottom:1px solid #bcd3f7;}
+.box2 td.tdtit1{ font-style:normal; font-family:"Î¢ÈíÑÅºÚ"; font-size:16px; color:#075f9d; width:64px; height:113px; line-height:21px; background:#f4fafe url(../images/tongxun/entt.gif) 50% 50% no-repeat; padding:3px 0 0;}
+.box2 td.tdtit2{ font-style:normal; font-family:"Î¢ÈíÑÅºÚ"; font-size:16px; color:#075f9d; width:64px; height:113px; line-height:21px; background:#f4fafe url(../images/tongxun/icons.gif) -129px -217px no-repeat; padding:3px 0 0; background-position: -129px -337px}
+.starli{ border-bottom:3px solid #bcd3f7; height:100%; overflow:hidden;}
+.starli li{ width:196px; float:left; border-right:1px solid #edf3fd; padding:11px 0;}
+.starli li.nbr{ border-right:none;}
+.starli li dl{ padding-left:17px;}
+.starli li dt{ float:left;}
+.starli li dt img{ width:75px; height:93px; padding:1px; border:1px solid #d4dfe6;}
+.starli li dd{ float:left; width:92px; margin-left:3px;}
+.starli li dd b{ display:block; color:#075f9d; height:35px; line-height:35px; overflow:hidden; padding:5px 0 0 5px; margin-bottom:10px; text-align:left; background:url(../images/tongxun/icons.gif) -118px -455px no-repeat;}
+.starli li dd b a{ color:#075f9d; font-size:16px; font-weight:100;}
+.starli li dd input{ border:none; background:transparent url(../images/tongxun/icons.gif) -161px -505px no-repeat; color:#9d7107; height:17px; line-height:19px; width:39px; text-align:left; padding-left:9px; margin:5px 2px 5px 0; cursor:pointer; font-size:12px;}
+.mxwb{ border-bottom:1px solid #94b6fb}
+.mxwb td,.mxwb th{ background:#fafdff; border-bottom:1px solid #cfdffa; border-right:1px solid #cfdffa; width:20%; height:64px; text-align:center; font-size:16px;}
+.mxwb th{ border-right:none; font-weight:100;}
+.mxwb td span,.mxwb th span{ display:block; width:160px; padding-left:18px; _padding-left:0px; text-align:left;}
+.mxwb td b,.mxwb th b{ display:block;text-align:left; border-bottom:1px dashed #dce4fb; font-weight:100; position:relative; padding:3px 3px 0; }
+.btn_wb{ background:transparent url(../images/tongxun/icons.gif) -161px -533px no-repeat; border:none; font-size:12px; width:39px; height:17px; line-height:19px; padding-left:9px; cursor:pointer; margin-top:3px; _margin:0; position:absolute; right:3px;}
+.mxwb td i,.mxwb th i{display:block; overflow:hidden;}
+.mxwb td i a,.mxwb th i a{ font-size:12px; display:block; float:left; height:26px; line-height:26px; color:#333; font-style:normal; background:url(../images/tongxun/icons.gif) -183px -83px no-repeat; padding-left:8px; margin:0 26px 0 2px;*margin:0 26px 0 1px;_margin:0 26px 0 1px;}
+.mxwb td i a.mrn,.mxwb th i a.mrn{ margin-right:0;}
+.mxwb tr.nbb2 td,.mxwb tr.nbb2 th{ border-bottom:none;}
+
+.star_sch{ border:1px solid #a0bcf3; border-top:none;}
+.schbar{ height:64px; line-height:64px; background:url(../images/tongxun/icons.gif) 0 -635px repeat-x; overflow:hidden;}
+.schbar span{ display:block; height:64px; float:left;}
+.schbar span.schbar_lf{ width:175px; background:url(../images/tongxun/icons.gif) 0 -570px no-repeat;}
+.schbar span.schbar_mid{ width:595px; float:left;}
+.ssbox{ width:452px; height:28px; line-height:30px; font-size:14px; color:#999; background:transparent url(../images/tongxun/icons2.gif) 0 0 no-repeat; padding-left:24px; border:1px solid #7f98b7; margin-top:18px;}
+.ssbtn{ width:98px; height:31px; line-height:33px; border:none; background:transparent url(../images/tongxun/icons.gif) -102px -703px no-repeat; cursor:pointer; font-size:14px; margin:18px 0 0 8px;}
+.schbar span.schbar_rt{ float:right; width:170px; margin-right:46px;_ margin-right:23px; padding-top:4px;}
+.schbar span.schbar_rt a{ color:#075f9d; margin:0 10px; zoom:1;}
+.sortbar{ height:75px; background:url(../images/tongxun/icons.gif) 0 -825px repeat-x; margin:0 6px;}
+.sortbar span{ display:block; height:75px; float:left;text-align:left}
+.sortbar span.sortbar_lt{ background:url(../images/tongxun/icons.gif) 0 -744px no-repeat; width:175px; padding-left:50px;}
+.sortbar span.sortbar_mid{ width:530px; float:left; margin-left:100px;}
+.sortbar span.sortbar_rt{ background:url(../images/tongxun/icons.gif) right -906px no-repeat; padding-right:100px; float:right;}
+.sortbar span dt{ font-weight:bold; font-size:12px; border-bottom:1px solid #c5d6ec; height:25px; line-height:25px; display:block;padding-top:3px;}
+.sortbar span dd{ clear:both; line-height:22px; }
+.sortbar span dd a{ margin:0 13px 0 0; padding:0 5px; zoom:1; color:#075f9d;}
+.sortbar span dd a.nrm,.sortbar span.sortbar_mid dd a.nrm{ margin:0;}
+.sortbar span.sortbar_mid dd a{ margin:0 2px;width:24px; display:block; float:left; text-align:center;}
+.allstar{ clear:both;}
+.allstar td,.allstar th{ height:70px; border-right:1px solid #cfdffa; border-bottom:1px solid #cfdffa; background:#fff; padding:0 0 0 10px; }
+.allstar td.nobrt{ font-weight:100; border-right:none;}
+.allstar tr.bbg td,.allstar tr.bbg th{ background:#fafdff;}
+.allstar td a,.allstar th a{font-size:13px; color:#333;}
+.allstar td dt,.allstar th dt{ display:block;  text-align:center; border-bottom:1px dashed #dbe4fb; padding-top:12px;}
+.allstar td dd,.allstar th dd{ height:25px; line-height:25px; margin-top:3px;}
+.allstar td dt a,.allstar th dt a{font-size:16px; color:#000;}
+.allstar td dd a,.allstar th dd a{ display:block; float:left; height:25px; line-height:25px; background:url(../images/tongxun/icons.gif) -183px -83px no-repeat; padding-left:8px; margin:0 24px 0 2px;_margin:0 24px 0 1px;}
+.allstar td dd a.mrn2,.allstar th dd a.mrn2{ margin-right:0;}
+
+.page{ background:#e4f3fc; border:1px solid #cfdffa; height:32px; line-height:32px; padding:4px 15px 0 0; text-align:right; margin:28px 5px 5px;color:#515151;}
+.page a{ border:1px solid #d4d4d4; background:#fff; padding:4px 8px; margin:0 4px; color:#515151;}
+.page a:hover{ background:#8fc7ef; border:1px solid #469ddb; color:#fff; text-decoration:none;}
+.page font{ color:#00a0e3; font-size:12px; margin:0 3px;}
+.page .ipt_page{ height:19px; line-height:19px; width:27px; border:1px solid #d4d4d4; margin:0 3px; font-size:14px; color:#666; padding-left:4px;}
+.page .btn_page{ width:51px; height:22px; line-height:25px; border:none; background:transparent url(../images/tongxun/icons.gif) -149px -1006px no-repeat; font-size:12px; color:#515151; margin-left:10px; cursor:pointer;}
+
+
+.ssbar_2{ clear:both; height:38px; background:#eff8fe; border-bottom:1px solid #bcd3f7; padding-top:7px;text-align:center;}
+.ssbar_2 .ssbox2{ width:460px; height:28px; line-height:32px; padding-left:24px;font-size:14px; color:#999; background:transparent url(../images/tongxun/icons2.gif) 0 0 no-repeat; border:1px solid #7f98b7;}
+.ssbar_2 .ssbtn2{ border:none; background:transparent url(../images/tongxun/icons2.gif) 0 -74px no-repeat; width:98px; height:31px; line-height:34px; font-size:14px; margin-left:8px; cursor:pointer;}
+.detail{ clear:both; height:100%; overflow:hidden;}
+.detail span{ display:block; float:left;}
+.detail span.d_photo img{ border:1px solid #d5e0e7; padding:2px; width:310px; height:380px; margin:8px;}
+.detail span.d_info{ float:right; width:640px; margin-left:15px;}
+.d_info dl{ overflow:hidden; height:100%; margin-bottom:10px;}
+.d_info dt{ display:block; font-weight:bold; height:40px; line-height:40px; padding-top:15px; text-align:left; font-size:16px; background:url(../images/tongxun/icons2.gif) 0 -330px no-repeat; }
+.d_info dd{ width:49%; float:left; text-align:left; font-size:13px; line-height:30px; padding-left:3px;}
+.d_info dd li{ height:33px;}
+.d_info dd li.nation{ position:relative;}
+.d_info dd li.nation img{ float:left; margin:4px 0 0 5px;}
+.d_info dd li.nation em{ float:left;}
+.d_info p{ clear:both; font-size:13px; line-height:25px; }
+.d_info p b{ display:block; font-weight:bold; width:45px; float:left;}
+.d_info p i{ font-style:normal; text-align:left; display:block; float:left; width:560px;}
+
+.box3{ border:1px solid #a5c0f7; border-bottom:none;}
+.box3 h2{ height:27px; line-height:27px; border-bottom:1px solid #9fbdfb; background:url(../images/tongxun/icons2.gif) 0 -142px repeat;}
+.box3 h2 span{ display:block; height:27px; float:left;}
+.box3 h2 span.tit_lf1{ padding-left:75px; font-size:14px; color:#075f9d; font-weight:bold; background:url(../images/tongxun/icons2.gif) 0 -114px no-repeat;}
+.box3 h2 span.tit_lf2{background:url(../images/tongxun/icons2.gif) 0 -198px no-repeat;}
+.box3 h2 span.tit_lf3{background:url(../images/tongxun/icons2.gif) 0 -226px no-repeat; padding-left:45px;}
+.box3 h2 span.tit_lf4{background:url(../images/tongxun/icons2.gif) 0 -254px no-repeat;}
+.box3 h2 span.tit_rt{ background:url(../images/tongxun/icons2.gif) left -170px no-repeat; float:right; width:52px; font-size:12px; font-weight:100; padding-left:10px; text-align:left;}
+a.more2{color:#1785d3; }
+.box3_cnt{ clear:both; height:100%;padding-left:15px; overflow:hidden}
+.box3_cnt li{ float:left; margin:5px 0 0; padding:9px 17px;  border-right:1px solid #edf3fd; width:126px; height:158px; overflow:hidden;}
+.box3_cnt li.lastli{ border:none;}
+.box3_cnt li a{ display:inline-block; width:126px; height:158px; }
+.box3_cnt li a span{display:-moz-inline-box!important;display:inline-block;vertical-align:middle;height:100%;}
+.box3_cnt li a img{ padding:2px; border:1px solid #d4dfe6; max-width:120px; max-height:150px;
+_width:expression(this.scrollWidth > 120 ? "120px" : "auto");
+_height:expression(this.scrollHeight > 150 ? "150px" : "auto");
+margin:0 auto; vertical-align:middle; display:inline}
+.box3_cnt li a:hover img{ border:2px solid #f60; padding:1px;}
+
+.box4_cnt{ clear:both; height:100%; overflow:hidden;padding-left:15px; }
+.box4_cnt li{ float:left; margin:5px 0; padding:9px 32px 0; *padding:9px 32px 4px;_padding:9px 32px 4px;border-right:1px solid #edf3fd; width:94px; overflow:hidden;}
+.box4_cnt li.lastli{ border:none;}
+.box4_cnt li a img{ padding:2px; border:1px solid #d4dfe6; width:90px; height:90px;}
+.box4_cnt li a:hover img{ padding:1px; border:2px solid #f60;}
+.box4_cnt li a{ color:#075f9d; font-size:14px;line-height:25px;}
+.box4_cnt li p{ height:25px; line-height:25px; overflow:hidden; text-align:center;}
+.star_tab td,.star_tab th{ font-size:16px; height:41px; line-height:41px; border-right:1px solid #edf3fd; border-bottom:1px solid #edf3fd; text-align:left; padding-left:12px; width:160px;}
+.star_tab th{ font-weight:100; border-right:none;}
+.star_tab .lastt td,.star_tab .lastt th{ border-bottom:none;}
+.bline{ border-bottom:1px solid #a5c0f7}
+
+/* foot */
+.foot{width:988px;}
+.foot-sch{ border:1px solid #d6e4f5; background:#f8faff; margin-top:5px; text-align:center; padding-top:13px; width:988px;}
+.foot-sch img{ vertical-align:middle; _margin-top:-13px;*margin-top:-13px;}
+.foot-sch p{ display:block;width:800px; margin:0 auto;}
+.foot-sch b{ font-weight:100; display:block; float:right; height:27px;*margin-top:3px;_margin-top:3px; line-height:30px; overflow:hidden;} 
+.foot-sch b a{ margin:0 6px;font-family:"ËÎÌå"; color:#03c;}
+.input_ss_sch{ width:440px; height:27px; line-height:27px; padding-left:4px; margin:0 3px 0 7px; }
+.butn_ss_sch{ width:78px; height:31px;}
+.option-grp{ height:40px; line-height:40px; clear:both; display:block;}
+.option-grp input{ margin-left:18px; vertical-align:middle; width:19px; height:20px;}
+.option-grp a{zoom:1}
+.tool-bar{ line-height:70px; padding-bottom:20px; font-size:16px;}
+.tool-bar img{ margin:0 25px; }
+.tool-bar input{ border:none; width:56px; height:19px; margin:0 20px; cursor:pointer; }
+.pic_list{ padding:4px 0 0 3px;}
+.pic_list li{ width:95px; float:left; text-align:center;}
+.pic_list li img { margin-top:4px; width:64px; height:53px;}
+.pic_list li b{ display:block; font-weight:100; line-height:19px; height:19px; overflow:hidden; }
+.fh{ background:transparent url(../images/tongxun/fh.gif) no-repeat; }
+.gb{ background:transparent url(../images/tongxun/gb.gif) no-repeat; }
+
+.clear{ clear:both;}
+.blue,a.blue,.blue a{ color:#1785d3;}
+.hotwords a:hover,.starli li dd b a:hover,.mxwb td i a:hover,.mxwb th i a:hover,.schbar span.schbar_rt a:hover,.sortbar span dd a:hover,.sortbar span dd a.red2,.sortbar span dd a.red2:visited,.sortbar span dd a:visited.red2,.allstar td dt a:hover,.allstar th dt a:hover,.allstar td dd a:hover,.allstar th dd a:hover,.foot-sch b a:hover,a.blue:hover,.blue a:hover,a.more2:hover,.box4_cnt li a:hover{color:#f00; }

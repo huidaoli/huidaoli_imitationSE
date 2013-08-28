@@ -1,0 +1,73 @@
+@charset "gb2312";
+/* common.css */
+/* base */
+body,p,dl,dt,dd,table,td,th,input,img,form,div,span,ul,ol,li,h1,h2,h3,h4,h5,h6,select,input,sub,sup{margin:0;padding:0;}
+body{ background:#fff;font:12px/1.5 Arial;text-align:center;_position:absolute;}
+button, input, select, textarea{ font-family:tahoma,arial,simsun}
+img,iframe{border:none;}
+ul,li,ol{list-style:none;}
+img{vertical-align:middle;}
+input{ outline:none;}
+em,b,i,strong,cite,sub,sup{font-style: normal;}
+a{color:#000; text-decoration:none;}
+a:hover{text-decoration:underline;color:#fd5151;}
+.fred, .top a.fred, .toolbox h2 .fred{ color:#fd5151;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+.top_in,.head,.path,.about,.foot-sch,.feedback{ width:990px; margin:0 auto;}
+.top,.top_keyw a.t_home,.feedback input,.about ul b{ background:url(../../images/xingzuo/common_bg.png) no-repeat; }
+
+/* top */
+.top{min-width:990px;height:29px; line-height:29px; background-position:0 0; background-repeat:repeat-x;text-align:center; overflow:hidden;}
+.top_in{text-align:right; color:#bcbbbb; text-align:left; }
+.top_keyw a { margin:0 12px 0 0; float:left; }
+.top_keyw a.t_home { background-position:-58px -29px ; padding-left:17px; margin:0; }
+.top_keyw a.t_home a { padding-left:10px; }
+.top i {margin-left: 5px; display:block; float:right; height:29px; line-height:29px; font-size:12px; font-style:normal; }
+.top a { display:inline-block; line-height:29px; _line-height:24px; _padding-top:3px;color:#505050;}
+.top a:hover { color:#f00; }
+.top font{ color:#ccc; margin:0 12px; font-size:12px; float:left; }
+.top i{ display:inline-block; float:right;}
+.top i a{ float:left;}
+/* head */
+.head{ height:70px;text-align:left;}
+#logo img{ margin:2px 0 0px 0px; }
+.search_gg{ text-align:center; float:right; padding:17px 25px 0 0; height:26px; }
+.search_gg span,.search_gg b{ display:block; float:left;}
+.search_gg b a{ font-family:"ËÎÌו"; font-weight:100; height:26px; line-height:30px; _line-height:36px; margin:0 6px; _margin:0 6px 0 3px;display:block; float:left; }
+.search_gg input,.search_gg img{ vertical-align:middle;}
+.input_gg_sch{ width:275px; height:26px; line-height:26px;  padding-left:4px; font-size:17px; border:1px solid #7f9db9;}
+.butn_gg_sch{ width:63px; height:28px; line-height:25px; margin-left:3px; cursor:pointer;}
+
+/* path */
+.path{height:25px; line-height:25px;border-top:1px solid #b7c7ef;background:#f0f6ff; overflow:hidden; text-align:left;}
+.path p{ float:left; width:300px;margin-left:5px;}
+.path span{ float:right; text-align:right; display:block; height:25px; width:400px; padding-right:5px; color:#999;}
+.path span a{ margin:0 3px; zoom:1;}
+
+/* about links */
+.about{ border:1px solid #a0b4e2; background:#e4ebfc;width:988px; margin-top:5px;}
+.about_in{ border:2px solid #f1f6fd; background:#fafbff; margin:2px;padding:4px 5px;}
+.about ul{ clear:both; line-height:23px; width:968px; overflow:hidden;}
+.about a{ font-size:13px;}
+.about ul li{ display:inline; margin:0 13px 0 12px; float:left; }
+.about ul b { margin:0;  width:73px; text-align:center; height:23px; line-height:23px; display:block; float:left; font-weight:100; background-position:0 -108px;}
+
+/* foot search */
+.foot-sch{ border:1px solid #d6e4f5; background:#f8faff; margin-top:5px; text-align:center; padding-top:13px;}
+.foot-sch img{ vertical-align:middle; _margin-top:-13px;*margin-top:-13px;}
+.foot-sch p{ display:block;width:800px; margin:0 auto;}
+.foot-sch b{ font-weight:100; display:block; float:right; height:27px;*margin-top:3px;_margin-top:3px; line-height:30px; overflow:hidden;} 
+.foot-sch b a{ margin:0 6px;font-family:"ËÎÌו"; }
+.input_ss_sch{ width:440px; height:27px; line-height:27px; padding-left:4px; margin:0 3px 0 7px; }
+.butn_ss_sch{ width:78px; height:31px; cursor:pointer;}
+.option-grp{ height:40px; line-height:40px; clear:both; display:block;}
+.option-grp input{ margin-left:18px; vertical-align:middle; width:19px; height:20px;}
+.option-grp a{zoom:1}
+
+/* feedback */
+.feedback{padding-bottom:20px; font-size:16px;}
+.feedback p{ line-height:70px; }
+.feedback input{ border:none; width:56px; height:19px; margin:0 20px; cursor:pointer; }
+.feedback input.fh{ background-position:0 -63px;}
+.feedback input.gb{ background-position:0 -88px;}

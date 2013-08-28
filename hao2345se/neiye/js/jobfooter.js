@@ -1,0 +1,6 @@
+document.write('<div style="height:28px;padding:20px 0 0;text-align: center;"><form action="http://www.sogou.com/sogou" method="get" >');
+document.write('<a href="http://www.sogou.com/index.htm?pid=sogou-site-220c77af02f8ad85"><img src="/neiye/images/logo_sg.gif" alt="ËÑË÷" width="101" height="27" align="absmiddle" /></a> ');
+document.write('<input type="text" style="width:300px; height:24px; line-height:27px; border:1px solid #bdd1eb;padding-left:2px; margin:0 3px"  name="query" value="" >');
+document.write('<input type="hidden" value="1341200376" name="_ast"><input type="hidden" value="01019901" name="w"><input type="hidden" value="40040702" name="p"><input type="hidden" value="sogou-site-220c77af02f8ad85" name="pid">');
+document.write('<input type="submit" style="height:27px; width:75px; font-size:14px; text-align:center" value="ËÑ Ë÷" /></form></div>');
+document.write('<div class="footer"><table width="200" border="0" align="center" cellpadding="0" cellspacing="0"><tr><td align="center"><button title="·µ»Ø±¾Õ¾Ê×Ò³" class="fhsy" onclick="location.href=\'\/\'"></button></td><td align="center"><button title="¹Ø±Õ±¾Ò³" class="gb" onclick="window.opener=null;window.close()"></button></td></tr></table></div>');

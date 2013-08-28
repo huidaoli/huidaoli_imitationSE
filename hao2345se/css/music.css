@@ -1,0 +1,66 @@
+@charset "gb2312";
+/* music */
+.sch_h{ width:540px; float:right; margin:19px 10px 0 0;font-size:14px;}
+.sch_in{ display:inline-block; width:350px; height:27px; line-height:27px; background:#fff; border:1px solid #aebdcc; border-right:none; float:left; position:relative;}
+.btn_m_1,.m_nav li em,.m_nav li,.m_nav li a.mcur,.m_nav li a:hover.mcur,.m_nav a.openwd,.m_right .tagh,.tagh a.tagcur,.mod_tit{ background:url(../images/music/mus_bgs.png) no-repeat;}
+.sch_name{ width:87px;overflow:hidden; position:absolute; top:28px; left:-1px; background:#fff; border:1px solid #9ccaec; border-top:0;}
+.sch_name li a{ display:block;width:74px; padding-left:13px;height:27px; line-height:27px;}
+.sch_in a.curr{display:block; float:left; width:74px; padding-left:13px;height:27px; line-height:27px; background: url(../images/music/mus_bgs.png);background-position: right 0; }
+.ipt_m_1{ width:250px; padding-left:5px; height:23px; line-height:23px; font-size:14px; float:left; border:0; margin-top:2px;}
+.btn_m_1{ border:0; background-position:0 -27px; width:84px; height:29px; cursor:pointer; font-size:14px; float:left;}
+.hotws{ height:27px; line-height:27px; }
+.hotws a{ color:#004f9b; margin-left:10px;}
+.hotws a:hover{ color:#fd5151;}
+.wrapper{ text-align:left;}
+.path2{ height:24px; line-height:24px; background:#f0f6ff; border-top:1px solid #b7c7ef; padding:0 5px;}
+.path2 a{ margin:0 3px;}
+.path2 span.pt_r{ float:right;} 
+.m_nav{ height:36px; line-height:36px; font-size:14px; background:#25a4da; padding-left:10px;}
+.m_nav li{ display:block; float:left; background-position: right -143px;}
+.m_nav li.lastmli{ background-image:none;}
+.m_nav li a{ color:#fff; display:inline-block; float:left; width:100px; padding-left:13px; margin:0 7px;}
+.m_nav li a:hover{ background-color:#3cb7ec; text-decoration:none; color:#fff;}
+.m_nav li a.mcur,.m_nav li a:hover.mcur{ background-position:0 -182px;}
+.m_nav li em{ display:inline-block; width:24px; height:24px; float:left; margin:6px 8px 0 0;}
+.m_nav li em.jiuku{ background-position:0 -58px;}
+.m_nav li em.kugo{ background-position:-30px -58px;}
+.m_nav li em.kuwo{ background-position:-60px -58px; }
+.m_nav li em.douban{ background-position:0 -85px;}
+.m_nav li em.beiwa{ background-position:-30px -85px;}
+.m_nav li em.mv{ background-position:-60px -85px;}
+
+.m_nav a.openwd{ float:right; color:#daf4ff; font-size:12px; width:68px; height:24px; line-height:24px; background-position:0 -116px; padding-left:29px; margin:6px 12px 0 0;}
+.mod_hot_bd{ border:1px solid #c1d7e0; border-top:0; height:440px; overflow:hidden}
+.m_left{ padding:10px 0 0 7px; float:left;}
+.m_right{ float:right; width:310px; height:420px; border:1px solid #dcdcdc; margin:10px 10px 0 0; _display:inline}
+.m_right .tagh{ height:36px; line-height:36px; background-position:0 -220px; background-repeat:repeat-x; font-size:14px; padding:0 12px; color:#555}
+.tagh a{ padding:0 18px; text-align:center; display:inline-block; float:right;}
+.tagh a.tagcur{ background-position:0 -257px;}
+.tagh strong{ font-weight:bold; float:left;}
+.m_right_bd{ padding:10px 18px; height:365px; overflow:hidden;}
+.pic_li li{ width:74px;overflow:hidden; float:left; text-align:center; margin-right:26px;height:115px; margin-bottom:8px;}
+.pic_li2 li{ height:95px; margin-bottom:0;}
+.pic_li li a{ width:74px; height:95px; display:block; overflow:hidden; }
+.pic_li li.lastl{ margin-right:0;}
+.pic_li li p{line-height:18px; color:#999;}
+.pic_li li a p{ color:#000; cursor:pointer;}
+.pic_li li a:hover p{ color:#fd5151}
+.pic_li li a img{padding:2px; border:1px solid #dcdcdc; display:block; margin-bottom:3px;}
+.pic_li li a:hover img{ border:1px solid #fd5151;}
+.singer_li{ padding-top:10px;}
+.singer_li dl{ height:29px; line-height:29px; border-top:1px dotted #b1b1b1; clear:both; overflow:hidden; text-align:center; font-size:13px;}
+.singer_li dl dd{ display:inline-block; width:33%; float:left;}
+.singer_li dl dd a{ color:#555;}
+.singer_li dl dd a:hover{ color:#fd5151;}
+.mt12{ margin-top:12px;}
+.part_l{ width:655px; float:left; border:1px solid #c1d7e0; border-top:none;}
+.mod_tit{ display:block; height:26px; line-height:26px; background-position:0 -295px; background-repeat:repeat-x; border-top:1px solid #c1d7e0; border-bottom:1px solid #c1d7e0; padding-left:12px; color:#3576b6; font-weight:bold; font-size:14px;}
+.mclist{ font-size:14px; margin:10px 0 10px 10px; height:100%; overflow:hidden;}
+.mclist dd{ width:95px; padding-left:9px; display:inline-block; float:left;height:28px; line-height:28px; overflow:hidden;}
+.part_r{ width:325px; float:right;}
+.part_r_box{border:1px solid #c1d7e0; border-top:none;}
+.mblog{ width:322px; border:1px solid #c1d7e0; width:322px; height:354px; overflow:hidden;}
+#stopBtnWrap{ width:530px; height:320px; background:#e1e1e1; padding:100px 0 0 112px; margin:0 0 10px;color:#eee;}
+#stopBtn{ background:url(../images/music/stopbtn.png) no-repeat; display:block; width:421px; height:228px;text-decoration:none;color:#eee}
+#stopBtn span {display: block;margin: 0 auto;padding-top: 163px;text-align: center;width: 421px;cursor:pointer;}
+#stopBtnWrap a:hover{ background-position:0 -232px; color:#fff;}

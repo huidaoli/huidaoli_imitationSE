@@ -1,0 +1,35 @@
+function MovieCallBack(obj,num){
+    var modname,modObj,color,ddidval,end_con,n;
+    ddidval = '';
+    for(var i=1;i<=num;i++){
+        modname = 'mod'+i;
+        modObj = eval(obj[modname]);
+        if(i==1){
+            end_con = '</ul></div><div class="mov_rt"><dl><dt>热门分类</dt><dd><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/aiqing------.html">爱情</a><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/xiju------.html">喜剧</a><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/kongbu------.html">恐怖</a><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/zhanzheng------.html">战争</a><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/lunli------.html">伦理</a><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/guzhuang------.html">古装</a><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/dongzuo------.html">动作</a><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/maoxian------.html">冒险</a><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/kehuan------.html">科幻</a><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/donghua------.html">动画</a><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/qingchun------.html">青春</a><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/qita------.html">其他</a></dd><dd><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/-dalu-----.html">大陆</a><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/-xianggang-----.html">香港</a><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/-taiwan-----.html">台湾</a><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/-riben-----.html">日本</a><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/-yindu-----.html">印度</a><a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com/list/-meiguo-----.html">美国</a></dd></dl><dl class="clearfix"><dt>热门电影排行榜</dt><dd class="clearfix nbb"><ol>';
+            ddidval += '<div class="pop_news"><h4><a onclick="clickCount(\'line4_\');" name="2" class="moreR" href="http://dianying.2345.com?r1">更多&raquo;</a><strong><a onclick="clickCount(\'line4_\');" name="2" class="t05" href="http://dianying.2345.com?r1">热门电影</a></strong></h4></div><div class="mod_mov"><div class="mov_lf"><ul>';
+            for(var mod_name in modObj){
+                ddidval += '<li><p><font>'+modObj[mod_name]['f']+'</font>分</p><p class="alphabg2"></p><a onclick="clickCount(\'line4_\');" name="2" href="'+modObj[mod_name]['u']+'" title="'+modObj[mod_name]['t']+modObj[mod_name]['s']+'"><img src="'+modObj[mod_name]['img']+'" style="width:81px;height:108px;"/>'+modObj[mod_name]['t']+'</a></li>';
+            }
+            ddidval += end_con;
+        }else{
+            end_con = '</ol></dd></dl></div></div>';
+            for(var mod_name in modObj){
+                n=parseInt(mod_name)+1;
+                ddidval += '<li><i class="ntop">'+n+'</i><a onclick="clickCount(\'line4_\');" name="2" href="'+modObj[mod_name]['u']+'" title="'+modObj[mod_name]['t']+modObj[mod_name]['s']+'">'+modObj[mod_name]['t']+'</a></li>';
+            }
+            ddidval += end_con;
+        }
+    }
+    $("movie_cont").innerHTML = ddidval;
+    if(!$("line4_h6")){
+        var h6Element = document.createElement("h6");
+        h6Element.id = "line4_h6";
+        $("movie_cont").parentNode.appendChild(h6Element);
+    }else{
+        var h6Element = $("line4_h6");
+    }
+    h6Element.innerHTML = '<a onclick="clickCount(\'line4_\');" name="2" href="http://dianying.2345.com?r3" >更多电影&raquo;</a><label for="line4_pop"><input id="line4_pop" name="oc_pop" type="checkbox" value="" onclick="ocPop(4);clickCount(\'ocPop\');" />以后不再展开此窗口</label><span class="tipT" id="tipT4" style="display:none;">关闭后，要重新展开此窗口，请点击主页右上角的“设置-热门推荐-开启”即可</span>';
+}
+if(typeof(MovieCallBack)!="undefined"){
+    MovieCallBack({"mod1":[{"u":"http:\/\/dianying.2345.com\/detail\/48844.html","img":"http:\/\/img1.2345.com\/dianyingimg\/img\/c\/16\/48844.jpg","f":"4.8","t":"\u5341\u4e8c\u661f\u5ea7\u79bb\u5947","s":"\u4e8b\u4ef6"},{"u":"http:\/\/dianying.2345.com\/detail\/56321.html","img":"http:\/\/img2.2345.com\/dianyingimg\/img\/e\/18\/56321.jpg","f":"9.0","t":"\u5c0f\u59d0\u597d\u7a77","s":""},{"u":"http:\/\/dianying.2345.com\/detail\/42699.html","img":"http:\/\/img3.2345.com\/dianyingimg\/img\/c\/14\/42699.jpg","f":"7.8","t":"\u9189\u540e\u4e00\u591c","s":""},{"u":"http:\/\/dianying.2345.com\/detail\/53618.html","img":"http:\/\/img4.2345.com\/dianyingimg\/img\/f\/17\/53618.jpg","f":"6.6","t":"\u502d\u5bc7\u7684\u8e2a\u8ff9","s":""},{"u":"http:\/\/dianying.2345.com\/detail\/39491.html","img":"http:\/\/img5.2345.com\/dianyingimg\/img\/f\/13\/39491.jpg","f":"5.0","t":"\u75af\u72c2\u7684\u8822\u8d3c","s":""},{"u":"http:\/\/dianying.2345.com\/detail\/1625.html","img":"http:\/\/img6.2345.com\/dianyingimg\/img\/a\/0\/1625.jpg","f":"8.5","t":"\u786c\u6c492","s":""},{"u":"http:\/\/dianying.2345.com\/detail\/47309.html","img":"http:\/\/img1.2345.com\/dianyingimg\/img\/c\/15\/47309.jpg","f":"8.0","t":"\u7b14\u4ed9\u60ca\u9b42","s":""},{"u":"http:\/\/dianying.2345.com\/detail\/46254.html","img":"http:\/\/img2.2345.com\/dianyingimg\/img\/4\/15\/46254.jpg","f":"6.7","t":"\u61a8\u8c46\u7279\u5de52","s":""},{"u":"http:\/\/dianying.2345.com\/detail\/42789.html","img":"http:\/\/img3.2345.com\/dianyingimg\/img\/9\/14\/42789.jpg","f":"6.7","t":"\u767e\u4e07\u5de8\u9cc4","s":""},{"u":"http:\/\/dianying.2345.com\/detail\/28983.html","img":"http:\/\/img4.2345.com\/dianyingimg\/img\/e\/9\/28983.jpg","f":"6.7","t":"\u6700\u7ec8\u5175\u5668\uff1a\u5f13","s":""},{"u":"http:\/\/dianying.2345.com\/detail\/47062.html","img":"http:\/\/img5.2345.com\/dianyingimg\/img\/3\/15\/47062.jpg","f":"8.4","t":"\u56db\u5927\u540d\u6355","s":""},{"u":"http:\/\/dianying.2345.com\/detail\/19438.html","img":"http:\/\/img6.2345.com\/dianyingimg\/img\/c\/6\/19438.jpg","f":"6.8","t":"\u8ffd\u51f6","s":""}],"mod2":[{"u":"http:\/\/dianying.2345.com\/detail\/48844.html","t":"\u5341\u4e8c\u661f\u5ea7\u79bb\u5947\u4e8b","s":"\u4ef6"},{"u":"http:\/\/dianying.2345.com\/detail\/42699.html","t":"\u9189\u540e\u4e00\u591c","s":""},{"u":"http:\/\/dianying.2345.com\/detail\/53618.html","t":"\u502d\u5bc7\u7684\u8e2a\u8ff9","s":""},{"u":"http:\/\/dianying.2345.com\/detail\/42168.html","t":"\u8d5b\u5fb7\u514b\u00b7\u5df4\u83b1","s":""},{"u":"http:\/\/dianying.2345.com\/detail\/43428.html","t":"\u7231\u7684\u9762\u5305\u9b42","s":""},{"u":"http:\/\/dianying.2345.com\/detail\/42220.html","t":"\u4e09\u4e2a\u706b\u67aa\u624b","s":""},{"u":"http:\/\/dianying.2345.com\/detail\/26852.html","t":"\u7231\u60c5\u65e0\u7ebf\u7275","s":""},{"u":"http:\/\/dianying.2345.com\/detail\/48820.html","t":"\u9752\u6625\u671f3","s":""}]},2);
+}

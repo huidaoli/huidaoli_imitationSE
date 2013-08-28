@@ -1,0 +1,59 @@
+﻿@charset "gb2312";
+/* CSS Document */
+
+.clear{clear:both}
+
+.child_box{border:1px solid;border-top:0;}
+.child_box .title{padding-top:1px;height:24px;border-top:1px solid; position:relative}
+.child_m1 td, .child_m1 th {height: 35px;line-height: 35px;padding: 0 8px 0 8px;  font-size: 16px;border-right: 1px solid;border-top: 1px solid ;}
+.child_m1 th {border-right: medium none;font-weight: 100;text-align: left;}
+.child_box .title h2{ height:24px; line-height:24px; font-size:14px; font-weight:bold;text-align:center;}
+.child_box .title span{width:60px; height:24px; line-height:24px; display:block; position:absolute; right:0; top:0; font-size:13px; font-weight:normal}
+.child_box .title span a{color:#333534;}
+.child_box .title span a:hover{color:#fd5151;}
+
+.child_menu{ height:39px; background:url(/neiye/standard/images/child/child.png) repeat-x 0 -78px;}
+.child_menu ul li.menu_l{ width:30px; height:39px; display:block; background:url(/neiye/standard/images/child/child.png) repeat-x 0 0px; float:left;}
+.child_menu ul li.menu_r{ width:5px; height:39px; display:block; background:url(/neiye/standard/images/child/child.png) repeat-x right 0px; float:right;}
+.child_menu li{width:113px; height:39px; font-size:14px; font-weight:bold; text-align:center; float:left;}
+.child_menu li.line{width:5px; margin:0 15px; display:inline;background:url(/neiye/standard/images/child/child.png) repeat-x right -185px; float:left;}
+.child_menu li a{width:113px; height:39px;line-height:39px; color:#fff; display:block}
+.child_menu li a:visited{ color:#e4f2ff;}
+.child_menu li a.active, .child_menu li a:visited.active, .child_menu li a:hover{background:url(/neiye/standard/images/child/child.png) repeat-x  0 -39px; color:#333;}
+
+.child_kecheng{padding:10px 10px 0; background:#fff;}
+.child_kecheng dl{padding-bottom:10px; height:33px; line-height:33px;font-size:14px; }
+.child_kecheng dt{ margin-right:20px;width:100px; height:33px; display:block;text-align:center; font-weight:bold; color:#115da4;background:url(/neiye/standard/images/child/child.png) no-repeat 0 -226px; float:left;}
+.child_kecheng dd{width:846px; float:left;}
+.child_kecheng dd span{padding-left:15px;width:150px; float:left;}
+.child_kecheng dd.bg1{ background:#f7f7f7; border:1px solid #ebebeb; border-left:0; border-right:0}
+
+
+.child_img{padding:10px 0; height:76px;}
+.child_img li{width:197px; text-align:center; float:left;}
+.child_img span{height:21px; line-height:21px; display:block;}
+.child_yule{padding:10px 10px 0; border-top:1px solid}
+.child_yule_title{height:31px; line-height:31px; background:url(/neiye/standard/images/child/child.png) repeat-x 0 -154px;}
+.child_yule_title h3{ width:160px;padding-left:10px; font-size:14px; font-weight:bold; color:#000; background:url(/neiye/standard/images/child/child.png) no-repeat 0 -122px; float:left;}
+.child_yule_title span{width:160px;padding-right:10px; font-size:13px; color:red; background:url(/neiye/standard/images/child/child.png) no-repeat right -122px; text-align:right; float:right;}
+.child_yule_title span a{color:red}
+.child_yule ul{padding:10px 0}
+.child_yule li{width:193px; text-align:center; float:left;}
+.child_yule li a img{margin:0 auto; padding:3px; border:1px solid #e1e5e6; background:#fff;}
+.child_yule li a:hover img{margin:0 auto; padding:3px; border:1px solid #f60; background:#fff;}
+.child_yule li span{height:24px; line-height:24px; display:block;}
+.child_yule_m td{height:35px; line-height:35px; font-size:15px; text-align:center; border-top:1px dashed #97bac3}
+
+.child_img2{padding:10px; border-top:1px solid #dce9f5}
+.child_img2 li{width:161px; text-align:center; float:left;}
+.child_img2 li span{ height:21px; display:block; font-size:13px; text-align:center;}
+.child_img2 li a img{margin:0 auto; padding:3px; border:1px solid #e1e5e6; background:#fff;}
+.child_img2 li a:hover img{margin:0 auto; padding:3px; border:1px solid #f60; background:#fff;}
+
+.nav_d{z-index:999}
+
+/*===��===*/
+.child_box, .keshi, .child_box .title{border-color:#aed1f5;background:#f5faff}
+.child_icon{border-color:#afd1f5; }
+.child_m1 td, .child_m1 th, .jibin_list, .child_yule{border-color:#dce9f5;}
+.child_box .title h2{background:#e6f3ff;color:#5986b2;}

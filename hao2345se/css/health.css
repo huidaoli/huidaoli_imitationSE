@@ -1,0 +1,57 @@
+@charset "gb2312";
+/* CSS Document */
+
+.clear{clear:both}
+
+.health_box{border:1px solid;border-top:0;}
+.health_box .title{padding-top:1px;height:24px;border-top:1px solid}
+.health_icon{padding:5px 0 0 13px;background:url(../images/health/healthbg.png) repeat-x 0 -158px; height:80px; margin:5px 0;border:1px solid;}
+.icon_txt{padding:5px 15px 0 0;width:17px; height:75px; line-height:16px; font-size:13px; color:#4d5794; display:block; float:left; background:url(../images/health/healthbg.png) no-repeat right -243px;}
+.icon{padding-top:0px; width:935px; float:left;}
+.icon a{ margin:5px 15px 0;width:62px; height:70px; font-size:12px; text-align:center; display:inline; float:left;}
+.icon img{display:block; margin:0 auto;}
+.icon span{width:1px; height:75px; display:block; background:url(healthbg.png) no-repeat 0 -243px; float:left;}
+.health_m1 td, .health_m1 th {height: 35px;line-height: 35px;padding: 0 8px 0 8px;  font-size: 15px;border-right: 1px solid;border-top: 1px solid ;}
+.health_m1 th {border-right: medium none;font-weight: 100;text-align: left;}
+.health_m1 .mv_photo td, .health_m1 .mv_photo th{height:auto;}
+.mv_img{ margin:10px 0 5px;padding:2px; width:143px; background:url(healthbg.png) no-repeat 0 0;}
+.mv_img img{margin-bottom:14px;}
+.mv_img span{ height:24px; line-height:24px; display:block; font-size:13px;text-align:center;}
+.keshi{margin-bottom:5px;border:1px solid;}
+.keshi a{color:#5986b2}
+.health_box .title h2{ height:24px; line-height:24px; font-size:14px; font-weight:bold;text-align:center;}
+.jibin_list{padding:10px 10px 0 10px; height:100%; border-top:1px solid}
+.jibin_list li{ padding-bottom:10px; height:25px; line-height:25px;width:50%; float:left;}
+.jibin_list li span{padding-left:10px;width:90px; height:25px; display:inline-block; background:url(../images/health/healthbg.png) no-repeat 0 -133px; color:#437300}
+.jibin_list li a{margin-left:15px;}
+.jibin_list li a.more{color:#5986b2}
+
+/*===ÂÌ===*/
+.health_box, .keshi, .health_box .title{border-color:#B9D8AD;background:#ECF5E4}
+.health_icon{border-color:#B9D8AD; }
+.health_m1 td, .health_m1 th, .jibin_list{border-color:#B9D8AD;}
+.health_box .title h2{background:#C6DFBC;color:#005018;}
+
+/*===»Æ===*/
+.health_box, .keshi, .health_box .title{border-color:#D5BA64;background:#FDFAF2}
+.health_icon{border-color:#D5BA64; }
+.health_m1 td, .health_m1 th, .jibin_list{border-color:#F3E4B5;}
+.health_box .title h2{background:#F9EFC4;color:#B35000;}
+
+/*===·Û===*/
+.health_box, .keshi, .health_box .title{border-color:#DCB6C5;background:#FFF9FB}
+.health_icon{border-color:#DCB6C5; }
+.health_m1 td, .health_m1 th, .jibin_list{border-color:#FAD7E5;}
+.health_box .title h2{background:#FDE3EE;color:#9E082F;}
+
+/*===»Ò===*/
+.health_box, .keshi, .health_box .title{border-color:#ccc;background:#F9F9F9}
+.health_icon{border-color:#ccc; }
+.health_m1 td, .health_m1 th, .jibin_list{border-color:#ddd;}
+.health_box .title h2{background:#E7E7E7;color:#333;}
+
+/*===À¶===*/
+.health_box, .keshi, .health_box .title{border-color:#aed1f5;background:#f5faff}
+.health_icon{border-color:#afd1f5; }
+.health_m1 td, .health_m1 th, .jibin_list{border-color:#dce9f5;}
+.health_box .title h2{background:#e6f3ff;color:#5986b2;}

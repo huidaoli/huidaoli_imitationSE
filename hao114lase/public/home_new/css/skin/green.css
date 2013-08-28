@@ -1,0 +1,24 @@
+@charset "gb2312";
+#wrap,.topbar .sets .sethome,.header .notice,.m-search,.m-search-tab .active,.m-search-tab .active116{ background-image:url(../../images/skin/green_spirit.png);}
+#wrap{ background-position:0 -207px; background-repeat:repeat-x;}
+.m-search-tab .active{ background-position:0 -23px; background-repeat:no-repeat; }
+.m-search-tab .active116{ background-position:0 -48px; background-repeat:no-repeat;}
+.topbar .sets .sethome{ background-position:0 -84px; background-repeat:no-repeat;}
+.header .notice{ background-position:0 3px; background-repeat:no-repeat;}
+.m-search{  border-color:#b7dd4f; background-position:0 -128px;background-repeat:repeat-x; }
+.header .logo{background-image:url(../../images/skin/green_logo.png);_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="");}
+.topbar{ border-color:#cee78c;}
+.col-hotKeys .hotKeys a,.box-prlInq .tit,.box-prlInq .more,.usage-tab .active,.col-coolsite .tit,.usage-con .tbox .ipt-text,.fmSite-tab li,.box-tuan a,.sortSite .tit a,.recomSite .tit a{ color:#5c7f01;}
+.topbar .setColor .blue{ background-position:-1px -568px;}
+.topbar .setColor .green{ background-position:-20px -612px;}
+.skin-list .default-setColor .blue{ background-position:0px -590px;}
+.skin-list .default-setColor .green{ background-position:-19px -634px;}
+.sideBar,.col-usage,.col-coolsite,.col,.fmSite-tab li,.box-tuan{ border-color:#a2d175;}
+.starBar{border-color:#cee1a2;}
+.starBar li.hover{ background-color:#e5f1cb;}
+.fmSite-tab li span,.box-tuan a{ background-color:#e7f6cb;}
+.sortSite{border-color:#e2f0c4; background-color:#fdfff9;}
+.sideBar{ background-color:#f6faed;}
+.col-recomSite{background-color:#fdfff9;}
+.usage-tab li{ background-color:#e5f1cb;}
+.usage-tab .active{background-color:#89c455;color:#fff;}

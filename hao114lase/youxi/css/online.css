@@ -1,0 +1,66 @@
+@charset "utf-8";
+.hot-online{
+	margin-bottom:10px;
+}
+.hot-online .box-con{
+	padding:3px 5px 0 4px;
+	height:370px
+}
+.hot-online-list-wp{
+	height:362px;
+	overflow:hidden;
+	width:940px;
+	position:relative;
+}
+.hot-online-list{
+	position:relative; 
+	left:1px;
+	top:1px;
+}
+.hot-online-list li{
+	border-bottom:1px dashed #ddd;
+	border-right:1px dashed #ddd;
+	display:inline;
+	float:left;
+	height:120px;
+	overflow:hidden;
+	width:187px;
+}
+.hot-online-list a{
+	display:block;
+	width:138px;
+	margin:0 auto;
+	padding-top:10px;
+}
+.hot-online-list img{
+	border:1px solid #ddd;
+	display:block;
+	height:69px;
+	padding:3px;
+	width:130px;
+}
+.hot-online-list .name{
+	display:block;
+	height:20px;
+	overflow:hidden;
+	margin-top:5px;
+	text-align:center;
+	white-space:nowrap;
+	word-break:keep-all;
+	width:100%;
+}
+.hot-online-list a:hover{
+	text-decoration:none;
+}
+.hot-online-list a:hover img{
+	border-color:#fe6300;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+@charset "gb2312";
+/* global */
+html{overflow-y:scroll;}
+body {margin:0; padding:0; font:12px/1.5 "\5B8B\4F53",san-serif;background:#fff;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;}  
+table,td,tr,th{font-size:12px;}
+img{vertical-align:top;border:0; behavior: url("iepngfix.htc") ;}
+ol,ul,li {list-style:none;}
+h1,h2,h3,h4,h5,h6 {font-size:12px; font-weight:normal;}
+address,cite,code,em,th {font-weight:normal; font-style:normal;}
+.fB{font-weight:bold;}
+.f12px{font-size:12px;}
+.f14px{font-size:14px;}
+.f25px{font-size:25px;}
+.left{float:left;}
+.right{ float:right;}
+.right{float:right;}
+.fred,a.fred{ color:#fd5151;}
+.mt15{ margin-top:15px;}
+.ml5{ margin-left:5px;}
+.ml20{ margin-left:20px;}
+.mb15{ margin-bottom:15px;}
+.mt17{margin-top:17px;}
+.bbline{ border-bottom:1px solid #dbdbdb;}
+.pbt15{ padding-bottom:15px;}
+.f999{ color:#999;}
+.f666{ color:#666;}
+.f00{ color:#F00}
+input{ outline:none;}
+a{ color:#006fa0; text-decoration:none; outline:none;}
+a:hover{ color:#fd5151; text-decoration:underline;}
+a .f00{ color:#F00;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+a:active,a:focus{outline:none;}
+.radio_01{ width:13px; height:13px; overflow:hidden; vertical-align:middle; margin:-4px 3px 0 0; _margin:0 3px 0 0;}
+.pdleft20{ padding-left:20px;}
+.nofloat{ float:none;}
+iframe{border:0}
+

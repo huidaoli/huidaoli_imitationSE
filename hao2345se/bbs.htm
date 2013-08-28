@@ -1,0 +1,478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>社区-我的网址导航</title>
+<link href="css/blog.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="neiye/js/libnew.js"></script>
+
+<SCRIPT type=text/javascript>
+function clickMail()
+{var gm=document.gomail
+var vDomain=gm.domains
+var vName=gm.uName
+var vPw=gm.uPw
+if(vDomain.value==""){alert("您没有选择论坛！")
+	vDomain.focus()
+	return false}
+if(vName.value==""){alert("用户名不能为空！")
+	vName.focus()
+	return false
+}
+if(vPw.value==""){alert("密码不能为空！")
+	vPw.focus()
+	return false}
+switch(vDomain.value){
+case "163":
+gm.action="http://reg.163.com/login.jsp"
+gm.url.value="http://bbs5.news.163.com/board/postlist.jsp?b=society"
+gm.username.value=vName.value
+gm.password.value=vPw.value
+break
+case "126":
+gm.action="http://entry.126.com/cgi/login"
+gm.domain.value="126.com"
+gm.user.value=vName.value
+gm.pass.value=vPw.value
+break
+
+case "sohu1":
+gm.action="http://passport.sohu.com/login.jsp"
+gm.url.value=""
+gm.UserName.value=vName.value
+gm.Password.value=vPw.value
+gm.id.value=vName.value
+gm.username.value=vName.value
+gm.password.value=vPw.value
+gm.m.value=vName.value
+gm.passwd.value=vPw.value
+gm.mpass.value=vPw.value
+gm.loginid.value=vName.value+"@sohu.com"
+gm.fl.value="1"
+gm.vr.value="1|1"
+gm.appid.value="1000"
+gm.ru.value="http://login.mail.sohu.com/servlet/LoginServlet"
+gm.eru.value="http://login.mail.sohu.com/login.jsp"
+gm.ct.value="1173080990"
+gm.sg.value="5082635c77272088ae7241ccdf7cf062"
+break
+
+case "sina":
+gm.action="http://bbs.service.sina.com.cn/forum/login.php?url=http://bbs.sina.com.cn/"
+gm.loginname.value=vName.value
+gm.passwd.value=vPw.value
+break
+
+case "sohu":
+gm.action="http://passport.sohu.com/login.jsp"
+gm.loginid.value=vName.value+"@chinaren.com"
+gm.passwd.value=vPw.value
+gm.fl.value="1"
+gm.vr.value="1|1"
+gm.appid.value="1005"
+gm.ru.value="http://profile.chinaren.com/urs/setcookie.jsp?burl=http://alumni.chinaren.com/"
+gm.ct.value="1174378209"
+gm.sg.value="84ff7b2e1d8f3dc46c6d17bb83fe72bd"
+break
+case "tianya":
+gm.action="http://www.tianya.cn/user/loginsubmit.asp"
+gm.vwriter.value=vName.value
+gm.vpassword.value=vPw.value
+break
+case "baidu":
+gm.action="https://passport.baidu.com/?login"
+gm.username.value=vName.value
+gm.password.value=vPw.value
+break
+case "51":
+gm.action="http://passport.51.com/login.5p"
+gm.passport_51_user.value=vName.value
+gm.passport_51_password.value=vPw.value
+gm.gourl.value="http%3A%2F%2Fmy.51.com%2Fwebim%2Findex.php"
+break
+case "xiaonei":
+gm.action="http://www.renren.com/PLogin.do"
+gm.email.value=vName.value
+gm.password.value=vPw.value
+gm.domain.value = "renren.com";
+break
+case "kaixin001":
+gm.action="http://www.kaixin001.com/login/login.php"
+gm.email.value=vName.value
+gm.password.value=vPw.value
+gm.url.value="/home/"
+break
+}
+vPw.value=""
+return true}</SCRIPT>
+<style type="text/css">
+<!--
+.lineS {color:#999999}
+.tdH {line-height:24px; height:24px}
+.tdL {color:#538753; padding:0px 0 0 15px; font-weight:600}
+.tdR {color:#538753; padding:0px 0 0 0; font-weight:600}
+hr.cg {border-top:1px dashed #C8DEC6;height: 1px;overflow:hidden; width:99%; margin-top:0}
+.STYLE1 {color: #4b5793; padding: 0px 0 0 15px; font-weight: 600; }
+.STYLE2 {color: #4b5793; padding: 0px 0 0 0; font-weight: 600; }
+#tab_s2 { font-size:16px;background-color:#eaf0fe}
+#tab_s2 td{ height:33px; line-height:33px; padding-left:14px; }
+#tab_s2.td1{border_bottom:1px dashed #c2d4ec;}
+.linkh a{ float:right; margin-right:15px; color:#4C5693;}
+-->
+</style>
+</head>
+
+<body>
+<script id="xtopjs" src="neiye/js/xtop.js"></script>
+
+<div class="head">
+<script type="text/javascript" src="neiye/js/sosohead.js"></script>
+</div>
+
+<div class="menu">
+	<ul class="clearfix">
+        <li><a href="weibo.htm" title="" target="_self">微博</a></li>
+        <li class="line"></li>
+        <li><a href="blog.htm" title="" target="_self">博客</a></li>
+        <li class="line"></li>
+    	<li><a href="chat.htm" title="" target="_self">聊天</a></li>
+        <li class="line"></li>
+        <li><a href="love.htm" title="" target="_self">交友</a></li>
+        <li class="line"></li>
+        <li><a class="m_curr" title="">论坛</a></li>
+     </ul>
+</div>  
+
+<div class="wrap">
+  <!-- left -->
+  <div class="left">
+        <table class="m_1" width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+    <th colspan="5"><form name=gomail onSubmit="return clickMail()" action="" method="post" id="FrLgn" style="margin:5px;padding:0" target="_blank">
+      <p align="center">
+        <INPUT type=hidden name=url>
+        <INPUT type=hidden name=username>
+        <INPUT type=hidden name=password>
+        <INPUT type=hidden name=domain>
+        <INPUT type=hidden name=user>
+        <INPUT type=hidden name=pass>
+        <INPUT type=hidden value=true name=enterVip>
+        <INPUT type=hidden name=UserName>
+        <INPUT type=hidden name=Password>
+        <INPUT type=hidden name=u  value=http://tieba.baidu.com/>
+        <INPUT type=hidden name=psw>
+        <INPUT type=hidden name=login>
+        <INPUT type=hidden name=LoginName>
+        <INPUT type=hidden name=usr>
+        <INPUT type=hidden name=Passwd>
+        <INPUT type=hidden name=passwd>
+        <INPUT type=hidden name=fl>
+        <INPUT type=hidden name=ct>
+        <INPUT type=hidden name=vr>
+        <INPUT type=hidden name=sg>
+        <INPUT type=hidden name=vwriter>
+        <INPUT type=hidden name=vpassword>
+        <INPUT type=hidden name=loginname>
+        <INPUT type=hidden value=1 name=type> 
+        <INPUT type=hidden value=bbs name=product>
+        <input type=hidden name=passport_51_user>
+        <input type=hidden name=passport_51_password>
+        <input type=hidden name=gourl>
+		<input type=hidden name=gourl>
+        <INPUT type=hidden name=email>
+        <INPUT type=hidden name=origURL>
+        用户名：
+        <input tabIndex=1 size=20 name=uName style="height:15px;font-size:15px;padding-top:2px;"> 
+        &nbsp; &nbsp;论坛：
+        <select tabIndex=2 size=1 name=domains style="height:20px;font-size:15px;">
+          <option selected >请选择论坛</option>
+          <option value=baidu>百度贴吧</option>
+		  <option value=tianya>天涯社区</option>
+          <option value=sina>新浪论坛</option>
+          <option value=163>网易论坛 </option>
+          <option value=51>51.com 博客</option>
+          <option value=xiaonei>人人网（原校内）</option> 
+        </select> 
+         &nbsp; &nbsp;密码：
+        <input tabIndex=3 type=password size=20 name=uPw style="height:15px;font-size:15px;padding-top:2px;"> 
+        <input   tabIndex=4 type=submit value=" 登 录 " name=sub style="height:23px;width:76px;font-size:15px;">
+        <INPUT type=hidden value=submit name=cmd>
+      </p>
+    </form></Th>
+  </TR>
+      </table>
+	   <h2>综合论坛</h2>
+        <table class="m_1" width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="20%"><a href="http://www.tianya.cn/">天涯社区</a></td>
+            <td width="20%"><a href="http://www.mop.com/">猫扑</a></td>
+            <td width="20%"><a href="http://bbs.sina.com.cn/">新浪论坛</a></td>
+            <td width="20%"><a href="http://club.sohu.com/">搜狐社区</a></td>
+            <td width="20%"><a href="http://tieba.baidu.com/">百度贴吧</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://www.xici.net/">西祠胡同</a></td>
+            <td><a href="http://bbs.qq.com/">QQ论坛</a></td>
+            <td><a href="http://bbs.voc.com.cn/">华声论坛</a></td>
+            <td><a href="http://www.kaixin001.com/">开心网</a></td>
+            <td width="20%"><a href="http://sobar.soso.com/">搜吧</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://club.kdnet.net/">凯迪社区</a></td>
+            <td><a href="http://www.daqi.com/">大旗网</a></td>
+            <td><a href="http://club.china.com/">中华网社区</a></td>
+            <td><a href="http://forum.home.news.cn/">新华网论坛</a></td>
+            <td><a style="color:#ff0000" href="http://bbs.cn.yahoo.com/"> 雅虎论坛</a></td> 
+          </tr>
+          <tr>
+            <td><a style="color:#ff0000" href="http://bbs.2hua.com/">花花女人社区 </a></td>
+            <td><a href="http://www.xilu.com/">西陆社区</a></td>
+            <td><a href="http://paoxue.com/">泡泡恋爱学院</a></td>
+            <td><a href="http://bbs.163.com/">网易论坛</a></td>
+            <td><a href="http://club.chinaren.com/">ChinaRen社区</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://bbs.ifeng.com/">凤凰论坛</a></td>
+            <td><a href="http://www.19lou.com/">19楼论坛</a></td>
+            <td><a href="http://bbs1.people.com.cn/boardList.do?action=postList&boardId=1">强国论坛</a></td>
+            <td><a href="http://www.51.com/?fromsite=2345_4">51.com</a></td>
+            <td><a href="http://bbs.huanqiu.com/">环球网论坛</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://www.55bbs.com/">我爱打折网</a></td>
+            <td><a href="http://www.qihoo.com/">奇虎问答</a></td>
+            <td><a href="http://bbs.duote.com/">多特软件论坛</a></td>
+            <td><a href="http://www.kaixin.com/">千橡开心网</a></td>
+            <td><a href="http://iask.sina.com.cn/">新浪爱问</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://www.5460.net/">5460同学录</a></td>
+            <td><a href="http://www.mosh.cn/">魔时网</a></td>
+            <td><a href="http://www.trendsmen.com/"> 时尚男人网 </a></td>
+            <td><a href="http://club.tom.com/">TOM社区</a></td>
+            <td><a href="http://bbs.chinanews.com/">中新网社区</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://bbs.tui18.com/">推一把论坛</a></td>
+            <td><a href="http://day.2345.com/">每日一乐</a></td>
+            <td><a href="http://at.yoka.com/">YOKA分享</a></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+    
+      </table>
+<h2>社交网站</h2>
+        <table class="m_1" width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="20%"><a href="http://www.kaixin001.com/">开心网</a></td>
+            <td width="20%"><a href="http://wwv.renren.com/">人人网</a></td>
+            <td width="20%"><a href="http://qzone.qq.com/">QQ空间</a></td>
+            <td width="20%"><a href="http://hi.baidu.com/">百度空间</a></td>
+            <td width="20%"><a href="http://www.douban.com/">豆瓣</a></td>
+          </tr>
+           <tr>
+            <td><a href="http://t.qiyi.com/">奇谈社区</a></td>
+            <td width="20%"><a href="http://www.chinaren.com/">chinaren</a></td>
+            <td width="20%"><a href="/daxue/college_bbs.htm">知名大学论坛</a></td>
+            <td width="20%"><a href="http://www.usquan.com/">大学生圈</a></td>
+            <td width="20%"><a href="http://www.pengyou.com/">朋友网</a></td>
+          </tr>
+          <tr>
+            <td width="20%"><a href="http://bai.sohu.com/">搜狐白社会</a></td>
+            <td width="20%"><a href="http://www.yyarea.com/">歪歪地盘</a></td>
+            <td width="20%"><a href="http://www.diandian.com/">点点网</a></td>
+            <td width="20%"><a href="http://www.pengyou.com/">朋友网</a></td>
+            <td width="20%"><a href="http://www.51.com/">51.com</a></td>
+          </tr>
+      </table>
+       <h2>微博网站</h2>
+        <table class="m_1" width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+      <td width="20%"><a href="http://t.qq.com/">腾讯QQ微博</a></td>
+      <td width="20%"><a style="color:#ff0000" href="http://weibo.com/?c=spr_web_sq_6164_weibo_t001">新浪微博</a></td>
+      <td width="20%"><a href="http://t.sohu.com/">搜狐Sohu微博</a></td>
+      <td width="20%"><a href="http://t.163.com/">网易163微博</a></td>
+      <td width="20%"><a href="http://t.ifeng.com/">凤凰网微博</a></td>
+      </tr>
+     <tr>
+      <td width="20%"><a style="color:#ff0000" href="http://www.tuita.com/">推他网</a></td>
+      <td width="20%"><a href="http://t.hexun.com/">和讯财经微博</a></td>
+      <td width="20%"><a href="http://fanfou.com/">饭否网</a></td>
+      <td width="20%"><a href="http://www.zuosha.net/">做啥网</a></td>
+      <td width="20%"><a href="http://digu.com/">嘀咕网</a></td>
+      </tr>
+      <tr>
+      	<td><a href="http://shequ.10086.cn/">移动微博</a></td>
+        <td><a href="http://t.ifeng.com/">凤凰网微博</a></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      
+      </tr>
+    </table>
+    <h2>博客</h2>
+        <table class="m_1" width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+      <td width="20%"><a href="http://blog.sina.com.cn/">新浪博客</a></td>
+      <td width="20%"><a href="http://blog.163.com/">网易博客</a></td>
+      <td width="20%"><a href="http://blog.sohu.com/">搜狐博客</a></td>
+      <td width="20%"><a href="http://blog.qq.com/">腾讯博客</a></td>
+      <td width="20%"><a href="http://blog.tianya.cn/">天涯博客</a></td>
+      </tr>
+     <tr>
+      <td width="20%"><a href="http://blog.ifeng.com/">凤凰博报</a></td>
+      <td width="20%"><a href="http://www.caogen.com/">草根网</a></td>
+      <td width="20%"><a href="blog.htm">博客网址大全&gt;&gt;</a></td>
+      <td width="20%">&nbsp;</td>
+      <td width="20%">&nbsp;</td>
+      </tr>
+     </table>
+      <h2>搜狗搜索</h2>
+        <table class="m_1" width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=找女友&pid=sogou-site-220c77af02f8ad85">找女友</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=美女交友网站&pid=sogou-site-220c77af02f8ad85">美女交友网站</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=同城交友&pid=sogou-site-220c77af02f8ad85">同城交友</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=同城在线交友&pid=sogou-site-220c77af02f8ad85">同城在线交友</a></td> 
+            <th width="20%"><a href="http://www.sogou.com/sogou?query=免费交友网&pid=sogou-site-220c77af02f8ad85">免费交友网</a></th> 
+          </tr> 
+          <tr> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=8分钟交友&pid=sogou-site-220c77af02f8ad85">8分钟交友</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=免费交友&pid=sogou-site-220c77af02f8ad85">免费交友</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=异性交友中心&pid=sogou-site-220c77af02f8ad85">异性交友中心</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=交女朋友&pid=sogou-site-220c77af02f8ad85">交女朋友</a></td> 
+            <th width="20%"><a href="http://www.sogou.com/sogou?query=美女网页游戏&pid=sogou-site-220c77af02f8ad85">美女网页游戏</a></th> 
+          </tr> 
+     </table>
+<h2>主题论坛</h2>
+	   <table class="m_1" width="100%" border="0" cellpadding="0" cellspacing="0">
+         <tr>
+           <td width="50%" style="border-bottom:1px dashed #c2d4ec;"><font class="STYLE1">电子书</font> <a href="http://www.txtbbs.com/">txt论坛</a> <font class="lineS">|</font> <a href="http://www.feiku.com/">飞库电子书</a> <font class="lineS">|</font> <a href="http://www.txtxz.com/">非凡txt论坛</a></td>
+           <td width="50%" style="border-bottom:1px dashed #c2d4ec;"><font class="STYLE2">体育</font> <a href="http://sports.sina.com.cn/bbs/">新浪体育论坛</a> <font class="lineS">|</font> <a href="http://bbs.chinafishing.com/">海峡钓鱼论坛</a></td>
+         </tr>
+   
+         <tr>
+           <td width="50%"><font class="STYLE1">手机</font><a href="http://nokia.zol.com.cn/">诺基亚论坛</a> <font class="lineS">|</font> <a href="http://iphone.tgbus.com/">iphone中文网</a> <font class="lineS">|</font> <a href="http://bbs.weiphone.com/">威锋网</a></td>
+           <td width="50%"><font class="STYLE2">时尚</font> <a href="http://www.6diy.com/">DIY手工俱乐部</a> <font class="lineS">|</font> <a href="http://bbs.trends.com.cn/">时尚论坛</a> <font class="lineS">|</font> <a href="http://www.iwatch365.net/">爱表族论坛</a> <font class="lineS">|</font> <a href="http://luntan.szxchina.com/">十字绣论坛</a></td>
+         </tr>
+       </table>
+
+
+	  	   <h2>专业论坛</h2>
+        <table class="m_1" width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="20%"><a href="http://www.xitek.com/">色影无忌</a></td>
+            <td width="20%"><a href="http://www.fengniao.com/">蜂鸟网</a></td>
+            <td width="20%"><a href="http://www.douban.com/">豆瓣</a></td>
+            <td width="20%"><a href="http://com.mysvw.com/">大众车友论坛</a></td>
+            <td width="20%"><a href="http://www.iyaya.com/">丫丫家庭社区</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://bbs.tiexue.net/">铁血社区</a></td>
+            <td><a href="http://bbs.yoka.com/">YOKA社区</a></td>
+            <td><a href="http://www.goumin.com/">狗民网</a></td>
+            <td><a href="http://bbs.rayli.com.cn/">瑞丽女性论坛</a></td>
+            <td><a href="http://bbs.8264.com/">中国驴友论坛</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://club.autohome.com.cn/">汽车之家社区</a></td>
+            <td><a href="http://bbs.hongxiu.com/">红袖论坛</a></td>
+            <td><a href="http://bbs.39.net/">39健康社区</a></td>
+            <td><a href="http://bbs.soufun.com/">搜房业主论坛</a></td>
+            <td><a href="http://club.china.alibaba.com/">阿里巴巴商人论坛</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://bbs.eastmoney.com/">东方财富网论坛</a></td>
+            <td><a href="http://guba.eastmoney.com/">股吧</a></td>
+            <td><a href="http://www.knifriend.com/">刀友论坛</a></td>
+            <td><a href="http://www.6to23.com/">中国学生网论坛</a></td>
+            <td><a href="http://bbs.kaoyan.com/">考研论坛</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://www.astronomy.com.cn/bbs/">牧夫天文论坛</a></td>
+            <td><a href="http://bbs.chinaswim.com/">悠泳论坛</a></td>
+            <td><a href="http://bbs.yaolan.com/">摇篮网-育儿论坛</a></td>
+            <td><a href="http://bbs.trends.com.cn/">时尚论坛</a></td>
+            <td><a href="http://bbs.haha168.com/">八目妖笑话社区</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://bbs.chinaacc.com/">中华会计网校论坛</a></td>
+            <td><a href="http://www.comsenz.com/downloads/install/discuz">DISCUZ论坛程序</a></td>
+            <td><a href="http://community.csdn.net/">CSDN论坛</a></td>
+            <td><a href="http://www.qiushibaike.com/">糗事百科</a></td>
+            <td><a href="http://bbs.shudoo.com/">电脑报论坛</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://www.im286.com/">落伍者</a></td>
+            <td><a href="http://bbs.mumayi.net/">木蚂蚁社区</a></td>
+            <td><a href="http://www.donews.com/">DoNews</a></td>
+            <td><a href="http://bbs.zol.com.cn/">中关村在线论坛</a></td>
+            <td><a href="http://bbs.admin5.com/">站长论坛</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://www.jd-bbs.com/">家电论坛</a></td>            
+            <td><a href="http://top.daqi.com/paihang/9.html">理财论坛排行</a></td>
+            <td><a href="http://www.mtime.com/community/">Mtime时光网</a></td>
+			<td><a href="http://www.jcwcn.com/">中国教程论坛</a></td>
+            <td><a href="http://bbs.caomeipai.com/forum.php">草莓派护肤论坛</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://bbs.paidai.com/">派代电商论坛</a></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+			<td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+      </table>
+	 
+
+    <h2>各地论坛</h2>
+                <table width="100%" border="0" cellpadding="0" cellspacing="1"id="tab_s">
+          <tr align="left">
+            <th colspan="5" align="center"><img src="images/map_cn0907.gif" border="0" usemap="#map1" />
+              <map name="map1" id="map1">
+                <area shape="poly" coords="439,340" href="#" />
+                <area shape="rect" coords="387,395,433,426" href="http://www.2345.com/bbs/hainan.htm?" target="_blank" alt="海南" />
+                <area shape="rect" coords="474,313,509,344" href="http://www.2345.com/bbs/fujian.htm?" target="_blank" alt="福建" />
+                <area shape="rect" coords="425,337,469,367" href="http://www.2345.com/bbs/guangdong.htm?" target="_blank" alt="广东" />
+                <area shape="rect" coords="377,343,415,372" href="http://www.2345.com/bbs/guangxi.htm?" target="_blank" alt="广西" />
+                <area shape="rect" coords="298,333,342,365" href="http://www.2345.com/bbs/yunnan.htm?" target="_blank" alt="云南" />
+                <area shape="rect" coords="354,311,395,336" href="http://www.2345.com/bbs/guizhou.htm?" target="_blank" alt="贵州" />
+                <area shape="rect" coords="405,296,447,324" href="http://www.2345.com/bbs/hunan.htm?" target="_blank" alt="湖南" />
+                <area shape="rect" coords="486,273,525,300" href="http://www.2345.com/bbs/zhejiang.htm?" target="_blank" alt="浙江" />
+                <area shape="rect" coords="449,288,485,313" href="http://www.2345.com/bbs/jiangxi.htm?" target="_blank" alt="江西" />
+                <area shape="rect" coords="408,255,451,281" href="http://www.2345.com/bbs/hubei.htm?" target="_blank" alt="湖北" />
+                <area shape="rect" coords="365,274,401,304" href="http://www.2345.com/bbs/chongqing.htm?" target="_blank" alt="重庆" />
+                <area shape="rect" coords="456,249,492,275" href="http://www.2345.com/bbs/anhui.htm?" target="_blank" alt="安徽" />
+                <area shape="rect" coords="485,223,518,251" href="http://www.2345.com/bbs/jiangsu.htm?" target="_blank" alt="江苏" />
+                <area shape="rect" coords="521,245,566,274" href="http://www.2345.com/bbs/shanghai.htm?" target="_blank" alt="上海" />
+                <area shape="rect" coords="457,191,500,221" href="http://www.2345.com/bbs/shandong.htm?" target="_blank" alt="山东" />
+                <area shape="rect" coords="419,225,459,252" href="http://www.2345.com/bbs/henan.htm?" target="_blank" alt="河南" />
+                <area shape="rect" coords="361,226,410,253" href="http://www.2345.com/bbs/shanxi.htm?" target="_blank" alt="陕西" />
+                <area shape="rect" coords="310,259,355,291" href="http://www.2345.com/bbs/sichuan.htm?" target="_blank" alt="四川" />
+                <area shape="rect" coords="468,159,515,183" href="http://www.2345.com/bbs/tianjin.htm?" target="_blank" alt="天津" />
+                <area shape="rect" coords="425,164,459,190" href="http://www.2345.com/bbs/hebei.htm?" target="_blank" alt="河北" />
+                <area shape="rect" coords="399,190,445,211" href="http://www.2345.com/bbs/sanxi.htm?" target="_blank" alt="山西" />
+                <area shape="rect" coords="343,186,393,211" href="http://www.2345.com/bbs/ningxia.htm?" target="_blank" alt="宁夏" />
+                <area shape="rect" coords="244,199,295,236" href="http://www.2345.com/bbs/qinghai.htm?" target="_blank" alt="青海" />
+                <area shape="rect" coords="425,135,468,159" href="http://www.2345.com/bbs/beijing.htm?" target="_blank" alt="北京" />
+                <area shape="rect" coords="493,126,535,152" href="http://www.2345.com/bbs/liaoning.htm?" target="_blank" alt="辽宁" />
+                <area shape="rect" coords="518,99,555,124" href="http://www.2345.com/bbs/jilin.htm?" target="_blank" alt="吉林" />
+                <area shape="rect" coords="507,58,559,88"   href="http://www.2345.com/bbs/heilongjiang.htm?" target="_blank" alt="黑龙江" />
+                <area shape="rect" coords="347,150,412,172" href="http://www.2345.com/bbs/neimenggu.htm?" target="_blank" alt="内蒙古" />
+                <area shape="rect" coords="262,146,304,181" href="http://www.2345.com/bbs/gansu.htm?" target="_blank" alt="甘肃" />
+            </map></th>
+          </tr></td>
+    </tr>
+      </table> 
+ 
+  </div>
+  <!-- left end -->
+</div>
+<script type="text/javascript">
+var pageName='社区';
+</script>
+<script src="neiye/js/sosofooter.js" type="text/javascript"></script>
+</body>
+</html>
+<span style="display:none"><script type="text/javascript" src="css/tj.js"></script></span>

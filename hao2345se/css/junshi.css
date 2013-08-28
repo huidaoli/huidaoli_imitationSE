@@ -1,0 +1,146 @@
+﻿th {font-size:12px; text-align:center;}
+td {font-size:12px; text-align:center;}
+body {font-size:12px; text-align:center;}
+li{list-style:none}
+ul{list-style:none}
+a {color: #333;text-decoration: none;outline:none}
+a:hover {text-decoration: underline;color: #F00;}
+a:visited {color: #009191;text-decoration: none;}
+*{padding:0; margin:0}
+img{border:none}
+.red{color:#ff5100}
+.clear{clear:both}
+.hr_8{height:7px; overflow:hidden; clear:both}
+.warp{width:990px; margin:0 auto; text-align:left;}
+.pic_news li.end{margin:0}
+.box{border:1px solid #a4d0e5;padding:1px;}
+.junshi_box{border:1px solid #aed1f5; border-top:none; border-bottom:none; background:#f5faff}
+.junshi_box h3{ height:27px; line-height:27px;font-size:14px; font-weight:bold; color:#4378af; text-align:center; background:url(../images/junshi/junshibg.png) repeat-x 0 0; border:1px solid #a5c0f7; border-left:none; border-right:none}
+
+.junshi_m th{ padding-left:15px; height:35px; font-size:16px;line-height:35px; border:1px solid #dce9f5; border-top:none; border-left:none; text-align:left;}
+
+.junshi_m td{ width:16.6%;padding-left:15px; height:35px; font-size:16px;line-height:35px; border:1px solid #dce9f5; border-top:none; border-left:none; text-align:left;}
+.junshi_m th{ width:17%; border:none; border-bottom:1px solid #dce9f5;  font-weight:normal;}
+.junshi_news_box_left{width:300px; height:424px; float:left;padding:5px; float:left;}
+.junshi_news_box_mid{padding:5px 0; width:367px; height:424px;  float:left;}
+.junshi_news_box_right{width:300px; height:424px;  padding:5px; float:left;}
+
+
+.junshi_news{ height:412px;border:1px solid #c6d8e0;padding:5px 18px;background:#fff;overflow:hidden;zoom:1}
+.junshi_news h4{padding-bottom:6px;height:28px; line-height:28px; text-align:center; font-size:16px; font-weight:bold; overflow:hidden}
+.junshi_news h4 a{color:#214972}
+.junshi_news h4 a:hover{color:#f00}
+.junshi_news .xiangq{padding-bottom:10px; font-size:12px; line-height:22px; color:#464646; border-bottom:1px dotted #999;}
+.junshi_news ul{padding-top:13px;}
+.junshi_news li{height:24px; line-height:24px; font-size:13px; padding-left:5px; overflow:hidden;}
+.junshi_rank li em{ font-size:12px; font-style:normal; font-family:'宋体'; color:#999;}
+.junshi_news .imgbox_spec{margin-top:10px;}
+.junshi_news .imgbox_spec img{width:329px;height:40px;overflow:hidden;}
+.junshi_jingxuan li em{ font-size:12px; font-style:normal; font-family:'宋体'; color:#999;}
+
+.junshi_news li em{ font-size:12px; font-style:normal; font-family:'宋体'; color:#999;}
+
+.junshi_jingxuan{height:422px;border:1px solid #c6d8e0;background:#fff; zoom:1}
+.junshi_rank h4{height:29px; line-height:29px; line-height:29px; background:url(../images/junshi/junshibg.png) repeat-x 0 -28px}
+.junshi_jingxuan h4{height:29px; line-height:29px; line-height:29px; background:url(../images/junshi/junshibg.png) repeat-x 0 -28px}
+.junshi_rank .title{width:78px; height:29px; display:block; float:left; font-size:14px; font-weight:bold; color:#535353; text-align:center; background:url(../images/junshi/junshibg.png) repeat-x 0 -58px; border-right:1px solid #c6d8e0}
+.junshi_jingxuan .title{width:78px; height:29px; display:block; float:left; font-size:14px; font-weight:bold; color:#535353; text-align:center; background:url(../images/junshi/junshibg.png) repeat-x 0 -58px; border-right:1px solid #c6d8e0}
+.junshi_rank .more{padding-right:10px; font-size:12px; font-weight:normal;float:right;}
+.junshi_jingxuan .more{padding-right:10px; font-size:12px; font-weight:normal;float:right;}
+.junshi_jingxuan ul{padding-top:8px;}
+.junshi_jingxuan li{height:24px; line-height:24px; font-size:13px; padding-left:5px; overflow:hidden;}
+.junshi_jingxuan li.zhankai{height:150px; overflow:auto; margin-bottom:10px;}
+.zk_m{ margin-bottom:5px;padding:10px; border-bottom:1px dotted #999; font-size:12px;  line-height:21px; height:97px;}
+.zk_m a.pic{ margin-right:10px;padding:2px; border:1px solid #ddd;width:127px; height:88px; display:block; float:left;}
+
+.news_pic{padding:5px; height:240px; border:1px solid #c6d8e0; background:#fff;}
+.news_pic li{width:288px; height:215px; overflow:hidden}
+.news_pic ul{width:288px; height:215px; overflow:hidden}
+.news_pic li img{width:288px; height:215px;}
+.news_pic li a{width:288px; height:215px; display:block; position:relative}
+.news_pic li .bgcolor{height:26px; width:288px; position:absolute; bottom:0; left:0; background:#000;opacity:0.6;ms-filter:alpha(opacity=60);filter: alpha(opacity=60); z-index:10}
+.news_pic li .pic_title{height:26px; line-height:26px; width:288px; position:absolute; bottom:0; left:0; z-index:12; text-align:center; font-size:14px; font-weight:bold; color:#fff; cursor:pointer}
+.pic_page{height:24px; text-align:right}
+.pic_page a{padding-top:3px;width:23px; height:18px; display:inline-block; margin-left:5px; line-height:18px; background:url(../images/junshi/junshibg.png) no-repeat -24px -153px; font-size:12px; font-weight:bold; text-align:center; color:#000}
+.pic_page a.cur{background:url(../images/junshi/junshibg.png) no-repeat 0px -153px; font-size:12px; font-weight:bold; text-align:center; color:#fff; text-decoration:none}
+
+.pic_page a:hover{background:url(../images/junshi/junshibg.png) no-repeat 0px -153px; font-size:12px; font-weight:bold; text-align:center; color:#fff; text-decoration:none}
+
+.junshi_rank{height:157px;border:1px solid #c6d8e0;background:#fff; zoom:1}
+.junshi_rank ul{padding:5px; zoom:1}
+.junshi_rank li{width:50%; height:23px; line-height:23px; font-size:13px; overflow:hidden; float:left; }
+.pic_news{padding:0 5px; zoom:1}
+.pic_news li{height:130px; width:147px; margin-right:19px; display:inline; float:left;}
+.pic_news a.pic{width:141px; height:96px; display:block; padding:2px; border:1px solid #ccc; background:#fff; overflow:hidden}
+.pic_news a:hover.pic{border:1px solid #ff5100}
+.pic_news li span{width:147px; height:24px; line-height:24px; display:block; text-align:center;}
+
+.shangjiang{height:27px; line-height:27px;background:url(../images/junshi/junshibg.png) repeat-x 0 0; border:1px solid #a5c0f7; border-left:none; border-right:none}
+.shangjiang li{width:100px; height:23px;padding-top:4px; margin-right:5px; display:inline; line-height:23px; text-align:center; font-weight:bold; float:left; background:url(../images/junshi/junshibg.png) no-repeat 0 -88px;}
+.shangjiang span{width:100px; height:23px;padding-top:4px; line-height:23px; display:block; text-align:center; font-weight:bold; color:#535353; float:left;}
+.shangjiang li.cur{ height:24px;background:url(../images/junshi/junshibg.png) no-repeat 0 -116px; margin-bottom:-1px; position:relative}
+.shangjiang li a{color:#667380;}
+.shangjiang li a:hover{color:#f00; text-decoration:underline}
+.shangjiang li.cur a:hover{color:#ff5100; text-decoration:none}
+.shangjiang li.cur a{color:#ff5100; text-decoration:none}
+.shangjiang_m{padding:5px 0;border-bottom:1px solid #a5c0f7;}
+.shangjiang_m td{ height:31px; line-height:31px; width:25%; padding-left:25px; text-align:left;}
+
+/*===footer====*/
+.fankui{padding:20px 0;text-align:center; margin:0 auto;}
+.fankui a{width:70px; height:24px; font-size:14px; color:#034381; display:inline-block}
+.fankui a.jianyi{ margin-right:20px;padding-left:20px;background:url(../../images/buy_ico.png) no-repeat 0 -325px;}
+.fankui a.hezuo{padding-left:15px;background:url(../../images/buy_ico.png) no-repeat 0 -355px;}
+.foot-sch { width:988px;border: 1px solid #D6E4F5; background-color:#F8FAFF;margin: 5px auto 0; padding-top: 13px;text-align: center;}
+.inner-ft {border: 2px solid;margin: 2px;padding: 4px 5px;}
+.foot-sch img {vertical-align: middle;border:0}
+.foot-sch b a {font-family: "宋体"; margin: 0 6px;}
+.foot-sch p {display: block;margin: 0 auto;width: 800px;}
+.foot-sch b {display: block;float: right;font-weight: 100;height: 27px;line-height: 30px;overflow: hidden;}
+
+.tool-bar {line-height: 70px;padding-bottom: 20px; font-size:16px; text-align:center}
+.tool-bar img {margin: 0 25px;}
+.tool-bar input {border: medium none;cursor: pointer;height: 19px;margin: 0 20px;width: 56px;}
+.input_ss_sch {height: 27px;line-height: 27px;margin: 0 3px 0 7px;padding-left: 4px;width: 440px;}
+.butn_ss_sch {height: 31px;width: 78px;}
+.option-grp {padding-top:5px;clear: both;display: block;height: 35px;line-height: 35px;}
+.option-grp input {height: 20px;margin-left: 18px;vertical-align: middle; width: 19px;}
+
+.fh {background: url("http://www.2345.com/../images/fh.gif") no-repeat scroll 0 0 transparent;}
+.gb {background: url("http://www.2345.com/../images/gb.gif") no-repeat scroll 0 0 transparent;}
+
+
+/*====haed===*/
+.head{ width:990px; margin:0 auto; height:70px; overflow:hidden; text-align:left;}
+#logo img{ margin:2px 0 0px 0px;}
+
+/* 搜索 */
+.search_gg{ text-align:center; float:right; padding:17px 25px 0 0; height:26px; }
+.search_gg b{ display:block; float:left;}
+.search_gg span{ display:block; float:left;}
+.search_gg b a{font-family:"宋体";  font-weight:100; height:26px; line-height:30px; _line-height:36px; margin:0 6px; _margin:0 6px 0 3px;display:block; float:left; }
+.search_gg img{ vertical-align:middle;}
+.search_gg input{ vertical-align:middle;}
+.input_gg_sch{ width:275px; height:26px; line-height:26px;  padding-left:4px; font-size:17px; border:1px solid #7f9db9;}
+.butn_gg_sch{ width:63px; height:28px; line-height:25px; margin-left:3px; cursor:pointer;}
+
+
+.path2{width:990px; margin:0 auto;height:25px; line-height:25px;border-top:1px solid #a4d0e5;background:#eff6ff; color:#666; text-align:left;}
+.path2 a{margin:0 5px; color:#666}
+.path2 a:hover{color:#fd5151}
+.path2 span{float:right}
+.path{ width:990px; margin:0 auto;height:25px; line-height:25px;border-top:1px solid #b7c7ef;background:#f0f6ff;}
+.path p{ float:left; width:300px;}
+.path p a{ float:left;} 
+.path span{ float:right; text-align:right; display:block; height:25px; width:400px;}
+.s_home{ background:url(http://www.2345.com/neiye/wide/../images/icons.gif) 9px 5px no-repeat; display:block; padding-left:27px; color:#d35e04;}
+.advice{ background:url(http://www.2345.com/neiye/wide/../images/icons.gif) 0px -25px no-repeat; display:block; padding-left:19px; margin-left:15px;}
+.path a{ color:#666;}
+.path{ color:#666;}
+.path a:hover{color:#fd5151; }
+.navico{padding-right:15px; float:right; width:25px; cursor:pointer;background:url(http://www.2345.com/neiye/standard/../images/icons.gif) 27px -52px no-repeat; position:relative;}
+i{color: #9A9A9A;font-size: 12px;font-style: normal;margin-left: 5px;float:right;}
+.hide{display:none}
+
+
+

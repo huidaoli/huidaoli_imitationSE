@@ -1,0 +1,107 @@
+.rn-t,.rn-b{
+    background:url(../images/rn.png) no-repeat 0 0;
+    display:block;
+    height:5px;
+    overflow:hidden;
+}
+.rn-b{
+    background-position:0 -5px;
+}
+.form{
+    margin-bottom:8px;
+}
+.form-inner{
+    background:#f2f8ff;
+    border:1px #a5c9ee solid;
+    border-width:0 1px;
+    padding:10px 10px 10px 50px;
+}
+
+.form-inner form{
+    background:url(../images/ico.png) no-repeat 0 0;
+    height:30px;
+   
+    padding:5px 0 5px 24px;
+}
+.form-inner input,
+.form-inner select,
+.form-inner label{
+    vertical-align:middle\9;
+}
+
+.form-inner h4{
+    float:left;
+    font-size:14px;
+    margin-right:15px;
+}
+
+#yuncheng{
+    background-position:0 3px;
+}
+#supei{
+    background-position:0 -35px;
+}
+#shengxiao{
+    background-position:0 -74px;
+}
+
+
+.submit{
+    font-size:12px;
+    padding:4px 0 2px;
+    width:60px;
+}
+
+.xz-list li{
+    background:url(../images/xz_icon.png) no-repeat;
+}
+.xz-list li span{
+    font-size:12px;
+    color:#5c5c5c;
+}
+.xz-list a:hover span{
+    color:#fff;
+}
+.xz-list .xz01{
+    background-position:12px 5px;
+}
+.xz-list .xz02{
+    background-position:12px -35px;
+}
+.xz-list .xz03{
+    background-position:12px -75px;
+}
+.xz-list .xz04{
+    background-position:12px -115px;
+}
+.xz-list .xz05{
+    background-position:12px -155px;
+}
+.xz-list .xz06{
+    background-position:12px -195px;
+}
+.xz-list .xz07{
+    background-position:9px -237px;
+}
+.xz-list .xz08{
+    background-position:8px -275px;
+}
+.xz-list .xz09{
+    background-position:12px -315px;
+}
+.xz-list .xz10{
+    background-position:10px -357px;
+}
+.xz-list .xz11{
+    background-position:12px -395px;
+}
+.xz-list .xz12{
+    background-position:12px -435px;
+}
+
+
+
+
+
+
+

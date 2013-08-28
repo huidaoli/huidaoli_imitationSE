@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>万年历_360安全网址导航</title>
+<base target="_blank"/>
+<link rel="stylesheet" href="css/wnl.css"/>    
+<style>
+.wnl-header td{
+line-height: 30px;
+text-align: center;
+font-weight: bold;
+font-size: 16px;
+color: #333;
+height: 30px !important;
+border-right: 1px solid #BDCCD9;
+border-bottom: 1px solid #AAB4C6;
+background-color:white !important;
+}
+td.weekend {color:#BF4040};
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div id="hd">   
+        <a id="logo" alt="360安全网址" title="360安全网址" href="http://hao.360.cn/"><img src="images/logo169.gif" /></a> 
+        <div class="search-box">
+        	<div id="search-icon" class="search-logo google"><a id="search-link" href="http://www.google.com.hk/webhp?client=aff-daohang"><img src="http://w.qhimg.com/images/v2/haotech/hao360cn_home/20110607/calendar/icon_topsearch.gif" /></a></div>
+            <div class="search-area">
+            	<form id="search-form" action="http://www.google.com.hk/search" target="_blank">
+                    <input type="text" id="search-text" name="word" class="input-text" autocomplete="off" />
+                    <input type="submit" class="search-btn" value="搜索" />
+                    <div class="search-radios">
+                        <input type="radio" name="site" id="site1" site="google" checked="checked">&nbsp;<label for="site1">谷歌</label>
+                        <input type="radio" name="site" id="site2" site="baidu">&nbsp;<label for="site2">百度</label>
+                    </div>
+                    <span id="hide-input">
+                        <input type="hidden" id="cl" name="cl" value="2">
+                        <input type="hidden" id="lm" name="lm" value="-1">
+                        <input type="hidden" id="ct" name="ct" value="201326592">
+                        <input type="hidden" id="ie" name="ie" value="gbk">
+                    </span>
+				</form>
+            </div>
+        </div><!--class='search-box' end-->
+  		<div class="quick-menu">
+        	<a onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://hao.360.cn/');return(false);" href="http://hao.360.cn/">设为主页</a><a href="#" target="_self" onClick="javascript:try{ window.external.AddFavorite('http://hao.360.cn/','360安全网址'); } catch(e){ (window.sidebar)?window.sidebar.addPanel('360安全网址','http://hao.360.cn/',''):alert('请使用按键 Ctrl+d，收藏360安全网址'); }">加入收藏</a>
+        </div><!--class='quick-menu' end-->
+    </div><!--id='hd' end-->
+    <div class="crumbs">您的位置：<a href="http://hao.360.cn/" target="_self">导航首页</a> &gt; <span>万年历</span></div>
+	<div id="bd">
+		<div class="main">
+        	<div class="sift-box">
+            	<div class="left">
+                	<input type="button" id="prev-year" class="btn-pre">
+                    <select id="year-selector" style="width:100px;">
+					</select>
+                    <input type="button" id="next-year" class="btn-next">
+					
+					<input type="button" id="prev-month" class="btn-pre">
+                    <select id="month-selector" style="width:60px;">
+					</select>
+                    <input type="button" id="next-month" class="btn-next">
+                </div>
+            	<div class="right">
+                	<select id="holiday-selector" style="width:150px;"></select>
+                    <input type="button" class="btn-today" value="今日">
+                </div>
+            </div>
+            <div class="calendar-container" id="calendar-container">
+             <!--
+            	<ul class="week">
+                	<li>一</li>
+                    <li style="width:101px">二</li>
+                    <li>三</li>
+                    <li style="width:102px">四</li>
+                    <li>五</li>
+                    <li class="weekend">六</li>
+	          <li class="weekend" style="width:103px">日</li>
+                </ul>       
+             -->
+               <table width="718">
+                    <tr class="wnl-header">
+                    <td>一</td>
+                    <td>二</td>
+                    <td>三</td>
+                    <td>四</td>
+                    <td>五</td>
+                    <td class="weekend">六</td>
+	          <td class="weekend">日</td>
+                    </tr>  
+               </table>      
+                      <table id="rl" width="718">
+                      <script> 		
+				var gNum , vHide = "";			  
+	            for (var i = 0; i < 6; ++i)
+				{
+				    if ( i > 4 )
+                    {
+					    document.write("<tr style='display:none;'>");					
+					}
+					else 
+                    {					
+					    document.write("<tr>");
+					}	 
+					for(var j = 0; j < 7; ++j) 
+					{
+						gNum = i*7 + j;
+						document.write('<td><div id="GD' + gNum + '"><span class="dateNum" id="SD' + gNum +'"></span><span id="LD' + gNum + '"></span><label id="FJ'+gNum+'"></label></div></td>');
+					}
+					document.write("</tr>");
+				}
+	           </script> 
+</table>
+            </div><!--class='calendar-container' end-->
+        </div><!--class='main' end-->
+        <div id="lr" class="aside">
+			<div id="day-desc">
+                                <div style="height:360px;">&nbsp;</div> 
+			</div>
+            <p><a href="http://www.baidu.com/s?wd=%C0%FA%CA%B7%C9%CF%B5%C4%BD%F1%CC%EC" target="_blank">查看历史上的今天&nbsp;&gt;&gt;</a></p>
+        </div><!--class='aside' end-->
+	</div><!--id='bd' end-->    
+    <div id="ft"><a href="about.html" target="_blank">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="book/" target="_blank">意见反馈</a>&nbsp;&nbsp;Copyright &copy; 360网址导航. All Rights Reserved. &nbsp;&nbsp;<a href="http://www.miibeian.gov.cn" class="icp">京ICP证080047号</a></div><!--id='ft' end-->
+</div><!--id='wrap' end-->
+<script src="js/jquery-1.6.1.min.js" type="text/javascript"></script>
+<script src="js/wnl/calendar.core.2011.js?v=20111212" type="text/javascript" charset="utf-8"></script>
+<script src="js/wnl/calendar.ui.2011.js?v=20111212" type="text/javascript" charset="utf-8"></script>
+<script src="js/wnl/json.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/wnl/2011.js?_=1309499020962" type="text/javascript" charset="utf-8"></script>
+<script>	
+var Today = getServerTime();
+var tY = Today.getFullYear();
+var tM = Today.getMonth();
+var tD = Today.getDate();	
+
+$(document).ready(function(){
+	//初始化日历初始格
+	//initContainer();	
+	
+	//画主日历
+	drawCld(tY,tM);
+
+	//画今日详情日历	
+	initDay(tY , tM , tD);
+	
+	//初始化节假日下拉框
+	initHoliday("holiday-selector");
+
+          //初始化选择框
+	initSelector(["prev-year" , "year-selector" , "next-year"] , ["prev-month" , "month-selector" , "next-month"]);	
+	
+	//选中指定时间的年月
+	setTimeout(function(){
+		$("#year-selector option[value="+tY+"]").attr("selected",true);
+		$("#month-selector option[value="+tM+"]").attr("selected",true);
+	} , 0);
+	
+	//初始化“今天”按钮
+	$(".btn-today").click(function() {
+		initDay();
+	});
+
+	//增加鼠标滑过效果
+	addHoverEffect();
+
+           //日历元素的手型
+           $("#rl div").bind("mouseover" , function(){$(this).css({"cursor" : "pointer"});});
+});
+</script>
+
+<span style="display:none"><script src="js/tj.js" type="text/javascript" ></script>
+
+</body>
+</html>

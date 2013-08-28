@@ -1,0 +1,23 @@
+@charset "gb2312";
+#wrap,.topbar .sets .sethome,.header .notice,.m-search,.m-search-tab .active,.m-search-tab .active116{ background-image:url(../../images/skin/orange_spirit.png);}
+#wrap{ background-position:0 -207px; background-repeat:repeat-x;}
+.m-search-tab .active{ background-position:0 -23px; background-repeat:no-repeat; }
+.m-search-tab .active116{ background-position:0 -48px; background-repeat:no-repeat;}
+.topbar .sets .sethome{ background-position:0 -84px; background-repeat:no-repeat;}
+.header .notice{ background-position:0 3px; background-repeat:no-repeat;}
+.m-search{  border-color:#ffc292; background-position:0 -128px;background-repeat:repeat-x; }
+.header .logo{ background-image:url(../../images/skin/orange_logo.png);_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="");}
+.topbar{ border-color:#fecba2;}
+.col-hotKeys .hotKeys a,.box-prlInq .tit,.box-prlInq .more,.usage-tab .active,.col-coolsite .tit,.usage-con .tbox .ipt-text,.fmSite-tab li,.box-tuan a,.sortSite .tit a,.recomSite .tit a{ color:#be5300;}
+.topbar .setColor .blue{ background-position:-1px -568px;}
+.skin-list  .default-setColor .blue{ background-position:0px -590px;}
+.skin-list .default-setColor .orange{ background-position:-57px -634px;}
+.sideBar,.col-usage,.col-coolsite,.col,.fmSite-tab li,.box-tuan{ border-color:#ffa965;}
+.starBar{border-color:#fac296;}
+.starBar li.hover{ background-color:#ffe5d1;}
+.fmSite-tab li span,.box-tuan a{ background-color:#ffecdd;}
+.sortSite{border-color:#ffdec2;background-color:#fffcf9;}
+.sideBar{ background-color:#fff7f0;}
+.col-recomSite{background-color:#fffcf9;}
+.usage-tab li{ background-color:#ffe5d1;}
+.usage-tab .active{background-color:#f48f3f;color:#fff;}

@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>音乐MP3_360安全网址导航</title>
+<meta name="keywords" content="360安全网址大全,360安全网址导航,网址之家,音乐,mp3,试听,下载,非主流" />
+<meta name="description" content="360安全网址导航音乐mp3频道,最新音乐在线试听,经典音乐下载,DJ舞曲,非主流音乐推荐,儿歌" />
+<link href="http://h1.qhimg.com/css/music_fire_index.css_com.css?201110261530" rel="stylesheet" type="text/css" />
+<base target="_blank"/>
+</head>
+<body class="wrap-bg">
+<div id="top">
+	<div class="top-bd">
+		<div class="top-left"></div>
+		<div class="top-right">
+			<a href="http://hao.360.cn" target="_self" class="back-home">返回首页</a>
+            <a onClick="try{ window.external.AddFavorite('http://hao.360.cn/music.html','360音乐'); } catch(e){ (window.sidebar)?window.sidebar.addPanel('360音乐','http://hao.360.cn/music.html',''):alert('请使用按键 Ctrl+d，收藏360音乐'); }">收藏</a>
+            <a href="book/">反馈</a>
+		</div>
+	</div>
+</div>
+<div id="wrap">
+    <div id="header">
+    <div id="logo">
+        <a href="/" target="_self"><img src="images/logo.png" /></a>
+		<sup class="logo-sup"></sup>
+    </div>
+    <div class="hd-search">
+       <form action="http://mp3.baidu.com/m" name="f1" target="_blank">
+            <input type="text" autocomplete="off" maxlength="100" size="42" id="kw" name="word">
+			<input type="submit" value="搜索" id="btn">
+			<input type="hidden" value="ms" name="f">
+			<input type="hidden" value="idx" name="rf">
+			<input type="hidden" value="baidump3" name="tn">
+			<input type="hidden" value="134217728" name="ct">
+			<input type="hidden" name="lf">
+			<input type="hidden" name="rn">
+			<input type="hidden" name="ie" value="utf-8">
+			<input type="hidden" id="hide-input" value="-1" name="lm" />
+		</form>
+    </div>
+    <div class="hd-hot">
+        <a href="kuandai.html">电影</a>
+        <a href="dianshi.html">电视剧</a>
+        <a href="youmoxiaohua.html">搞笑</a>
+        <a href="xiaoshuoyuedu.html">小说</a>
+        <a href="xiaoyouxi.html">小游戏</a>
+    </div>
+</div>
+<ul id="suggests" class="fold"></ul>
+<div class="hd-select">
+	<div id="hd-selected">全部</div>
+	<ul id="select-list" class="fold">
+		<li engine="all">全部</li>
+		<li engine="mp3">mp3</li>
+		<li engine="rm">rm</li>
+		<li engine="wma">wma</li>
+		<li engine="other">其它</li>
+		<li engine="lyric">歌词</li>
+	</ul>
+</div>  
+  <div id="content" class="clearfix">
+	<div class="column online">
+		<ul id="tabs" class="tabs provider clearfix">
+			<li id="kg"><span class="kg"></span>酷狗音乐</li>
+                        <li id="kuwo"><span class="kuwo"></span>酷我音乐盒</li>
+			<li id="db"><span class="douban"></span>豆瓣电台</li>
+			<li id="beiwa"><span class="beiwa"></span>贝瓦儿歌</li>
+		</ul>
+		<div class="online-kuwo" id="player-container" style="display:none">
+			<iframe id="player" scrolling="no" height="413" frameborder="0" width="640" src="" allowtransparency="true"></iframe>
+                     </div>
+                     <div class="online-kuwo" id="player-container-loading">
+                         <div>
+                         <img src="http://p8.qhimg.com/d/music2011/ajax-loader.gif"/>
+                          请稍候，360音乐正在为您努力加载<span id="toSite"></span> ……
+                         </div> 
+                     </div>
+		<div class="online-side" style="padding-top:0px;">
+		  <div class="side-box">
+			<div class="top">
+				<h2 id="tuijian"></h2>
+				<ul class="tabs recommend clearfix">
+					<li id="gs" onclick="return false;">热门歌手</li> 
+					<li id="zj" onclick="return false;">最新专辑</li>
+				</ul>
+			</div>
+              <ul id="zj_pic" class="middle-zj list clearfix">
+               <li>
+                    <a id="link0" href="#">
+                    <img class="img" id="img0" src="http://p8.qhimg.com/d/music2011/none.gif">
+                    </a>
+                        <em  id="text01"></em>
+                    <span id="text02" class="gray"></span>
+                </li>
+                <li>
+                    <a id="link1" href="#">
+                        <img class="img" id="img1" src="http://p8.qhimg.com/d/music2011/none.gif">
+                    </a>
+                        <em id="text11"></em>
+                    <span id="text12" class="gray"></span>
+                </li>
+                <li>
+                    <a id="link2" href="#">
+                        <img class="img" id="img2" src="http://p8.qhimg.com/d/music2011/none.gif">
+                    </a>
+                        <em id="text21"></em>
+                    <span id="text22" class="gray"></span>
+                </li>
+                <li>
+                    <a id="link3" href="#">
+                        <img class="img" id="img3" src="http://p8.qhimg.com/d/music2011/none.gif">
+                    </a>
+                   <em id="text31"></em>
+                  <span id="text32" class="gray"></span>
+                </li>
+                <li>
+                    <a id="link4" href="#">
+                        <img class="img" id="img4" src="http://p8.qhimg.com/d/music2011/none.gif">
+                    </a>
+                        <em id="text41"></em>
+                    <span id="text42" class="gray"></span>
+                </li>
+                <li>
+                    <a id="link5" href="#">
+                        <img class="img" id="img5" src="http://p8.qhimg.com/d/music2011/none.gif">
+                    </a>
+                        <em id="text51"></em>
+                    <span id="text52" class="gray"></span>
+                </li>
+                <li>
+                    <a id="link6" href="#">
+                        <img class="img" id="img6" src="http://p8.qhimg.com/d/music2011/none.gif">
+                    </a>
+                        <em id="text61"></em>
+                    <span id="text62" class="gray"></span>
+                </li>
+                <li>
+                    <a id="link7" href="#">
+                        <img class="img" id="img7" src="http://p8.qhimg.com/d/music2011/none.gif">
+                    </a>
+                        <em id="text71"></em>
+                    <span id="text72" class="gray"></span>
+                </li>
+                <li>
+                    <a id="link8" href="#">
+                        <img class="img" id="img8" src="http://p8.qhimg.com/d/music2011/none.gif">
+                    </a>
+                        <em id="text81"></em>
+                    <span id="text82" class="gray"></span>
+                </li> 
+            </ul>
+	<ul id="gs_pic" class="middle list clearfix">
+                <li>
+                    <a id="gslink0" href="#">
+                        <img class="img" id="gsimg0" src="http://p8.qhimg.com/d/music2011/none.gif">
+                    </a>
+                    <em  id="gstext01"></em>
+                </li>
+                <li>
+                    <a id="gslink1" href="#">
+                        <img class="img" id="gsimg1" src="http://p8.qhimg.com/d/music2011/none.gif">
+                    </a>
+                    <em id="gstext11"></em>
+                </li>
+                <li>
+                    <a id="gslink2" href="#">
+                        <img class="img" id="gsimg2" src="http://p8.qhimg.com/d/music2011/none.gif">
+                    </a>
+                    <em id="gstext21"></em>
+                </li>
+            </ul>
+            <ul id="gs_list" class="singer-list">
+            </ul>
+            <div id="page" class="bottom" style="display:none;"></div>
+		 </div>
+		</div>
+	</div>
+	<div class="column main">
+        <h2 class="header">在线听歌</h2>
+		<ul class="list clearfix">
+			<li><a href="http://mp3.baidu.com/">百度MP3</a></li>
+            <li><a href="http://www.1ting.com/">一听音乐网</a></li>
+            <li><a href="http://www.9ku.com/">九酷音乐网</a></li>
+            <li><a href="http://www.kugou.com/">酷狗音乐</a></li>
+            <li><a href="http://mp3.sogou.com/">搜狗音乐</a></li>
+			<li><a href="http://www.qianqian.com/">千千音乐在线</a></li>
+            <li><a href="http://mp3.gougou.com/">狗狗音乐搜索</a></li>
+            <li><a href="http://music.qq.com/">QQ音乐</a></li>
+            <li><a href="http://www.aiting.com/">爱听音乐网</a></li>
+            <li><a href="http://www.9sky.com/">九天音乐网</a></li>
+            <li><a href="http://music.tudou.com/">土豆音乐网</a></li>
+            <li><a href="http://www.yue365.com/">365音乐网</a></li>
+            <li><a href="http://www.666ccc.com/">今生缘音乐网</a></li>
+            <li><a href="http://www.yymp3.com/">yymp3音乐网</a></li>
+            <li><a href="http://music.youku.com/">优酷音乐</a></li>
+            <li><a href="http://www.xiami.com/">虾米音乐网</a></li>
+            <li><a href="http://www.yinyuetai.com/">音悦台高清MV</a></li>
+            <li><a href="http://www.google.cn/music/homepage?client=aff-daohang&hl=zh-CN&tab=wU">谷歌音乐</a></li>
+		</ul>
+        <h2 class="header">DJ舞曲</h2>
+		<ul class="list clearfix">
+			<li><a href="http://www.dj97.com/">水晶DJ网</a></li>
+            <li><a href="http://www.dj527.com/">DJ舞曲网</a></li>
+            <li><a href="http://www.dj520.com/">DJ前卫音乐</a></li>
+            <li><a href="http://www.hcdj.com/">DJ音乐厅</a></li>
+            <li><a href="http://www.yaotou.com/">摇头DJ站</a></li>
+            <li><a href="http://www.ik123.com/">深港DJ俱乐部</a></li>
+            <li><a href="http://www.111ttt.com/">要听舞曲</a></li>
+            <li><a href="http://www.djkk.com/">DJ嗨嗨网</a></li>
+		</ul> 
+        <h2 class="header">音乐社区</h2>
+		<ul class="list clearfix">
+			<li><a href="http://www.5sing.com/">中国原创音乐</a></li>
+			<li><a href="http://zhangmen.baidu.com/">音乐掌门人</a></li>
+			<li><a href="http://www.songtaste.com/">SongTaste</a></li>
+			<li><a href="http://music.douban.com/">豆瓣音乐</a></li>
+			<li><a href="http://musicradio.cnr.cn/">音乐之声</a></li>
+			<li><a href="http://www.yiqilai.com/">一起来音乐</a></li>
+			<li><a href="http://www.911pop.com/">青檬音乐台</a></li>
+			<li><a href="http://www.a8.com/">A8原创音乐</a></li>
+			<li><a href="http://www.zasv.com/">杂碎后院</a></li>
+			<li><a href="http://radio.wanmei.com/">完美音乐在线</a></li>
+			<li><a href="http://bbs.breezecn.com/">清风音乐论坛</a></li>
+			<li><a href="http://www.pt80.com/">80音乐论坛</a></li>
+			<li><a href="http://bbs.besgold.com/">百事高论坛</a></li>
+			<li><a href="http://www.51ctzs.com/">楚天之声</a></li>
+			<li><a href="http://www.tinglian.com/">听恋轻音乐</a></li>
+			<li><a href="http://yue.sina.com.cn/">新浪音乐网</a></li>
+                            <li><a href="http://www.top100.cn/">巨鲸音乐网</a></li>
+		</ul>
+		<h2 class="header">音乐盒</h2>
+		<ul class="list clearfix">
+			<li><a href="http://download.kugou.com/">酷狗音乐</a></li>
+			<li><a href="http://music.qq.com/portal_v2/static/player.html">QQ音乐</a>
+			<li><a href="http://ttplayer.qianqian.com/down.html">千千静听</a></li>
+			<li><a href="http://www.koowo.com/mbox.down2?src=kwun0271" style="color:#ff0000">酷我音乐盒</a></li>
+			<li><a href="http://www.skycn.com/soft/10360.html">Foobar2000</a></li>
+			<li><a href="http://www.apple.com.cn/itunes/download/">iTunes</a></li>
+			<li><a href="http://www.skycn.com/soft/4641.html">Winamp</a></li>
+			<li><a href="http://music.google.org.cn/">谷歌音乐盒</a></li>
+			<li><a href="http://www.duomi.com/">多米音乐</a></li>
+			<li><a href="http://www.tting.com.cn/">一听音乐盒</a></li>
+			<li><a href="http://www.ttpod.com/">天天动听</a></li>
+			<li><a href="http://www.ddong.com/">酷狗叮咚</a></li>
+			<li><a href="http://www.kxting.com/">开心听</a></li>
+			<li><a href="http://www.mvbox.cn/mvbox/">MVBOX</a></li>
+			<li><a href="http://www.1g1g.com/">亦歌</a></li>
+		</ul>
+		<h2 class="header">歌迷俱乐部</h2>
+		<ul class="list clearfix">
+			<li><a href="http://www.jaycn.com/">周杰伦中文网</a></li>
+			<li><a href="http://www.sunyanzicc.net/">姿迷城市</a></li>
+			<li><a href="http://tieba.baidu.com/f?kw=%CD%F5%C1%A6%BA%EA">王力宏吧</a></li>
+			<li><a href="http://tieba.baidu.com/f?kw=super%20junior&fr=ala0">super junior</a></li>
+			<li><a href="http://tieba.baidu.com/f?kw=%B3%C2%DE%C8%D1%B8">陈奕迅吧</a></li>
+			<li><a href="http://www.mjjcn.com/">迈克尔杰克逊</a></li>
+			<li><a href="http://tieba.baidu.com/f?kw=%D5%C5%C9%D8%BA%AD">张韶涵吧</a></li>
+			<li><a href="http://tieba.baidu.com/f?kw=%C0%EE%D3%EE%B4%BA">李宇春吧</a></li>
+			<li><a href="http://tieba.baidu.com/f?kw=%B6%AB%B7%BD%C9%F1%C6%F0">东方神起吧</a></li>
+			<li><a href="http://tieba.baidu.com/f?kw=%BA%AB%B8%FD">韩庚吧</a></li>
+			<li><a href="http://tieba.baidu.com/f?kw=%B2%CC%D2%C0%C1%D6">蔡依林吧</a></li>
+		</ul>
+		<h2 class="header">伴奏翻唱</h2>
+		<ul class="list clearfix">
+			<li><a href="http://www.wo99.com/">我99伴奏翻唱</a></li>
+			<li><a href="http://www.51mike.com/">麦客疯</a></li>
+			<li><a href="http://www.banzouku.com/">伴奏酷</a></li>
+			<li><a href="http://www.fcmp3.com/">fc伴奏网</a></li>
+			<li><a href="http://bz.5sing.com/">5sing伴奏</a></li>
+		</ul>
+	</div>
+	<div class="side">
+		<div class="column">
+			<h2 class="header">音乐类型</h2>
+            <ul class="list clearfix">
+				<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%BE%A2%B1%AC&lm=-1&rf=idxtag#1">劲爆</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%D6%D8%BD%F0%CA%F4&lm=-1&rf=idxtag#1">重金属</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%D2%A1%B9%F6&lm=-1&rf=idxtag#1">摇滚</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%C5%B7%C3%C0&lm=-1&rf=idxtag#1">欧美</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%D6%D0%B9%FA%B7%E7&lm=-1&rf=idxtag#1">中国风</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%CD%F8%C2%E7%B8%E8%C7%FA&lm=-1&rf=idxtag#1">网络歌曲</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%B7%C7%D6%F7%C1%F7&lm=-1&rf=idxtag#1">非主流</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%C3%F1%B8%E8&lm=-1&rf=idxtag#1">民歌</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=80%BA%F3&lm=-1&rf=idxtag#1">80后</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=90%BA%F3&lm=-1&rf=idxtag#1">90后</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%CC%EC%F4%A5%D6%AE%C9%F9&lm=-1&rf=idxtag#1">天籁之声</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%C9%CB%B8%D0%B5%C4%B0%AE%C7%E9&lm=-1&rf=idxtag#1">伤感的爱情</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%BB%D8%D2%E4&lm=-1&rf=idxtag#1">回忆</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%D3%C7%D3%F4&lm=-1&rf=idxtag#1">忧郁</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%D0%C4%CB%E9%C7%E9%B8%E8&lm=-1&rf=idxtag#1">心情碎歌</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%CF%C9%BD%A3&lm=-1&rf=idxtag#1">仙剑</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%BA%AB%BE%E7&lm=-1&rf=idxtag#1">韩剧</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%D3%B0%CA%D3&lm=-1&rf=idxtag#1">影视</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%BE%AD%B5%E4%C1%F7%D0%D0&lm=-1&rf=idxtag#1">经典流行</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%B4%BF%D2%F4%C0%D6&lm=-1&rf=idxtag#1">纯音乐</a></li>
+<li><a href="http://mp3.baidu.com/m?f=ms&tn=baidump3&ct=134217728&lf=&rn=&word=%C6%FB%B3%B5%D2%F4%C0%D6&lm=-1&rf=idxtag#1">汽车音乐</a></li>
+			</ul>
+		</div>
+		<div class="column weibo">
+            <iframe width="275"  height="367" frameborder="0"  scrolling="no"  src="http://service.t.sina.com.cn/widget/list/list.php?width=275&height=367&listid=146392839&uname=360%E4%B8%8A%E7%BD%91%E5%AF%BC%E8%88%AA&uid=2003206347&listname=%E9%9F%B3%E4%B9%90%E6%98%8E%E6%98%9F&color=CCCCCC,E1E1E1,444444,0082CB,FFFFFF,FFFFEA&showcreate=0&isborder=0&showtitle=2&appkey=4222486741"></iframe>
+		</div>
+	</div>
+  </div>
+  <!--footer-->
+  <div id="footer">
+	<a target="_blank" href="about.html">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a target="_blank" href="book/">意见反馈</a>&nbsp;&nbsp;Copyright &copy; 360网址导航. All Rights Reserved. &nbsp;&nbsp;<a class="icp" href="http://www.miibeian.gov.cn">京ICP证080047号</a>
+  </div>
+  <!--the end-->
+</div>
+<textarea id="kw_zj_t" style="display:none;">{"item":[{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1019398","fav_count":"83","id":"1019398","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/6/7/83776_1323997214.jpg","rank":"1","singer":"selina","song_sum":"","title":"重作一个梦"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1019401","fav_count":"595","id":"1019401","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/7/8/83787_1323997225.jpg","rank":"2","singer":"五月天","song_sum":"","title":"第二人生"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1019590","fav_count":"40","id":"1019590","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/3/9/83793_1324015807.jpg","rank":"3","singer":"刘力扬","song_sum":"","title":"旅途心歌 自选辑"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1019852","fav_count":"2","id":"1019852","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/0/2/83820_1324186804.jpg","rank":"4","singer":"张继聪","song_sum":"","title":"5+"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1019892","fav_count":"44","id":"1019892","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/4/2/83824_1324273803.jpg","rank":"5","singer":"张惠妹","song_sum":"","title":"acoustic best"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1016128","fav_count":"340","id":"1016128","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/3/5/83453_1323133805.jpg","rank":"6","singer":"华语群星","song_sum":"","title":"那些年, 我们一起听过的歌(国语歌曲精选)"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1017382","fav_count":"27","id":"1017382","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/9/8/83589_1323441679.jpg","rank":"7","singer":"海鸣威","song_sum":"","title":"工体爱情故事2012新歌+精选"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1018183","fav_count":"49","id":"1018183","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/8/5/83658_1323742215.jpg","rank":"8","singer":"李健","song_sum":"","title":"依然"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1017980","fav_count":"37","id":"1017980","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/3/3/83633_1323614476.jpg","rank":"9","singer":"棉花糖","song_sum":"","title":"等地球爆炸"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=0","fav_count":"225","id":"0","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/8/5/83558_1323355275.jpg","rank":"10","singer":"杨幂","song_sum":"","title":"异想记(单曲)"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1016813","fav_count":"17","id":"1016813","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/1/5/83551_1323325828.jpg","rank":"11","singer":"4minute","song_sum":"","title":"ready go(single)"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1016840","fav_count":"20","id":"1016840","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/8/2/83528_1323325805.jpg","rank":"12","singer":"BoA","song_sum":"","title":"milestone(single)"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1014983","fav_count":"13","id":"1014983","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/2/5/83352_1322750478.jpg","rank":"13","singer":"杨臣刚","song_sum":"","title":"龙"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1014497","fav_count":"64","id":"1014497","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/7/0/83307_1322632821.jpg","rank":"14","singer":"Twins","song_sum":"","title":"3650 新城演唱会"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1015143","fav_count":"28","id":"1015143","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/7/7/83377_1322836876.jpg","rank":"15","singer":"姚政","song_sum":"","title":"姚老板这两年的那点事儿"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=0","fav_count":"225","id":"0","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/0/6/83360_1322787618.jpg","rank":"16","singer":"陈佳薪","song_sum":"","title":"陈佳薪"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1014282","fav_count":"38","id":"1014282","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/7/8/83287_1322616019.jpg","rank":"17","singer":"汤灿","song_sum":"","title":"开始为你而活"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1012401","fav_count":"209","id":"1012401","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/0/9/83090_1322116206.jpg","rank":"18","singer":"罗志祥","song_sum":"","title":"生命之舞 live tour"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1004408","fav_count":"63","id":"1004408","img_url":"http://img2.kwcdn.kuwo.cn:81/star/albumcover/120/4/0/77004_1321337407.jpg","rank":"19","singer":"电视原声","song_sum":"","title":"真心请按两次铃"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=233210","fav_count":"192","id":"233210","img_url":"http://img1.kwcdn.kuwo.cn:81/star/albumcover/120/4/1/83014_1321923006.jpg","rank":"20","singer":"任贤齐","song_sum":"","title":"神魔.不信邪"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1011561","fav_count":"165","id":"1011561","img_url":"http://img1.kwcdn.kuwo.cn:81/star/albumcover/120/0/3/83030_1321972877.jpg","rank":"21","singer":"弦子","song_sum":"","title":"逆风的蔷薇"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1005669","fav_count":"97","id":"1005669","img_url":"http://img1.kwcdn.kuwo.cn:81/star/albumcover/120/8/9/77098_1321627285.jpg","rank":"22","singer":"刘心","song_sum":"","title":"隔壁家的 孩子 EP"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1003541","fav_count":"184","id":"1003541","img_url":"http://img1.kwcdn.kuwo.cn:81/star/albumcover/120/5/1/76915_1320972609.jpg","rank":"23","singer":"周笔畅","song_sum":"","title":"黑·择·明"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1003550","fav_count":"374","id":"1003550","img_url":"http://img1.kwcdn.kuwo.cn:81/star/albumcover/120/7/1/76917_1320972611.jpg","rank":"24","singer":"苏打绿","song_sum":"","title":"你在烦恼什么"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1004873","fav_count":"42","id":"1004873","img_url":"http://img1.kwcdn.kuwo.cn:81/star/albumcover/120/7/3/77037_1321405210.jpg","rank":"25","singer":"吴雨霏","song_sum":"","title":"我本人"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1002512","fav_count":"19","id":"1002512","img_url":"http://img1.kwcdn.kuwo.cn:81/star/albumcover/120/6/4/76846_1320676872.jpg","rank":"26","singer":"黄贯中","song_sum":"","title":"A小调协奏曲"},{"direct_url":"http://yinyue.kuwo.cn/yy/st/Album?id=1002194","fav_count":"1111","id":"1002194","img_url":"http://img1.kwcdn.kuwo.cn:81/star/albumcover/120/0/3/76830_1320417670.jpg","rank":"27","singer":"周杰伦","song_sum":"","title":"惊叹号(新歌试听)"}],"last_update_time":"2011-12-26","sitename":"酷我热门专辑","siteurl":"http://www.kuwo.cn","total":"27"}</textarea>
+<textarea id="kw_gs_t" style="display:none;">{"item":[{"direct_url":"http://www.kuwo.cn/mingxing/%E5%91%A8%E6%9D%B0%E4%BC%A6/","fav_count":"159987","id":"7","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/240/6/336_1315363916_0.jpg","rank":"2","singer":"周杰伦","song_sum":"152","title":"周杰伦"},{"direct_url":"http://www.kuwo.cn/mingxing/%E9%83%91%E6%BA%90/","fav_count":"98754","id":"4037","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/6/266_1315363916_0.jpg","rank":"6","singer":"郑源","song_sum":"52","title":"郑源"},{"direct_url":"http://www.kuwo.cn/mingxing/%E5%BC%A0%E5%AD%A6%E5%8F%8B/","fav_count":"71459","id":"587","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/6/896_1315363916_0.jpg","rank":"14","singer":"张学友","song_sum":"389","title":"张学友"},{"direct_url":"http://www.kuwo.cn/mingxing/%E6%9E%97%E4%BF%8A%E6%9D%B0/","fav_count":"61559","id":"4588","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/2/1062_1315363916_0.jpg","rank":"13","singer":"林俊杰","song_sum":"96","title":"林俊杰"},{"direct_url":"http://www.kuwo.cn/mingxing/%E7%8E%8B%E5%8A%9B%E5%AE%8F/","fav_count":"53908","id":"5210","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/6/1416_1319095214_0.jpg","rank":"15","singer":"王力宏","song_sum":"147","title":"王力宏"},{"direct_url":"http://www.kuwo.cn/mingxing/%E5%BC%A0%E6%9D%B0/","fav_count":"65561","id":"760","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/0/680_1315363916_0.jpg","rank":"17","singer":"张杰","song_sum":"44","title":"张杰"},{"direct_url":"http://www.kuwo.cn/mingxing/%E8%87%B3%E4%B8%8A%E5%8A%B1%E5%90%88/","fav_count":"46632","id":"308988","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/240/1/1641_1315363916_0.jpg","rank":"199","singer":"至上励合","song_sum":"11","title":"至上励合"},{"direct_url":"http://www.kuwo.cn/mingxing/%E5%88%98%E5%BE%B7%E5%8D%8E/","fav_count":"124748","id":"1463","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/6/286_1315363916_0.jpg","rank":"10","singer":"刘德华","song_sum":"452","title":"刘德华"},{"direct_url":"http://www.kuwo.cn/mingxing/beyond/","fav_count":"16755","id":"1277","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/120/0/1250_1315363916_0.jpg","rank":"39","singer":"beyond","song_sum":"120","title":"beyond"},{"direct_url":"http://www.kuwo.cn/mingxing/%E5%BC%A0%E9%9B%A8%E7%94%9F/","fav_count":"24685","id":"1533","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/4/1074_1315363916_0.jpg","rank":"89","singer":"张雨生","song_sum":"45","title":"张雨生"},{"direct_url":"http://www.kuwo.cn/mingxing/%E4%BB%BB%E8%B4%A4%E9%BD%90/","fav_count":"35072","id":"1630","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/3/973_1315363916_0.jpg","rank":"29","singer":"任贤齐","song_sum":"195","title":"任贤齐"},{"direct_url":"http://www.kuwo.cn/mingxing/%E9%99%88%E5%A5%95%E8%BF%85/","fav_count":"30584","id":"1638","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/7/47_1321006925_0.jpg","rank":"8","singer":"陈奕迅","song_sum":"259","title":"陈奕迅"},{"direct_url":"http://www.kuwo.cn/mingxing/%E5%88%80%E9%83%8E/","fav_count":"60757","id":"6692","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/240/3/683_1315363916_0.jpg","rank":"25","singer":"刀郎","song_sum":"51","title":"刀郎"},{"direct_url":"http://www.kuwo.cn/mingxing/%E5%91%A8%E5%8D%8E%E5%81%A5/","fav_count":"42856","id":"576","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/2/332_1315363916_0.jpg","rank":"40","singer":"周华健","song_sum":"157","title":"周华健"},{"direct_url":"http://www.kuwo.cn/mingxing/%E5%BC%A0%E4%BF%A1%E5%93%B2/","fav_count":"26685","id":"1216","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/3/1493_1322649064_0.jpg","rank":"50","singer":"张信哲","song_sum":"152","title":"张信哲"},{"direct_url":"http://www.kuwo.cn/mingxing/%E5%BC%A0%E9%9D%93%E9%A2%96/","fav_count":"43321","id":"3833","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/1/211_1315363916_0.jpg","rank":"46","singer":"张靓颖","song_sum":"64","title":"张靓颖"},{"direct_url":"http://www.kuwo.cn/mingxing/%E6%A2%81%E9%9D%99%E8%8C%B9/","fav_count":"48602","id":"5764","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/7/317_1315363916_0.jpg","rank":"22","singer":"梁静茹","song_sum":"151","title":"梁静茹"},{"direct_url":"http://www.kuwo.cn/mingxing/s.h.e/","fav_count":"34200","id":"2754","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/4/624_1315363916_0.jpg","rank":"43","singer":"s.h.e","song_sum":"138","title":"s.h.e"},{"direct_url":"http://www.kuwo.cn/mingxing/%E9%98%BF%E6%A1%91/","fav_count":"18485","id":"2751","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/3/513_1315363916_0.jpg","rank":"197","singer":"阿桑","song_sum":"29","title":"阿桑"},{"direct_url":"http://www.kuwo.cn/mingxing/%E8%94%A1%E4%BE%9D%E6%9E%97/","fav_count":"58898","id":"789","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/8/978_1319187485_0.jpg","rank":"44","singer":"蔡依林","song_sum":"185","title":"蔡依林"},{"direct_url":"http://www.kuwo.cn/mingxing/%E6%96%AF%E7%90%B4%E9%AB%98%E4%B8%BD/","fav_count":"81475","id":"188096","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/0/7bef9c74c59ea07cb88f84d1fec27e4_0.jpg","rank":"81","singer":"斯琴高丽","song_sum":"10","title":"斯琴高丽"},{"direct_url":"http://www.kuwo.cn/mingxing/%E8%94%A1%E5%81%A5%E9%9B%85/","fav_count":"3956","id":"607","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/120/2/522_1315363916_0.jpg","rank":"178","singer":"蔡健雅","song_sum":"82","title":"蔡健雅"},{"direct_url":"http://www.kuwo.cn/mingxing/%E5%87%A4%E5%87%B0%E4%BC%A0%E5%A5%87/","fav_count":"250026","id":"12320","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/9/419_1315363916_0.jpg","rank":"3","singer":"凤凰传奇","song_sum":"49","title":"凤凰传奇"},{"direct_url":"http://www.kuwo.cn/mingxing/%E9%82%93%E4%B8%BD%E5%90%9B/","fav_count":"98769","id":"2183","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/240/8/1328_1315363916_0.jpg","rank":"18","singer":"邓丽君","song_sum":"282","title":"邓丽君"},{"direct_url":"http://www.kuwo.cn/mingxing/%E8%8E%AB%E6%96%87%E8%94%9A/","fav_count":"13996","id":"818","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/9/909_1315363916_0.jpg","rank":"65","singer":"莫文蔚","song_sum":"165","title":"莫文蔚"},{"direct_url":"http://www.kuwo.cn/mingxing/%E8%90%A7%E4%BA%9A%E8%BD%A9/","fav_count":"18509","id":"955","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/6/226_1315363916_0.jpg","rank":"21","singer":"萧亚轩","song_sum":"129","title":"萧亚轩"},{"direct_url":"http://www.kuwo.cn/mingxing/%E5%BC%A0%E9%9F%B6%E6%B6%B5/","fav_count":"20277","id":"5586","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/120/2/492_1321498212_0.jpg","rank":"88","singer":"张韶涵","song_sum":"64","title":"张韶涵"},{"direct_url":"http://www.kuwo.cn/mingxing/%E5%BC%A0%E6%83%A0%E5%A6%B9/","fav_count":"29886","id":"3197","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/240/1/1001_1315363916_0.jpg","rank":"33","singer":"张惠妹","song_sum":"190","title":"张惠妹"},{"direct_url":"http://www.kuwo.cn/mingxing/%E7%8E%8B%E8%8F%B2/","fav_count":"53614","id":"552","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/240/5/385_1315363916_0.jpg","rank":"24","singer":"王菲","song_sum":"204","title":"王菲"},{"direct_url":"http://www.kuwo.cn/mingxing/%E5%88%98%E8%8B%A5%E8%8B%B1/","fav_count":"25093","id":"3363","img_url":"http://img4.kwcdn.kuwo.cn:81/star/starheads/180/1/1431_1315363916_0.jpg","rank":"47","singer":"刘若英","song_sum":"96","title":"刘若英"}],"last_update_time":"2011-12-26","sitename":"酷我热门歌手","siteurl":"http://www.kuwo.cn","total":"30"}</textarea>
+<textarea id="db_zj_t" style="display:none;">{"title":{"0":"\u534e\u8bed\u6392\u884c\u699c"},"item":[{"title":"\u7b2c\u4e8c\u4eba\u751f \u660e\u65e5\u7248","singer":"\u4e94\u6708\u5929","img_url":"http:\/\/img3.douban.com\/spic\/s7018733.jpg","direct_url":"http:\/\/music.douban.com\/subject\/7065469\/"},{"title":"\u5b78\u4e0d\u6703","singer":"\u6797\u4fca\u5091","img_url":"http:\/\/img3.douban.com\/spic\/s7008616.jpg","direct_url":"http:\/\/music.douban.com\/subject\/7047121\/"},{"title":"\u5bb6\u5728\u5317\u6781\u6751","singer":"\u9648\u5347","img_url":"http:\/\/img3.douban.com\/spic\/s7012426.jpg","direct_url":"http:\/\/music.douban.com\/subject\/7054719\/"},{"title":"\u7b2c\u4e8c\u4eba\u751f \u672b\u65e5\u7248","singer":"\u4e94\u6708\u5929","img_url":"http:\/\/img3.douban.com\/spic\/s7021494.jpg","direct_url":"http:\/\/music.douban.com\/subject\/7065468\/"},{"title":"\u6211\u611b\u6211 (\u6b63\u5f0f\u7248)","singer":"\u8427\u4e9a\u8f69 Elva Hsiao","img_url":"http:\/\/img3.douban.com\/spic\/s7013615.jpg","direct_url":"http:\/\/music.douban.com\/subject\/7051994\/"},{"title":"Demo 4","singer":"\u9673\u7dba\u8c9e","img_url":"http:\/\/img1.douban.com\/spic\/s7018780.jpg","direct_url":"http:\/\/music.douban.com\/subject\/7057315\/"},{"title":"\u4f9d\u7136","singer":"\u674e\u5065","img_url":"http:\/\/img3.douban.com\/spic\/s7007916.jpg","direct_url":"http:\/\/music.douban.com\/subject\/7046522\/"},{"title":"\u7b49\u5730\u7403\u7206\u70b8","singer":"\u68c9\u82b1\u7cd6","img_url":"http:\/\/img3.douban.com\/spic\/s7016467.jpg","direct_url":"http:\/\/music.douban.com\/subject\/7007655\/"},{"title":"\u7121\u4ee5\u540d\u72c0\u7684\u5feb\u6a02\u8207\u60b2\u50b7","singer":"\u68c9\u82b1\u7cd6 katncandix2","img_url":"http:\/\/img3.douban.com\/spic\/s7024636.jpg","direct_url":"http:\/\/music.douban.com\/subject\/7153184\/"},{"title":"\u4f60\u5728\u70e6\u607c\u4ec0\u4e48","singer":"\u82cf\u6253\u7eff","img_url":"http:\/\/img3.douban.com\/spic\/s6987806.jpg","direct_url":"http:\/\/music.douban.com\/subject\/6816154\/"}]}</textarea>
+<textarea id="db_gs_t" style="display:none;">{"title":{"0":"weeklyartists"},"item":[{"singer":"\u90b5\u5c0f\u6bdb","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/9e85d18b596002a.jpg","direct_url":"http:\/\/site.douban.com\/dannv\/","fav_count":"113203"},{"singer":"Tamas Wells","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/db278ae291f7ba8.jpg","direct_url":"http:\/\/site.douban.com\/tamas\/","fav_count":"59650"},{"singer":"\u65b0\u88e4\u5b50","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/756a52e6102ad0b.jpg","direct_url":"http:\/\/site.douban.com\/newpants\/","fav_count":"25273"},{"singer":"\u8bb8\u54f2\u73ee","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/2ad4f70a0b455b7.jpg","direct_url":"http:\/\/site.douban.com\/peggyhsu\/","fav_count":"12433"},{"singer":"\u4e4b\u738b","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/3622f679a847ace.jpg","direct_url":"http:\/\/site.douban.com\/zhiwang\/","fav_count":"640"},{"singer":"\u738b\u5c0f\u718a\u732b","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/dd5adbe17c6c0ff.jpg","direct_url":"http:\/\/site.douban.com\/wangxiaobear\/","fav_count":"580"},{"singer":"B.K.Jimmy","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/bb81f4bb0a50e7a.jpg","direct_url":"http:\/\/site.douban.com\/jimmy\/","fav_count":"3148"},{"singer":"\uff2dr.Meng","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/e313fabf6b62b58.jpg","direct_url":"http:\/\/site.douban.com\/Mengmeng\/","fav_count":"412"},{"singer":"SMZB","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/0aa8cb309e40bda.jpg","direct_url":"http:\/\/site.douban.com\/smzb\/","fav_count":"3497"},{"singer":"\u6881\u6653\u96ea","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/98e3d06490ad6e9.jpg","direct_url":"http:\/\/site.douban.com\/kulu\/","fav_count":"29378"},{"singer":"\u653e\u8086\u7684\u8086","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/04a49473b89c1c8.jpg","direct_url":"http:\/\/site.douban.com\/wpoxs\/","fav_count":"5585"},{"singer":"\u9ed8\u9ed8\u7684\u5409\u666e","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/006a70778e5f1ad.jpg","direct_url":"http:\/\/site.douban.com\/momojeep\/","fav_count":"142"},{"singer":"\u695a\u4eba\u6000\u7389","img_url":"http:\/\/img1.douban.com\/view\/site\/median\/public\/a314fdc8067a7e1.jpg","direct_url":"http:\/\/site.douban.com\/http\/","fav_count":"4991"},{"singer":"ChaCha","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/020cb13e91f679e.jpg","direct_url":"http:\/\/site.douban.com\/chacha\/","fav_count":"1437"},{"singer":"\u53f2\u60b2","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/263235ab9c12d6c.jpg","direct_url":"http:\/\/site.douban.com\/ecaps\/","fav_count":"818"},{"singer":"A-JING","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/e89501cdfe59766.jpg","direct_url":"http:\/\/site.douban.com\/a-jing\/","fav_count":"2038"},{"singer":"\u6768\u5609\u677e","img_url":"http:\/\/img1.douban.com\/view\/site\/median\/public\/6c7c63926876a11.jpg","direct_url":"http:\/\/site.douban.com\/yangjiasong\/","fav_count":"1010"},{"singer":"AKA\u7530\u56ed\u80a5\u725b","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/3bedb445df94315.jpg","direct_url":"http:\/\/site.douban.com\/FeiNiu\/","fav_count":"148"},{"singer":"\u94a2\u94c1\u7684\u5fc3\uff08STEELY HEART\uff09","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/043e8fcb0356248.jpg","direct_url":"http:\/\/site.douban.com\/steelyheart\/","fav_count":"2484"},{"singer":"\u8fc7\u5931\u4e50\u961f","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/78a18999301b214.jpg","direct_url":"http:\/\/site.douban.com\/demeritpunks\/","fav_count":"3238"},{"singer":"\u6b66\u6c49\u5927\u5b66\u539f\u521b\u97f3\u4e50\u534f\u4f1a","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/d4884d70413778d.jpg","direct_url":"http:\/\/site.douban.com\/whumusic\/","fav_count":"441"},{"singer":"\u5357\u57ce\u4e8c\u54e5\u97f3\u4e50\u8868\u6f14\u56e2","img_url":"http:\/\/img1.douban.com\/view\/site\/median\/public\/8c937df310a61c2.jpg","direct_url":"http:\/\/site.douban.com\/nanchengerge\/","fav_count":"1530"},{"singer":"\u8f6f\u8f6f\u7684\u997c\u5e72","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/56392f7c669de08.jpg","direct_url":"http:\/\/site.douban.com\/zhanghui\/","fav_count":"21"},{"singer":"Magnolian","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/24e2d373106b66b.jpg","direct_url":"http:\/\/site.douban.com\/magnolian\/","fav_count":"13"},{"singer":"\u5c0f\u8001\u864e","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/e45ed21198166b6.jpg","direct_url":"http:\/\/site.douban.com\/jfever\/","fav_count":"5039"},{"singer":"\u8086\u4f0d","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/46844beaaf41a4d.jpg","direct_url":"http:\/\/site.douban.com\/fourfive\/","fav_count":"2365"},{"singer":"\u6e05\u6b4c","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/6dad99ede25ee8b.jpg","direct_url":"http:\/\/site.douban.com\/jiangguoguo\/","fav_count":"2620"},{"singer":"\u77b3","img_url":"http:\/\/img1.douban.com\/view\/site\/median\/public\/5687189969bdcc0.jpg","direct_url":"http:\/\/site.douban.com\/pioneer\/","fav_count":"6"},{"singer":"HAYA\u4e50\u56e2","img_url":"http:\/\/img3.douban.com\/view\/site\/median\/public\/f90488bae92ce24.jpg","direct_url":"http:\/\/site.douban.com\/haya\/","fav_count":"1244"},{"singer":"\u5218\u6668\u7199","img_url":"http:\/\/img1.douban.com\/view\/site\/median\/public\/c66f743e50cbf10.jpg","direct_url":"http:\/\/site.douban.com\/lcxmusic\/","fav_count":"3"}]}</textarea>
+<textarea id="kg_zj_t" style="display:none;">{"siteName":"酷狗","siteUrl":"http://www.kugou.com","last_update_time":"1324832459.47975","total":"36","item":[{"id":59,"singer":"2NE1","rank":"1","fav_count":5465878,"title":"To Anyone","img_url":"http://image7.kugou.com/TMusic/Special/90/20100928/201009281146221y5.jpg","direct_url":"http://www1.kugou.com/ting/special/23930C4BC7CEEAB7.htm"},{"id":58,"singer":"JYJ","rank":"2","fav_count":5441592,"title":"The...","img_url":"http://image7.kugou.com/TMusic/Special/90/20100928/20100928113422ydl.jpg","direct_url":"http://www1.kugou.com/ting/special/95EE2560231C4DEF.htm"},{"id":71,"singer":"何韵诗","rank":"3","fav_count":5279784,"title":"无名·诗","img_url":"http://image7.kugou.com/TMusic/Special/90/20101008/20101008115325auv.jpg","direct_url":"http://www1.kugou.com/ting/special/0FD0EB0ECFE09210.htm"},{"id":87,"singer":"林育羣","rank":"4","fav_count":1143101,"title":"未来的第一站","img_url":"http://image7.kugou.com/TMusic/Special/90/20101026/20101026100400bdj.jpg","direct_url":"http://www1.kugou.com/ting/special/C89E112A421DC5AB.htm"},{"id":57,"singer":"田馥甄","rank":"5","fav_count":581319,"title":"To Hebe","img_url":"http://image7.kugou.com/TMusic/Special/90/20100928/20100928111647slo.jpg","direct_url":"http://www1.kugou.com/ting/special/B1713E88E73E881A.htm"},{"id":67,"singer":"快乐家族","rank":"6","fav_count":575927,"title":"快乐你懂的","img_url":"http://image7.kugou.com/TMusic/Special/90/20100928/20100928183059gvp.jpg","direct_url":"http://www1.kugou.com/ting/special/205C22B41FC3B590.htm"},{"id":56,"singer":"迪克牛仔","rank":"7","fav_count":560540,"title":"禁区","img_url":"http://image7.kugou.com/TMusic/Special/90/20100928/20100928110931tav.jpg","direct_url":"http://www1.kugou.com/ting/special/8E7EF4C99EB68310.htm"},{"id":53,"singer":"萧亚轩","rank":"8","fav_count":368872,"title":"萧洒小姐","img_url":"http://image7.kugou.com/TMusic/Special/90/20100927/20100927183127mkp.jpg","direct_url":"http://www1.kugou.com/ting/special/DAD686C146D19A74.htm"},{"id":54,"singer":"李玖哲","rank":"9","fav_count":261429,"title":"好玖","img_url":"http://image7.kugou.com/TMusic/Special/90/20100927/20100927183839ufo.jpg","direct_url":"http://www1.kugou.com/ting/special/508F1F922F470C00.htm"},{"id":60,"singer":"林宇中","rank":"10","fav_count":235663,"title":"新娘","img_url":"http://image7.kugou.com/TMusic/Special/90/20100928/20100928115802jgt.jpg","direct_url":"http://www1.kugou.com/ting/special/BDD2FDA892B98722.htm"},{"id":72,"singer":"凤凰传奇","rank":"11","fav_count":190438,"title":"我从草原来 新歌＋精选","img_url":"http://image7.kugou.com/TMusic/Special/90/20101008/201010081157151pr.jpg","direct_url":"http://www1.kugou.com/ting/special/1D3711B0657B4442.htm"},{"id":84,"singer":"陈柏宇","rank":"12","fav_count":159340,"title":"Put On","img_url":"http://image7.kugou.com/TMusic/Special/90/20101019/201010191811561zz.jpg","direct_url":"http://www1.kugou.com/ting/special/67ACC0404A9E5606.htm"},{"id":707,"singer":"郭静","rank":"13","fav_count":138808,"title":"陪着我的时候想着她","img_url":"http://image7.kugou.com/TMusic/Special/90/20110830/20110830160218jil.jpg","direct_url":"http://www1.kugou.com/ting/special/380F966C98A17693.htm"},{"id":219,"singer":"梁静茹","rank":"14","fav_count":110747,"title":"情歌没有告诉你","img_url":"http://image7.kugou.com/TMusic/Special/90/20101220/201012201650502z0.jpg","direct_url":"http://www1.kugou.com/ting/special/E6A695AF37D9D8EB.htm"},{"id":25,"singer":"苏打绿","rank":"15","fav_count":102125,"title":"十年一刻","img_url":"http://image7.kugou.com/TMusic/Special/90/20100907/20100907141304lqd.jpg","direct_url":"http://www1.kugou.com/ting/special/3951848297DEF403.htm"},{"id":98,"singer":"蔡依林","rank":"16","fav_count":101986,"title":"TAKE 2 MYSELF-Dance with Me","img_url":"http://image7.kugou.com/TMusic/Special/90/20101104/20101104111725loh.jpg","direct_url":"http://www1.kugou.com/ting/special/964A0C0E39D4D0F6.htm"},{"id":265,"singer":"黄小琥","rank":"17","fav_count":100078,"title":"如果能…重来","img_url":"http://image7.kugou.com/TMusic/Special/90/20110122/20110122113911mkx.jpg","direct_url":"http://www1.kugou.com/ting/special/939695CA4FB325B3.htm"},{"id":76,"singer":"刘德华","rank":"18","fav_count":97879,"title":"忘不了的","img_url":"http://image7.kugou.com/TMusic/Special/90/20101014/20101014175315ibo.jpg","direct_url":"http://www1.kugou.com/ting/special/03D01131D9C31DDC.htm"},{"id":26,"singer":"王力宏","rank":"19","fav_count":94823,"title":"十八般武艺","img_url":"http://image7.kugou.com/TMusic/Special/90/20100902/20100902162727a5z.jpg","direct_url":"http://www1.kugou.com/ting/special/E12E58803A5BE490.htm"},{"id":229,"singer":"A-Lin","rank":"20","fav_count":93556,"title":"寂寞不痛","img_url":"http://image7.kugou.com/TMusic/Special/90/20101223/20101223183625n3c.jpg","direct_url":"http://www1.kugou.com/ting/special/A2F55D26E743C795.htm"},{"id":747,"singer":"江映蓉","rank":"21","fav_count":88376,"title":"女人帮EP","img_url":"http://image7.kugou.com/TMusic/Special/90/20110921/20110921175750zh1.jpg","direct_url":"http://www1.kugou.com/ting/special/BDF5A9238F887537.htm"},{"id":156,"singer":"张杰","rank":"22","fav_count":80019,"title":"这，就是爱","img_url":"http://image7.kugou.com/TMusic/Special/90/20101122/201011221508473t3.jpg","direct_url":"http://www1.kugou.com/ting/special/126F99FF207A12CA.htm"},{"id":335,"singer":"孙燕姿","rank":"23","fav_count":80012,"title":"是时候","img_url":"http://image7.kugou.com/TMusic/Special/90/20110307/20110307113153fhi.jpg","direct_url":"http://www1.kugou.com/ting/special/C129C13929FC7D0D.htm"},{"id":656,"singer":"杨丞琳","rank":"24","fav_count":78944,"title":"仰望","img_url":"http://image7.kugou.com/TMusic/Special/90/20110804/20110804141726ija.jpg","direct_url":"http://www1.kugou.com/ting/special/AD2D3D9937EFD90F.htm"},{"id":249,"singer":"江若琳","rank":"25","fav_count":78180,"title":"江若琳Elanne kwong首张国语大碟","img_url":"http://image7.kugou.com/TMusic/Special/90/20110108/20110108154715jag.jpg","direct_url":"http://www1.kugou.com/ting/special/1E4936BE969AD54D.htm"},{"id":527,"singer":"光良","rank":"26","fav_count":75411,"title":"台北下着雨的星期天","img_url":"http://image7.kugou.com/TMusic/Special/90/20110607/20110607161911jsq.jpg","direct_url":"http://www1.kugou.com/ting/special/0B20AC9788322778.htm"},{"id":86,"singer":"陈奕迅","rank":"27","fav_count":75354,"title":"Taste The Atmosphere","img_url":"http://image7.kugou.com/TMusic/Special/90/20101020/20101020175659p2a.jpg","direct_url":"http://www1.kugou.com/ting/special/8F505F52A2B2D65F.htm"},{"id":684,"singer":"林欣彤","rank":"28","fav_count":68215,"title":"Vocalist","img_url":"http://image7.kugou.com/TMusic/Special/90/20110819/201108191110243oe.jpg","direct_url":"http://www1.kugou.com/ting/special/58D2798D87BBEE73.htm"},{"id":491,"singer":"Lady Gaga","rank":"29","fav_count":58486,"title":"Born This Way","img_url":"http://image7.kugou.com/TMusic/Special/90/20110519/20110519155217e10.jpg","direct_url":"http://www1.kugou.com/ting/special/B52113478248F534.htm"},{"id":196,"singer":"谭咏麟","rank":"30","fav_count":57309,"title":"2010再度感动演唱会","img_url":"http://image7.kugou.com/TMusic/Special/90/20101202/20101202162111dyb.jpg","direct_url":"http://www1.kugou.com/ting/special/28A8B6F424D1758E.htm"},{"id":50,"singer":"飞轮海","rank":"31","fav_count":50616,"title":"太热","img_url":"http://image7.kugou.com/TMusic/Special/90/20100927/201009271812590y2.jpg","direct_url":"http://www1.kugou.com/ting/special/A729C8C1E567D80B.htm"},{"id":406,"singer":"Lenka","rank":"32","fav_count":49918,"title":"Two","img_url":"http://image7.kugou.com/TMusic/Special/90/20110402/20110402155039rzn.jpg","direct_url":"http://www1.kugou.com/ting/special/0F1E566AECAB40ED.htm"},{"id":295,"singer":"张震岳","rank":"33","fav_count":48964,"title":"我想要的感觉","img_url":"http://image7.kugou.com/TMusic/Special/90/20110217/20110217164136hur.jpg","direct_url":"http://www1.kugou.com/ting/special/39BF23E7BA3B1F48.htm"},{"id":505,"singer":"张靓颖","rank":"34","fav_count":47428,"title":"改变","img_url":"http://image7.kugou.com/TMusic/Special/90/20110526/20110526164607qk0.jpg","direct_url":"http://www1.kugou.com/ting/special/220F72DDCE78B747.htm"},{"id":438,"singer":"张惠妹","rank":"35","fav_count":47354,"title":"你在看我吗","img_url":"http://image7.kugou.com/TMusic/Special/90/20110421/20110421104215uwo.jpg","direct_url":"http://www1.kugou.com/ting/special/508D9A26D17B52A1.htm"},{"id":709,"singer":"滨崎步","rank":"36","fav_count":45886,"title":"FIVE","img_url":"http://image7.kugou.com/TMusic/Special/90/20110831/201108311940164s4.jpg","direct_url":"http://www1.kugou.com/ting/special/7025E92778259B9C.htm"}]}</textarea>
+<textarea id="kg_gs_t" style="display:none;">{"siteName":"酷狗","siteUrl":"http://www.kugou.com","last_update_time":"1324832459.65162","total":"29","item":[{"id":154,"title":"","fav_count":5626580,"singer":"何韵诗","img_url":"http://image7.kugou.com/TMusic/Singer/90/20101008/20101008114141ngt.jpg","rank":"1","direct_url":"http://www1.kugou.com/ting/singer/A6AAEB394F456AF6.html"},{"id":155,"title":"","fav_count":1518166,"singer":"凤凰传奇","img_url":"http://image7.kugou.com/TMusic/Singer/90/20101008/20101008115021dr0.jpg","rank":"2","direct_url":"http://www1.kugou.com/ting/singer/4A17282ACB06534B.html"},{"id":347,"title":"","fav_count":579780,"singer":"韩红","img_url":"http://image7.kugou.com/TMusic/Singer/90/20110215/20110215175424bha.jpg","rank":"3","direct_url":"http://www1.kugou.com/ting/singer/68FF5A41A2019F51.html"},{"id":107,"title":"","fav_count":529068,"singer":"苏打绿","img_url":"http://image7.kugou.com/TMusic/Singer/90/20100928/20100928154313mwx.jpg","rank":"4","direct_url":"http://www1.kugou.com/ting/singer/807073D425997B51.html"},{"id":106,"title":"","fav_count":494316,"singer":"林依晨","img_url":"http://image7.kugou.com/TMusic/Singer/90/20110124/201101241436111or.jpg","rank":"5","direct_url":"http://www1.kugou.com/ting/singer/DA1B400F32E9AE8A.html"},{"id":109,"title":"","fav_count":446785,"singer":"蔡依林","img_url":"http://image7.kugou.com/TMusic/Singer/90/20100928/20100928155315w5y.jpg","rank":"6","direct_url":"http://www1.kugou.com/ting/singer/198E820B134A9591.html"},{"id":108,"title":"","fav_count":398275,"singer":"王力宏","img_url":"http://image7.kugou.com/TMusic/Singer/90/20100927/20100927193426eti.jpg","rank":"7","direct_url":"http://www1.kugou.com/ting/singer/B4DF8CC4B89EE047.html"},{"id":159,"title":"","fav_count":364021,"singer":"刘德华","img_url":"http://image7.kugou.com/TMusic/Singer/90/20101014/20101014174356gyw.jpg","rank":"8","direct_url":"http://www1.kugou.com/ting/singer/66E8D7691252B9AF.html"},{"id":194,"title":"","fav_count":327689,"singer":"许嵩","img_url":"http://image7.kugou.com/TMusic/Singer/90/20101110/201011101021133bd.jpg","rank":"9","direct_url":"http://www1.kugou.com/ting/singer/F810DCA54C5B7242.html"},{"id":171,"title":"","fav_count":245236,"singer":"少女时代","img_url":"http://image7.kugou.com/TMusic/Singer/90/20101028/20101028130525z1c.jpg","rank":"10","direct_url":"http://www1.kugou.com/ting/singer/8F943AB91696C672.html"},{"id":167,"title":"","fav_count":208662,"singer":"陈奕迅","img_url":"http://image7.kugou.com/TMusic/Singer/90/20101020/20101020110827k0k.jpg","rank":"11","direct_url":"http://www1.kugou.com/ting/singer/0CFA133750DC5AFA.html"},{"id":520,"title":"","fav_count":186166,"singer":"王心凌","img_url":"http://image7.kugou.com/TMusic/Singer/90/20110531/20110531161204m2n.jpg","rank":"12","direct_url":"http://www1.kugou.com/ting/singer/EF0949F9AC46F6A1.html"},{"id":137,"title":"","fav_count":185764,"singer":"萧亚轩","img_url":"http://image7.kugou.com/TMusic/Singer/90/20101008/20101008152837ykm.jpg","rank":"13","direct_url":"http://www1.kugou.com/ting/singer/238339A01623DAF4.html"},{"id":276,"title":"","fav_count":133910,"singer":"陈楚生","img_url":"http://image7.kugou.com/TMusic/Singer/90/20101207/20101207172055qje.jpg","rank":"14","direct_url":"http://www1.kugou.com/ting/singer/60FD1F71FAA10327.html"},{"id":526,"title":"","fav_count":117397,"singer":"光良","img_url":"http://image7.kugou.com/TMusic/Singer/90/20110607/20110607161751ry5.jpg","rank":"15","direct_url":"http://www1.kugou.com/ting/singer/032B9F18822CC410.html"},{"id":135,"title":"","fav_count":116754,"singer":"飞轮海","img_url":"http://image7.kugou.com/TMusic/Singer/90/20101009/20101009143119qrf.jpg","rank":"16","direct_url":"http://www1.kugou.com/ting/singer/B4659FA75DBB2ACD.html"},{"id":227,"title":"","fav_count":89070,"singer":"尚雯婕","img_url":"http://image7.kugou.com/TMusic/Singer/90/20101122/20101122113515aby.jpg","rank":"17","direct_url":"http://www1.kugou.com/ting/singer/0749849FDC201EE2.html"},{"id":312,"title":"","fav_count":86559,"singer":"东方神起","img_url":"http://image7.kugou.com/TMusic/Singer/90/20110105/20110105163258oqj.jpg","rank":"18","direct_url":"http://www1.kugou.com/ting/singer/9BA7895A3211C783.html"},{"id":138,"title":"","fav_count":86509,"singer":"李玖哲","img_url":"http://image7.kugou.com/TMusic/Singer/90/20100928/201009281421514v1.jpg","rank":"19","direct_url":"http://www1.kugou.com/ting/singer/BA02005EF455F436.html"},{"id":580,"title":"","fav_count":84692,"singer":"曾轶可","img_url":"http://image7.kugou.com/TMusic/Singer/90/20110712/20110712144206xtk.jpg","rank":"20","direct_url":"http://www1.kugou.com/ting/singer/F85E10991072F3ED.html"},{"id":612,"title":"","fav_count":73046,"singer":"信","img_url":"http://image7.kugou.com/TMusic/Singer/90/20110803/20110803170827rax.jpg","rank":"21","direct_url":"http://www1.kugou.com/ting/singer/1FB4CDF229AA350F.html"},{"id":139,"title":"","fav_count":72794,"singer":"江语晨","img_url":"http://image7.kugou.com/TMusic/Singer/90/20100927/20100927181749rbn.jpg","rank":"22","direct_url":"http://www1.kugou.com/ting/singer/686F22A7165459EB.html"},{"id":290,"title":"","fav_count":69450,"singer":"滨崎步","img_url":"http://image7.kugou.com/TMusic/Singer/90/20101220/20101220155624s1e.jpg","rank":"23","direct_url":"http://www1.kugou.com/ting/singer/AF202E42448EE01D.html"},{"id":174,"title":"","fav_count":57489,"singer":"卫兰","img_url":"http://image7.kugou.com/TMusic/Singer/90/20101102/20101102174844fdy.jpg","rank":"24","direct_url":"http://www1.kugou.com/ting/singer/B228F9FC0288B6B1.html"},{"id":180,"title":"","fav_count":48344,"singer":"James Blunt","img_url":"http://image7.kugou.com/TMusic/Singer/90/20101104/20101104145728zod.jpg","rank":"25","direct_url":"http://www1.kugou.com/ting/singer/BEE22FEFA7C9238D.html"},{"id":205,"title":"","fav_count":37040,"singer":"KARA","img_url":"http://image7.kugou.com/TMusic/Singer/90/20101116/20101116115846rzh.jpg","rank":"26","direct_url":"http://www1.kugou.com/ting/singer/8E8E82C0AABD54AA.html"},{"id":391,"title":"","fav_count":29381,"singer":"Aril Lavigne","img_url":"http://image7.kugou.com/TMusic/Singer/90/20110303/20110303144056hd0.jpg","rank":"27","direct_url":"http://www1.kugou.com/ting/singer/580F3709CE6A57CE.html"},{"id":289,"title":"","fav_count":27071,"singer":"4Minute","img_url":"http://image7.kugou.com/TMusic/Singer/90/20101220/20101220134308k0b.jpg","rank":"28","direct_url":"http://www1.kugou.com/ting/singer/0431BF846BEFDF13.html"},{"id":380,"title":"","fav_count":20675,"singer":"AKB48","img_url":"http://image7.kugou.com/TMusic/Singer/90/20110225/201102251108112yx.jpg","rank":"29","direct_url":"http://www1.kugou.com/ting/singer/404A1855E72582C8.html"}]}</textarea>
+<textarea id="bw_zj_t" style="display:none;">{"siteName":"\u513f\u7ae5\u6b4c\u66f2","siteUrl":"http:\/\/bao.beva.com","last_update_time":1317122909,"total":27,"item":[{"id":297,"title":"\u4e24\u53ea\u8001\u864e","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/297?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/297.png","rank":1},{"id":283,"title":"\u6570\u9e2d\u6b4c","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/283?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/283.png","rank":2},{"id":312,"title":"\u5c0f\u6bdb\u9a74","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/312?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/312.png","rank":3},{"id":320,"title":"\u4e00\u5206\u94b1","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/320?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/320.png","rank":4},{"id":314,"title":"\u5c0f\u71d5\u5b50","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/314?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/314.png","rank":5},{"id":371,"title":"\u5c0f\u5154\u5b50\u4e56\u4e56","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/371?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/371.png","rank":6},{"id":410,"title":"\u5a03\u54c8\u54c8","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/410?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/410.png","rank":7},{"id":378,"title":"\u62cd\u624b\u6b4c","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/378?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/378.png","rank":8},{"id":399,"title":"\u5356\u62a5\u6b4c","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/399?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/399.png","rank":9},{"id":421,"title":"\u5c0f\u661f\u661f","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/421?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/421.png","rank":10},{"id":463,"title":"\u4e0a\u5b66\u6b4c","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/463?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/463.png","rank":11},{"id":322,"title":"\u8717\u725b\u4e0e\u9ec4\u9e42\u9e1f","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/322?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/322.png","rank":12},{"id":438,"title":"\u6349\u6ce5\u9cc5","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/438?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/438.png","rank":13},{"id":415,"title":"\u5c0f\u87ba\u53f7","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/415?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/415.png","rank":14},{"id":358,"title":"\u62d4\u841d\u535c","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/358?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/358.png","rank":15},{"id":305,"title":"\u4e16\u4e0a\u53ea\u6709\u5988\u5988\u597d","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/305?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/305.png","rank":16},{"id":59,"title":"\u5c0f\u5154\u5b50\u4e56\u4e56-\u7ae5\u8c23","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/59?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/59.png","rank":17},{"id":58,"title":"\u866b\u513f\u7684\u6b4c","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/58?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/58.png","rank":18},{"id":60,"title":"\u5c0f\u8001\u9f20\u4e0a\u706f\u53f0","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/60?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/60.png","rank":19},{"id":203,"title":"\u4e50\u4e8e\u52a9\u4eba\u7684\u8d1d\u74e6","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/203?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/203.png","rank":20},{"id":429,"title":"\u8d1d\u561f\u561f\u7684\u5c0f\u810f\u624b","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/429?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/429.png","rank":21},{"id":450,"title":"\u8bf4\u8c0e\u7684\u76ae\u76ae","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/450?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/450.png","rank":22},{"id":113,"title":"\u535a\u58eb\u7684\u5047\u7259","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/113?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/113.png","rank":23},{"id":311,"title":"\u76ae\u514b\u7684\u6545\u4e8b","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/311?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/311.png","rank":24},{"id":83,"title":"\u4e09\u5b57\u7ecf\u4eba\u4e4b\u521d1","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/83?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/83.png","rank":25},{"id":228,"title":"\u4e09\u5b57\u7ecf\u4eba\u4e4b\u521d2","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/228?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/228.png","rank":26},{"id":97,"title":"\u4e2d\u79cb\u8282\u5feb\u4e50","fav_count":200,"singer":"\u8d1d\u74e6\u7f51","direct_url":"http:\/\/bao.beva.com\/video\/97?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/97.png","rank":27}]}</textarea>
+<textarea id="bw_gs_t" style="display:none;">{"siteName":"\u513f\u7ae5\u6545\u4e8b","siteUrl":"http:\/\/bao.beva.com","last_update_time":1320034507,"total":30,"item":[{"id":297,"title":"\u4e24\u53ea\u8001\u864e","fav_count":200,"singer":"\u4e24\u53ea\u8001\u864e","direct_url":"http:\/\/bao.beva.com\/video\/297?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/297.png","rank":1},{"id":283,"title":"\u6570\u9e2d\u6b4c","fav_count":200,"singer":"\u6570\u9e2d\u6b4c","direct_url":"http:\/\/bao.beva.com\/video\/283?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/283.png","rank":2},{"id":371,"title":"\u5c0f\u5154\u5b50\u4e56\u4e56","fav_count":200,"singer":"\u5c0f\u5154\u5b50\u4e56\u4e56","direct_url":"http:\/\/bao.beva.com\/video\/371?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/371.png","rank":3},{"id":71,"title":"\u5c0f\u9a6c\u8fc7\u6cb3","fav_count":200,"singer":"\u5c0f\u9a6c\u8fc7\u6cb3","direct_url":"http:\/\/bao.beva.com\/ebook\/71?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/71.png","rank":4},{"id":140,"title":"\u5c0f\u874c\u86aa\u627e\u5988\u5988","fav_count":200,"singer":"\u5c0f\u874c\u86aa\u627e\u5988\u5988","direct_url":"http:\/\/bao.beva.com\/ebook\/140?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/140.png","rank":5},{"id":88,"title":"\u4e09\u53ea\u5c0f\u732a","fav_count":200,"singer":"\u4e09\u53ea\u5c0f\u732a","direct_url":"http:\/\/bao.beva.com\/ebook\/88?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/88.png","rank":6},{"id":73,"title":"\u9f9f\u5154\u8d5b\u8dd1","fav_count":200,"singer":"\u9f9f\u5154\u8d5b\u8dd1","direct_url":"http:\/\/bao.beva.com\/ebook\/73?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/73.png","rank":7},{"id":74,"title":"\u4e4c\u9e26\u559d\u6c34","fav_count":200,"singer":"\u4e4c\u9e26\u559d\u6c34","direct_url":"http:\/\/bao.beva.com\/ebook\/74?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/74.png","rank":8},{"id":229,"title":"\u4e95\u5e95\u4e4b\u86d9","fav_count":200,"singer":"\u4e95\u5e95\u4e4b\u86d9","direct_url":"http:\/\/bao.beva.com\/ebook\/229?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/229.png","rank":9},{"id":72,"title":"\u5c0f\u732b\u9493\u9c7c","fav_count":200,"singer":"\u5c0f\u732b\u9493\u9c7c","direct_url":"http:\/\/bao.beva.com\/ebook\/72?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/72.png","rank":10},{"id":301,"title":"\u5c0f\u7334\u5b50\u4e0b\u5c71","fav_count":200,"singer":"\u5c0f\u7334\u5b50\u4e0b\u5c71","direct_url":"http:\/\/bao.beva.com\/ebook\/301?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/301.png","rank":11},{"id":123,"title":"\u5927\u5bb6\u6765\u627e\u832c","fav_count":200,"singer":"\u5927\u5bb6\u6765\u627e\u832c","direct_url":"http:\/\/bao.beva.com\/game\/123?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/123.png","rank":12},{"id":490,"title":"\u76f2\u4eba\u6478\u8c61","fav_count":200,"singer":"\u76f2\u4eba\u6478\u8c61","direct_url":"http:\/\/bao.beva.com\/ebook\/490?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/490.png","rank":13},{"id":426,"title":"\u4e09\u4e2a\u548c\u5c1a","fav_count":200,"singer":"\u4e09\u4e2a\u548c\u5c1a","direct_url":"http:\/\/bao.beva.com\/ebook\/426?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/426.png","rank":14},{"id":380,"title":"\u753b\u86c7\u6dfb\u8db3","fav_count":200,"singer":"\u753b\u86c7\u6dfb\u8db3","direct_url":"http:\/\/bao.beva.com\/ebook\/380?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/380.png","rank":15},{"id":373,"title":"\u62d4\u82d7\u52a9\u957f","fav_count":200,"singer":"\u62d4\u82d7\u52a9\u957f","direct_url":"http:\/\/bao.beva.com\/ebook\/373?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/373.png","rank":16},{"id":392,"title":"\u72d0\u72f8\u548c\u4e4c\u9e26","fav_count":200,"singer":"\u72d0\u72f8\u548c\u4e4c\u9e26","direct_url":"http:\/\/bao.beva.com\/ebook\/392?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/392.png","rank":17},{"id":398,"title":"\u72e1\u733e\u7684\u72d0\u72f8","fav_count":200,"singer":"\u72e1\u733e\u7684\u72d0\u72f8","direct_url":"http:\/\/bao.beva.com\/ebook\/398?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/398.png","rank":18},{"id":343,"title":"\u72d0\u5047\u864e\u5a01","fav_count":200,"singer":"\u72d0\u5047\u864e\u5a01","direct_url":"http:\/\/bao.beva.com\/ebook\/343?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/343.png","rank":19},{"id":288,"title":"\u852c\u83dc\u603b\u52a8\u5458","fav_count":200,"singer":"\u852c\u83dc\u603b\u52a8\u5458","direct_url":"http:\/\/bao.beva.com\/game\/288?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/288.png","rank":20},{"id":257,"title":"\u963b\u6b62\u7a7a\u88ad","fav_count":200,"singer":"\u963b\u6b62\u7a7a\u88ad","direct_url":"http:\/\/bao.beva.com\/game\/257?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/257.png","rank":21},{"id":364,"title":"\u6536\u62fe\u623f\u95f4","fav_count":200,"singer":"\u6536\u62fe\u623f\u95f4","direct_url":"http:\/\/bao.beva.com\/game\/364?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/364.png","rank":22},{"id":219,"title":"\u5c0f\u9e1f\u6392\u6392\u5750","fav_count":200,"singer":"\u5c0f\u9e1f\u6392\u6392\u5750","direct_url":"http:\/\/bao.beva.com\/video\/219?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/219.png","rank":23},{"id":256,"title":"\u6355\u9c7c\u80fd\u624b","fav_count":200,"singer":"\u6355\u9c7c\u80fd\u624b","direct_url":"http:\/\/bao.beva.com\/game\/256?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/256.png","rank":24},{"id":102,"title":"\u5361\u7247\u7ffb\u7ffb\u770b","fav_count":200,"singer":"\u5361\u7247\u7ffb\u7ffb\u770b","direct_url":"http:\/\/bao.beva.com\/game\/102?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/102.png","rank":25},{"id":333,"title":"\u841d\u535c\u4fdd\u536b\u6218","fav_count":200,"singer":"\u841d\u535c\u4fdd\u536b\u6218","direct_url":"http:\/\/bao.beva.com\/game\/333?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/333.png","rank":26},{"id":134,"title":"\u8ff7\u8def\u7684\u8d1d\u561f\u561f","fav_count":200,"singer":"\u8ff7\u8def\u7684\u8d1d\u561f\u561f","direct_url":"http:\/\/bao.beva.com\/game\/134?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/134.png","rank":27},{"id":302,"title":"\u8bc6\u5b57\u5361","fav_count":200,"singer":"\u8bc6\u5b57\u5361","direct_url":"http:\/\/bao.beva.com\/\/302?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/302.png","rank":28},{"id":362,"title":"\u6d82\u9e26\u718a\u732b","fav_count":200,"singer":"\u6d82\u9e26\u718a\u732b","direct_url":"http:\/\/bao.beva.com\/paint\/362?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/362.png","rank":29},{"id":459,"title":"\u66fc\u66fc\u7684\u65b0\u5bb6","fav_count":200,"singer":"\u66fc\u66fc\u7684\u65b0\u5bb6","direct_url":"http:\/\/bao.beva.com\/ebook\/459?from=360nav","img_url":"http:\/\/fs.beva.cn\/images\/360songs\/459.png","rank":30}]}</textarea>
+<script src="http://s0.qhimg.com/lib/qwrap/101.js" charset="utf-8" type="text/javascript"></script>
+<script type="text/javascript">
+var $ = function (d){
+    return W(d);
+};    
+
+W.prototype.bind = function (e , fn){
+    W(this).on(e , fn);
+}
+
+function evalJson( jsonText )
+{
+    var jsonObject;
+    switch(typeof jsonText )
+    {
+        case 'string':
+            try
+            {
+                jsonObject = eval('('+jsonText+')');
+            }
+            catch(e)
+            {
+                jsonObject = null;
+            }
+            break;
+        case 'object':
+        case 'number':
+        case 'boolean':
+        case 'function':
+            jsonObject = jsonText;
+    }
+
+    return jsonObject;
+}
+
+var kw_zj = evalJson(W("#kw_zj_t").val().trim());
+var kw_gs = evalJson(W("#kw_gs_t").val().trim());
+var db_zj = evalJson(W("#db_zj_t").val().trim());
+var db_gs = evalJson(W("#db_gs_t").val().trim());
+var kg_zj = evalJson(W("#kg_zj_t").val().trim());
+var kg_gs = evalJson(W("#kg_gs_t").val().trim()); 
+var bw_zj = evalJson(W("#bw_zj_t").val().trim());
+var bw_gs = evalJson(W("#bw_gs_t").val().trim());
+
+var yt_zj = 0;
+var yt_gs = 0;
+</script>
+<script type="text/javascript" src="http://h1.qhimg.com/js/qtool.storage.js_com.js" charset="utf-8"></script>
+<script src="http://h1.qhimg.com/js/music_fire.js_com.js?201112" type="text/javascript"></script>
+<span style="display:none"><script src="js/tj.js"  type="text/javascript"></script></span>
+
+</body>
+</html>

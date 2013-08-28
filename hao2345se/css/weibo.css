@@ -1,0 +1,132 @@
+@charset "gb2312";
+/* index20111221.css
+ * Created: 2011-12-21
+ * Update: 2011-12-21
+ * Author: amanda
+ */
+html, body, div, span,applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;}
+body{font:12px/1.5 Arial,Tahoma,Helvetica,simsun,sans-serif;color:#666;word-wrap:break-word;word-break:break-all;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+a{text-decoration: none;color: #333;}
+a:hover{text-decoration:underline;color:#de0000;}
+a:active{outline:none;}
+li{list-style-type:none;}
+img{border:0 none;vertical-align:top;}
+fieldset{border-style: none }
+label,button{cursor: pointer;}
+select,input,textarea{font-size:12px;line-height:1.2em;}
+.clearfix:after{content:".";height:0;visibility:hidden;display:block;clear:both;font-size:0;line-height:0;}
+.clearfix{*zoom:1;}
+.fix{word-break:keep-all;overflow:hidden;text-overflow:ellipsis;}
+.clear{font-size:0;line-height:0;height:0;clear:both;overflow: hidden;display: block;}
+.none{display:none;}
+
+.head{ width:990px; margin:0 auto;text-align:left;clear:both;}
+.head{ height:70px; overflow:hidden}
+#logo img{ margin:2px 0 0px 0px; }
+.search_gg{ text-align:center; float:right; padding:17px 16px 0 0; height:26px; }
+.search_gg span,.search_gg b{ display:block; float:left;}
+.search_gg b a{ font-family:"simsun"; font-weight:100; height:26px; line-height:30px; _line-height:36px; margin:0 6px; _margin:0 6px 0 3px;display:block; float:left; }
+.search_gg input,.search_gg img{ vertical-align:middle;}
+.input_gg_sch{ width:275px; height:26px; line-height:26px;  padding-left:4px; font-size:17px; border:1px solid #7f9db9;}
+.butn_gg_sch{ width:63px; height:28px; line-height:25px; margin-left:3px; cursor:pointer;}
+
+.menu{ height:40px;background:url('/images/weibo/skin.png') repeat-x 0 0;}
+.menu ul{margin:0 auto;width:990px;padding-top:5px;}
+.menu li{ float:left;}
+.menu li.line{width:2px;height:33px;font-size:0;background:url('/images/weibo/skin.png') no-repeat -101px -40px;overflow:hidden;}
+.menu li a {margin-top:2px;width:101px;height:33px;line-height:28px;font-size:14px;color:#fff;font-weight:bold;text-align:center;display:block;}
+.menu li a:hover{color:#fff;}
+.menu li a.m_curr{color:#4175ac;line-height:32px;background:url('/images/weibo/skin.png') no-repeat 0 -40px;}
+
+.wrapper{margin:0 auto;padding-top:10px;width:990px;}
+.navlist{padding:5px 4px;border:1px solid #d5eefa;background:#fbfeff;font-size:14px;line-height:28px;}
+.navlist li{float:left;width:140px;text-align:center;}
+.navlist li a{padding:3px 4px;color:#4175ac;}
+.navlist li a:hover{color:#fff; text-decoration:none;background:#7fbae4;}
+.icon{position:relative;*top:-2px;_top:2px;width:13px;height:11px;background:url('/images/weibo/skin.png') no-repeat -341px -45px;display:inline-block;*display:inline;*zoom:1;}
+.i_tra{margin-right:3px;background-position: -341px -45px;}
+.i_look{margin-right:3px;width:12px;height:10px;background-position:-387px -45px;}
+.i_hot{_top:-2px;margin:0 8px 0 11px;width:5px;height:18px;background-position:-354px -45px; vertical-align:top;}
+.i_gra{width:28px;height:13px;color:#fff;line-height:13px;background-position:-359px -45px;}
+.i_gra1,.i_gra2,.i_gra3{width:14px;height:28px;background-position:-472px -111px;font-size:0;vertical-align:middle;}
+.i_gra2{background-position:-486px -111px;}
+.i_gra3{background-position:-500px -111px;}
+.container{margin-bottom:5px;text-align:left;}
+.main{float:left;padding:1px;width:730px;height:193px;border:1px solid #d5eefa;background:#f4fbff;}
+.mainbox{padding:12px 15px 0;width:700px;text-align:left;height:180px;background:#fff;overflow:hidden;}
+.mainbox dl{float:left;margin:0 8px 0 7px;_margin:0 11px 0 4px;width:160px;height:180px;overflow:hidden;}
+.mainbox a img{padding:1px;width:156px;height:152px;border:1px solid #c1c1c1;}
+.mainbox a:hover img{padding:0;width:156px;height:152px;border:2px solid #ff7900;}
+.mainbox dd{padding-top:5px;text-align:right;height:13px;}
+.mainbox dd a{color:#636363;}
+.mainbox dd a:hover{color:#ff7900;}
+.login{float:right;border:1px solid #d5eefa;background:#f8fdff;width:244px;height:195px;overflow:hidden;}
+.login_tab{float:left;margin:7px 0 7px -1px;}
+.login_content{float:right;padding:7px 19px 7px 16px;width:181px;font-size:14px;overflow:hidden;}
+.login_tab .first{margin-top:0;}
+.login_tab li{margin-top:-2px;width:22px;height:58px;overflow:hidden; border-left:1px #c7e8f5 solid; line-height:14px; padding:17px 0 17px 6px; cursor:pointer;color:#4175ac;background:url('/images/weibo/skin.png') no-repeat -571px -199px;}
+.login_tab li.current{border-left:1px solid #b5e0f1;font-weight:bold;color:#636363;background-position:-571px -108px;}
+.login_content .login_logo{padding-top:7px;height:39px;text-align:center;}
+.sina,.qq{width:128px;height:33px;background:url('/images/weibo/skin.png') no-repeat 0 -149px;display:inline-block;*display:inline;*zoom:1;}
+.qq{width:108px;background-position:-128px -149px;}
+.login_content .field{margin-bottom:7px;}
+.login_content .field .txt{padding-left:7px;width:172px;height:23px;line-height:23px;border:1px solid #cadae8;border-radius:2px;}
+.login_content .s_button{padding:8px 0;text-align:center;}
+.login_content .btn{margin:0;padding:0;border:0 none;color:#fff;text-align:center;width:87px;height:24px;line-height:24px;background:url('/images/weibo/skin.png') no-repeat -103px -41px;}
+.login_content .btn_hover{background-position: -190px -41px;}
+.login_content label{color:#444;}
+.looking{margin:8px 0;font-size:13px;color:#4c9bef;text-align:left;width:990px;height:20px;line-height:20px;white-space:nowrap;overflow:hidden;}
+.looking span{color:#363636;}
+.looking a{color:#4c9bef;}
+.looking a:hover{color:#ff7900;}
+.container .article{float:left;width:486px;height:699px;overflow:hidden;}
+.container .article iframe{margin:0;padding:0;width:486px;height:699px;overflow:hidden;}
+.container .about_weibo{float:right;width:494px;}
+.section{border:1px solid #d5eefa;border-top-color:#7fbeef;}
+.section h3{padding-top:8px;height:26px;color:#4175ac;font-size:14px;background:url('/images/weibo/skin.png') no-repeat 0 -75px;}
+.weibolist{margin-bottom:8px;}
+.catalist{padding:5px 0 0 1px;font-size:13px;background:url('/images/weibo/skin.png') no-repeat 0 -75px;}
+.catalist li{float:left;height:29px;}
+.catalist a{margin-left:4px;width:77px;height:29px;text-align:center;line-height:28px;color:#4175ac;background:url('/images/weibo/skin.png') no-repeat -480px -41px;display:block;}
+.catalist .cur a{width:77px;color:#636363;font-weight:bold;background-position: -399px -41px;}
+.weibolist .tab_content,.applist{padding:8px 13px 0;height:270px;overflow:hidden;}
+.weibolist .tab_content a,.applist a{float:left;width:66px;height:80px;text-align:center;display:block;overflow:hidden;position: relative;}
+.weibolist .tab_content a:hover,.applist a:hover{color:#ff7900}
+.weibolist .tab_content a img{border:1px solid #c0c0c0;padding:1px;width:50px;height:50px;overflow:hidden;}
+.weibolist .tab_content a:hover img{border:2px solid #ff7900;padding:0;}
+.weibolist .tab_content span,.applist span{text-align:center;line-height:20px;display:block;}
+.weibolist .tab_content font,.applist font {position: absolute;top: 0; font-size:14px;}
+.section .underline{margin-bottom:14px;border-bottom:1px dotted #ddd;}
+.applist{height:333px;}
+.applist a{width:92px;height:100px;overflow:hidden;}
+.applist span{margin-top:3px;font-size:13px;line-height:22px;}
+/* foot */
+.foot-sch{margin:0 auto; margin-top:8px;+margin-top:3px; text-align:center; padding-top:13px; width:990px;}
+.foot-sch img{ vertical-align:middle; float:left; display:inline}
+.foot-sch p{ display:block;width:800px; margin:0 auto;}
+.foot-sch b{ font-weight:100; display:block; float:right; height:27px;*margin-top:3px;_margin-top:3px; line-height:30px; overflow:hidden;} 
+.foot-sch b a{ margin:0 6px;font-family:"ËÎÌו"; }
+.input_ss_sch{ width:440px; height:27px; line-height:27px; padding-left:4px; margin:0 3px 0 7px; }
+.butn_ss_sch{ width:78px; height:31px;}
+.option-grp{ height:40px; line-height:40px; clear:both; display:block;}
+.option-grp input{ margin-left:18px; vertical-align:middle; width:19px; height:20px;}
+.option-grp a{zoom:1}
+.tool-bar{margin:0 auto; padding-bottom:20px;padding-bottom:0\0; *padding-bottom:0; font-size:16px; text-align:center;}
+.tool-bar p{line-height:70px;}
+.tool-bar img{ margin:0 25px; }
+.tool-bar input{ border:none; width:56px; height:19px; margin:0 20px; cursor:pointer; }
+.pic_list{ padding:4px 0 0 3px;}
+.pic_list li{ width:95px; float:left; text-align:center;}
+.pic_list li img { margin-top:4px; width:64px; height:53px;}
+.pic_list li b{ display:block; font-weight:100; line-height:19px; height:19px; overflow:hidden; }
+.fh{ background:transparent url(/images/fh.gif) no-repeat; }
+.gb{ background:transparent url(/images/gb.gif) no-repeat; }
+.clear{ clear:both;}
+.keywords a:hover,.top a:hover,.hright a:hover,.orderli li a:hover{ color:#f00;}
+
+.sghot{background-color: #FFF5E0;border: 1px solid #FEEABD;font-size: 12px;height: 30px;line-height: 30px;margin-bottom: 8px;width: auto;}
+.sghot dt{color: #845A00;height: 30px;margin: 0;width: 80px;}
+.sghot dt, .sghot dd {float: left;}
+.sghot dd {height: 30px;overflow: hidden;padding-top: 2px;width: 900px;}
+.sghot dt span {background:url("http://www.2345.com/image/sougou/sghot.png") no-repeat scroll 0 0 transparent;display: inline-block;height: 23px;line-height: 23px;margin: 4px 0 3px 5px;padding-left: 5px;width: 65px;}

@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+/**S 首页网址导航 **/
+.game-child-nav{
+	border:1px solid #d2e6fb;
+	background:#fff;
+	padding:0 11px 0 15px;
+}
+.child-nav-wrap{
+	height:175px;
+	overflow:hidden;
+}
+.child-nav-item{
+	border-bottom:1px dashed #ddd;
+	height:57px;
+	width:452px;
+	padding:15px 14px 15px 0;
+}
+.child-nav-item .item-title{
+	border:1px solid #d2e6fb;
+	background:#f4faff;
+	color:#479be1;
+	font-size:14px;
+	height:55px;
+	position:relative;
+	text-align:center;
+	width:50px;
+}
+.child-nav-item .title{
+	display:block;
+	line-height:18px;
+	margin-top:9px;
+	_margin-top:10px;
+}
+.child-nav-item .title b{
+	display:block;
+}
+.child-nav-item .arrow{
+	background-position:0 0;
+	top:23px;
+	right:-7px;
+	height:11px;
+	overflow:hidden;
+	position:absolute;
+	width:7px;
+}
+.child-nav-item .item-con{
+	border:1px solid #fff;
+	border-left:0;
+	height:53px;
+	overflow:hidden;
+	padding:2px 0 0 18px;
+	width:381px;
+}
+.child-nav-item .item-con p{
+	height:20px;
+	line-height:20px;
+	margin-top:4px;
+	_width:390px;
+}
+
+.child-nav-item .item-con  a{
+	color:#479be1;
+	display:inline;
+	float:left;
+	text-align:center;
+	width:69px;
+	overflow:hidden;
+	white-space:pre;
+}
+.child-nav-item .item-con i{
+	color:#dddddd;
+	display:inline;
+	float:left;
+	margin:0 2px;
+}
+.child-nav-item .item-con a:hover{
+	color:#fe6300;
+}
+.child-nav-item-hover .item-title{
+	border-color:#c2f492;
+	background-color:#e3f8cf;
+	color:#63a71d;
+}
+.child-nav-item-hover .arrow{
+	background-position:0 -11px;
+}
+.child-nav-item-hover .item-con{
+	border-color:#c2f492;
+	background-color:#f5ffeb;
+}
+/**E 首页网址导航 **/
+
+/**S 热门游戏 **/
+.game-hot{
+	background:#fff;
+	margin-top:10px;
+	position:relative;
+	
+}
+.game-hot-title{
+	background-position:-7px 0;
+	color:#fff;
+	height:41px;
+	position:absolute;
+	top:-3px;
+	left:400px;
+	text-indent:-9999em;
+	width:160px;
+}
+.game-hot-top{
+	background:#93d7fa;
+	height:3px;
+	overflow:hidden;
+}
+.game-hot-con{
+	border:1px solid #ddd;
+	border-top:0;
+}
+
+.game-hot-con-list{
+	padding:47px 0 0 4px;
+}
+.game-hot-con-list li{
+	display:inline;
+	float:left;
+	padding:0 0 10px 20px;
+	width:134px;
+}
+.game-hot-con-list img{
+	border:1px solid #ddd;
+	padding:3px;
+	display:block;
+	height:87px;
+	width:127px;
+}
+
+.game-hot-con-list .des{
+	display:block;
+	text-align:center;
+	margin-top:5px;
+	overflow:hidden;
+	white-space:nowrap;
+	width:100%;
+}
+.game-hot-con-list a:hover img{
+	border-color:#fe6300;
+}
+.game-hot-con-list a:hover{
+	text-decoration:none;
+}
+/**E 热门游戏 **/
+
+/**S 游戏分类 **/
+.game-box{
+	background:#f6f6f6;
+	margin-top:10px;
+}
+.game-box-menu{
+	width:160px;
+}
+.game-box-menu .menu-title{
+	background:#3dbcfe;
+	height:40px;
+	text-align:center;
+}
+.game-box-menu .title{
+	background:url(../images/g_bg.png) no-repeat;
+	display:inline-block;
+	*display:block;
+	overflow:hidden;
+	text-indent:-9999em;
+}
+.game-box-menu .web{
+	background-position:0 -80px;
+	height:19px;
+	margin-top:12px;
+	width:80px;
+	
+}
+.game-box-menu-list{
+	border:1px solid #ddd;
+	border-top:0;
+	height:266px;
+	width:158px;
+	*overflow:hidden;
+}
+.game-box-menu-list li{
+	display:inline;
+	float:left;
+	height:40px;
+	margin-top:1px;
+	position:relative;
+	
+}
+.game-box-menu-list a{
+	display:block;
+	font-size:14px;
+	line-height:40px;
+	text-align:center;
+	width:158px;
+}
+.game-box-menu-list .ring{
+	background:url(../images/g_bg.png) 0 -118px  no-repeat;
+	display:none;
+	height:16px;
+	position:absolute;
+	left:-8px;
+	top:12px;
+	width:12px;
+}
+.game-box-menu-list .current{
+	background:#75c429;
+	width:165px;
+	left:-1px;
+}
+.game-box-menu-list .current .ring{
+	display:block;
+}
+.game-box-menu-list .current a{
+	color:#fff;
+	font-weight:900;
+}
+.game-box-menu-list a:hover{
+	text-decoration:none;
+}
+.game-box-con{
+	background:#fff;
+	border:1px solid #ddd;
+	border-left:0;
+	height:305px;
+	width:799px;
+	overflow:hidden;
+}
+.game-box-con-top{
+	height:20px;
+	line-height:20px;
+	padding:7px 0 0 21px;
+}
+.game-box-con-top a{
+	color:#008fd9;
+}
+.game-box-con-top a:hover{
+	color:#fe6300;
+}
+.game-box-con-top .more{
+	font-family:\5B8B\4F53;
+	margin-right:23px;
+}
+.game-box-con-links .s{
+	color:#afafaf;
+	margin:0 9px 0 10px;
+}
+.game-box-con-list{
+	padding:20px 0 0 0;
+}
+
+/**E 游戏分类 **/
+
+/**S 网络游戏**/
+.game-box-menu .online{
+	background-position: 0 -41px;
+    height: 20px;
+    margin-top: 10px;
+    width: 80px;
+}
+/**E 网络游戏**/
+
+/**S 小游戏 **/
+.game-box-menu .small{
+	background-position: 0 -99px;
+    height: 19px;
+    margin-top: 11px;
+    width: 60px;
+}
+.game-box-smallGm .game-box-menu-list{
+	height:371px;
+}
+.game-box-smallGm .game-box-con{
+	height:410px;
+}
+.game-box-smallGm-list{
+	padding:20px 0 0 2px;
+}
+.game-box-smallGm-list li{
+	display:inline;
+	float:left;
+	margin:0 0 15px 12px;
+	width:100px;
+}
+.game-box-smallGm-list a{
+	display:block;
+}
+.game-box-smallGm-list img{
+	display:block;
+	height:80px;
+	margin:auto;
+	width:80px;
+}
+.game-box-smallGm-list .des{
+	display:block;
+	text-align:center;
+	margin-top:6px;
+	overflow:hidden;
+	width:100%;
+	white-space:nowrap;
+}
+.game-box-smallGm-list a:hover{
+	text-decoration:none;
+}
+/**E 小游戏 **/
+
+/**S 单机游戏 **/
+.game-box-menu .pc{
+	background-position: 0 -61px;
+    height: 19px;
+    margin-top: 11px;
+    width: 81px;
+}
+.game-box-pcGm .game-box-menu-list{
+	height:425px;
+}
+.game-box-pcGm .game-box-con{
+	height:464px;
+}
+
+.game-box-pcGm-list{
+	padding-top:20px;
+}
+.game-box-pcGm-list li{
+	display:inline;
+	float:left;
+	width:140px;
+	margin:0 0 15px 15px;
+}
+.game-box-pcGm-list a{
+	display:block;
+}
+.game-box-pcGm-list a:hover{
+	text-decoration:none;
+}
+.game-box-pcGm-list a:hover img{
+	border-color:#fe6300;
+}
+.game-box-pcGm-list img{
+	border:1px solid #ddd;
+	display:block;
+	height:161px;
+	margin:auto;
+	padding:3px;
+	width:122px;
+}
+.game-box-pcGm-list .des{
+	display:block;
+	margin-top:5px;
+	text-align:center;
+	overflow:hidden;
+	width:100%;
+	white-space:nowrap;
+}
+/**E 单机游戏 **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

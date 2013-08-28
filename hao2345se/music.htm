@@ -1,0 +1,643 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<title>音乐-我的网址导航</title>
+<link href="neiye/css/common_global.css" rel="stylesheet">
+<link href="css/music.css" rel="stylesheet">
+<style>
+/* head */
+.head{ width:990px; margin:0 auto;text-align:left;clear:both;}
+.head{ height:70px; overflow:hidden}
+#logo img{ margin:2px 0 0px 0px; }
+.search_gg{ text-align:center; float:right; padding:17px 16px 0 0; height:26px; }
+.search_gg span,.search_gg b{ display:block; float:left;}
+.search_gg b a{ font-family:"simsun"; font-weight:100; height:26px; line-height:30px; _line-height:36px; margin:0 6px; _margin:0 6px 0 3px;display:block; float:left; }
+.search_gg input,.search_gg img{ vertical-align:middle;}
+.input_gg_sch{ width:275px; height:26px; line-height:26px;  padding-left:4px; font-size:12px; border:1px solid #7f9db9;}
+.butn_gg_sch{ width:63px; height:28px; line-height:26px; margin-left:3px; font-size:12px; cursor:pointer;}
+
+/* foot */
+.foot-sch{ border:1px solid #d6e4f5; background:#f8faff; margin-top:10px; text-align:center; padding-top:13px; width:988px;}
+.foot-sch img{ vertical-align:middle; _margin-top:-13px;*margin-top:-13px;}
+.foot-sch p{ display:block;width:800px; margin:0 auto;}
+.foot-sch b{ font-weight:100; display:block; float:right; height:27px;*margin-top:3px;_margin-top:3px; line-height:30px; overflow:hidden;} 
+.foot-sch b a{ margin:0 6px;font-family:"宋体"; }
+.input_ss_sch{ width:440px; height:26px; line-height:26px; padding-left:4px; margin:0 3px 0 7px; }
+.butn_ss_sch{ width:78px; height:30px; line-height:27px; font-size:12px; cursor:pointer;}
+.option-grp{ height:40px; line-height:40px; clear:both; display:block;font-size:12px;}
+.option-grp input{ margin-left:18px; vertical-align:middle; width:19px; height:13px;line-height: 13px;margin: 0 0 0 18px;vertical-align: middle;width: 19px;}
+.option-grp a{zoom:1}
+.tool-bar{ padding-bottom:20px; font-size:16px;text-align:center; }
+.tool-bar p{line-height:70px;}
+.tool-bar img{ margin:0 25px; }
+.tool-bar input{ border:none; width:56px; height:19px; margin:0 20px; cursor:pointer; }
+.fh{ background:transparent url(images/car/fh.gif) no-repeat; }
+.gb{ background:transparent url(images/car/gb.gif) no-repeat; }
+.clear{ clear:both;}
+.keywords a:hover,.top a:hover,.hright a:hover,.orderli li a:hover{ color:#f00;}
+</style>
+</head>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Hide
+function killErrors() {
+return true;
+}
+window.onerror = killErrors;
+// -->
+</SCRIPT>
+<body>
+<!-- top -->
+<script id="xtopjs" src="neiye/js/xtop.js"></script>
+
+<div class="head">
+<script type="text/javascript" src="neiye/js/sosohead.js"></script>
+</div>
+<!-- head end -->
+
+
+<!-- wrapper -->
+<div class="wrapper clearfix">
+<div class="path2"><span class="pt_r"><a target="_blank" href="http://book.6164.com/">小说</a>|<a target="_blank" href="joke.htm">笑话</a>|<a target="_blank" href="http://v.yisou.com/?cid=4392">MV</a></span><a href="/">首页</a>><a href="ylwz.htm">休闲娱乐</a>><a>音乐</a></div>
+
+<div class="mod_hot clearfix">
+<!-- 导航菜单 -->
+<div class="m_nav" >
+<a class="openwd" href="#" onclick="opendig();">小窗口播放</a>
+<ul id="m_nav"><li><a href="###"><em class="jiuku"></em>九酷音乐</a></li>
+<li><a href="###"><em class="kugo"></em>酷狗音乐</a></li>
+<li><a href="###"><em class="kuwo"></em>酷我音乐</a></li>
+<li><a href="###"><em class="douban"></em>虾米电台</a></li>
+<li><a href="###"><em class="beiwa"></em>贝瓦儿歌</a></li>
+<li class="lastmli"><a target="_blank" href="http://v.yisou.com/?cid=4392"><em class="mv"></em>MV</a></li>
+</ul></div>
+
+
+<!-- 切换内容 -->
+
+
+<div class="mod_hot_bd clearfix" style="display:;">
+<!-- left -->
+<div class="m_left">
+<iframe style="display:;" id="fm" src="http://www.jiuku.com/app/2345new/" frameborder="0" width="640" height="439" scrolling="no"></iframe>
+<div id="stopBtnWrap" style="display:none;"><a href="javascript:void(0)" id="stopBtn" title="点击本页播放" ><span>继续播放，关闭小窗口</span></a></div>
+</div>
+<!-- 九酷音乐 -->
+<!-- right -->
+<div class="m_right" id="9k" style="display:none;">
+<!-- tag -->
+<div class="tagh">
+<strong>九酷推荐</strong>
+<a href="###" class="tagcur">热门歌手</a>
+<a href="###">最新专辑</a>
+</div>
+<!-- content -->
+<!-- cd -->
+<div class="m_right_bd"style="display:none; " id="t1">
+<ul class="pic_li pic_li_cd clearfix"><li><a target="_blank"  href="http://www.jiuku.com/zhuanji-140008.html"><img src="images/music/haonande.jpg"><p>好难得</p></a><p>丁当</p></a></li>
+<li><a target="_blank"  href="http://www.jiuku.com/zhuanji-140004.html"><img src="images/music/tingdedaoshijian.jpg"><p>听得到的时间</p></a><p>王铮亮</p></a></li>
+<li class="lastl"><a target="_blank" href="http://www.jiuku.com/zhuanji-140010.html"><img src="images/music/xinzaixiangnian.jpg"><p>心在想念</p></a><p>陈志朋</p></a></li>
+<li><a target="_blank" href="http://www.jiuku.com/zhuanji-140015.html"><img src="images/music/dijiucichulian.jpg"><p>第九次初恋</p></a><p>阿杜</p></a></li>
+<li><a target="_blank" href="http://www.jiuku.com/zhuanji-140013.html"><img src="images/music/aizaiyiqitogether.jpg"><p>爱,在一起Together</p></a><p>范玮琪</p></a></li>
+<li class="lastl"><a target="_blank" href="http://www.jiuku.com/zhuanji-140005.html"><img src="images/music/Awakening.jpg"><p>Awakening</p></a><p>何韵诗</p></a></li>
+<li><a target="_blank" href="http://www.jiuku.com/zhuanji-140002.html"><img src="images/music/jijuxie.jpg"><p>寄居蟹</p></a><p>陈思涵</p></a></li>
+<li><a target="_blank" href="http://www.jiuku.com/zhuanji-140001.html"><img src="images/music/Mr.JAZZ.jpg"><p>Mr.JAZZ</p></a><p>萧敬腾</p></a></li>
+<li class="lastl"><a target="_blank" href="http://www.jiuku.com/zhuanji-139998.html"><img src="images/music/TWINKLE.jpg"><p>TWINKLE</p></a><p>少女时代</p></a></li></ul>
+</div>
+
+
+<!-- singer -->
+<div class="m_right_bd" id="t2">
+<ul class="pic_li pic_li2 clearfix"><li><a target="_blank" href="http://www.jiuku.com/geshou-798.html"><img src="images/music/zhoujielun.jpg"><p>周杰伦</p></a></li>
+<li><a target="_blank" href="http://www.jiuku.com/geshou-2263.html"><img src="images/music/zhengyuan.jpg"><p>郑源</p></a></li>
+<li class="lastl"><a target="_blank" href="http://www.jiuku.com/geshou-349.html"><img src="images/music/liudehua.jpg"><p>刘德华</p></a></li></ul>
+
+<div class="singer_li clearfix">
+<dl>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-2711.html">凤凰传奇</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-6847.html">小沈阳</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-855.html">刀郎</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-3762.html">欢子</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-1075.html">Beyond</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-722.html">张学友</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-114.html">蔡依林</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-321.html">林俊杰</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-489.html">王力宏</a></dd>
+</dl>
+<dl>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-147.html">邓丽君</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-429.html">任贤齐</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-1608.html">信乐团</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-837.html">张韶涵</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-528.html">伍佰</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-2834.html">陈瑞</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-1408.html">SHE</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-6931.html">冷漠</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-412.html">潘玮柏</a></dd>
+</dl>
+<dl>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-574.html">王心凌</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-378.html">梁静茹</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-899.html">胡彦斌</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-795.html">周建华</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-719.html">张信哲</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-906.html">韩红</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-1615.html">小虎队</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-608.html">王菲</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/geshou-789.html">周传雄</a></dd>
+</dl>
+</div>
+</div>
+</div>
+
+<!-- 九酷音乐end -->
+
+<!-- 酷狗音乐 -->
+
+<!-- right -->
+<div class="m_right" style="display:none;" id="kg">
+<!-- tag -->
+<div class="tagh">
+<strong>酷狗推荐</strong>
+<a href="###" class="tagcur">热门歌手</a>
+<a href="###">最新专辑</a>
+</div>
+<!-- content -->
+<!-- cd -->
+<div class="m_right_bd" id="t1" style="display:none;">
+<ul class="pic_li pic_li_cd clearfix"><li><a target="_blank" href="http://www.kugou.com/yueku/html/album/7208.html"><img src="images/music/20120321180945898905.jpg"><p>Grown Up</p></a><p>洪卓立</p></a></li>
+<li><a target="_blank" href="http://www.kugou.com/yueku/html/album/7133.html"><img src="images/music/20120319100840772290.jpg"><p>Go Round／YEAH-OH</p></a><p>安室奈美惠</p></a></li>
+<li class="lastl"><a target="_blank" href="http://www.kugou.com/yueku/html/album/8397.html"><img src="images/music/20120517183424960811.jpg"><p>我最爱的一首歌EP</p></a><p>斯琴高丽</p></a></li>
+<li><a target="_blank" href="http://www.kugou.com/yueku/html/album/8482.html"><img src="images/music/20120522123348838340.jpg"><p>少年进化论</p></a><p>RTA</p></a></li>
+<li><a target="_blank" href="http://www.kugou.com/yueku/html/album/7411.html"><img src="images/music/20120406120350727684.jpg"><p>有我在</p></a><p>罗志祥</p></a></li>
+<li class="lastl"><a target="_blank" href="http://www.kugou.com/yueku/html/album/7151.html"><img src="images/music/20120319183343901107.jpg"><p>春娇与志明</p></a><p>杨千嬅、余文乐</p></a></li>
+<li><a target="_blank" href="http://www.kugou.com/yueku/html/album/227.html"><img src="images/music/20110316100015671580.jpg"><p>兰色～Love Moon Light</p></a><p>阿兰</p></a></li>
+<li><a target="_blank" href="http://www.kugou.com/yueku/html/album/7171.html"><img src="images/music/20120320173831250148.jpg"><p>他不爱我</p></a><p>金莎</p></a></li>
+<li class="lastl"><a target="_blank" href="http://www.kugou.com/yueku/html/album/8575.html"><img src="images/music/20120522112328202049.jpg"><p>真夏のSounds good</p></a><p>AKB48</p></a></li></ul>
+</div>
+
+
+<!-- singer -->
+<div class="m_right_bd"  id="t2">
+<ul class="pic_li pic_li2 clearfix"><li><a target="_blank" href="http://www.kugou.com/yueku/html/singer/x/5118.html"><img src="images/music/20110905115632318.jpg"><p>许嵩</p></a></li>
+<li><a target="_blank" href="http://www.kugou.com/yueku/html/singer/f/2918.html"><img src="images/music/20101008115021dr0.jpg"><p>凤凰传奇</p></a></li>
+<li class="lastl"><a target="_blank" href="http://www.kugou.com/yueku/html/singer/h/3103.html"><img src="images/music/20110215175424bha.jpg"><p>韩红</p></a></li></ul>
+
+<div class="singer_li clearfix">
+<dl>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/z/5705.html">周杰伦</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/z/5649.html">郑源</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/l/3864.html">刘德华</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/l/1102.html">Lady Gaga</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/l/3903.html">刘若英</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/l/3568.html">冷漠</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/z/5528.html">张学友</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/w/4712.html">王力宏</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/x/4939.html">萧亚轩</a></dd>
+</dl>
+<dl>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/w/4680.html">王菲</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/l/3743.html">梁静茹</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/c/2451.html">蔡依林</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/s/1659.html">SHE</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/c/2636.html">陈奕迅</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/l/3793.html">林俊杰</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/z/5473.html">张靓颖</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/d/2761.html">邓丽君</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/j/3467.html">金莎</a></dd>
+</dl>
+<dl>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/z/5466.html">张杰</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/w/4698.html">王杰</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/r/4328.html">任贤齐</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/w/4787.html">卫兰</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/z/5457.html">张惠妹</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/w/4819.html">乌兰托娅</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/c/2583.html">陈瑞</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/j/3423.html">姜玉阳</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/yueku/html/singer/m/4136.html">慕容晓晓</a></dd>
+</dl>
+</div>
+</div>
+</div>
+<!-- 酷狗音乐end -->
+
+<!-- 酷我音乐 -->
+
+<!-- right -->
+<div class="m_right" style="display:none;" id="kw">
+<!-- tag -->
+<div class="tagh">
+<strong>酷我推荐</strong>
+<a href="###" class="tagcur">热门歌手</a>
+<a href="###">最新专辑</a>
+</div>
+<!-- content -->
+<!-- cd -->
+<div class="m_right_bd" id="t1" style="display:none;">
+<ul class="pic_li pic_li_cd clearfix"><li><a target="_blank" href="http://www.kuwo.cn/album/112135/"><img src="images/music/3430872735.jpg"><p>minor classics live</p></a><p>杨千嬅</p></a></li>
+<li><a target="_blank" href="http://www.kuwo.cn/album/112265/"><img src="images/music/1111625304.jpg"><p>好难得</p></a><p>丁当</p></a></li>
+<li class="lastl"><a target="_blank" href="http://www.kuwo.cn/album/112339/"><img src="images/music/3907006251.jpg"><p>心在想念</p></a><p>陈志朋</p></a></li>
+<li><a target="_blank" href="http://www.kuwo.cn/album/112398/"><img src="images/music/574969228.jpg"><p>oli杭士琁 + band</p></a><p>杭士琁</p></a></li>
+<li><a target="_blank" href="http://www.kuwo.cn/album/111832/"><img src="images/music/396489572.jpg"><p>我不能哭</p></a><p>莫艳琳</p></a></li>
+<li class="lastl"><a target="_blank" href="http://www.kuwo.cn/album/111805/"><img src="images/music/1670565079.jpg"><p>听得到的时间</p></a><p>王铮亮</p></a></li>
+<li><a target="_blank" href="http://www.kuwo.cn/album/111881/"><img src="images/music/332858903.jpg"><p>miss. d.d</p></a><p> 范晓萱</p></a></li>
+<li><a target="_blank" href="http://www.kuwo.cn/album/111960/"><img src="images/music/155928930.jpg"><p>awakening</p></a><p>何韵诗</p></a></li>
+<li class="lastl"><a target="_blank" href="http://www.kuwo.cn/album/111033/"><img src="images/music/3888541550.jpg"><p>爱情 很突然</p></a><p>林凡</p></a></li></ul>
+</div>
+
+
+<!-- singer -->
+<div class="m_right_bd"  id="t2">
+<ul class="pic_li pic_li2 clearfix"><li><a target="_blank" href="http://www.kuwo.cn/mingxing/%E7%8E%8B%E5%8A%9B%E5%AE%8F/"><img src="images/music/1416_1319095214_0.jpg"><p>王力宏</p></a></li>
+<li><a target="_blank" href="http://www.kuwo.cn/mingxing/%E5%91%A8%E5%8D%8E%E5%81%A5/"><img src="images/music/332_1315363916_0.jpg"><p>周华健</p></a></li>
+<li class="lastl"><a target="_blank" href="http://www.kuwo.cn/mingxing/%E8%94%A1%E4%BE%9D%E6%9E%97/"><img src="images/music/978_1319187485_0.jpg"><p>蔡依林</p></a></li></ul>
+
+<div class="singer_li clearfix">
+<dl>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E8%8E%AB%E6%96%87%E8%94%9A/">莫文蔚</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E8%8B%8F%E6%89%93%E7%BB%BF/">苏打绿</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E5%B0%8F%E8%99%8E%E9%98%9F/">小虎队</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E5%BC%A0%E6%9D%B0/">张杰</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E6%AC%A2%E5%AD%90/">欢子</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E6%85%95%E5%AE%B9%E6%99%93%E6%99%93/">慕容晓晓</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E6%9D%8E%E5%AE%87%E6%98%A5/">李宇春</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E8%87%B3%E4%B8%8A%E5%8A%B1%E5%90%88/">至上励合</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E7%BE%BD%E6%B3%89/">羽泉</a></dd>
+</dl>
+<dl>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/lady+gaga/">lady gaga</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/taylor+swift/">taylor swift</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/super+junior/">super junior</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/wonder+girls/">wonder girls</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E5%91%A8%E6%9D%B0%E4%BC%A6/">周杰伦</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E6%9E%97%E4%BF%8A%E6%9D%B0/">林俊杰</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E7%8E%8B%E8%8F%B2/">王菲</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E5%88%98%E8%8B%A5%E8%8B%B1/">刘若英</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E5%BC%A0%E9%9F%B6%E6%B6%B5/">张韶涵</a></dd>
+</dl>
+<dl>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/s.h.e/">SHE</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E4%BA%94%E6%9C%88%E5%A4%A9/">五月天</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E4%BF%A1%E4%B9%90%E5%9B%A2/">信乐团</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E8%AE%B8%E5%B5%A9/">许嵩</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E5%86%B7%E6%BC%A0/">冷漠</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E6%B1%AA%E5%B3%B0/">汪峰</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E5%BC%A0%E9%9D%93%E9%A2%96/">张靓颖</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E4%B9%8C%E5%85%B0%E6%89%98%E5%A8%85/">乌兰托娅</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/mingxing/%E9%99%88%E7%91%9E/">陈瑞</a></dd>
+
+</dl>
+</div>
+</div>
+</div>
+<!-- 酷我音乐end -->
+
+<!-- 虾米电台 -->
+<!-- right -->
+<div class="m_right" style="display:none;" id="db">
+<!-- tag -->
+<div class="tagh">
+<strong>虾米推荐</strong>
+<a href="###" class="tagcur">热门歌手</a>
+<a href="###">热门专辑</a>
+</div>
+<!-- content -->
+<!-- cd -->
+<div class="m_right_bd" id="t1" style="display:none;">
+<ul class="pic_li pic_li_cd clearfix"><li><a target="_blank" href="http://www.xiami.com/album/70071"><img src="images/music/700711324010597_1.jpg"><p>第二人生</p></a><p>五月天</p></a></li>
+<li><a target="_blank" href="http://www.xiami.com/album/508879"><img src="images/music/5088791334917004_1.jpg"><p>脚趾上的星光</p></a><p>姚谦</p></a></li>
+<li class="lastl"><a target="_blank" href="http://www.xiami.com/album/253320"><img src="images/music/2533201292817042_1.jpg"><p>21</p></a><p>Adele</p></a></li>
+<li><a target="_blank" href="http://www.xiami.com/album/513122"><img src="images/music/5131221336733429_1.jpg"><p>Miss D.D</p></a><p>Miss D.D</p></a></li>
+<li><a target="_blank" href="http://www.xiami.com/album/406532"><img src="images/music/4065321287132984_1.jpg"><p>夜的钢琴曲</p></a><p>石进</p></a></li>
+<li class="lastl"><a target="_blank" href="http://www.xiami.com/album/502010"><img src="images/music/1332512986_1.jpg"><p>Trespassing</p></a><p> Adam Lambert</p></a></li>
+<li><a target="_blank" href="http://www.xiami.com/album/459960"><img src="images/music/4599601314931396_1.jpg"><p>My Love</p></a><p>田馥甄</p></a></li>
+<li><a target="_blank" href="http://www.xiami.com/album/507194"><img src="images/music/5071941335599291_1.jpg"><p>爱情_很突然</p></a><p>林凡</p></a></li>
+<li class="lastl"><a target="_blank" href="http://www.xiami.com/album/467449"><img src="images/music/4674491337910680_1.jpg"><p>Call Me Maybe</p></a><p> Carly Rae Jepsen</p></a></li></ul>
+</div>
+
+<!-- singer -->
+<div class="m_right_bd"  id="t2">
+<ul class="pic_li pic_li2 clearfix"><li><a target="_blank" href="http://www.xiami.com/artist/135"><img src="images/music/13160969757205_1.jpg"><p>陈奕迅</p></a></li>
+<li><a target="_blank" href="http://www.xiami.com/artist/3110"><img src="images/music/12992056831500_1.jpg"><p>五月天</p></a></li>
+<li class="lastl"><a target="_blank" href="http://www.xiami.com/artist/1260"><img src="images/music/13161013044368_1.jpg"><p>周杰伦</p></a></li></ul>
+
+<div class="singer_li clearfix">
+<dl>
+<dd><a target="_blank" href="http://www.xiami.com/artist/23485">Adele</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/2132">孙燕姿</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/78523">田馥甄</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.xiami.com/artist/1836">梁静茹</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/7243">丁当</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/77201">石进</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.xiami.com/artist/23401">Jason Mraz</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/3048">苏打绿</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/110110">Miss D.D</a></dd>
+</dl>
+<dl>
+<dd><a target="_blank" href="http://www.xiami.com/artist/2177">王菲</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/23748">萧敬腾</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/6845">久石让</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.xiami.com/artist/2450">张惠妹</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/23517">林宥嘉</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/2017">莫文蔚</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.xiami.com/artist/1341">蔡健雅</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/1614">何韵诗</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/1856">林凡</a></dd>
+</dl>
+<dl>
+<dd><a target="_blank" href="http://www.xiami.com/artist/23868">Katy Perry</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/2358">杨千嬅</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/1166">张国荣</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.xiami.com/artist/2018">莫艳琳</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/1414">陈绮贞</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/23549">Taylor Swift</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://www.xiami.com/artist/1508">范玮琪</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/1198">张学友</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/artist/615">林俊杰</a></dd>
+</dl>
+</div>
+</div>
+</div>
+<!-- 虾米电台end -->
+
+<!-- 贝瓦儿歌 -->
+
+<!-- right -->
+<div class="m_right" style="display:none;" id="bw">
+<!-- tag -->
+<div class="tagh">
+<strong>贝瓦推荐</strong>
+<a href="###" class="tagcur">儿童故事</a>
+<a href="###">儿童歌谣</a>
+</div>
+<!-- content -->
+<!-- cd -->
+<div class="m_right_bd" id="t1" style="display:none;">
+<ul class="pic_li pic_li_cd clearfix"><li><a target="_blank" href="http://bao.beva.com/video/297--10031.html"><img src="images/music/639_laohu.jpg"><p>两只老虎</p></a><p>贝瓦网</p></a></li>
+<li><a target="_blank" href="http://bao.beva.com/video/399--10031.html"><img src="images/music/641_maibaoge.jpg"><p>卖报歌</p></a><p>贝瓦网</p></a></li>
+<li class="lastl"><a target="_blank" href="http://bao.beva.com/video/283--10031.html"><img src="images/music/643_shuyage.jpg"><p>数鸭子</p></a><p>贝瓦网</p></a></li>
+<li><a target="_blank" href="http://bao.beva.com/video/438--10031.html"><img src="images/music/646_zhuoniuqiu.jpg"><p>捉泥鳅</p></a><p>贝瓦网</p></a></li>
+<li><a target="_blank" href="http://bao.beva.com/video/312--10031.html"><img src="images/music/650_xiaomaolv.jpg"><p>小毛驴</p></a><p>贝瓦网</p></a></li>
+<li class="lastl"><a target="_blank" href="http://bao.beva.com/video/83--10033.html"><img src="images/music/652_sanzijing.jpg"><p>三字经人之初1</p></a><p>贝瓦网</p></a></li>
+<li><a target="_blank" href="http://bao.beva.com/video/320--10031.html"><img src="images/music/656_yifenqian.jpg"><p>一分钱</p></a><p>贝瓦网</p></a></li>
+<li><a target="_blank" href="http://bao.beva.com/video/415--10031.html"><img src="images/music/657_xiaoluohao.jpg"><p>小螺号</p></a><p>贝瓦网</p></a></li>
+<li class="lastl"><a target="_blank" href="http://bao.beva.com/video/463--10031.html"><img src="images/music/674_shangxue.jpg"><p>上学歌</p></a><p>贝瓦网</p></a></li></ul>
+</div>
+
+
+<!-- singer -->
+<div class="m_right_bd"  id="t2">
+<ul class="pic_li pic_li2 clearfix"><li><a target="_blank" href="http://bao.beva.com/ebook.html"><img src="images/music/622_ertonggushi.jpg"><p>儿童故事</p></a></li>
+<li><a target="_blank" href="http://bao.beva.com/video--10031.html"><img src="images/music/626_erge.jpg"><p>儿童歌曲</p></a></li>
+<li class="lastl"><a target="_blank" href="http://bao.beva.com/game.html"><img src="images/music/634_youxi.jpg"><p>儿童游戏</p></a></li></ul>
+
+<div class="singer_li clearfix">
+<dl>
+<dd><a target="_blank" href="http://bao.beva.com/game/132.html">调皮的影子</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/game/219.html">小鸟排排坐</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/game/503.html">寻找图形</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://bao.beva.com/game/451.html">趣味七巧板</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/game/357.html">魔法厨房</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/game/339.html">吹泡泡比赛</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://bao.beva.com/game/370.html">红灯绿灯</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/game/401.html">森林快照</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/game/422.html">超市大采购</a></dd>
+</dl>
+<dl>
+<dd><a target="_blank" href="http://bao.beva.com/game/483.html">贝瓦去郊游</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/game/308.html">神秘的礼物</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/game/254.html">音乐泡泡</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://bao.beva.com/ebook/412.html">孔融让梨</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/ebook/386.html">守株待兔</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/ebook/426.html">三个和尚</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://bao.beva.com/ebook/459.html">曼曼的新家</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/ebook/446.html">蚂蚁报恩</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/ebook/466.html">狼来了</a></dd>
+</dl>
+<dl>
+<dd><a target="_blank" href="http://bao.beva.com/ebook/490.html">盲人摸象</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/ebook/491.html">臭屁王国</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/ebook/232.html">认识a</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://bao.beva.com/ebook/561.html">青蛙王子</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/ebook/72.html">小猫钓鱼</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/ebook/239.html">春天来了</a></dd></dl>
+<dl>
+<dd><a target="_blank" href="http://bao.beva.com/ebook/301.html">小猴子下山</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/ebook/332.html">弟子规入则孝3</a></dd>
+<dd><a target="_blank" href="http://bao.beva.com/">更多</a></dd>
+</dl>
+</div>
+</div>
+</div>
+<!-- 贝瓦儿歌end -->
+</div>
+<!-- 切换内容end -->
+</div>
+<div class="mt12 clearfix">
+<!-- left -->
+<div class="part_l">
+<!-- 音乐综合 -->
+<div class="clearfix">
+<h3 class="mod_tit">音乐综合</h3>
+<dl class="mclist clearfix">
+<dd><a target="_blank" href="http://music.soso.com/index.html">搜搜音乐</a></dd>
+<dd><a target="_blank" href="http://mp3.baidu.com/">百度MP3搜索</a></dd>
+<dd><a target="_blank" href="http://music.cn.yahoo.com/">雅虎音乐</a></dd>
+<dd><a target="_blank" href="http://mp3.gougou.com/">狗狗音乐</a></dd>
+<dd><a target="_blank" href="http://www.1ting.com/">一听音乐网</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/">虾米音乐</a></dd>
+<dd><a target="_blank" href="http://mp3.sogou.com/">搜狗音乐</a></dd>
+<dd><a target="_blank" href="http://music.qq.com/">QQ音乐</a></dd>
+<dd><a target="_blank" href="http://www.kugou.com/">酷狗音乐</a></dd>
+<dd><a target="_blank" href="http://www.kuwo.cn/">酷我音乐</a></dd>
+<dd><a target="_blank" href="http://ttplayer.qianqian.com/index.html">千千音乐在线</a></dd>
+<dd><a target="_blank" href="http://www.9ku.com/?9991">九酷音乐网</a></dd>
+<dd><a target="_blank" href="http://www.top100.cn/">巨鲸音乐网</a></dd>
+<dd><a target="_blank" href="http://www.9sky.com/">九天音乐网</a></dd>
+<dd><a target="_blank" href="http://www.songtaste.com/">SongTaste</a></dd>
+<dd><a target="_blank" href="http://music.10086.cn/">中国移动音乐</a></dd>
+<dd><a target="_blank" href="http://www.yinyuetai.com/">音悦台</a></dd>
+<dd><a target="_blank" href="http://music.tudou.com/">土豆音乐</a></dd>
+<dd><a target="_blank" href="http://www.google.cn/music/homepage">谷歌音乐</a></dd>
+<dd><a target="_blank" href="http://www.5sing.com/">中国原创音乐基地</a></dd>
+<dd><a target="_blank" href="http://ent.163.com/music/">网易音乐频道</a></dd>
+<dd><a target="_blank" href="http://www.verycd.com/sto/music/">电驴音乐下载</a></dd>
+<dd><a target="_blank" href="http://music.sina.com.cn/index.shtml">新浪音乐频道</a></dd>
+<dd><a target="_blank" href="http://yue.qq.com/">腾讯音乐频道</a></dd>
+<dd><a target="_blank" href="http://list.mp3.baidu.com/top/dj.html">热门DJ列表</a></dd>
+<dd><a target="_blank" href="http://www.duomi.com/?2345">多米音乐</a></dd>
+<dd><a target="_blank" href="http://www.yue365.com/">365音乐网</a></dd>
+<dd><a target="_blank" href="http://music.sogou.com/song/newtop.html">搜狗新歌Top100</a></dd>
+<dd><a target="_blank" href="http://music.sina.com.cn/yueku/rank/newmoreboard.php">新浪乐库排行榜</a></dd>
+<dd><a target="_blank" href="http://mp3.youdao.com/">有道音乐</a></dd>
+<dd><a target="_blank" href="http://www.sogou.com/index.htm?pid=sogou-site-220c77af02f8ad85">MP3搜索大全</a></dd>
+<dd><a target="_blank" href="http://www.xingmai.com/">星脉音乐网</a></dd>
+</dl></div>
+
+<!-- DJ翻唱 -->
+<div class="clearfix">
+<h3 class="mod_tit">DJ翻唱</h3>
+<dl class="mclist clearfix">
+<dd><a target="_blank" href="http://www.dj527.com/">DJ舞曲网</a></dd>
+<dd><a target="_blank" href="http://www.dj520.com/">DJ前卫音乐</a></dd>
+<dd><a target="_blank" href="http://www.djkk.com/">中国DJ嗨嗨网</a></dd>
+<dd><a target="_blank" href="http://www.yykc.com/">音乐快车网</a></dd>
+<dd><a target="_blank" href="http://www.djye.com/">DJ耶耶网</a></dd>
+<dd><a target="_blank" href="http://www.dj97.com/">水晶DJ网</a></dd>
+<dd><a target="_blank" href="http://www.92cc.com/">DJ轮回舞曲</a></dd>
+<dd><a target="_blank" href="http://www.vvvdj.com/">清风DJ</a></dd>
+<dd><a target="_blank" href="http://www.ik123.com/">深港DJ</a></dd>
+<dd><a target="_blank" href="http://www.9ku.com/zhuanji/13.htm">最新DJ</a></dd>
+<dd><a target="_blank" href="http://www.hcdj.com/">DJ音乐厅</a></dd>
+<dd><a target="_blank" href="http://www.mydjb.com/">慢摇DJ吧</a></dd>
+<dd><a target="_blank" href="http://www.51mike.com/">麦客网</a></dd>
+<dd><a target="_blank" href="http://yyfc.iq123.com/">音乐翻唱</a></dd>
+<dd><a target="_blank" href="http://www.wo99.com/">wo99伴奏翻唱</a></dd>
+<dd><a target="_blank" href="http://fc.5sing.com/">翻唱歌曲</a></dd>
+<dd><a target="_blank" href="http://xiu.56.com/">我乐秀场</a></dd>
+</dl></div>
+
+<!-- 电台MV -->
+<div class="clearfix">
+<h3 class="mod_tit">电台MV</h3>
+<dl class="mclist clearfix">
+<dd><a target="_blank" href="http://musicradio.cnr.cn/">音乐之声</a></dd>
+<dd><a target="_blank" href="http://douban.fm/">豆瓣电台</a></dd>
+<dd><a target="_blank" href="http://www.xiami.com/radio">虾米电台</a></dd>
+<dd><a target="_blank" href="http://www.911pop.com/">青檬音乐台</a></dd>
+<dd><a target="_blank" href="http://ting.baidu.com/fm">ting!电台</a></dd>
+<dd><a target="_blank" href="http://fm.qq.com/">QQ音乐电台</a></dd>
+<dd><a target="_blank" href="http://topic.kugou.com/radio/">酷狗电台</a></dd>
+<dd><a target="_blank" href="http://fm.beva.com/">贝瓦儿童电台</a></dd>
+<dd><a target="_blank" href="http://www.yinyuetai.com/">音悦台</a></dd>
+<dd><a target="_blank" href="http://music.youku.com/">优酷音乐</a></dd>
+<dd><a target="_blank" href="http://music.tudou.com/">土豆音乐</a></dd>
+<dd><a target="_blank" href="http://tv.sohu.com/music/">搜狐视频音乐</a></dd>
+<dd><a target="_blank" href="http://v.qq.com/music/index.html">腾讯视频音乐</a></dd>
+<dd><a target="_blank" href="http://video.baidu.com/childchannal/videomv/videomv.html">百度视频音乐</a></dd>
+<dd><a target="_blank" href="http://you.video.sina.com.cn/v/mv/">新浪视频音乐</a></dd>
+<dd><a target="_blank" href="http://mv.ku6.com/">酷6音乐</a></dd>
+</dl></div>
+
+<!-- 音乐周边 -->
+<div class="clearfix">
+<h3 class="mod_tit">音乐周边</h3>
+<dl class="mclist clearfix">
+<dd><a target="_blank" href="http://www.huain.com/">华音网</a></dd>
+<dd><a target="_blank" href="http://www.classicaldoor.com/">古典之门</a></dd>
+<dd><a target="_blank" href="http://www.51ctzs.com/">楚天之声</a></dd>
+<dd><a target="_blank" href="http://music.fjnet.com/">佛教音乐</a></dd>
+<dd><a target="_blank" href="http://www.guqu.net/">中国古曲网</a></dd>
+<dd><a target="_blank" href="http://www.chinaopera.net/">中国戏曲网</a></dd>
+<dd><a target="_blank" href="http://list.mp3.baidu.com/top/minyue.html">中国民乐</a></dd>
+<dd><a target="_blank" href="http://www.2345.com/mingjia.htm">名家戏曲</a></dd>
+<dd><a target="_blank" href="http://www.youku.com/playlist_show/id_608930.html">世界著名钢琴曲</a></dd>
+<dd><a target="_blank" href="http://www.ccjt.net/">虫虫吉他</a></dd>
+<dd><a target="_blank" href="http://www.sooopu.com/">搜谱网</a></dd>
+<dd><a target="_blank" href="http://www.pep.com.cn/yinyue/">音乐教育</a></dd>
+<dd><a target="_blank" href="http://www.musiceol.com/">中音在线</a></dd>
+<dd><a target="_blank" href="http://www.yanzoujia.net/">演奏家</a></dd>
+<dd><a target="_blank" href="http://bbs.besgold.com/">百事高音乐论坛</a></dd>
+<dd><a target="_blank" href="http://zhangmen.baidu.com/">百度音乐掌门人</a></dd>
+<dd><a target="_blank" href="http://www.duomi.com/?2345">多米音乐播放器</a></dd>
+<dd><a target="_blank" href="quyi.htm">地方曲艺</a></dd>
+</dl></div>
+
+
+<!-- 搜狗热搜 -->
+<div class="clearfix">
+<h3 class="mod_tit">搜狗热搜</h3>
+<dl class="mclist clearfix">
+<dd><a target="_blank" href="http://www.sogou.com/sogou?query=免费交友&pid=sogou-site-220c77af02f8ad85">免费交友</a></dd>
+<dd><a target="_blank" href="http://www.sogou.com/sogou?query=视频交友网&pid=sogou-site-220c77af02f8ad85">视频交友网</a></dd>
+<dd><a target="_blank" href="http://www.sogou.com/sogou?query=8分钟交友&pid=sogou-site-220c77af02f8ad85">8分钟交友</a></dd>
+<dd><a target="_blank" href="http://www.sogou.com/sogou?query=异性交友中心&pid=sogou-site-220c77af02f8ad85">异性交友中心</a></dd>
+<dd><a target="_blank" href="http://www.sogou.com/sogou?query=交女朋友&pid=sogou-site-220c77af02f8ad85">交女朋友</a></dd>
+<dd><a target="_blank" href="http://www.sogou.com/sogou?query=免费交友网&pid=sogou-site-220c77af02f8ad85">免费交友网</a></dd>
+<dd><a target="_blank" href="http://www.sogou.com/sogou?query=同城在线交友&pid=sogou-site-220c77af02f8ad85">同城在线交友</a></dd>
+<dd><a target="_blank" href="http://www.sogou.com/sogou?query=同城交友&pid=sogou-site-220c77af02f8ad85">同城交友</a></dd>
+<dd><a target="_blank" href="http://www.sogou.com/sogou?query=找单身女人&pid=sogou-site-220c77af02f8ad85">找单身女人</a></dd>
+<dd><a target="_blank" href="http://www.sogou.com/sogou?query=美女交友网站&pid=sogou-site-220c77af02f8ad85">美女交友网站</a></dd>
+<dd><a target="_blank" href="http://click.t3nlink.com/link/131484/">麦克疯卡拉OK</a></dd>
+<dd><a target="_blank" href="http://click.t3nlink.com/link/131473/">真人美女秀场</a></dd>
+</dl>
+</div>
+</div>
+<!-- right -->
+<div class="part_r">
+<!-- 音乐类型 -->
+<div class="part_r_box clearfix">
+<h3 class="mod_tit">音乐类型</h3>
+<dl class="mclist clearfix">
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/25">非主流歌曲</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/3">经典老歌</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/52">流行歌曲</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/13">DJ舞曲</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/55">网络歌曲</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/69">手机铃声</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/67">日韩歌曲</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/54">经典红歌</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/4">情歌对唱</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/5">校园歌曲</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/71">伤感音乐</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/41">背景音乐</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/33">爱情故事</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/15">儿童歌曲</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/11">粤语歌曲</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/75">ktv歌曲排行榜</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/45">QQ炫舞歌曲</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/38">婚礼歌曲</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/39">励志歌曲</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/19">轻音乐</a></dd>
+<dd><a target="_blank" href="http://www.jiuku.com/square/song9k/64">非诚勿扰</a></dd>
+</dl></div>
+
+<!-- mblog -->
+<div style="height:467px;" class="mblog mt12">
+<iframe frameborder="0" width="322px" height="390px" src="http://service.t.sina.com.cn/widget/list/list.php?width=322&height=393&listid=146392839&uname=2345%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA&uid=2003206347&listname=%E9%9F%B3%E4%B9%90%E6%98%8E%E6%98%9F&color=CCCCCC,E1E1E1,444444,0082CB,FFFFFF,FFFFEA&showcreate=0&isborder=0&showtitle=2&appkey=3197495784"></iframe>
+</div>
+</div>
+</div>
+</div>
+<!-- wrapper end --> 
+<!-- foot -->
+<script src="neiye/js/sosofooter.js" type="text/javascript"></script>
+<!-- foot end -->
+<script type="text/javascript" src="neiye/js/tab.js"></script>
+<script type="text/javascript">smusic();</script>
+<span style="display:none;">
+<script type="text/javascript" src="css/tj.js"></script>
+</span>
+
+</body>
+</html>

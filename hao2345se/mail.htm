@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>邮箱-我的网址导航</title>
+<link href="neiye/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="neiye/js/libnew.js"></script>
+<SCRIPT language=javascript> 
+function s_cookie(name, value)
+{var expdate = new Date();var argv = s_cookie.arguments;var argc = s_cookie.arguments.length
+var expires = (argc > 2) ? argv[2] : null;var path = (argc > 3) ? argv[3] : null
+var domain = (argc > 4) ? argv[4] : null;var secure = (argc > 5) ? argv[5] : false
+if(expires!=null) expdate.setTime(expdate.getTime() + ( expires * 1000 ))
+document.cookie = name + "=" + escape (value) +((expires == null) ? "" : ("; expires="+ expdate.toGMTString()))
++((path == null) ? "" : ("; path=" + path)) +((domain == null) ? "" : ("; domain=" + domain))
++((secure == true) ? "; secure" : "")}
+function _GetCookieVal(offset)
+{var c= document.cookie;var endstr = c.indexOf (";", offset)
+if (endstr == -1) endstr = c.length
+return unescape(c.substring(offset, endstr))}
+function clickMail(){
+var gm=document.gomail
+var vDomain=gm.domainss
+var vName=gm.uName
+var vPw=gm.uPw
+if(vDomain.value==""){alert("请选择您的邮箱...");vDomain.focus();return false}
+if(vName.value==""){alert("请填写您的用户名...");vName.focus();return false}
+if(vPw.value==""){alert("请填写您的密码...");vPw.focus();return false}
+//clickCount('2345mail_'+vDomain.value)
+switch(vDomain.value){
+case "163":
+gm.action="http://reg.163.com/CheckUser.jsp"
+gm.url.value="http://entry.mail.163.com/coremail/fcg/ntesdoor2?lightweight=1&verifycookie=1&language=-1&style=15"
+gm.username.value=vName.value
+gm.password.value=vPw.value
+gm.enterVip.value=''
+break
+case "126":
+gm.action="https://reg.163.com/logins.jsp?type=1&product=mail126&url=http://entry.mail.126.com/cgi/ntesdoor?lightweight%3D1%26verifycookie%3D1%26language%3D0%26style%3D-1"
+gm.domain.value="126.com"
+gm.username.value=vName.value+"@126.com"
+gm.password.value=vPw.value
+break
+ 
+case "vip163":
+gm.action="https://ssl1.vip.163.com/logon.m?language=-1&style=-1"
+gm.username.value=vName.value
+gm.password.value=vPw.value
+break
+case "netease":
+gm.action="http://web.netease.com/cgi/login?verifycookie=1&language=0"
+gm.username.value=vName.value
+gm.password.value=vPw.value
+break
+case "sohu":
+gm.action="http://passport.sohu.com/login.jsp"
+gm.url.value=""
+gm.UserName.value=vName.value
+gm.Password.value=vPw.value
+gm.id.value=vName.value
+gm.username.value=vName.value
+gm.password.value=vPw.value
+gm.m.value=vName.value
+gm.passwd.value=vPw.value
+gm.mpass.value=vPw.value
+gm.loginid.value=vName.value+"@sohu.com"
+gm.fl.value="1"
+gm.vr.value="1|1"
+gm.appid.value="1000"
+gm.ru.value="http://login.mail.sohu.com/servlet/LoginServlet"
+gm.eru.value="http://login.mail.sohu.com/login.jsp"
+gm.ct.value="1173080990"
+gm.sg.value="5082635c77272088ae7241ccdf7cf062"
+break
+case "yahoo":
+gm.action="https://edit.bjs.yahoo.com/config/login"
+gm.login.value=vName.value
+gm.passwd.value=vPw.value
+break
+case "yahoocn":
+gm.action="https://edit.bjs.yahoo.com/config/login"
+gm.login.value=vName.value+"@yahoo.cn"
+gm.passwd.value=vPw.value
+break
+case "Gmail":
+gm.action="https://www.google.com/accounts/ServiceLoginAuth"
+gm.Email.value=vName.value
+gm.Passwd.value=vPw.value
+break
+case "tom":
+gm.action="http://bjweb.163.net/cgi/163/login_pro.cgi"
+gm.user.value=vName.value
+gm.pass.value=vPw.value
+break
+case "21cn":
+gm.action="http://passport.21cn.com/maillogin.jsp"
+gm.LoginName.value=vName.value
+gm.passwd.value=vPw.value
+gm.domainname.value="21cn.com"
+gm.UserName.value=vName.value+'@21cn.com'
+break
+case "china":
+gm.action="http://mail.china.com/coremail/fcg/login"
+gm.user.value=vName.value
+gm.pass.value=vPw.value
+gm.domainname.value="china.com"
+//gm.passwd.value=vPw.value
+break
+case "mailchina":
+gm.action="http://freemail.china.com/extend/gb/NULL/NULL/NULL/SignIn.gen"
+gm.LoginName.value=vName.value
+gm.passwd.value=vPw.value
+ 
+break
+case "56":
+var gUrsHost=["m113","m48","m49"];
+gm.action="http://"+gUrsHost[((new Date()).getSeconds())%3]+".56.com/mail/mail.56"
+gm.username.value=vName.value
+gm.password.value=vPw.value
+break
+case "Xinhuanet":
+gm.action="http://mail.xinhuanet.com/login.jsp"
+gm.username.value=vName.value
+gm.password.value=vPw.value
+gm.domainname.value='xinhuanet.com'
+break
+case "sina":
+gm.action="http://mail.sina.com.cn/cgi-bin/login.cgi"
+gm.u.value=vName.value
+gm.psw.value=vPw.value
+break
+case "eyou":
+gm.action="http://ssl.eyou.com/mail_login.php"
+gm.LoginName.value=vName.value
+gm.Password.value=vPw.value
+break
+case "yeah":
+gm.action="https://reg.163.com/logins.jsp?type=1&product=mailyeah&url=http://entry.mail.yeah.net/cgi/ntesdoor?lightweight%3D1%26verifycookie%3D1%26style%3D-1"
+gm.domain.value="yeah.net"
+gm.username.value=vName.value+"@yeah.net"
+gm.password.value=vPw.value
+break
+ 
+case "263":
+gm.action="http://mailbeta.263.net/xmweb"
+gm.usr.value=vName.value
+gm.pass.value=vPw.value
+gm.domain.value="263.net"
+gm.func.value="login"
+break
+case "qq":
+gm.action="http://mail.qq.com/cgi-bin/login"
+gm.u.value=vName.value
+gm.p.value=vPw.value
+gm.starttime.value=(new Date()).valueOf()
+break
+case "vipsina":
+gm.action="http://vip.sina.com.cn/cgi-bin/login.php"
+gm.domain.value='vip.sina.com'
+gm.u.value=vName.value
+gm.psw.value=vPw.value
+ 
+break
+case "cren":
+gm.action="http://passport.sohu.com/login.jsp"
+gm.loginid.value=vName.value+"@chinaren.com"
+gm.passwd.value=vPw.value
+gm.fl.value="1"
+gm.vr.value="1|1"
+gm.appid.value="1005"
+gm.ru.value="http://profile.chinaren.com/urs/setcookie.jsp?burl=http://alumni.chinaren.com/"
+gm.ct.value="1174378209"
+gm.sg.value="84ff7b2e1d8f3dc46c6d17bb83fe72bd"
+ 
+break
+case "51":
+gm.action="http://passport.51.com/login.5p"
+gm.passport_51_user.value=vName.value
+gm.passport_51_password.value=vPw.value
+gm.gourl.value="http%3A%2F%2Fmy.51.com%2Fwebim%2Findex.php"
+break
+case "baidu":
+gm.action="http://passport.baidu.com/?login"
+gm.username.value=vName.value
+gm.password.value=vPw.value
+break
+case "tianya":
+gm.action="http://www.tianya.cn/user/loginsubmit.asp"
+gm.vwriter.value=vName.value
+gm.vpassword.value=vPw.value
+break
+ 
+case "xn":
+	gm.action="http://login.renren.com/Login.do";
+	setVal("email",vName.value);
+	setVal("password",vPw.value);
+	return cMail();}
+s_cookie('m',vDomain.selectedIndex,5184000,'/')
+vPw.value = ""
+return true}
+function _c(linkId, e){    
+var fireOnThis = document.getElementById(linkId)
+if (document.createEvent) {  var evObj = document.createEvent('MouseEvents'); evObj.initEvent( 'click', true, false );  fireOnThis.dispatchEvent(evObj);  }  else if (document.createEventObject) { fireOnThis.fireEvent('onclick') }
+}
+
+
+ function  linkurl(url)
+ {   
+      var lg=url.length ,newLink = document.getElementById('newLink');
+	  if(lg>8)
+	  {
+         newLink.href=url; 
+		 try{newLink.click();}catch(e){_c('newLink')}
+		document.gomail.domainss.selectedIndex=0;   
+	  }
+  }   
+</script>
+</head>
+<body>
+<script type="text/javascript" id="xtopjs" src="neiye/js/top.js?fk=youxiang&cfg=stand"></script>
+
+<div class="head">
+
+<script type="text/javascript" src="neiye/js/sosohead.js"></script>
+
+</div>
+<div class="path"> 
+<span> 
+<a href="chat.htm" target="_self">聊天</a>|
+<a target="_self" href="love.htm">交友</a>|
+<a target="_self" href="software.htm">软件</a>&nbsp;
+</span> 
+<ul><li style="display:inline;"><a target="_self" href="/">首页</a></li>&nbsp;&gt;&nbsp;<li style="display:inline;"><a target="_self" href="/qtwz.htm">其它类别</a></li>&nbsp;&gt;&nbsp;<li style="display:inline;">邮箱</li></ul> 
+</div> 
+<div class="wrap">
+  <!-- left -->
+  <div class="left">
+   	  <h2>电子邮箱登陆</h2>    
+   	  <table class="m_1" width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr> 
+    <th colspan="5" height=18 align="center" valign="middle"> 
+     <FORM  style="margin:5px;padding:1px;text-align:center;" id=gomail name=gomail onSubmit="return clickMail()" action="" method=post><INPUT type=hidden name=url><INPUT type=hidden name=username><INPUT type=hidden name=type><INPUT type=hidden name=password><INPUT type=hidden name=domain><INPUT type=hidden value=http://mail.cn.yahoo.com/inset.html?rr=529401327 name=.done><INPUT type=hidden name=user><INPUT type=hidden name=pass><INPUT type=hidden value=true name=enterVip><INPUT type=hidden name=UserName><INPUT type=hidden name=Password><INPUT type=hidden name=u><INPUT type=hidden name=psw><INPUT type=hidden name=login><INPUT type=hidden name=LoginName><INPUT type=hidden name=usr><INPUT type=hidden name=func><INPUT type=hidden name=login_name><INPUT type=hidden name=login_password><INPUT type=hidden name=BackURL><INPUT type=hidden value=http://mail.google.com/mail?ui=html&amp;zy=l name=continue><INPUT type=hidden name=Email><INPUT type=hidden name=email><INPUT type=hidden name=domainname><INPUT type=hidden value=false name=firstlogin><INPUT type=hidden name=starttime><INPUT type=hidden name=p2><INPUT type=hidden name=passwd><INPUT type=hidden name=id><INPUT type=hidden name=m><INPUT type=hidden name=mpass><INPUT type=hidden name=loginid><INPUT type=hidden name=appid><INPUT  type=hidden name=ru><INPUT type=hidden name=eru><INPUT type=hidden name=fl><INPUT type=hidden name=ct><INPUT type=hidden name=vr><INPUT type=hidden name=sg><INPUT type=hidden name=vwriter><INPUT type=hidden  name=vpassword><INPUT type=hidden name=passport_51_user><INPUT type=hidden name=passport_51_password><INPUT type=hidden name=gourl><INPUT type=hidden name=Passwd><input type=hidden name=.intl value=cn> 
+        请输入邮箱帐号：<INPUT  name=uName class=fk 
+      id=uName  style="height:16px;font-size:15px;padding-top:2px;" size="20"> 
+        &nbsp;
+     <SELECT style="HEIGHT: 20px; FONT-SIZE: 15px; PADDING-TOP: 2px" class=slct 
+      name=domainss onchange=linkurl(this.value)> 
+        <OPTION value="" selected="selected">－请选择您的邮箱－</OPTION> 
+        <<option value="163">@163.com 网易</option><option value="126">@126.com 网易</option><option value="sina">@sina.com 新浪</option><option value="sohu">@sohu.com 搜狐</option><option value="yahoo">@yahoo.com.cn</option><option value="yahoocn">@yahoo.cn</option><option value="tom">@tom.com</option><option value="21cn">@21cn.com</option><option value="yeah">@yeah.net</option><option value="vipsina">@vip.sina.com</option><option value="vip163">@vip.163.com</option> 
+        <option value="">--在弹出页登陆--</OPTION> 
+        <option value="http://www.gmail.com">@gmail.com</option> 
+        <option value="http://mail.qq.com">@qq.com</option> 
+        <option value="http://mail.10086.cn">@139.com</option> 
+        <option value="http://www.hotmail.com">@hotmail.com</option> 
+        <option value="http://qzone.qq.com/index.html">QQ空间</option> 
+        <option value="http://www.kaixin001.com/">开心网</option> 
+        <option value="">--请选择其他登录--</option><option value="tianya">天涯社区</option><option value="baidu">百度账号</option><option value="51">51.com</option><option value="xn">人人网</option></SELECT><a id=newLink  target="_blank"   style="position:absolute;left:-10000,top:-10000"></a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密 码：<INPUT  name=uPw type=password class=fk id=uPw style="height:16px;font-size:15px;padding-top:2px;" size="20"> 
+        &nbsp;<INPUT type=submit value=登&nbsp;录 name=Submit style="height:23px;width:76px;font-size:15px;"> <INPUT type=hidden 
+      value=submit name=cmd></FORM></th> 
+  </tr></table>
+  <h2>电子邮箱</h2>
+  <table class="m_1" width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="20%"><a href="http://mail.163.com/">网易163邮箱</a><span><a href="http://reg.email.163.com/mailregAll/reg0.jsp">[注册]</a></span></td>
+      <td width="20%"><a href="http://www.126.com/">网易126邮箱</a><span><a href="http://reg.email.163.com/mailregAll/reg0.jsp">[注册]</a></span></td>
+      <td width="20%"><a href="http://mail.sohu.com/">搜狐邮箱</a><span><a href="https://passport.sohu.com/web/dispatchAction.action?registerType=Passport&showAllType=1">[注册]</a></span></td>
+      <td width="20%"><a href="http://mail.tom.com/">TOM邮箱</a><span><a href="http://bjcgi.tom.com/cgi-bin/tom_reg.cgi?rf=060704">[注册]</a></span></td>
+      <th width="20%"><a href="http://mail.sina.com.cn/">新浪邮箱</a><span><a href="http://mail.sina.com.cn/register/reg_freemail.php">[注册]</a></span></th>
+    </tr>
+    <tr>
+      <td><a href="http://vip.163.com/">163VIP邮箱</a></td>
+      <td><a href="http://mail.china.com/chinawm/index.html">China付费邮箱</a></td>
+      <td><a href="http://vip.sohu.com/">搜狐VIP邮箱</a></td>
+      <td><a href="http://vip.tom.com/">TOMVIP邮箱</a></td>
+      <th><a href="http://vip.sina.com.cn/cgi-bin/login.php">新浪VIP邮箱</a></th>
+    </tr>
+    <tr>
+      <td><a href="http://mail.cn.yahoo.com/?id=40168">雅虎邮箱</a><span><a href="https://cn.edit.yahoo.com/registration?intl=cn&done=http://cn.yahoo.com/&src=&last=&partner=yahoo_default">[注册]</a></span></td>
+      <td><a href="http://mail.qq.com/">QQ邮箱</a><span><a href="http://mail.qq.com/cgi-bin/loginpage?t=regist">[注册]</a></span></td>
+      <td><a href="http://mail.google.com/">Gmail邮箱</a><span><a href="https://www.google.com/accounts/NewAccount?service=mail&amp;continue=http%3A%2F%2Fmail.google.com%2Fmail%2Fe-11-116384fe9a5d2c98984844fc7a44abe-b7383c594cab954f9c029559be9817a5c0ac0d06&amp;type=2">[注册]</a></span></td>
+      <td><a href="http://www.yeah.net/">Yeah.net邮箱</a><span><a href="http://reg.email.163.com/mailregAll/reg0.jsp">[注册]</a></span></td>
+      <th><a href="http://mail.21cn.com/">21CN邮箱</a><span><a href="http://passport.21cn.com/reg/register1.jsp">[注册]</a></span></th>
+    </tr>
+    <tr>
+      <td><a href="http://www.hotmail.com/">Hotmail</a></td>
+      <td><a href="http://mail.sogou.com/">搜狗邮箱</a></td>
+      <td><a href="http://freemail.eyou.com/">亿邮</a></td>
+      <td><a href="http://www.188.com/">188财富邮</a></td>
+      <th><a href="http://mail.10086.cn/">139手机邮箱</a></th>
+    </tr>
+    <tr>
+      <td><a href="http://mail.189.cn/">189邮箱</a></td>
+      <td><a href="http://mail.wo.com.cn/mail/login.action">联通手机邮箱</a></td>
+      <td><a href="http://www.263.net/">263邮箱</a></td>
+      <td><a href="http://mail.qq.com/cgi-bin/loginpage?t=fox_loginpage&amp;sid=,2,zh_CN&amp;r=ec71351fa05c2dd1446dde13afdf520b">foxmail</a></td>
+      <th><a href="http://mail.hexun.com/">和讯免费邮箱</a></th>
+    </tr>
+    <tr>
+      <td><a href="http://www.shangmail.com/index">尚邮</a></td>
+      <td><a href="http://ym.163.com/">网易企业邮箱</a></td>
+      <td><a href="http://exmail.qq.com/">腾讯企业邮箱</a></td>
+      <td><a href="http://123.163.com/">网易手机邮箱</a></td>
+      <th><a href="http://3gqq.qq.com/mail.jsp">QQ手机邮箱</a></th>
+    </tr>
+    </table>
+<h2>邮箱工具</h2>      
+	  	   <table class="m_1" width="100%" border="0" cellpadding="0" cellspacing="0">
+	  	     <tr>
+	  	       <td width="20%"><a href="http://www.duote.com/soft/6554.html">Windows Live Mail</a></td>
+	  	       <td width="20%"><a href="http://www.foxmail.com.cn/download.htm">Foxmail下载</a></td>
+	  	       <td width="20%"><a href="http://www.duote.com/soft/12635.html">电子邮件登陆器</a></td>
+	  	       <td width="20%"><a href="http://www.duote.com/soft/21070.html">DreamMail</a></td>
+	  	       <th width="20%">&nbsp;</th>
+  	         </tr>
+    </table>
+<h2>网盘</h2>      
+	  	  	   <table class="m_1" width="100%" border="0" cellpadding="0" cellspacing="0">
+	  	  	     <tr>
+	  	  	       <td width="20%"><a href="http://www.rayfile.com/zh-cn/">RayFile</a></td>
+	  	  	       <td width="20%"><a href="http://115.com/union/1054417" style="color:#ff0000">115网盘</a></td>
+	  	  	       <td width="20%"><a href="http://vdisk.me/">微盘</a></td>
+	  	  	       <td width="20%"><a href="http://www.dbank.com/">华为网盘</a></td>
+	  	  	       <th width="20%"><a href="http://disk.qq.com/">QQ网络硬盘</a></th>
+  	  	         </tr>
+	  	  	     <tr>
+	  	  	       <td><a href="http://wp.163.com/">网易网盘</a></td>
+	  	  	       <td><a href="http://www.gokuai.com/">够快网盘</a></td>
+	  	  	       <td><a href="http://www.ys168.com/">永硕网络硬盘</a></td>
+	  	  	       <td><a href="http://www.qiannao.com/">千脑</a></td>
+	  	  	       <th><a href="http://www.99pan.com/">99网盘</a></th>
+  	  	         </tr>
+                 <tr>
+	  	  	       <td><a href="http://walkbox.vip.xunlei.com/login.html">迅雷随身盘</a></td>
+	  	  	       <td><a href="http://www.1tpan.com/">金山T盘</a></td>
+	  	  	       <td><a href="http://kuai.xunlei.com/">迅雷快传</a></td>
+	  	  	       <td>&nbsp;</td>
+	  	  	       <th>&nbsp;</th>
+  	  	         </tr>
+    </table>
+    <h2>搜狗热搜</h2>      
+	  	  	   <table class="m_1" width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=美女交友网站&pid=sogou-site-220c77af02f8ad85">美女交友网站</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=异性交友中心&pid=sogou-site-220c77af02f8ad85">异性交友中心</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=速配交友&pid=sogou-site-220c77af02f8ad85">速配交友</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=找女友&pid=sogou-site-220c77af02f8ad85">找女友</a></td> 
+            <th width="20%"><a href="http://www.sogou.com/sogou?query=找单身女人&pid=sogou-site-220c77af02f8ad85">找单身女人</a></th> 
+          </tr> 
+          <tr> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=美女网页游戏&pid=sogou-site-220c77af02f8ad85">美女网页游戏</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=8分钟交友&pid=sogou-site-220c77af02f8ad85">8分钟交友</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=同城交友&pid=sogou-site-220c77af02f8ad85">同城交友</a></td> 
+            <td width="20%"><a href="http://www.sogou.com/sogou?query=免费交友网&pid=sogou-site-220c77af02f8ad85">免费交友网</a></td> 
+            <th width="20%"><a href="http://www.sogou.com/sogou?query=找女性朋友&pid=sogou-site-220c77af02f8ad85">找女性朋友</a></th> 
+          </tr> 
+    </table>
+	  
+  </div>
+  <!-- left end -->
+</div>
+<script type="text/javascript">
+var pageName='邮箱';
+</script>
+<script type="text/javascript" src="neiye/js/sosofooter.js"></script>
+</body>
+</html>
+<span style="display:none"><script type="text/javascript" src="css/tj.js"></script></span>

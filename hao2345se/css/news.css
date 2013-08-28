@@ -1,0 +1,111 @@
+@charset "gb2312";
+/* CSS Document */
+
+.clear{clear:both}
+.hr10{height:10px; overflow:hidden; clear:both}
+.wrap{width:990px; margin:0 auto; text-align:left; position:relative}
+.news_box{border:1px solid #b1d8fd; background:#f8fcff; zoom:1}
+.news_box h2{padding-left:10px;height:27px; line-height:27px; padding-bottom:2px; background:url(../images/news/newsbg.png) repeat-x 0 0; font-size:14px; font-weight:bold; color:#01529C; text-align:left}
+.news_1 td, .news_1 th{padding-left:10px;border:1px solid #b1d8fd; border-top:none; border-left:none; line-height:35px; height:35px; font-size:14px; font-weight:normal}
+.news_1 th{;border-right:none}
+.news_1 tr.end td, .news_1 tr.end th{border-bottom:none}
+
+.news_box2{border:1px solid #b1d8fd; background:#f8fcff;padding:10px 0 0 13px; zoom:1}
+.news_title{height:24px; margin-bottom:5px;}
+.news_title i{color:#b20000}
+.news_t_img{width:67px; height:20px; display:block; background:url(../images/news/newsbg.png) no-repeat 0 -60px; float:left;}
+.time{ margin-left:10px;float:left;}
+.dingzhi{ margin-right:13px;width:82px; height:23px; display:inline; background:url(../images/news/newsbg.png) no-repeat 0 -80px; float:right; position:relative; }
+.dz_cur{z-index:99}
+.dingzhi a.dz_txt{padding-left:22px; width:58px;height:21px; line-height:21px; display:block; border:1px solid #b1d8fd; z-index:999; position:absolute}
+.dingzhi a.down{background:url(../images/news/newsbg.png) no-repeat 8px -120px; border-bottom-color:#f7f7f7;}
+.dingzhi a.up{background:url(../images/news/newsbg.png) no-repeat 8px -103px;}
+.fenlei_list{padding:5px 10px;;background: none repeat scroll 0 0 #f6f6f6;border: 1px solid #b1d8fd;overflow: hidden;position: absolute;right: 0;top: 22px;width: 105px;z-index: 98;}
+.fenlei_list ul{zoom:1}
+.fenlei_list li{padding:5px 0;height:14px; line-height:14px; overflow:hidden; color:#004f9b}
+.fenlei_list .inp{padding:0; margin:0px 5px 0 0;height: 13px; width: 13px; float:left; display:inline; vertical-align:middle}
+.fenlei_list label{float:left; }
+.tx-select, .btn-select{border-top:1px dotted #8a8a8a}
+.btn-select li{height:20px; line-height:20px;}
+
+	 /* menu */
+	 .imenu,.imenu li,.imenu li a,.imenu ul li a b{ background:url(../images/news/menubg.png)}
+	 .imenu{ height:36px; line-height:36px; border-top:2px solid #f7f7f7; text-align:left; margin-bottom:10px;}
+	 .imenu ul{ width:990px; margin:0 auto; height:36px;}
+	 .imenu ul li{ height:36px; float:left; background-position:right -72px;}
+	 .imenu ul li.last{ background:none;}
+	 .imenu ul li a{ display:inline-block; height:36px;  }
+	 .imenu ul li a,.imenu ul li a b{ display:inline-block; height:36px; line-height:36px;}
+	 .imenu ul li a{padding-left:27px; margin:0 7px;}
+	 .imenu ul li a b{padding-right:27px;font-size:14px; font-weight:bold;  color:#fff; cursor:pointer;}
+	 .imenu ul li a:hover{ background-position:0 -36px; text-decoration:underline; color:#226caa}
+	 .imenu ul li a:hover b{background-position:right -36px; text-decoration:underline;color:#226caa}
+	 .imenu ul li.curr a,.imenu ul li.curr a:hover{background-position:0 -36px; text-decoration:underline}
+	 .imenu ul li.curr a b,.imenu ul li.curr a:hover b{background-position:right -36px;color:#1364a5;}
+
+
+.qh_city{width:70px; height:25px; line-height:25px; display:block; float:left;}
+.qh_city a.down{padding-left:15px;background:url(../images/news/newsbg.png) no-repeat -87px -107px;}
+.qh_city a.up{padding-left:15px;background:url(../images/news/newsbg.png) no-repeat -87px -124px;}
+.city{ width:350px; border:1px solid #a5d2fc; background:#f3f9ff; position:absolute; top:35px; left:10px;}
+.city .upimg{width:9px; height:6px; display:block; overflow:hidden; background:url(../images/news/newsbg.png) no-repeat -90px -74px; position:absolute; top:-6px; left:45px;}
+.city .colse{ width:11px;height:11px; overflow:hidden; display:block; position:absolute; right:5px; top:3px;}
+.city .colse a{width:11px; height:11px; display:block; float:right; background:url(../images/news/newsbg.png) no-repeat -89px -60px;}
+.city_list{padding:5px 10px 5px; zoom:1}
+.city_list li{width:55px; height:21px; float:left;}
+
+.news_m{width:472px;float:left;margin:0 13px 10px 0;  display:inline; position:relative }
+.news_list{padding:1px; border:1px solid #b1d8fd; background:#fff;}
+.news_list_title{height:25px; line-height:25px; padding:0 7px 3px; background:url(../images/news/newsbg.png) repeat-x 0 -30px;}
+.news_list_title .title{height:25px; display:block; float:left;padding-right:30px; font-size:14px; font-weight:bold; color:#01529c}
+.news_list_title .title i{ margin-top:4px;width:16px; height:16px; overflow:hidden; float:left; margin-right:5px;}
+.news_list_title .title i.yaowen{background:url(../images/news/newsbg.png) no-repeat 0 -143px;}
+.news_list_title .title i.guonei{background:url(../images/news/newsbg.png) no-repeat 0 -159px;}
+.news_list_title .title i.guoji{background:url(../images/news/newsbg.png) no-repeat 0 -175px;}
+.news_list_title .title i.bendi{background:url(../images/news/newsbg.png) no-repeat 0 -191px;}
+.news_list_title .title i.yule{background:url(../images/news/newsbg.png) no-repeat 0 -207px;}
+.news_list_title .title i.caijin{background:url(../images/news/newsbg.png) no-repeat 0 -223px;}
+.news_list_title .title i.tiyu{background:url(../images/news/newsbg.png) no-repeat 0 -239px;}
+.news_list_title .title i.junshi{background:url(../images/news/newsbg.png) no-repeat 0 -255px;}
+.news_list_title .title i.qiche{background:url(../images/news/newsbg.png) no-repeat 0 -271px;}
+.news_list_title .title i.keji{background:url(../images/news/newsbg.png) no-repeat 0 -287px;}
+.news_list_title .title i.reshou{background:url(../images/news/newsbg.png) no-repeat 0 -303px;}
+.news_list_title .title i.weibo{background:url(../images/news/newsbg.png) no-repeat 0 -319px;}
+
+.news_list_title .web{color:#6899ca; float:left;}
+.news_list_title .more{float:right}
+.news_list_m{height:280px;padding:10px 13px;}
+.news_list_m li{height:28px; line-height:28px; font-size:14px; overflow:hidden}
+.news_list_m li i{ font-family:'ËÎÌו';}
+.news_list a{color:#004f9b}
+.news_list a:hover{color:#FD5151}
+.more_txt{padding-left:5px;height:30px; line-height:30px; font-size:14px;}
+.more_txt a{margin-right:15px;}
+
+.renshou_weibo_m{padding:10px 13px 10px 25px;}
+.renshou_weibo_m li{width:50%; float:left;height:28px; line-height:28px; font-size:14px; overflow:hidden}
+
+.r_menu{padding-top:3px;width:20px; height:57px; line-height:14px; text-align:center;margin-left:992px; background:url(../images/news/newsbg.png) no-repeat -80px -365px; position:fixed; top:296px;  _position:absolute;_bottom:auto;_top:expression(documentElement.scrollTop - -150+'px');}
+.r_menu a, .r_menu a:hover{color:#71a6d9; text-decoration:none}
+
+.news_search_box{ height:29px; margin-top:20px; float:right}
+.search_name{padding-left:0px;height:29px; line-height:29px; width:88px; float:left; background:url(../images/news/newsbg.png) no-repeat 0 -529px; font-size:13px; position:relative; z-index:998}
+.search_name a{color:#666}
+.search_name a:hover{color:#fd5151;}
+.search_name a.curr{padding-left:10px;height:29px; width:78px; display:block;background:url(../images/news/newsbg.png) no-repeat 0 -558px;}
+.news_search_m{width:86px; border:1px solid #aebdcc; position:absolute; top:28px; left:0; z-index:999; background:#fff;}
+.news_search_m li{height:26px; line-height:26px; overflow:hidden}
+.news_search_m li a{padding-left:10px; height:26px; display:block;overflow:hidden}
+.news_search_m li a:hover{background:#1f9ad6; color:#fff; text-decoration:none}
+.news_inp_r{height:29px; width:5px; display:block; float:left; margin-right:10px; background:url(../images/news/newsbg.png) no-repeat right -529px;}
+.news_inp{height:27px;line-height: 27px; border:1px solid #aebdcc; border-left:0; border-right:0; width:260px; background:#fff; float:left;}
+.news_btn{border: 0 none;color: #333; cursor: pointer; float: left; font-size: 14px;height:29px; line-height:29px; overflow: hidden; width:84px; background:url(../images/news/newsbg.png) no-repeat 0 -469px;}
+.news_btn_hover{background:url(../images/news/newsbg.png) no-repeat 0 -499px;}
+.keywords{float:left; height:29px; line-height:29px; display:inline-block;padding-left:10px;}
+.keywords a{margin-right:5px; font-size:14px; color:#004f9b}
+.keywords a:hover{color:#fd5151}
+
+#btn_back{padding:10px 0 5px 10px; height:24px; line-height:24px; font-weight:bold;}
+.head{overflow:visible}
+.dingzhi-tishi{padding:3px 0 0 10px;width:141px; height:19px; line-height:19px; font-size:12px; color:#db6d01; position:absolute;left:-155px; top:0; background:url(../images/news/dingzhi-tishi.png) no-repeat 0 0}
+

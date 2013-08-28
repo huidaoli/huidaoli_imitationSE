@@ -1,0 +1,75 @@
+@charset "gb2312";
+/**
+ * Copyright (c) 2010, www.114la.com. All rights reserved.
+ * -------------------------------------------------------
+ * Date:2010-2-2
+ * Author: cai@115.com
+ * File: style.css
+ * -------------------------------------------------------
+ * Version: 1.0
+ */
+* { margin:0; padding:0; }
+body {font-family: Verdana, Geneva, sans-serif, sans-serif;font-size:12px; }
+img { border:0;}
+ul li { list-style:none;}
+.clearfix,#imgView dl {zoom:1;}
+.clearfix:after,#imgView dl:after{content:"\0020";display:block;clear:both;height:0;}
+.fr { float:right;}
+.fl { float:left;}
+.red { color:#FF0000;}
+.green { color:#008000;}
+.blue { color:#00c;}
+
+button { margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; height:22px;}
+
+body { line-height:1.5;}
+a { color:#00c;text-decoration:none;font-size:12px;}
+a:hover {text-decoration:underline;}
+.container {padding-top:10px;height:232px;}
+
+#imgView  {margin:0 0 0 5px;width:35%;float:left;display:inline;}
+#imgView .img{text-align:center;}
+#imgView td { padding-left:5px;}
+
+#imgView .item {margin-top:5px;overflow:hidden;}
+#imgView dl {border-bottom:1px dashed #84a8cd;}
+#imgView .last{border:none;}
+#imgView .current dd,#imgView .current dt{}
+#imgView dt,#imgView dd {padding-left:5px;width:56px;height:28px;line-height:28px;float:left; }
+#imgView dt {padding-left:12px; width:55px;white-space:nowrap;}
+#imgView .current dt{background:url(../images/arrow.gif) no-repeat 3px center;}
+#imgView dd { font-size:11px;}
+
+#imgView #js_all_third dd { width:73px;}
+#imgView #js_all_third dt { width:76px;}
+
+#content { margin:0 5px;float:right;width:62%;display:inline;}
+#manager { border:1px solid #B9D4E2;zoom:1;}
+#manager tr { height:22px; line-height:22px; }
+#manager tr:hover td{ background-color:#E9EFF8;}
+#manager td, #manager th { text-align:center; font-weight:normal;font-size:12px;}
+#manager th { background-color:#E1E9F6; }
+#manager td { background-color:#F9F9F9; font-size:11px }
+#manager .name { font-size:12px;}
+
+#inputStock {height:32px;line-height:32px;}
+.meta {text-align:right;line-height:32px;}
+.meta .date{float:left;}
+
+.tab ,.tab li,.tab a,.input-form,.input-form .stock-inp,.input-form .button,.input-form select,.input-form .view{ float:left;}
+.tab li { height:29px; line-height:24px; text-align:center;}
+.tab a,.tab a:hover { color:#00c; text-decoration:none; width:65px; text-align:center; background:url(../images/menu.gif) no-repeat; height:24px; line-height:24px; margin:0 2px;}
+.tab a.current { width:65px; height:29px; background-position:0 -25px; font-weight:bold; color:#333; cursor:default;}
+
+
+.input-form {z-index:1;position:relative;float:right;}
+.input-form select{height:22px; padding:2px;}
+.input-form .button {height:24px;line-height:24px;width:50px;}
+.input-form .view {height:24px; background:url(../images/view.gif) no-repeat; width:60px; line-height:24px; color:#666; text-align:center; margin-right:3px;}
+.input-form input.stock-inp {height:24px;line-height:24px;padding:0 3px;border:1px solid #A5ACB2;font-size:12px;font-family:Arial, Helvetica, sans-serif;width:120px;margin:0 5px;zoom:1;}
+
+
+.copyBoard {margin:0 5px 8px;}
+.copy { font-size:12px; padding:3px 2px 1px;color:#666; font-family:Arial, Helvetica, sans-serif; width:180px;}
+.copyBoard .fl{ padding-left:4px; line-height:30px;}
+#manager .name a{width:95px;overflow:hidden;height:22px;white-space:nowrap;display:block;}
